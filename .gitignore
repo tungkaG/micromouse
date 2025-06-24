@@ -1,0 +1,11 @@
+.generated_files/
+
+build/
+
+*.log
+*.log.inx
+
+dist/
+nbproject/
+
+Makefile
