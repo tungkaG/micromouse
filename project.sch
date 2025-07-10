@@ -7766,6 +7766,80 @@ naming: grid - package width</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ABM8-20.000MHZ-B2-T">
+<packages>
+<package name="XTAL_ABM8-20.000MHZ-B2-T">
+<wire x1="-1.25" y1="1.6" x2="1.25" y2="1.6" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1.6" x2="1.25" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1.6" x2="-1.25" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.6" x2="-1.25" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="1.25" y1="0.18" x2="1.25" y2="-0.18" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="0.18" x2="-1.25" y2="-0.18" width="0.127" layer="21"/>
+<wire x1="-1.65" y1="2.05" x2="1.65" y2="2.05" width="0.05" layer="39"/>
+<wire x1="-1.65" y1="2.05" x2="-1.65" y2="-2.05" width="0.05" layer="39"/>
+<wire x1="1.65" y1="2.05" x2="1.65" y2="-2.05" width="0.05" layer="39"/>
+<wire x1="1.65" y1="-2.05" x2="-1.65" y2="-2.05" width="0.05" layer="39"/>
+<text x="-1.65" y="2.25" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.65" y="-2.25" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<circle x="-2.15" y="1.15" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.15" y="1.15" radius="0.1" width="0.2" layer="51"/>
+<smd name="1" x="-0.875" y="1.15" dx="1.05" dy="1.3" layer="1"/>
+<smd name="2" x="-0.875" y="-1.15" dx="1.05" dy="1.3" layer="1"/>
+<smd name="3" x="0.875" y="-1.15" dx="1.05" dy="1.3" layer="1"/>
+<smd name="4" x="0.875" y="1.15" dx="1.05" dy="1.3" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ABM8-20.000MHZ-B2-T">
+<wire x1="-1.397" y1="2.54" x2="1.397" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.397" y1="2.54" x2="1.397" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.397" y1="-2.54" x2="-1.397" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-1.397" y1="2.54" x2="-1.397" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="2.3368" y1="2.54" x2="2.3368" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-2.3368" y1="2.54" x2="-2.3368" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-5.0878" y="6.35585" size="1.78073125" layer="95">&gt;NAME</text>
+<text x="-5.094390625" y="-10.16" size="1.78303125" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="GND" x="7.62" y="-5.08" length="short" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ABM8-20.000MHZ-B2-T" prefix="Y">
+<description> &lt;a href="https://pricing.snapeda.com/parts/ABM8-20.000MHZ-B2-T/Abracon/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ABM8-20.000MHZ-B2-T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XTAL_ABM8-20.000MHZ-B2-T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/ABM8-20.000MHZ-B2-T/Abracon/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value="                                                      Oscillator, Crystal,20MHz,Ceramic,SMD,+/-20ppm,-20 to +70ppm,80 Ohms,Fund.,18pF | Abracon ABM8-20.000MHZ-B2-T                                              "/>
+<attribute name="MF" value="Abracon"/>
+<attribute name="MP" value="ABM8-20.000MHZ-B2-T"/>
+<attribute name="PACKAGE" value="NON-STANDARD-4 ABRACON"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/ABM8-20.000MHZ-B2-T/Abracon/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7789,6 +7863,11 @@ naming: grid - package width</description>
 <part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Y1" library="ABM8-20.000MHZ-B2-T" deviceset="ABM8-20.000MHZ-B2-T" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C2" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
+<part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7840,6 +7919,24 @@ naming: grid - package width</description>
 <instance part="GND3" gate="1" x="-101.6" y="-35.56" smashed="yes">
 <attribute name="VALUE" x="-104.14" y="-38.1" size="1.778" layer="96"/>
 </instance>
+<instance part="Y1" gate="G$1" x="144.78" y="0" smashed="yes">
+<attribute name="NAME" x="139.6922" y="6.35585" size="1.78073125" layer="95"/>
+<attribute name="VALUE" x="139.685609375" y="-10.16" size="1.78303125" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="154.94" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="152.4" y="-10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="134.62" y="5.08" smashed="yes">
+<attribute name="NAME" x="136.144" y="5.461" size="1.778" layer="95"/>
+<attribute name="VALUE" x="136.144" y="0.381" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="G$1" x="154.94" y="5.08" smashed="yes">
+<attribute name="NAME" x="156.464" y="5.461" size="1.778" layer="95"/>
+<attribute name="VALUE" x="156.464" y="0.381" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="144.78" y="12.7" smashed="yes" rot="R180">
+<attribute name="VALUE" x="147.32" y="15.24" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7868,6 +7965,21 @@ naming: grid - package width</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-101.6" y1="-30.48" x2="-101.6" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="134.62" y1="7.62" x2="134.62" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="10.16" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="10.16" x2="154.94" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="10.16" x2="154.94" y2="7.62" width="0.1524" layer="91"/>
+<junction x="144.78" y="10.16"/>
+</segment>
+<segment>
+<pinref part="Y1" gate="G$1" pin="GND"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="154.94" y1="-5.08" x2="152.4" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="AN0" class="0">
 <segment>
@@ -7887,6 +7999,29 @@ naming: grid - package width</description>
 <pinref part="U1" gate="A" pin="AN0/VREF+/CN2/RA0"/>
 <wire x1="-63.5" y1="-20.32" x2="-71.12" y2="-20.32" width="0.1524" layer="91"/>
 <label x="-68.58" y="-20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="Y1" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="0" x2="134.62" y2="0" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="0" x2="134.62" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="134.62" y="0"/>
+<pinref part="U1" gate="A" pin="OSC2/CLKO/CN29/RA3"/>
+<wire x1="134.62" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="Y1" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="0" x2="152.4" y2="0" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="OSC1/CLKI/CN30/RA2"/>
+<wire x1="124.46" y1="-10.16" x2="160.02" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-10.16" x2="160.02" y2="0" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="0" x2="154.94" y2="0" width="0.1524" layer="91"/>
+<junction x="154.94" y="0"/>
 </segment>
 </net>
 </nets>
