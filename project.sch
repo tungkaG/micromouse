@@ -8312,6 +8312,83 @@ Source: www.cypressindustries.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="1761681-1">
+<description>&lt;Body Features: Primary Product Color Black | Connector Profile Low | Daisy Chain With | Configuration Features: PCB Mount Orientation Vertical | Number of Positions 6 | Number of Rows 2 | Contact Features: Contact Mating Area Plating Material Thickness 15 MICIN | Contact Type Pin | PCB Contact Termination Area Plating Material Tin | Contact Base Material Phosphor Bronze | PCB Contact Termination Area Plating Material Thickness 100 MICIN | Contact Current Rating (Max) 1 AMP | Contact Underplating Material Ni&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SHDR6W67P254_2X3_1524X916X922P">
+<description>&lt;b&gt;1761681-1&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.15" diameter="1.725" shape="square"/>
+<pad name="2" x="0" y="2.54" drill="1.15" diameter="1.725"/>
+<pad name="3" x="2.54" y="0" drill="1.15" diameter="1.725"/>
+<pad name="4" x="2.54" y="2.54" drill="1.15" diameter="1.725"/>
+<pad name="5" x="5.08" y="0" drill="1.15" diameter="1.725"/>
+<pad name="6" x="5.08" y="2.54" drill="1.15" diameter="1.725"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-5.33" y1="-3.425" x2="-5.33" y2="6.425" width="0.05" layer="51"/>
+<wire x1="-5.33" y1="6.425" x2="10.41" y2="6.425" width="0.05" layer="51"/>
+<wire x1="10.41" y1="6.425" x2="10.41" y2="-3.425" width="0.05" layer="51"/>
+<wire x1="10.41" y1="-3.425" x2="-5.33" y2="-3.425" width="0.05" layer="51"/>
+<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="6.175" width="0.1" layer="51"/>
+<wire x1="-5.08" y1="6.175" x2="10.16" y2="6.175" width="0.1" layer="51"/>
+<wire x1="10.16" y1="6.175" x2="10.16" y2="-3.175" width="0.1" layer="51"/>
+<wire x1="10.16" y1="-3.175" x2="-5.08" y2="-3.175" width="0.1" layer="51"/>
+<wire x1="0" y1="-3.175" x2="10.16" y2="-3.175" width="0.2" layer="21"/>
+<wire x1="10.16" y1="-3.175" x2="10.16" y2="6.175" width="0.2" layer="21"/>
+<wire x1="10.16" y1="6.175" x2="-5.08" y2="6.175" width="0.2" layer="21"/>
+<wire x1="-5.08" y1="6.175" x2="-5.08" y2="0" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="1761681-1">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="3" x="0" y="-2.54" length="middle"/>
+<pin name="5" x="0" y="-5.08" length="middle"/>
+<pin name="2" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="4" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="6" x="20.32" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1761681-1" prefix="J">
+<description>&lt;b&gt;Body Features: Primary Product Color Black | Connector Profile Low | Daisy Chain With | Configuration Features: PCB Mount Orientation Vertical | Number of Positions 6 | Number of Rows 2 | Contact Features: Contact Mating Area Plating Material Thickness 15 MICIN | Contact Type Pin | PCB Contact Termination Area Plating Material Tin | Contact Base Material Phosphor Bronze | PCB Contact Termination Area Plating Material Thickness 100 MICIN | Contact Current Rating (Max) 1 AMP | Contact Underplating Material Ni&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer Drawing1761681A1pdfEnglishENG_CD_1761681_A1.pdf1761681-1"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="1761681-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SHDR6W67P254_2X3_1524X916X922P">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Body Features: Primary Product Color Black | Connector Profile Low | Daisy Chain With | Configuration Features: PCB Mount Orientation Vertical | Number of Positions 6 | Number of Rows 2 | Contact Features: Contact Mating Area Plating Material Thickness 15 MICIN | Contact Type Pin | PCB Contact Termination Area Plating Material Tin | Contact Base Material Phosphor Bronze | PCB Contact Termination Area Plating Material Thickness 100 MICIN | Contact Current Rating (Max) 1 AMP | Contact Underplating Material Ni" constant="no"/>
+<attribute name="HEIGHT" value="9.22mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="TE Connectivity" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1761681-1" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="571-1761681-1" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1761681-1?qs=BqFpTYCQ3dLAeZ2wzdz7aw%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8369,6 +8446,8 @@ Source: www.cypressindustries.com</description>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C13" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="MOTOR_B" library="1761681-1" deviceset="1761681-1" device=""/>
+<part name="MOTOR_A" library="1761681-1" deviceset="1761681-1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8539,6 +8618,14 @@ Source: www.cypressindustries.com</description>
 </instance>
 <instance part="GND18" gate="1" x="-71.12" y="45.72" smashed="yes">
 <attribute name="VALUE" x="-73.66" y="43.18" size="1.778" layer="96"/>
+</instance>
+<instance part="MOTOR_B" gate="G$1" x="162.56" y="48.26" smashed="yes">
+<attribute name="NAME" x="179.07" y="55.88" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="179.07" y="53.34" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="MOTOR_A" gate="G$1" x="162.56" y="30.48" smashed="yes">
+<attribute name="NAME" x="179.07" y="38.1" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="179.07" y="35.56" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -8725,6 +8812,16 @@ Source: www.cypressindustries.com</description>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="53.34" x2="-71.12" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="MOTOR_B" gate="G$1" pin="3"/>
+<wire x1="162.56" y1="45.72" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
+<label x="157.48" y="45.72" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="MOTOR_A" gate="G$1" pin="3"/>
+<wire x1="162.56" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
+<label x="157.48" y="27.94" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="AN0" class="0">
@@ -8931,6 +9028,74 @@ Source: www.cypressindustries.com</description>
 <pinref part="U3" gate="G$1" pin="TXD"/>
 <wire x1="-58.42" y1="71.12" x2="-63.5" y2="71.12" width="0.1524" layer="91"/>
 <label x="-63.5" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AO2" class="0">
+<segment>
+<pinref part="MOTOR_A" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="30.48" x2="187.96" y2="30.48" width="0.1524" layer="91"/>
+<label x="187.96" y="30.48" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="VDD33" class="0">
+<segment>
+<pinref part="MOTOR_B" gate="G$1" pin="4"/>
+<wire x1="182.88" y1="45.72" x2="187.96" y2="45.72" width="0.1524" layer="91"/>
+<label x="187.96" y="45.72" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="MOTOR_A" gate="G$1" pin="4"/>
+<wire x1="182.88" y1="27.94" x2="187.96" y2="27.94" width="0.1524" layer="91"/>
+<label x="187.96" y="27.94" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="ENCA_B" class="0">
+<segment>
+<pinref part="MOTOR_A" gate="G$1" pin="6"/>
+<wire x1="182.88" y1="25.4" x2="187.96" y2="25.4" width="0.1524" layer="91"/>
+<label x="187.96" y="25.4" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="ENCA_A" class="0">
+<segment>
+<pinref part="MOTOR_A" gate="G$1" pin="5"/>
+<wire x1="162.56" y1="25.4" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
+<label x="157.48" y="25.4" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="AO1" class="0">
+<segment>
+<pinref part="MOTOR_A" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
+<label x="157.48" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BO2" class="0">
+<segment>
+<pinref part="MOTOR_B" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="48.26" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
+<label x="187.96" y="48.26" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="ENCB_B" class="0">
+<segment>
+<pinref part="MOTOR_B" gate="G$1" pin="6"/>
+<wire x1="182.88" y1="43.18" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
+<label x="187.96" y="43.18" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="ENCB_A" class="0">
+<segment>
+<pinref part="MOTOR_B" gate="G$1" pin="5"/>
+<wire x1="162.56" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
+<label x="157.48" y="43.18" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="BO1" class="0">
+<segment>
+<pinref part="MOTOR_B" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
+<label x="157.48" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
