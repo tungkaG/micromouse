@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '1761681_1'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TE Connectivity", "1761681-1" (!) = "", "SHDR6W67P254_2X3_1524X916X922P", "Header, Shrouded - Straight PTH Box", "571-1761681-1", "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1761681-1?qs=BqFpTYCQ3dLAeZ2wzdz7aw%3D%3D", "Body Features: Primary Product Color Black | Connector Profile Low | Daisy Chain With | Configuration Features: PCB Mount Orientation Vertical | Number of Positions 6 | Number of Rows 2 | Contact Features: Contact Mating Area Plating Material Thickness 15 MICIN | Contact Type Pin | PCB Contact Termination Area Plating Material Tin | Contact Base Material Phosphor Bronze | PCB Contact Termination Area Plating Material Thickness 100 MICIN | Contact Current Rating (Max) 1 AMP | Contact Underplating Material Ni", "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1761681%7FA1%7Fpdf%7FEnglish%7FENG_CD_1761681_A1.pdf%7F1761681-1", "9.22 mm"
+END_PART
+
+END.
