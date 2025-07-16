@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2937IMPX-3.3_NOPB
+D 400mA and 500mA Voltage Regulator
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU2/DSASFU100036522.pdf
+$ENDCMP
+#
+#End Doc Library

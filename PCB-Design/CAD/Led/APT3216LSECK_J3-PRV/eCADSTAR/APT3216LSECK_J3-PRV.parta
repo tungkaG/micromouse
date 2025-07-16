@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_818504"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-10-15:02:28)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "APT3216LSECK_J3-PRV")
+)
+
+
+(pinAssign "ECS_818504"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-10-15:02:28)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_818504")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "APT3216LSECK_J3-PRV")
+)
+
+
+(part "APT3216LSECK_J3-PRV"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-10-15:02:28)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "APT3216LSECK_J3-PRV")
+    (pinAssignRef "ECS_818504")
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "LED")
+    (property "description" "3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle")
+    (property "Mouser_Part_Number" "604-APT3216LSECKJ3RV")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D")
+    (property "Manufacturer_Name" "Kingbright")
+    (property "Manufacturer_Part_Number" "APT3216LSECK/J3-PRV")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/APT3216LSECK_J3-PRV.pdf")
+    (property "compAreaTopHeight" 0.95)
+)
+
+

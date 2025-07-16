@@ -1,0 +1,9 @@
+Manufacturer=Kingbright
+PartNumber=APT3216LSECK/J3-PRV
+PartCategory=LED
+PackageCategory=LEDs Chip
+PinCount=2
+Version=1.1
+Released=2018-05-10 15:02:28
+Downloaded=2025-07-16 18:45:57
+3D=N

@@ -1,0 +1,9 @@
+Manufacturer=Microchip
+PartNumber=dsPIC33FJ64MC804-I/ML
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat No-Lead
+PinCount=45
+Version=2.1
+Released=2015-06-18 00:00:00
+Downloaded=2025-07-03 17:57:01
+3D=Y

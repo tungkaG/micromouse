@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP dsPIC33FJ64MC804-I_ML
+D MCU&DSP 64K Flash 16K RAM DMA QFN44
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/70291G.pdf
+$ENDCMP
+#
+#End Doc Library

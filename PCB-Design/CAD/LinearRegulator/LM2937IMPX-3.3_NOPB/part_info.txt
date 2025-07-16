@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=LM2937IMPX-3.3/NOPB
+PartCategory=Integrated Circuit
+PackageCategory=SOT223 (3-Pin)
+PinCount=4
+Version=1.1
+Released=2018-10-16 08:26:21
+Downloaded=2025-07-16 18:45:12
+3D=Y

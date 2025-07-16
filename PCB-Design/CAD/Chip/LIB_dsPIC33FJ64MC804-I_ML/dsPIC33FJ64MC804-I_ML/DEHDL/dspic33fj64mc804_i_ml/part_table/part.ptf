@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'dsPIC33FJ64MC804_I_ML'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Microchip", "dsPIC33FJ64MC804-I/ML" (!) = "", "QFN65P800X800X100-45N-D", "Quad Flat No-Lead", "579-DSPIC364MC804IML", "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/DSPIC33FJ64MC804-I-ML?qs=nMCt4TBfEwoppiYgos1DJw%3D%3D", "MCU&DSP 64K Flash 16K RAM DMA QFN44", "http://ww1.microchip.com/downloads/en/DeviceDoc/70291G.pdf", "1 mm"
+END_PART
+
+END.
