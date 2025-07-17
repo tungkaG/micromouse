@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <xc.h>
 #include <stdbool.h>
+#include <limits.h>
 
 typedef enum { STOP, FORWARD, TURN_LEFT_90, TURN_RIGHT_90, TURN_180 } command_t;
 
@@ -33,7 +34,8 @@ typedef enum { FREE, WALL, UNKNOWN } wall_t;
 
 typedef enum { UP, LEFT, DOWN, RIGHT } heading_t;
 
-typedef enum { IDLE, EXPLORING, RETURN_TO_START, DRIVE_TO_GOAL } state_t;
+typedef enum { IDLE, EXPLORING_PATH_TO_GOAL, EXPLORING_TEMP_BEST_PATH, RETURN_TO_START, DRIVE_TO_GOAL } state_t;
+// typedef enum { IDLE, EXPLORING, RETURN_TO_START, DRIVE_TO_GOAL } state_t;
 
 #define FORWARD_SPEED 10.0
 #define TURNING_SPEED 10.0
@@ -86,6 +88,10 @@ state_t state = IDLE;
 volatile int path_len = 0;
 volatile int path_counter = 0;
 Cell path[GRID_SIZE * GRID_SIZE];
+int dist[GRID_SIZE][GRID_SIZE];
+
+Cell provisional_path[GRID_SIZE * GRID_SIZE];
+volatile int provisional_path_len = 0;
 
 void resetGrid() {
     path_len = 0;
@@ -274,6 +280,7 @@ bool has_unknown(uint8_t x, uint8_t y) {
     return false;
 }
 
+/*
 bool find_nearest_unknown(Cell *out_path) {
     bool visited[GRID_SIZE][GRID_SIZE] = {{ false }};
     Cell queue[GRID_SIZE * GRID_SIZE];
@@ -336,6 +343,7 @@ bool find_nearest_unknown(Cell *out_path) {
     path_len = 0;
     return false;
 }
+ * */
 
 
 // x_next and y_next should be direct neighbours of curr_x and curr_y
@@ -380,6 +388,7 @@ void updateCell(int d, wall_t w) {
     }
 }
 
+/*
 // Min?heap of indices into open[]
 static int  heap[GRID_SIZE*GRID_SIZE];
 static int  heap_size = 0;
@@ -420,11 +429,14 @@ static int heap_pop(void) {
 static int manh(Cell a, Cell b) {
     return abs(a.x - b.x) + abs(a.y - b.y);
 }
+ * */
+
 
 /**
  * Runs A* on the global grid from curr cell to goal cell by filling out_path[0..out_len-1].
  * If no path found, returns false.
  */
+/*
 bool astar_path(Cell goal, Cell *out_path, int *out_len) {
     // clear
     heap_size = 0;
@@ -494,16 +506,237 @@ bool astar_path(Cell goal, Cell *out_path, int *out_len) {
     *out_len = GRID_SIZE*GRID_SIZE;
     return false;
 }
+ * */
+
+void build_distance_field(Cell goals[4], int num_goals) {
+    // initialize all distances to infinite
+    for (int y=0; y<GRID_SIZE; y++)
+        for (int x=0; x<GRID_SIZE; x++)
+            dist[y][x] = INT_MAX;
+
+    // BFS queue
+    Cell queue[GRID_SIZE*GRID_SIZE];
+    // queue_pointer keeps track of current queue element, queue_counter keeps track of total number of added cells
+    int queue_pointer = 0, queue_counter = 0;
+    
+    // set goals to distance 0
+    for (int i=0; i<num_goals; i++) {
+        Cell g = goals[i];
+        dist[g.y][g.x] = 0;
+        queue[queue_counter] = g;
+        queue_counter++;
+    }
+
+    // BFS
+    while (queue_pointer < queue_counter) {
+        Cell c = queue[queue_pointer];
+        queue_pointer++;
+        int cd = dist[c.y][c.x];
+        for (int d=0; d<4; d++) {
+            int nx = c.x + dx[d], ny = c.y + dy[d];
+            // check if new cell is in bounds and not a wall
+            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[c.y][c.x][d] == WALL) continue;
+            if (dist[ny][nx] > cd + 1) {
+                dist[ny][nx] = cd + 1;
+                queue[queue_counter] = (Cell){nx,ny};
+                queue_counter++;
+            }
+        }
+    }
+}
+
+bool goal_reached(Cell *goals, int num_goals) {
+    for (int i=0; i<num_goals; i++) {
+        if (curr_x == goals[i].x && curr_y == goals[i].y) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// now in provisional_path[] we have the path from middle (goals) to start (provisional_path[0] is goal cell)
+void calculate_path_to_goal() {
+    // clear provisional path
+    provisional_path_len = 0;
+
+    // go from START_X, START_Y the fastest way to the nearest goal cell
+    Cell curr = {START_X, START_Y};
+    while (dist[curr.y][curr.x] != 0) {
+        // find next cell with distance one less
+        int best_d = INT_MAX;
+        Cell next = {0xFF, 0xFF}; // invalid cell
+        for (int d=0; d<4; d++) {
+            int nx = curr.x + dx[d], ny = curr.y + dy[d];
+            // check if new cell is in bounds and not a wall
+            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr.y][curr.x][d] == WALL) continue;
+            
+            // check if distance is one less than current cell
+            if (dist[ny][nx] < best_d && dist[ny][nx] == dist[curr.y][curr.x] - 1) {
+                best_d = dist[ny][nx];
+                next = (Cell){nx, ny};
+            }
+        }
+        if (next.x == 0xFF) {
+            // no next cell found, this should not happen
+            return;
+        }
+        provisional_path[provisional_path_len] = next;
+        provisional_path_len++;
+        curr = next;
+    }
+
+    // reverse provisional path to have path from goal to start
+    for (int i=0; i<provisional_path_len/2; i++) {
+        Cell tmp = provisional_path[i];
+        provisional_path[i] = provisional_path[provisional_path_len-1-i];
+        provisional_path[provisional_path_len-1-i] = tmp;
+    }
+}
 
 command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
-
     if (path_counter == path_len) {
         // reached target cell
+        
+        int best_d = INT_MAX, best_dir = -1;
+        Cell *goals;
+        int num_goals = 0;
         switch (state) {
             case IDLE:
                 toggle_led2();
                 action_enabled = 0;
                 break;
+            case EXPLORING_PATH_TO_GOAL:
+                updateCell(curr_heading, front_wall);
+                updateCell((curr_heading+1)%4, left_wall);
+                updateCell((curr_heading+3)%4, right_wall);
+
+                goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
+                num_goals = 4;
+
+                if (goal_reached(goals, num_goals)) {
+                    // new state is EXPLORING_TEMP_BEST_PATH
+                    state = EXPLORING_TEMP_BEST_PATH;
+                    // new target is end of path that is provisionally planned from start to goal
+                    goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
+                    num_goals = 4;
+                    build_distance_field(goals, num_goals);
+                    calculate_path_to_goal();
+
+                    goals = (Cell[]){ {START_X, START_Y} };
+                    num_goals = 1;
+                    // now in path[] we have the path from middle (goals) to start (provisional_path[0] is goal cell) -> find the first cell (closest to goal) that has UNKNOWN walls
+                    int provisional_path_counter = 0;
+                    for (; provisional_path_counter < provisional_path_len; provisional_path_counter++) {
+                        if (has_unknown(provisional_path[provisional_path_counter].x, provisional_path[provisional_path_counter].y)) {
+                            // provisional_path[provisional_path_counter] has UNKNOWN walls -> go to this cell next
+                            goals = (Cell[]){provisional_path[provisional_path_counter]};
+                            num_goals = 1;
+                            break;
+                        }
+                    }
+
+                    if (provisional_path_counter == provisional_path_len) {
+                        // no cell with UNKNOWN walls found, so we are done exploring
+                        // new state is RETURN_TO_START
+                        state = RETURN_TO_START;
+                        // build distance field to goals
+                        goals = (Cell[]){{0,0}};
+                        num_goals = 1;
+                    }
+                }                
+                break;
+            case EXPLORING_TEMP_BEST_PATH:
+                updateCell(curr_heading, front_wall);
+                updateCell((curr_heading+1)%4, left_wall);
+                updateCell((curr_heading+3)%4, right_wall);
+
+                // new target is end of path that is temporarily planned from start to goal
+                goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
+                num_goals = 4;
+                build_distance_field(goals, num_goals);
+                calculate_path_to_goal();
+
+                goals = (Cell[]){ {START_X, START_Y} };
+                num_goals = 1;
+                // now in path[] we have the path from middle (goals) to start (provisional_path[0] is goal cell) -> find the last cell (excluding start cell) that has UNKNOWN walls
+                int provisional_path_counter = 0;
+                for (; provisional_path_counter < provisional_path_len; provisional_path_counter++) {
+                    if (has_unknown(provisional_path[provisional_path_counter].x, provisional_path[provisional_path_counter].y)) {
+                        // provisional_path[provisional_path_counter] has UNKNOWN walls -> go to this cell next
+                        goals = (Cell[]){provisional_path[provisional_path_counter]};
+                        num_goals = 1;
+                        break;
+                    }
+                }
+
+                if (provisional_path_counter == provisional_path_len) {
+                    // no cell with UNKNOWN walls found, so we are done exploring
+                    // printf("finished exploring.\n");
+                    //print_maze();
+                    toggle_led2();
+                    // new state is RETURN_TO_START
+                    state = RETURN_TO_START;
+                    // build distance field to goals
+                    goals = (Cell[]){{0,0}};
+                    num_goals = 1;
+                }
+                break;
+            /*
+            case EXPLORING:
+                updateCell(curr_heading, front_wall);
+                updateCell((curr_heading+1)%4, left_wall);
+                updateCell((curr_heading+3)%4, right_wall);
+
+                goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
+                num_goals = 4;
+
+                if (goal_reached(goals, num_goals)) {
+                    // finished exploring, new state is RETURN_TO_START
+                    toggle_led2();
+                    state = RETURN_TO_START;
+                    // build distance field to goals
+                    goals = (Cell[]){{0,0}};
+                    num_goals = 1;
+                }                
+                break;
+             * */
+            case RETURN_TO_START:
+                updateCell(curr_heading, front_wall);
+                updateCell((curr_heading+1)%4, left_wall);
+                updateCell((curr_heading+3)%4, right_wall);
+                
+
+                goals = (Cell[]){{0,0}};
+                num_goals = 1;
+
+                if (goal_reached(goals, num_goals)) {
+                    // returned to start, new state is DRIVE_TO_GOAL
+                    toggle_led2();
+                    state = DRIVE_TO_GOAL;
+                    // build distance field to goals 
+                    goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
+                    num_goals = 4;
+                }                
+                break;
+            case DRIVE_TO_GOAL:
+                // do this just in case we get stuck, but actually we should be able to not update path
+                updateCell(curr_heading, front_wall);
+                updateCell((curr_heading+1)%4, left_wall);
+                updateCell((curr_heading+3)%4, right_wall);
+                
+                goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
+                num_goals = 4;
+
+                if (goal_reached(goals, num_goals)) {
+                    // driven to goal -> go back to IDLE state
+                    state = IDLE;
+                    toggle_led2();
+                    action_enabled = 0;
+                    // reset grid
+                    resetGrid();
+                }                
+                break;
+            /*
             case EXPLORING:
                 updateCell(curr_heading, front_wall);
                 updateCell((curr_heading+1)%4, left_wall);
@@ -594,10 +827,44 @@ command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
                 // reset grid
                 resetGrid();
                 break;
+             * */
             default:
                 toggle_led2();
                 action_enabled = 0;                
-        } 
+        }
+        // create distance fields with distances to specified goals
+        build_distance_field(goals, num_goals);
+
+        for (int d = 0; d < 4; d++) {
+            // start with current heading + 1, such that current heading is chosen as next cell (if multiple options have the same distance)
+            int n_heading = (curr_heading + 1 + d) % 4;
+            int nx = curr_x + dx[n_heading], ny = curr_y + dy[n_heading];
+            // check if new cell is in bounds and not a wall
+            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr_y][curr_x][n_heading] == WALL) continue;
+
+            int cd = dist[ny][nx];
+            // if current distance is better than best_d, or if it is equal and 
+            // the cell has at least one UNKNOWN (in Explore or Return state)
+            // or has no unknown walls (in Drive_to_Goal) to take paths that are already explored if possible
+            // then we have a new best direction
+            if (cd < best_d || (cd == best_d && (state == DRIVE_TO_GOAL ? !has_unknown(nx, ny) : has_unknown(nx, ny)))) {
+                best_d = cd;
+                best_dir = n_heading;
+            }
+        }
+
+        // no neighbor is reachable
+        if (best_dir < 0 || best_d == INT_MAX) {
+            toggle_led2();
+            state = IDLE;
+            action_enabled = 0;
+            return STOP;
+        }
+
+        // TODO: remove ugly path[]
+        path_counter = 0;
+        path[path_counter] = (Cell){ curr_x + dx[best_dir], curr_y + dy[best_dir] };
+        path_len = 1;
     }
 
     // next_move generates next command to get from curr_x/y to next path cell
@@ -615,6 +882,7 @@ int stream_sensor_data(void)
     static long t_right_initial = 0;
     
     static long initial_counter = 0;
+    static int last_forward = -1;
     
 
     // calculate current velocity of left wheel in rad/s
@@ -643,11 +911,12 @@ int stream_sensor_data(void)
     // stop the mouse unless we pressed the switch to start it
     if (!action_enabled) {
         curr_cmd = STOP;
+        last_forward = -1;
     }
     
-    wall_t front_wall = front_dist > 100 ? FREE : WALL;
-    wall_t left_wall = left_dist > 100 ? FREE : WALL;
-    wall_t right_wall = right_dist > 100 ? FREE : WALL;
+    wall_t front_wall = front_dist > 130 ? FREE : WALL;
+    wall_t left_wall = left_dist > 130 ? FREE : WALL;
+    wall_t right_wall = right_dist > 130 ? FREE : WALL;
 
     
     switch (curr_cmd) {
@@ -666,6 +935,7 @@ int stream_sensor_data(void)
                     startAngleRight = curr_angle_right_deg;
                     t_left_initial = t_left;
                     t_right_initial = t_right;
+                    last_forward = -1;
                     /*
                     // random exploration
                     if (front_dist > 100) {
@@ -695,6 +965,7 @@ int stream_sensor_data(void)
             }
             break;
         case FORWARD:
+            /*
             // stop if wall is reached or 18cm are covered
             if (front_dist < 40 || (t_left-t_left_initial) > 2000) {
                 curr_x = path[path_counter].x;
@@ -714,7 +985,57 @@ int stream_sensor_data(void)
                     curr_cmd = STOP;
                     initial_counter = 0;
                 }
-
+            
+             * */
+            
+            // stop if wall is reached or 18cm are covered
+            if (front_dist < 40 || (t_left-t_left_initial) > 2000) {
+                if (last_forward == 0) {
+                    // continue driving forward -> reset t_left_initial and t_right_initial
+                    setpoint = FORWARD_SPEED;
+                    t_left_initial = t_left;
+                    t_right_initial = t_right;
+                    // if we are to close to the wall, brake opposite wheel and if we are to far away from a wall, brake this wheel
+                    current_setpoint_left = (left_dist > 50 && left_dist < 100) || right_dist < 35 ? setpoint*0.85 : setpoint;
+                    current_setpoint_right = (right_dist > 50 && right_dist < 100) || left_dist < 35 ? setpoint*0.85 : setpoint;
+                } else {
+                    // this was last forward -> go to STOP case
+                    curr_cmd = STOP;
+                    initial_counter = 0;
+                }
+                // reset last_forward 
+                last_forward = -1;
+            } else if ((t_left-t_left_initial) > 1616 && last_forward != 0) {
+                // start braking early (from 1616 to 2016 ticks) if this is last forward cmd for smooth stopping
+                if (last_forward == -1) {
+                    // not yet checked if this is last forward
+                    curr_x = path[path_counter].x;
+                    curr_y = path[path_counter].y;
+                    path_counter++;
+                    // TODO: test
+                    if (nextCmd(left_wall, right_wall, front_wall) == FORWARD) {
+                        // continue driving forward (skip this if branch in next timer interrupt)
+                        toggle_led4(1);
+                        last_forward = 0;
+                    } else {
+                        // this is the last_forward, start braking
+                        toggle_led3(1);
+                        last_forward = 1;
+                    }
+                }
+                
+                // if we are to close to the wall, brake opposite wheel and if we are to far away from a wall, brake this wheel
+                current_setpoint_left = (left_dist > 50 && left_dist < 100) || right_dist < 35 ? setpoint*0.85 : setpoint;
+                current_setpoint_right = (right_dist > 50 && right_dist < 100) || left_dist < 35 ? setpoint*0.85 : setpoint;
+  
+                if (last_forward == 1) {
+                    // between 400 (=weak breaking) and 16 (=strong breaking)
+                    float deceleration_factor = 2016.0 - (t_left-t_left_initial); 
+                    current_setpoint_left = 0.0025 * deceleration_factor * current_setpoint_left;
+                        current_setpoint_right = 0.0025 * deceleration_factor * current_setpoint_right;
+                }
+             
+            
             } else {
                 // if we are to close to the wall, brake opposite wheel and if we are to far away from a wall, brake this wheel
                 current_setpoint_left = (left_dist > 50 && left_dist < 100) || right_dist < 35 ? setpoint*0.85 : setpoint;
@@ -864,7 +1185,7 @@ void toggle_motors(void)
             break;
     }
      * */
-    state = action_enabled ? IDLE : EXPLORING;
+    state = action_enabled ? IDLE : EXPLORING_PATH_TO_GOAL;
     action_enabled = action_enabled ? 0 : 1;
     
 }
