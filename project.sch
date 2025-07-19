@@ -17688,7 +17688,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <part name="C8" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
 <part name="C9" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="10uF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="BATTERY" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="C14" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.33µF"/>
 <part name="C15" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1µF"/>
 <part name="C16" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
@@ -17727,7 +17727,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="085CS-1AR" package3d_urn="urn:adsk.eagle:package:23396/3" value="10uF"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LINEAR_REGULATOR" library="UA78M33CDCYG3" deviceset="UA78M33CDCYG3" device=""/>
+<part name="LINEAR_REGULATOR_3.3V" library="UA78M33CDCYG3" deviceset="UA78M33CDCYG3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17735,8 +17735,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </plain>
 <instances>
 <instance part="MICROCHIP" gate="A" x="-63.5" y="25.4" smashed="yes">
-<attribute name="NAME" x="25.7556" y="34.5186" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="25.1206" y="31.9786" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="25.7556" y="16.7386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="17.5006" y="11.6586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="JP1(GP2Y0A51SK0F)" gate="A" x="-30.48" y="-111.76" smashed="yes">
 <attribute name="NAME" x="-36.83" y="-106.045" size="1.778" layer="95"/>
@@ -17791,9 +17791,9 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <instance part="GND5" gate="1" x="144.78" y="12.7" smashed="yes" rot="R180">
 <attribute name="VALUE" x="147.32" y="15.24" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="HBRIDGE" gate="G$1" x="185.42" y="114.3" smashed="yes">
-<attribute name="NAME" x="175.2248" y="142.3369" size="2.5488" layer="95" ratio="10"/>
-<attribute name="VALUE" x="175.2459" y="80.5986" size="2.543509375" layer="96" ratio="10"/>
+<instance part="HBRIDGE" gate="G$1" x="187.96" y="114.3" smashed="yes">
+<attribute name="NAME" x="180.3048" y="144.8769" size="2.5488" layer="95" ratio="10"/>
+<attribute name="VALUE" x="172.7059" y="80.5986" size="2.543509375" layer="96" ratio="10"/>
 </instance>
 <instance part="P+2" gate="VCC" x="33.02" y="-99.06" smashed="yes">
 <attribute name="VALUE" x="30.48" y="-101.6" size="1.778" layer="96" rot="R90"/>
@@ -17860,37 +17860,37 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <instance part="GND13" gate="1" x="233.68" y="121.92" smashed="yes">
 <attribute name="VALUE" x="231.14" y="119.38" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="-5.08" y="55.88" smashed="yes">
-<attribute name="NAME" x="-11.43" y="61.595" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-11.43" y="50.8" size="1.778" layer="96"/>
+<instance part="BATTERY" gate="G$1" x="-261.62" y="27.94" smashed="yes">
+<attribute name="NAME" x="-270.51" y="33.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-267.97" y="22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="C14" gate="G$1" x="7.62" y="53.34" smashed="yes">
-<attribute name="NAME" x="9.144" y="53.721" size="1.778" layer="95"/>
-<attribute name="VALUE" x="9.144" y="48.641" size="1.778" layer="96"/>
+<instance part="C14" gate="G$1" x="-241.3" y="25.4" smashed="yes">
+<attribute name="NAME" x="-239.776" y="25.781" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-239.776" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="C15" gate="G$1" x="71.12" y="53.34" smashed="yes">
-<attribute name="NAME" x="75.184" y="53.721" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.644" y="48.641" size="1.778" layer="96"/>
+<instance part="C15" gate="G$1" x="-177.8" y="25.4" smashed="yes">
+<attribute name="NAME" x="-173.736" y="25.781" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-176.276" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="C16" gate="G$1" x="81.28" y="53.34" smashed="yes">
-<attribute name="NAME" x="82.804" y="53.721" size="1.778" layer="95"/>
-<attribute name="VALUE" x="82.804" y="48.641" size="1.778" layer="96"/>
+<instance part="C16" gate="G$1" x="-167.64" y="25.4" smashed="yes">
+<attribute name="NAME" x="-166.116" y="25.781" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-166.116" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="C17" gate="G$1" x="93.98" y="53.34" smashed="yes">
-<attribute name="NAME" x="95.504" y="53.721" size="1.778" layer="95"/>
-<attribute name="VALUE" x="95.504" y="48.641" size="1.778" layer="96"/>
+<instance part="C17" gate="G$1" x="-154.94" y="25.4" smashed="yes">
+<attribute name="NAME" x="-153.416" y="25.781" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-153.416" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="P+5" gate="VCC" x="76.2" y="63.5" smashed="yes">
-<attribute name="VALUE" x="81.28" y="63.5" size="1.778" layer="96" rot="R90"/>
+<instance part="P+5" gate="VCC" x="-172.72" y="35.56" smashed="yes">
+<attribute name="VALUE" x="-167.64" y="35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND19" gate="1" x="60.96" y="45.72" smashed="yes">
-<attribute name="VALUE" x="68.58" y="43.18" size="1.778" layer="96"/>
+<instance part="GND19" gate="1" x="-187.96" y="17.78" smashed="yes">
+<attribute name="VALUE" x="-180.34" y="15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="GND20" gate="1" x="0" y="48.26" smashed="yes">
-<attribute name="VALUE" x="-2.54" y="45.72" size="1.778" layer="96"/>
+<instance part="GND20" gate="1" x="-256.54" y="20.32" smashed="yes">
+<attribute name="VALUE" x="-259.08" y="17.78" size="1.778" layer="96"/>
 </instance>
 <instance part="PROGRAMMER_PO" gate="A" x="-162.56" y="-10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="-146.05" y="1.905" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="-148.59" y="1.905" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-156.21" y="0" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D1" gate="1" x="-121.92" y="-30.48" smashed="yes" rot="R90">
@@ -17944,12 +17944,12 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <attribute name="VALUE" x="-129.54" y="40.64" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="MOTOR_R" gate="G$1" x="175.26" y="58.42" smashed="yes">
-<attribute name="NAME" x="191.77" y="66.04" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="191.77" y="63.5" size="1.778" layer="96" align="center-left"/>
+<attribute name="NAME" x="179.07" y="63.5" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="179.07" y="48.26" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="MOTOR_L" gate="G$1" x="175.26" y="40.64" smashed="yes">
-<attribute name="NAME" x="191.77" y="48.26" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="191.77" y="45.72" size="1.778" layer="96" align="center-left"/>
+<instance part="MOTOR_L" gate="G$1" x="175.26" y="33.02" smashed="yes">
+<attribute name="NAME" x="179.07" y="38.1" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="179.07" y="22.86" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="GND25" gate="1" x="210.82" y="81.28" smashed="yes">
 <attribute name="VALUE" x="208.28" y="78.74" size="1.778" layer="96"/>
@@ -17976,13 +17976,13 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <attribute name="NAME" x="105.1814" y="118.11" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="109.982" y="118.11" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="DEBUGGING_PO" gate="A" x="15.24" y="111.76" smashed="yes">
-<attribute name="NAME" x="8.89" y="120.015" size="1.778" layer="95"/>
-<attribute name="VALUE" x="8.89" y="99.06" size="1.778" layer="96"/>
+<instance part="DEBUGGING_PO" gate="A" x="-60.96" y="66.04" smashed="yes">
+<attribute name="NAME" x="-69.85" y="76.835" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-67.31" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="BLUETOOTH_UART" gate="A" x="-96.52" y="101.6" smashed="yes">
-<attribute name="NAME" x="-102.87" y="112.395" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-102.87" y="91.44" size="1.778" layer="96"/>
+<instance part="BLUETOOTH_UART" gate="A" x="-88.9" y="63.5" smashed="yes">
+<attribute name="NAME" x="-105.41" y="76.835" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-95.25" y="53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="C10" gate="G$1" x="226.06" y="48.26" smashed="yes">
 <attribute name="NAME" x="227.584" y="48.641" size="1.778" layer="95"/>
@@ -18002,9 +18002,9 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <instance part="GND15" gate="1" x="251.46" y="33.02" smashed="yes">
 <attribute name="VALUE" x="248.92" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="LINEAR_REGULATOR" gate="G$1" x="20.32" y="66.04" smashed="yes">
-<attribute name="NAME" x="46.99" y="73.66" size="1.778" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="44.45" y="71.12" size="1.778" layer="96" rot="R180" align="center-left"/>
+<instance part="LINEAR_REGULATOR_3.3V" gate="G$1" x="-228.6" y="38.1" smashed="yes">
+<attribute name="NAME" x="-194.31" y="43.18" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="-199.39" y="27.94" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -18039,33 +18039,33 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="162.56" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="HBRIDGE" gate="G$1" pin="VCC"/>
-<wire x1="210.82" y1="162.56" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="162.56" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="162.56" x2="203.2" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="162.56" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
 <junction x="210.82" y="162.56"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="58.42" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="30.48" x2="-172.72" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-172.72" y1="30.48" x2="-167.64" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="30.48" x2="-154.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="30.48" x2="-170.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="30.48" x2="-177.8" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="58.42" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
-<junction x="81.28" y="58.42"/>
+<wire x1="-167.64" y1="30.48" x2="-167.64" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-167.64" y="30.48"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="58.42" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
-<junction x="93.98" y="58.42"/>
+<wire x1="-154.94" y1="30.48" x2="-154.94" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-154.94" y="30.48"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="76.2" y1="60.96" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
-<junction x="76.2" y="58.42"/>
-<wire x1="93.98" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="LINEAR_REGULATOR" gate="G$1" pin="OUTPUT"/>
-<wire x1="20.32" y1="60.96" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="55.88" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
-<junction x="71.12" y="58.42"/>
+<wire x1="-172.72" y1="33.02" x2="-172.72" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-172.72" y="30.48"/>
+<wire x1="-154.94" y1="30.48" x2="-147.32" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="30.48" x2="-177.8" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-177.8" y="30.48"/>
+<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="OUTPUT"/>
+<wire x1="-228.6" y1="33.02" x2="-228.6" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-228.6" y1="25.4" x2="-180.34" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="25.4" x2="-180.34" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
@@ -18178,32 +18178,32 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="BATTERY" gate="G$1" pin="2"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="-7.62" y1="55.88" x2="0" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="0" y1="55.88" x2="0" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-264.16" y1="27.94" x2="-256.54" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-256.54" y1="27.94" x2="-256.54" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
-<junction x="60.96" y="48.26"/>
+<junction x="-187.96" y="20.32"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="20.32" x2="-187.96" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="20.32" x2="-187.96" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="20.32" x2="-187.96" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LINEAR_REGULATOR" gate="G$1" pin="COMMON_1"/>
-<wire x1="20.32" y1="63.5" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="63.5" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<junction x="58.42" y="48.26"/>
-<pinref part="LINEAR_REGULATOR" gate="G$1" pin="COMMON_2"/>
-<wire x1="58.42" y1="66.04" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
-<junction x="58.42" y="50.8"/>
+<wire x1="-190.5" y1="20.32" x2="-187.96" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="20.32" x2="-190.5" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="COMMON_1"/>
+<wire x1="-228.6" y1="35.56" x2="-231.14" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-231.14" y1="35.56" x2="-231.14" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-231.14" y1="22.86" x2="-190.5" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-190.5" y1="22.86" x2="-190.5" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-190.5" y="20.32"/>
+<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="COMMON_2"/>
+<wire x1="-190.5" y1="38.1" x2="-190.5" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-190.5" y="22.86"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
@@ -18252,18 +18252,18 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="3"/>
-<wire x1="175.26" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="91"/>
 <label x="165.1" y="55.88" size="1.778" layer="95"/>
+<wire x1="175.26" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="3"/>
-<wire x1="175.26" y1="38.1" x2="170.18" y2="38.1" width="0.1524" layer="91"/>
-<label x="170.18" y="38.1" size="1.778" layer="95" rot="R180"/>
+<label x="165.1" y="30.48" size="1.778" layer="95"/>
+<wire x1="175.26" y1="30.48" x2="165.1" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="GND"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="200.66" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="86.36" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18293,8 +18293,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="BLUETOOTH_UART" gate="A" pin="2"/>
-<wire x1="-99.06" y1="106.68" x2="-111.76" y2="106.68" width="0.1524" layer="91"/>
-<label x="-114.3" y="106.68" size="1.778" layer="95"/>
+<wire x1="-91.44" y1="68.58" x2="-104.14" y2="68.58" width="0.1524" layer="91"/>
+<label x="-106.68" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AN0" class="0">
@@ -18318,8 +18318,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="7"/>
-<wire x1="12.7" y1="109.22" x2="0" y2="109.22" width="0.1524" layer="91"/>
-<label x="0" y="109.22" size="1.778" layer="95"/>
+<wire x1="-63.5" y1="63.5" x2="-76.2" y2="63.5" width="0.1524" layer="91"/>
+<label x="-76.2" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -18366,8 +18366,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="9"/>
-<wire x1="12.7" y1="106.68" x2="0" y2="106.68" width="0.1524" layer="91"/>
-<label x="0" y="106.68" size="1.778" layer="95"/>
+<wire x1="-63.5" y1="60.96" x2="-76.2" y2="60.96" width="0.1524" layer="91"/>
+<label x="-76.2" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AN4" class="0">
@@ -18391,8 +18391,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="11"/>
-<wire x1="12.7" y1="104.14" x2="0" y2="104.14" width="0.1524" layer="91"/>
-<label x="0" y="104.14" size="1.778" layer="95"/>
+<wire x1="-63.5" y1="58.42" x2="-76.2" y2="58.42" width="0.1524" layer="91"/>
+<label x="-76.2" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -18406,12 +18406,12 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <junction x="226.06" y="137.16"/>
 <pinref part="HBRIDGE" gate="G$1" pin="VM1"/>
 <pinref part="HBRIDGE" gate="G$1" pin="VM2"/>
-<wire x1="205.74" y1="137.16" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="137.16" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="134.62" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
 <junction x="205.74" y="137.16"/>
 <pinref part="HBRIDGE" gate="G$1" pin="VM3"/>
-<wire x1="200.66" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="132.08" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 <junction x="205.74" y="134.62"/>
 </segment>
@@ -18419,7 +18419,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="STBY" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="STBY"/>
-<wire x1="170.18" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
 <label x="162.56" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18429,14 +18429,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="5"/>
-<wire x1="12.7" y1="111.76" x2="0" y2="111.76" width="0.1524" layer="91"/>
-<label x="0" y="111.76" size="1.778" layer="95"/>
+<wire x1="-63.5" y1="66.04" x2="-76.2" y2="66.04" width="0.1524" layer="91"/>
+<label x="-76.2" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWMA" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="PWMA"/>
-<wire x1="170.18" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
 <label x="162.56" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18451,14 +18451,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="1"/>
-<wire x1="12.7" y1="116.84" x2="0" y2="116.84" width="0.1524" layer="91"/>
-<label x="0" y="116.84" size="1.778" layer="95"/>
+<wire x1="-63.5" y1="71.12" x2="-76.2" y2="71.12" width="0.1524" layer="91"/>
+<label x="-76.2" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWMB" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="PWMB"/>
-<wire x1="170.18" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
 <label x="162.56" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18473,14 +18473,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="3"/>
-<wire x1="12.7" y1="114.3" x2="0" y2="114.3" width="0.1524" layer="91"/>
-<label x="0" y="114.3" size="1.778" layer="95"/>
+<wire x1="-63.5" y1="68.58" x2="-76.2" y2="68.58" width="0.1524" layer="91"/>
+<label x="-76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MTRDRV_AIN1" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="AIN1"/>
-<wire x1="170.18" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
 <label x="154.94" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18490,14 +18490,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="2"/>
-<wire x1="20.32" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
-<label x="25.4" y="116.84" size="1.778" layer="95"/>
+<wire x1="-55.88" y1="71.12" x2="-45.72" y2="71.12" width="0.1524" layer="91"/>
+<label x="-50.8" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MTRDRV_BIN1" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="BIN1"/>
-<wire x1="170.18" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
 <label x="154.94" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18507,14 +18507,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="6"/>
-<wire x1="20.32" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
-<label x="25.4" y="111.76" size="1.778" layer="95"/>
+<wire x1="-55.88" y1="66.04" x2="-45.72" y2="66.04" width="0.1524" layer="91"/>
+<label x="-50.8" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MTRDRV_BIN2" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="BIN2"/>
-<wire x1="170.18" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
 <label x="154.94" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18524,14 +18524,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="8"/>
-<wire x1="20.32" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<label x="25.4" y="109.22" size="1.778" layer="95"/>
+<wire x1="-55.88" y1="63.5" x2="-45.72" y2="63.5" width="0.1524" layer="91"/>
+<label x="-50.8" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MTRDRV_AIN2" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="AIN2"/>
-<wire x1="170.18" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
 <label x="154.94" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18541,20 +18541,20 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="4"/>
-<wire x1="20.32" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
-<label x="25.4" y="114.3" size="1.778" layer="95"/>
+<wire x1="-55.88" y1="68.58" x2="-45.72" y2="68.58" width="0.1524" layer="91"/>
+<label x="-50.8" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="58.42" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="58.42" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="LINEAR_REGULATOR" gate="G$1" pin="INPUT"/>
-<wire x1="20.32" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="66.04" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
-<junction x="7.62" y="58.42"/>
+<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="INPUT"/>
+<wire x1="-228.6" y1="38.1" x2="-241.3" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="38.1" x2="-241.3" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="30.48" x2="-241.3" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-241.3" y="30.48"/>
+<pinref part="BATTERY" gate="G$1" pin="1"/>
+<wire x1="-241.3" y1="30.48" x2="-264.16" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -18638,16 +18638,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="AO2" class="0">
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="40.64" x2="200.66" y2="40.64" width="0.1524" layer="91"/>
-<label x="200.66" y="40.64" size="1.778" layer="95" rot="R180"/>
+<label x="195.58" y="33.02" size="1.778" layer="95"/>
+<wire x1="195.58" y1="33.02" x2="205.74" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="AO2@1"/>
-<wire x1="200.66" y1="116.84" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
 <label x="205.74" y="116.84" size="1.778" layer="95"/>
 <pinref part="HBRIDGE" gate="G$1" pin="AO2@2"/>
 <wire x1="203.2" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="114.3" x2="203.2" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="114.3" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
 <junction x="203.2" y="116.84"/>
 </segment>
@@ -18655,18 +18653,18 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="VDD33" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="4"/>
-<wire x1="195.58" y1="55.88" x2="200.66" y2="55.88" width="0.1524" layer="91"/>
-<label x="200.66" y="55.88" size="1.778" layer="95"/>
+<label x="195.58" y="55.88" size="1.778" layer="95"/>
+<wire x1="195.58" y1="55.88" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="4"/>
-<wire x1="195.58" y1="38.1" x2="200.66" y2="38.1" width="0.1524" layer="91"/>
-<label x="200.66" y="38.1" size="1.778" layer="95" rot="R180"/>
+<label x="195.58" y="30.48" size="1.778" layer="95"/>
+<wire x1="195.58" y1="30.48" x2="205.74" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BLUETOOTH_UART" gate="A" pin="1"/>
-<wire x1="-99.06" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
-<label x="-114.3" y="109.22" size="1.778" layer="95"/>
+<wire x1="-91.44" y1="71.12" x2="-104.14" y2="71.12" width="0.1524" layer="91"/>
+<label x="-106.68" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="1"/>
@@ -18686,30 +18684,28 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="ENCA_B" class="0">
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="6"/>
-<wire x1="195.58" y1="35.56" x2="200.66" y2="35.56" width="0.1524" layer="91"/>
-<label x="200.66" y="35.56" size="1.778" layer="95" rot="R180"/>
+<label x="195.58" y="27.94" size="1.778" layer="95"/>
+<wire x1="195.58" y1="27.94" x2="205.74" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENCA_A" class="0">
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="5"/>
-<wire x1="175.26" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
-<label x="170.18" y="35.56" size="1.778" layer="95" rot="R180"/>
+<label x="165.1" y="27.94" size="1.778" layer="95"/>
+<wire x1="175.26" y1="27.94" x2="165.1" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AO1" class="0">
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="40.64" x2="170.18" y2="40.64" width="0.1524" layer="91"/>
-<label x="170.18" y="40.64" size="1.778" layer="95"/>
+<label x="165.1" y="33.02" size="1.778" layer="95"/>
+<wire x1="175.26" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="AO1@1"/>
-<wire x1="200.66" y1="121.92" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
 <label x="205.74" y="121.92" size="1.778" layer="95"/>
 <pinref part="HBRIDGE" gate="G$1" pin="AO1@2"/>
 <wire x1="203.2" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="119.38" x2="203.2" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="119.38" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
 <junction x="203.2" y="121.92"/>
 </segment>
@@ -18717,16 +18713,15 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="BO2" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="200.66" y="58.42" size="1.778" layer="95"/>
+<label x="195.58" y="58.42" size="1.778" layer="95"/>
+<wire x1="195.58" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="BO2@1"/>
-<wire x1="200.66" y1="104.14" x2="203.2" y2="104.14" width="0.1524" layer="91"/>
 <label x="205.74" y="104.14" size="1.778" layer="95"/>
 <pinref part="HBRIDGE" gate="G$1" pin="BO2@2"/>
 <wire x1="203.2" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="101.6" x2="203.2" y2="104.14" width="0.1524" layer="91"/>
 <junction x="203.2" y="104.14"/>
 </segment>
@@ -18734,31 +18729,28 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="ENCB_B" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="6"/>
-<wire x1="195.58" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
-<label x="200.66" y="53.34" size="1.778" layer="95"/>
+<label x="195.58" y="53.34" size="1.778" layer="95"/>
+<wire x1="195.58" y1="53.34" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENCB_A" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="5"/>
-<wire x1="175.26" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
-<label x="157.48" y="53.34" size="1.778" layer="95"/>
-<label x="157.48" y="53.34" size="1.778" layer="95"/>
+<label x="165.1" y="53.34" size="1.778" layer="95"/>
+<wire x1="175.26" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BO1" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="58.42" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
 <label x="165.1" y="58.42" size="1.778" layer="95"/>
+<wire x1="175.26" y1="58.42" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="BO1@1"/>
-<wire x1="200.66" y1="109.22" x2="203.2" y2="109.22" width="0.1524" layer="91"/>
 <label x="205.74" y="109.22" size="1.778" layer="95"/>
 <pinref part="HBRIDGE" gate="G$1" pin="BO1@2"/>
 <wire x1="203.2" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="106.68" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="106.68" x2="203.2" y2="109.22" width="0.1524" layer="91"/>
 <junction x="203.2" y="109.22"/>
 </segment>
@@ -18780,20 +18772,20 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="N$27" class="0">
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="10"/>
-<wire x1="20.32" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="60.96" x2="-45.72" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="12"/>
-<wire x1="20.32" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="58.42" x2="-45.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RTS" class="0">
 <segment>
 <pinref part="BLUETOOTH_UART" gate="A" pin="3"/>
-<wire x1="-99.06" y1="104.14" x2="-111.76" y2="104.14" width="0.1524" layer="91"/>
-<label x="-114.3" y="104.14" size="1.778" layer="95"/>
+<wire x1="-91.44" y1="66.04" x2="-104.14" y2="66.04" width="0.1524" layer="91"/>
+<label x="-106.68" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PWM1L2/DAC1RN/RP13/CN13/PMRD/RB13"/>
@@ -18804,8 +18796,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="RX" class="0">
 <segment>
 <pinref part="BLUETOOTH_UART" gate="A" pin="4"/>
-<wire x1="-99.06" y1="101.6" x2="-111.76" y2="101.6" width="0.1524" layer="91"/>
-<label x="-114.3" y="101.6" size="1.778" layer="95"/>
+<wire x1="-91.44" y1="63.5" x2="-104.14" y2="63.5" width="0.1524" layer="91"/>
+<label x="-106.68" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PGEC2/PWM1L3/RP11/CN15/PMD1/RB11"/>
@@ -18816,8 +18808,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="TX" class="0">
 <segment>
 <pinref part="BLUETOOTH_UART" gate="A" pin="5"/>
-<wire x1="-99.06" y1="99.06" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
-<label x="-114.3" y="99.06" size="1.778" layer="95"/>
+<wire x1="-91.44" y1="60.96" x2="-104.14" y2="60.96" width="0.1524" layer="91"/>
+<label x="-106.68" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PGED2/EMCD2/PWM1H3/RP10/CN16/PMD2/RB10"/>
@@ -18828,8 +18820,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <net name="CTS" class="0">
 <segment>
 <pinref part="BLUETOOTH_UART" gate="A" pin="6"/>
-<wire x1="-99.06" y1="96.52" x2="-111.76" y2="96.52" width="0.1524" layer="91"/>
-<label x="-114.3" y="96.52" size="1.778" layer="95"/>
+<wire x1="-91.44" y1="58.42" x2="-104.14" y2="58.42" width="0.1524" layer="91"/>
+<label x="-106.68" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PWM1H2/DAC1RP/RP12/CN14/PMD0/RB12"/>
