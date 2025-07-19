@@ -17569,6 +17569,79 @@ Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?A
 </deviceset>
 </devicesets>
 </library>
+<library name="UA78M33CDCYG3">
+<description>&lt;Linear Voltage Regulators 3.3 V 500mA Fix Pos Voltage Regulator&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOT230P700X180-4N">
+<description>&lt;b&gt;SOT-223__&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-3.15" y="2.3" dx="1.75" dy="0.95" layer="1"/>
+<smd name="2" x="-3.15" y="0" dx="1.75" dy="0.95" layer="1"/>
+<smd name="3" x="-3.15" y="-2.3" dx="1.75" dy="0.95" layer="1"/>
+<smd name="4" x="3.15" y="0" dx="3.2" dy="1.75" layer="1" rot="R90"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-4.275" y1="3.6" x2="4.275" y2="3.6" width="0.05" layer="51"/>
+<wire x1="4.275" y1="3.6" x2="4.275" y2="-3.6" width="0.05" layer="51"/>
+<wire x1="4.275" y1="-3.6" x2="-4.275" y2="-3.6" width="0.05" layer="51"/>
+<wire x1="-4.275" y1="-3.6" x2="-4.275" y2="3.6" width="0.05" layer="51"/>
+<wire x1="-1.75" y1="3.25" x2="1.75" y2="3.25" width="0.1" layer="51"/>
+<wire x1="1.75" y1="3.25" x2="1.75" y2="-3.25" width="0.1" layer="51"/>
+<wire x1="1.75" y1="-3.25" x2="-1.75" y2="-3.25" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="-3.25" x2="-1.75" y2="3.25" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="0.95" x2="0.55" y2="3.25" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="3.25" x2="1.75" y2="3.25" width="0.2" layer="21"/>
+<wire x1="1.75" y1="3.25" x2="1.75" y2="-3.25" width="0.2" layer="21"/>
+<wire x1="1.75" y1="-3.25" x2="-1.75" y2="-3.25" width="0.2" layer="21"/>
+<wire x1="-1.75" y1="-3.25" x2="-1.75" y2="3.25" width="0.2" layer="21"/>
+<wire x1="-4.025" y1="3.125" x2="-2.275" y2="3.125" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="UA78M33CDCYG3">
+<wire x1="5.08" y1="2.54" x2="33.02" y2="2.54" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-7.62" x2="33.02" y2="2.54" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="34.29" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="34.29" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="INPUT" x="0" y="0" length="middle"/>
+<pin name="COMMON_1" x="0" y="-2.54" length="middle"/>
+<pin name="OUTPUT" x="0" y="-5.08" length="middle"/>
+<pin name="COMMON_2" x="38.1" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="UA78M33CDCYG3" prefix="IC">
+<description>&lt;b&gt;Linear Voltage Regulators 3.3 V 500mA Fix Pos Voltage Regulator&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="UA78M33CDCYG3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT230P700X180-4N">
+<connects>
+<connect gate="G$1" pin="COMMON_1" pad="2"/>
+<connect gate="G$1" pin="COMMON_2" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Linear Voltage Regulators 3.3 V 500mA Fix Pos Voltage Regulator" constant="no"/>
+<attribute name="HEIGHT" value="1.8mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="UA78M33CDCYG3" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-UA78M33CDCYG3" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/UA78M33CDCYG3?qs=0O%2FZFlpUpJU0kFSZAC76Kw%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17654,6 +17727,7 @@ Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?A
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="085CS-1AR" package3d_urn="urn:adsk.eagle:package:23396/3" value="10uF"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="IC1" library="UA78M33CDCYG3" deviceset="UA78M33CDCYG3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17794,23 +17868,23 @@ Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?A
 <attribute name="NAME" x="9.144" y="53.721" size="1.778" layer="95"/>
 <attribute name="VALUE" x="9.144" y="48.641" size="1.778" layer="96"/>
 </instance>
-<instance part="C15" gate="G$1" x="43.18" y="53.34" smashed="yes">
-<attribute name="NAME" x="44.704" y="53.721" size="1.778" layer="95"/>
-<attribute name="VALUE" x="44.704" y="48.641" size="1.778" layer="96"/>
+<instance part="C15" gate="G$1" x="71.12" y="53.34" smashed="yes">
+<attribute name="NAME" x="75.184" y="53.721" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.644" y="48.641" size="1.778" layer="96"/>
 </instance>
-<instance part="C16" gate="G$1" x="55.88" y="53.34" smashed="yes">
-<attribute name="NAME" x="57.404" y="53.721" size="1.778" layer="95"/>
-<attribute name="VALUE" x="57.404" y="48.641" size="1.778" layer="96"/>
+<instance part="C16" gate="G$1" x="81.28" y="53.34" smashed="yes">
+<attribute name="NAME" x="82.804" y="53.721" size="1.778" layer="95"/>
+<attribute name="VALUE" x="82.804" y="48.641" size="1.778" layer="96"/>
 </instance>
-<instance part="C17" gate="G$1" x="68.58" y="53.34" smashed="yes">
-<attribute name="NAME" x="70.104" y="56.261" size="1.778" layer="95"/>
-<attribute name="VALUE" x="70.104" y="48.641" size="1.778" layer="96"/>
+<instance part="C17" gate="G$1" x="93.98" y="53.34" smashed="yes">
+<attribute name="NAME" x="95.504" y="53.721" size="1.778" layer="95"/>
+<attribute name="VALUE" x="95.504" y="48.641" size="1.778" layer="96"/>
 </instance>
-<instance part="P+5" gate="VCC" x="50.8" y="63.5" smashed="yes">
-<attribute name="VALUE" x="48.26" y="60.96" size="1.778" layer="96" rot="R90"/>
+<instance part="P+5" gate="VCC" x="76.2" y="63.5" smashed="yes">
+<attribute name="VALUE" x="81.28" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND19" gate="1" x="27.94" y="45.72" smashed="yes">
-<attribute name="VALUE" x="25.4" y="43.18" size="1.778" layer="96"/>
+<instance part="GND19" gate="1" x="60.96" y="45.72" smashed="yes">
+<attribute name="VALUE" x="68.58" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="GND20" gate="1" x="0" y="48.26" smashed="yes">
 <attribute name="VALUE" x="-2.54" y="45.72" size="1.778" layer="96"/>
@@ -17928,6 +18002,10 @@ Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?A
 <instance part="GND15" gate="1" x="251.46" y="33.02" smashed="yes">
 <attribute name="VALUE" x="248.92" y="30.48" size="1.778" layer="96"/>
 </instance>
+<instance part="IC1" gate="G$1" x="20.32" y="66.04" smashed="yes">
+<attribute name="NAME" x="29.21" y="73.66" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="44.45" y="71.12" size="1.778" layer="96" rot="R180" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17967,20 +18045,27 @@ Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?A
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="58.42" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="58.42" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="58.42" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="58.42" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-<junction x="55.88" y="58.42"/>
+<wire x1="81.28" y1="58.42" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<junction x="81.28" y="58.42"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="58.42" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
-<junction x="68.58" y="58.42"/>
+<wire x1="93.98" y1="58.42" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<junction x="93.98" y="58.42"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="50.8" y1="60.96" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
-<junction x="50.8" y="58.42"/>
+<wire x1="76.2" y1="60.96" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+<junction x="76.2" y="58.42"/>
+<wire x1="93.98" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="OUTPUT"/>
+<wire x1="20.32" y1="60.96" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="55.88" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<junction x="71.12" y="58.42"/>
 </segment>
 <segment>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
@@ -18100,15 +18185,25 @@ Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?A
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
-<junction x="27.94" y="48.26"/>
+<junction x="60.96" y="48.26"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="COMMON_1"/>
+<wire x1="20.32" y1="63.5" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="63.5" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
+<junction x="58.42" y="48.26"/>
+<pinref part="IC1" gate="G$1" pin="COMMON_2"/>
+<wire x1="58.42" y1="66.04" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
+<junction x="58.42" y="50.8"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
@@ -18456,6 +18551,10 @@ Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?A
 <wire x1="-7.62" y1="58.42" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="58.42" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="INPUT"/>
+<wire x1="20.32" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="66.04" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
+<junction x="7.62" y="58.42"/>
 </segment>
 </net>
 <net name="N$7" class="0">
