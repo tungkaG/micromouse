@@ -1,0 +1,16 @@
+.ABM8-20.000MHZ-B2-T :1 ;20 MHz +/-20ppm Crystal 18pF 50 Ohms 4-SMD, No Lead
+ABM810000MHZ12D2W
+*STM Y
+*NGS
+*PLB 1="X1" 2="GND_1" 3="X2" 4="GND_2"
+*MXP 4
+*DFN ABM8-20.000MHZ-B2-T
+~!Mouser Part Number (815-ABM8-20-B2-T)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/ABRACON/ABM8-20000MHZ-B2-T?qs=zLkLEWnxMJwLicGB81opDg%3D%3D)
+~!Manufacturer_Name (ABRACON)
+~!Manufacturer_Part_Number (ABM8-20.000MHZ-B2-T)
+~!Link Datasheet (https://abracon.com/Resonators/abm8.pdf)
+~!Height (0.8mm)
+~!3D_Model (ABM8-20.000MHZ-B2-T)
+ABM8-20.000MHZ-B2-T
+1.1!U 2.1!U 3.1!U 4.1!U 

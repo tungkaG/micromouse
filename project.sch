@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -17005,230 +17019,6 @@ naming: grid - package width</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="ABM8-20.000MHZ-B2-T">
-<packages>
-<package name="XTAL_ABM8-20.000MHZ-B2-T">
-<wire x1="-1.25" y1="1.6" x2="1.25" y2="1.6" width="0.127" layer="51"/>
-<wire x1="1.25" y1="1.6" x2="1.25" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-1.25" y1="1.6" x2="-1.25" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="1.25" y1="-1.6" x2="-1.25" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="1.25" y1="0.18" x2="1.25" y2="-0.18" width="0.127" layer="21"/>
-<wire x1="-1.25" y1="0.18" x2="-1.25" y2="-0.18" width="0.127" layer="21"/>
-<wire x1="-1.65" y1="2.05" x2="1.65" y2="2.05" width="0.05" layer="39"/>
-<wire x1="-1.65" y1="2.05" x2="-1.65" y2="-2.05" width="0.05" layer="39"/>
-<wire x1="1.65" y1="2.05" x2="1.65" y2="-2.05" width="0.05" layer="39"/>
-<wire x1="1.65" y1="-2.05" x2="-1.65" y2="-2.05" width="0.05" layer="39"/>
-<text x="-1.65" y="2.25" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.65" y="-2.25" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<circle x="-2.15" y="1.15" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2.15" y="1.15" radius="0.1" width="0.2" layer="51"/>
-<smd name="1" x="-0.875" y="1.15" dx="1.05" dy="1.3" layer="1"/>
-<smd name="2" x="-0.875" y="-1.15" dx="1.05" dy="1.3" layer="1"/>
-<smd name="3" x="0.875" y="-1.15" dx="1.05" dy="1.3" layer="1"/>
-<smd name="4" x="0.875" y="1.15" dx="1.05" dy="1.3" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ABM8-20.000MHZ-B2-T">
-<wire x1="-1.397" y1="2.54" x2="1.397" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.397" y1="2.54" x2="1.397" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.397" y1="-2.54" x2="-1.397" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="-1.397" y1="2.54" x2="-1.397" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="2.3368" y1="2.54" x2="2.3368" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="-2.3368" y1="2.54" x2="-2.3368" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-5.0878" y="6.35585" size="1.78073125" layer="95">&gt;NAME</text>
-<text x="-5.094390625" y="-10.16" size="1.78303125" layer="96">&gt;VALUE</text>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="2" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="1" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="GND" x="7.62" y="-5.08" length="short" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ABM8-20.000MHZ-B2-T" prefix="Y">
-<description> &lt;a href="https://pricing.snapeda.com/parts/ABM8-20.000MHZ-B2-T/Abracon/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ABM8-20.000MHZ-B2-T" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="XTAL_ABM8-20.000MHZ-B2-T">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="In Stock"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/ABM8-20.000MHZ-B2-T/Abracon/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value="                                                      Oscillator, Crystal,20MHz,Ceramic,SMD,+/-20ppm,-20 to +70ppm,80 Ohms,Fund.,18pF | Abracon ABM8-20.000MHZ-B2-T                                              "/>
-<attribute name="MF" value="Abracon"/>
-<attribute name="MP" value="ABM8-20.000MHZ-B2-T"/>
-<attribute name="PACKAGE" value="NON-STANDARD-4 ABRACON"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/ABM8-20.000MHZ-B2-T/Abracon/view-part/?ref=snap"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="TB6612FNG_C_8_EL">
-<packages>
-<package name="SOP65P760X160-24N">
-<wire x1="-2.8" y1="4.2" x2="-2.8" y2="-4.2" width="0.2032" layer="51"/>
-<wire x1="-2.8" y1="-4.2" x2="2.8" y2="-4.2" width="0.2032" layer="21"/>
-<wire x1="2.8" y1="-4.2" x2="2.8" y2="4.2" width="0.2032" layer="51"/>
-<wire x1="2.8" y1="4.2" x2="-2.8" y2="4.2" width="0.2032" layer="21"/>
-<circle x="-1.928" y="3.406" radius="0.3048" width="0.1524" layer="51"/>
-<text x="-4.83885" y="4.63456875" size="1.27235" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-3.811240625" y1="3.435140625" x2="-2.8" y2="3.725" layer="51"/>
-<rectangle x1="-3.80676875" y1="2.779940625" x2="-2.8" y2="3.075" layer="51"/>
-<rectangle x1="-3.81211875" y1="2.13178125" x2="-2.8" y2="2.425" layer="51"/>
-<rectangle x1="-3.8068" y1="1.477640625" x2="-2.8" y2="1.775" layer="51"/>
-<rectangle x1="-3.80828125" y1="0.8268" x2="-2.8" y2="1.125" layer="51"/>
-<rectangle x1="-3.80678125" y1="0.1753125" x2="-2.8" y2="0.475" layer="51"/>
-<rectangle x1="-3.81158125" y1="-0.47645" x2="-2.8" y2="-0.175" layer="51"/>
-<rectangle x1="-3.80755" y1="-1.127240625" x2="-2.8" y2="-0.825" layer="51"/>
-<rectangle x1="-3.810409375" y1="-1.77986875" x2="-2.8" y2="-1.475" layer="51"/>
-<rectangle x1="-3.81035" y1="-2.4316" x2="-2.8" y2="-2.125" layer="51"/>
-<rectangle x1="-3.807940625" y1="-3.08143125" x2="-2.8" y2="-2.775" layer="51"/>
-<rectangle x1="-3.80766875" y1="-3.73251875" x2="-2.8" y2="-3.425" layer="51"/>
-<rectangle x1="2.807409375" y1="0.1754625" x2="3.8" y2="0.475" layer="51" rot="R180"/>
-<rectangle x1="2.806690625" y1="0.826971875" x2="3.8" y2="1.125" layer="51" rot="R180"/>
-<rectangle x1="2.80161875" y1="2.126240625" x2="3.8" y2="2.425" layer="51" rot="R180"/>
-<rectangle x1="2.806009375" y1="2.780959375" x2="3.8" y2="3.075" layer="51" rot="R180"/>
-<rectangle x1="2.80471875" y1="3.430759375" x2="3.8" y2="3.725" layer="51" rot="R180"/>
-<rectangle x1="2.80451875" y1="-3.731009375" x2="3.8" y2="-3.425" layer="51" rot="R180"/>
-<rectangle x1="2.808459375" y1="-3.084290625" x2="3.8" y2="-2.775" layer="51" rot="R180"/>
-<rectangle x1="2.803090625" y1="-1.776959375" x2="3.8" y2="-1.475" layer="51" rot="R180"/>
-<rectangle x1="2.80763125" y1="-1.12806875" x2="3.8" y2="-0.825" layer="51" rot="R180"/>
-<rectangle x1="2.8062" y1="-0.476053125" x2="3.8" y2="-0.175" layer="51" rot="R180"/>
-<circle x="-4.25" y="4.2" radius="0.127" width="0" layer="21"/>
-<wire x1="-4.75" y1="4.5" x2="4.75" y2="4.5" width="0.127" layer="39"/>
-<wire x1="4.75" y1="4.5" x2="4.75" y2="-4.5" width="0.127" layer="39"/>
-<wire x1="4.75" y1="-4.5" x2="-4.75" y2="-4.5" width="0.127" layer="39"/>
-<wire x1="-4.75" y1="-4.5" x2="-4.75" y2="4.5" width="0.127" layer="39"/>
-<text x="-4.839690625" y="-5.986109375" size="1.27258125" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="2.805090625" y1="1.47768125" x2="3.8" y2="1.775" layer="51"/>
-<rectangle x1="2.803690625" y1="-2.428190625" x2="3.8" y2="-2.125" layer="51"/>
-<smd name="1" x="-3.625" y="3.575" dx="1.5" dy="0.4" layer="1"/>
-<smd name="2" x="-3.625" y="2.925" dx="1.5" dy="0.4" layer="1"/>
-<smd name="3" x="-3.625" y="2.275" dx="1.5" dy="0.4" layer="1"/>
-<smd name="4" x="-3.625" y="1.625" dx="1.5" dy="0.4" layer="1"/>
-<smd name="5" x="-3.625" y="0.975" dx="1.5" dy="0.4" layer="1"/>
-<smd name="6" x="-3.625" y="0.325" dx="1.5" dy="0.4" layer="1"/>
-<smd name="7" x="-3.625" y="-0.325" dx="1.5" dy="0.4" layer="1"/>
-<smd name="8" x="-3.625" y="-0.975" dx="1.5" dy="0.4" layer="1"/>
-<smd name="9" x="-3.625" y="-1.625" dx="1.5" dy="0.4" layer="1"/>
-<smd name="10" x="-3.625" y="-2.275" dx="1.5" dy="0.4" layer="1"/>
-<smd name="11" x="-3.625" y="-2.925" dx="1.5" dy="0.4" layer="1"/>
-<smd name="12" x="-3.625" y="-3.575" dx="1.5" dy="0.4" layer="1"/>
-<smd name="15" x="3.625" y="-2.275" dx="1.5" dy="0.4" layer="1"/>
-<smd name="16" x="3.625" y="-1.625" dx="1.5" dy="0.4" layer="1"/>
-<smd name="17" x="3.625" y="-0.975" dx="1.5" dy="0.4" layer="1"/>
-<smd name="18" x="3.625" y="-0.325" dx="1.5" dy="0.4" layer="1"/>
-<smd name="19" x="3.625" y="0.325" dx="1.5" dy="0.4" layer="1"/>
-<smd name="20" x="3.625" y="0.975" dx="1.5" dy="0.4" layer="1"/>
-<smd name="21" x="3.625" y="1.625" dx="1.5" dy="0.4" layer="1"/>
-<smd name="22" x="3.625" y="2.275" dx="1.5" dy="0.4" layer="1"/>
-<smd name="23" x="3.625" y="2.925" dx="1.5" dy="0.4" layer="1"/>
-<smd name="24" x="3.625" y="3.575" dx="1.5" dy="0.4" layer="1"/>
-<smd name="14" x="3.625" y="-2.925" dx="1.5" dy="0.4" layer="1"/>
-<smd name="13" x="3.625" y="-3.575" dx="1.5" dy="0.4" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TB6612FNG,C,8,EL">
-<wire x1="-10.16" y1="27.94" x2="10.16" y2="27.94" width="0.381" layer="94"/>
-<wire x1="10.16" y1="27.94" x2="10.16" y2="-30.48" width="0.381" layer="94"/>
-<wire x1="10.16" y1="-30.48" x2="-10.16" y2="-30.48" width="0.381" layer="94"/>
-<wire x1="-10.16" y1="-30.48" x2="-10.16" y2="27.94" width="0.381" layer="94"/>
-<text x="-10.1952" y="28.0369" size="2.5488" layer="95" ratio="10">&gt;NAME</text>
-<text x="-10.1741" y="-33.7014" size="2.543509375" layer="96" ratio="10">&gt;VALUE</text>
-<pin name="AO1@1" x="15.24" y="7.62" length="middle" direction="out" rot="R180"/>
-<pin name="AO1@2" x="15.24" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="PGND1@1" x="15.24" y="-25.4" length="middle" direction="pas" rot="R180"/>
-<pin name="PGND1@2" x="15.24" y="-22.86" length="middle" direction="pas" rot="R180"/>
-<pin name="AO2@1" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
-<pin name="AO2@2" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="BO1@1" x="15.24" y="-5.08" length="middle" direction="out" rot="R180"/>
-<pin name="BO1@2" x="15.24" y="-7.62" length="middle" direction="out" rot="R180"/>
-<pin name="PGND2@1" x="15.24" y="-20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="PGND2@2" x="15.24" y="-17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="BO2@1" x="15.24" y="-10.16" length="middle" direction="out" rot="R180"/>
-<pin name="BO2@2" x="15.24" y="-12.7" length="middle" direction="out" rot="R180"/>
-<pin name="VM2" x="15.24" y="20.32" length="middle" direction="pwr" rot="R180"/>
-<pin name="VM3" x="15.24" y="17.78" length="middle" direction="pwr" rot="R180"/>
-<pin name="PWMB" x="-15.24" y="10.16" length="middle" direction="in"/>
-<pin name="BIN2" x="-15.24" y="-10.16" length="middle" direction="in"/>
-<pin name="BIN1" x="-15.24" y="-7.62" length="middle" direction="in"/>
-<pin name="GND" x="15.24" y="-27.94" length="middle" direction="pas" rot="R180"/>
-<pin name="STBY" x="-15.24" y="15.24" length="middle" direction="in"/>
-<pin name="VCC" x="15.24" y="25.4" length="middle" direction="pwr" rot="R180"/>
-<pin name="AIN1" x="-15.24" y="5.08" length="middle" direction="in"/>
-<pin name="AIN2" x="-15.24" y="2.54" length="middle" direction="in"/>
-<pin name="PWMA" x="-15.24" y="12.7" length="middle" direction="in"/>
-<pin name="VM1" x="15.24" y="22.86" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TB6612FNG,C,8,EL" prefix="U">
-<description> &lt;a href="https://pricing.snapeda.com/parts/TB6612FNG%2CC%2C8%2CEL/Toshiba/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="TB6612FNG,C,8,EL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOP65P760X160-24N">
-<connects>
-<connect gate="G$1" pin="AIN1" pad="21"/>
-<connect gate="G$1" pin="AIN2" pad="22"/>
-<connect gate="G$1" pin="AO1@1" pad="1"/>
-<connect gate="G$1" pin="AO1@2" pad="2"/>
-<connect gate="G$1" pin="AO2@1" pad="5"/>
-<connect gate="G$1" pin="AO2@2" pad="6"/>
-<connect gate="G$1" pin="BIN1" pad="17"/>
-<connect gate="G$1" pin="BIN2" pad="16"/>
-<connect gate="G$1" pin="BO1@1" pad="11"/>
-<connect gate="G$1" pin="BO1@2" pad="12"/>
-<connect gate="G$1" pin="BO2@1" pad="7"/>
-<connect gate="G$1" pin="BO2@2" pad="8"/>
-<connect gate="G$1" pin="GND" pad="18"/>
-<connect gate="G$1" pin="PGND1@1" pad="3"/>
-<connect gate="G$1" pin="PGND1@2" pad="4"/>
-<connect gate="G$1" pin="PGND2@1" pad="9"/>
-<connect gate="G$1" pin="PGND2@2" pad="10"/>
-<connect gate="G$1" pin="PWMA" pad="23"/>
-<connect gate="G$1" pin="PWMB" pad="15"/>
-<connect gate="G$1" pin="STBY" pad="19"/>
-<connect gate="G$1" pin="VCC" pad="20"/>
-<connect gate="G$1" pin="VM1" pad="24"/>
-<connect gate="G$1" pin="VM2" pad="13"/>
-<connect gate="G$1" pin="VM3" pad="14"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="In Stock"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/TB6612FNG,C,8,EL/Toshiba/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value="                                                      - Motor Driver Power MOSFET Parallel 24-SSOP                                              "/>
-<attribute name="MF" value="Toshiba"/>
-<attribute name="MP" value="TB6612FNG,C,8,EL"/>
-<attribute name="PACKAGE" value="SSOP-24 Toshiba"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/TB6612FNG,C,8,EL/Toshiba/view-part/?ref=snap"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="diode" urn="urn:adsk.eagle:library:210">
 <description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
@@ -17642,6 +17432,212 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </deviceset>
 </devicesets>
 </library>
+<library name="TB6612FNG_C_8_EL">
+<description>&lt;otor / Motion / Ignition Controllers &amp; Drivers Brush Motor Driver IC&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOP65P760X160-24N">
+<description>&lt;b&gt;TB6575FNG,C,8,EL-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-3.562" y="3.575" dx="1.525" dy="0.45" layer="1"/>
+<smd name="2" x="-3.562" y="2.925" dx="1.525" dy="0.45" layer="1"/>
+<smd name="3" x="-3.562" y="2.275" dx="1.525" dy="0.45" layer="1"/>
+<smd name="4" x="-3.562" y="1.625" dx="1.525" dy="0.45" layer="1"/>
+<smd name="5" x="-3.562" y="0.975" dx="1.525" dy="0.45" layer="1"/>
+<smd name="6" x="-3.562" y="0.325" dx="1.525" dy="0.45" layer="1"/>
+<smd name="7" x="-3.562" y="-0.325" dx="1.525" dy="0.45" layer="1"/>
+<smd name="8" x="-3.562" y="-0.975" dx="1.525" dy="0.45" layer="1"/>
+<smd name="9" x="-3.562" y="-1.625" dx="1.525" dy="0.45" layer="1"/>
+<smd name="10" x="-3.562" y="-2.275" dx="1.525" dy="0.45" layer="1"/>
+<smd name="11" x="-3.562" y="-2.925" dx="1.525" dy="0.45" layer="1"/>
+<smd name="12" x="-3.562" y="-3.575" dx="1.525" dy="0.45" layer="1"/>
+<smd name="13" x="3.562" y="-3.575" dx="1.525" dy="0.45" layer="1"/>
+<smd name="14" x="3.562" y="-2.925" dx="1.525" dy="0.45" layer="1"/>
+<smd name="15" x="3.562" y="-2.275" dx="1.525" dy="0.45" layer="1"/>
+<smd name="16" x="3.562" y="-1.625" dx="1.525" dy="0.45" layer="1"/>
+<smd name="17" x="3.562" y="-0.975" dx="1.525" dy="0.45" layer="1"/>
+<smd name="18" x="3.562" y="-0.325" dx="1.525" dy="0.45" layer="1"/>
+<smd name="19" x="3.562" y="0.325" dx="1.525" dy="0.45" layer="1"/>
+<smd name="20" x="3.562" y="0.975" dx="1.525" dy="0.45" layer="1"/>
+<smd name="21" x="3.562" y="1.625" dx="1.525" dy="0.45" layer="1"/>
+<smd name="22" x="3.562" y="2.275" dx="1.525" dy="0.45" layer="1"/>
+<smd name="23" x="3.562" y="2.925" dx="1.525" dy="0.45" layer="1"/>
+<smd name="24" x="3.562" y="3.575" dx="1.525" dy="0.45" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-4.575" y1="4.4" x2="4.575" y2="4.4" width="0.05" layer="51"/>
+<wire x1="4.575" y1="4.4" x2="4.575" y2="-4.4" width="0.05" layer="51"/>
+<wire x1="4.575" y1="-4.4" x2="-4.575" y2="-4.4" width="0.05" layer="51"/>
+<wire x1="-4.575" y1="-4.4" x2="-4.575" y2="4.4" width="0.05" layer="51"/>
+<wire x1="-2.8" y1="4.15" x2="2.8" y2="4.15" width="0.1" layer="51"/>
+<wire x1="2.8" y1="4.15" x2="2.8" y2="-4.15" width="0.1" layer="51"/>
+<wire x1="2.8" y1="-4.15" x2="-2.8" y2="-4.15" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="-4.15" x2="-2.8" y2="4.15" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="3.5" x2="-2.15" y2="4.15" width="0.1" layer="51"/>
+<wire x1="-2.45" y1="4.15" x2="2.45" y2="4.15" width="0.2" layer="21"/>
+<wire x1="2.45" y1="4.15" x2="2.45" y2="-4.15" width="0.2" layer="21"/>
+<wire x1="2.45" y1="-4.15" x2="-2.45" y2="-4.15" width="0.2" layer="21"/>
+<wire x1="-2.45" y1="-4.15" x2="-2.45" y2="4.15" width="0.2" layer="21"/>
+<wire x1="-4.325" y1="4.15" x2="-2.8" y2="4.15" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TB6612FNG,C,8,EL">
+<wire x1="5.08" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-30.48" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-30.48" x2="5.08" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-30.48" width="0.254" layer="94"/>
+<text x="29.21" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="29.21" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="AO1_1" x="0" y="0" length="middle"/>
+<pin name="AO1_2" x="0" y="-2.54" length="middle"/>
+<pin name="PGND1_1" x="0" y="-5.08" length="middle"/>
+<pin name="PGND1_2" x="0" y="-7.62" length="middle"/>
+<pin name="AO2_1" x="0" y="-10.16" length="middle"/>
+<pin name="AO2_2" x="0" y="-12.7" length="middle"/>
+<pin name="BO2_1" x="0" y="-15.24" length="middle"/>
+<pin name="BO2_2" x="0" y="-17.78" length="middle"/>
+<pin name="PGND2_1" x="0" y="-20.32" length="middle"/>
+<pin name="PGND2_2" x="0" y="-22.86" length="middle"/>
+<pin name="BO1_1" x="0" y="-25.4" length="middle"/>
+<pin name="BO1_2" x="0" y="-27.94" length="middle"/>
+<pin name="VM1" x="33.02" y="0" length="middle" rot="R180"/>
+<pin name="PWMA" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="AIN2" x="33.02" y="-5.08" length="middle" rot="R180"/>
+<pin name="AIN1" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="VCC" x="33.02" y="-10.16" length="middle" rot="R180"/>
+<pin name="STBY" x="33.02" y="-12.7" length="middle" rot="R180"/>
+<pin name="GND" x="33.02" y="-15.24" length="middle" rot="R180"/>
+<pin name="BIN1" x="33.02" y="-17.78" length="middle" rot="R180"/>
+<pin name="BIN2" x="33.02" y="-20.32" length="middle" rot="R180"/>
+<pin name="PWMB" x="33.02" y="-22.86" length="middle" rot="R180"/>
+<pin name="VM3" x="33.02" y="-25.4" length="middle" rot="R180"/>
+<pin name="VM2" x="33.02" y="-27.94" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TB6612FNG,C,8,EL" prefix="IC">
+<description>&lt;b&gt;otor / Motion / Ignition Controllers &amp; Drivers Brush Motor Driver IC&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=10660&amp;prodName=TB6612FNG"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TB6612FNG,C,8,EL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP65P760X160-24N">
+<connects>
+<connect gate="G$1" pin="AIN1" pad="21"/>
+<connect gate="G$1" pin="AIN2" pad="22"/>
+<connect gate="G$1" pin="AO1_1" pad="1"/>
+<connect gate="G$1" pin="AO1_2" pad="2"/>
+<connect gate="G$1" pin="AO2_1" pad="5"/>
+<connect gate="G$1" pin="AO2_2" pad="6"/>
+<connect gate="G$1" pin="BIN1" pad="17"/>
+<connect gate="G$1" pin="BIN2" pad="16"/>
+<connect gate="G$1" pin="BO1_1" pad="11"/>
+<connect gate="G$1" pin="BO1_2" pad="12"/>
+<connect gate="G$1" pin="BO2_1" pad="7"/>
+<connect gate="G$1" pin="BO2_2" pad="8"/>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="PGND1_1" pad="3"/>
+<connect gate="G$1" pin="PGND1_2" pad="4"/>
+<connect gate="G$1" pin="PGND2_1" pad="9"/>
+<connect gate="G$1" pin="PGND2_2" pad="10"/>
+<connect gate="G$1" pin="PWMA" pad="23"/>
+<connect gate="G$1" pin="PWMB" pad="15"/>
+<connect gate="G$1" pin="STBY" pad="19"/>
+<connect gate="G$1" pin="VCC" pad="20"/>
+<connect gate="G$1" pin="VM1" pad="24"/>
+<connect gate="G$1" pin="VM2" pad="13"/>
+<connect gate="G$1" pin="VM3" pad="14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="otor / Motion / Ignition Controllers &amp; Drivers Brush Motor Driver IC" constant="no"/>
+<attribute name="HEIGHT" value="1.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Toshiba" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TB6612FNG,C,8,EL" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="757-TB6612FNGC8EL" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Toshiba/TB6612FNGC8EL?qs=rsevcuukUAy2UalRuv4E%2FQ%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="ABM8-20.000MHZ-B2-T">
+<description>&lt;20 MHz +/-20ppm Crystal 18pF 50 Ohms 4-SMD, No Lead&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="ABM810000MHZ12D2W">
+<description>&lt;b&gt;ABM8&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.15" y="-0.925" dx="1.3" dy="1.05" layer="1"/>
+<smd name="2" x="1.15" y="-0.925" dx="1.3" dy="1.05" layer="1"/>
+<smd name="3" x="1.15" y="0.925" dx="1.3" dy="1.05" layer="1"/>
+<smd name="4" x="-1.15" y="0.925" dx="1.3" dy="1.05" layer="1"/>
+<text x="0" y="-0.218" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-0.218" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.2" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.2" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.2" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.2" layer="51"/>
+<wire x1="-2.8" y1="2.45" x2="2.8" y2="2.45" width="0.1" layer="51"/>
+<wire x1="2.8" y1="2.45" x2="2.8" y2="-2.887" width="0.1" layer="51"/>
+<wire x1="2.8" y1="-2.887" x2="-2.8" y2="-2.887" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="-2.887" x2="-2.8" y2="2.45" width="0.1" layer="51"/>
+<wire x1="-1.25" y1="-1.854" x2="-1.25" y2="-1.854" width="0.2" layer="21"/>
+<wire x1="-1.25" y1="-1.854" x2="-1.05" y2="-1.854" width="0.2" layer="21" curve="180"/>
+<wire x1="-1.05" y1="-1.854" x2="-1.05" y2="-1.854" width="0.2" layer="21"/>
+<wire x1="-1.05" y1="-1.854" x2="-1.25" y2="-1.854" width="0.2" layer="21" curve="180"/>
+<wire x1="-0.2" y1="1.25" x2="0.2" y2="1.25" width="0.2" layer="21"/>
+<wire x1="-0.2" y1="-1.25" x2="0.2" y2="-1.25" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ABM8-20.000MHZ-B2-T">
+<wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-5.08" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="26.67" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="26.67" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="X1" x="0" y="-2.54" length="middle"/>
+<pin name="GND_1" x="30.48" y="-2.54" length="middle" rot="R180"/>
+<pin name="X2" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="GND_2" x="0" y="0" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ABM8-20.000MHZ-B2-T" prefix="Y">
+<description>&lt;b&gt;20 MHz +/-20ppm Crystal 18pF 50 Ohms 4-SMD, No Lead&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ABM8-20.000MHZ-B2-T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABM810000MHZ12D2W">
+<connects>
+<connect gate="G$1" pin="GND_1" pad="2"/>
+<connect gate="G$1" pin="GND_2" pad="4"/>
+<connect gate="G$1" pin="X1" pad="1"/>
+<connect gate="G$1" pin="X2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="20 MHz +/-20ppm Crystal 18pF 50 Ohms 4-SMD, No Lead" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ABRACON" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ABM8-20.000MHZ-B2-T" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="815-ABM8-20-B2-T" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/ABRACON/ABM8-20000MHZ-B2-T?qs=zLkLEWnxMJwLicGB81opDg%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17663,12 +17659,10 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="OSC" library="ABM8-20.000MHZ-B2-T" deviceset="ABM8-20.000MHZ-B2-T" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="22pF"/>
 <part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="22pF"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="HBRIDGE" library="TB6612FNG_C_8_EL" deviceset="TB6612FNG,C,8,EL" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
@@ -17713,7 +17707,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="MOTOR_R" library="1761681-1" deviceset="1761681-1" device=""/>
 <part name="MOTOR_L" library="1761681-1" deviceset="1761681-1" device=""/>
-<part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TLLG4400" device="" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
@@ -17728,6 +17721,13 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LINEAR_REGULATOR_3.3V" library="UA78M33CDCYG3" deviceset="UA78M33CDCYG3" device=""/>
+<part name="HBRIDGE" library="TB6612FNG_C_8_EL" deviceset="TB6612FNG,C,8,EL" device=""/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Y1" library="ABM8-20.000MHZ-B2-T" deviceset="ABM8-20.000MHZ-B2-T" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17773,27 +17773,19 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <instance part="GND3" gate="1" x="-2.54" y="-127" smashed="yes">
 <attribute name="VALUE" x="-5.08" y="-129.54" size="1.778" layer="96"/>
 </instance>
-<instance part="OSC" gate="G$1" x="144.78" y="0" smashed="yes">
-<attribute name="NAME" x="139.6922" y="6.35585" size="1.78073125" layer="95"/>
-<attribute name="VALUE" x="139.685609375" y="-10.16" size="1.78303125" layer="96"/>
+<instance part="GND4" gate="1" x="223.52" y="0" smashed="yes" rot="R90">
+<attribute name="VALUE" x="226.06" y="-2.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND4" gate="1" x="154.94" y="-7.62" smashed="yes">
-<attribute name="VALUE" x="152.4" y="-10.16" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="190.5" y="-2.54" smashed="yes">
+<attribute name="NAME" x="192.024" y="-2.159" size="1.778" layer="95"/>
+<attribute name="VALUE" x="192.024" y="-7.239" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="134.62" y="5.08" smashed="yes">
-<attribute name="NAME" x="136.144" y="5.461" size="1.778" layer="95"/>
-<attribute name="VALUE" x="136.144" y="0.381" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="220.98" y="7.62" smashed="yes">
+<attribute name="NAME" x="222.504" y="8.001" size="1.778" layer="95"/>
+<attribute name="VALUE" x="222.504" y="2.921" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="154.94" y="5.08" smashed="yes">
-<attribute name="NAME" x="156.464" y="5.461" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.464" y="0.381" size="1.778" layer="96"/>
-</instance>
-<instance part="GND5" gate="1" x="144.78" y="12.7" smashed="yes" rot="R180">
-<attribute name="VALUE" x="147.32" y="15.24" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="HBRIDGE" gate="G$1" x="187.96" y="114.3" smashed="yes">
-<attribute name="NAME" x="180.3048" y="144.8769" size="2.5488" layer="95" ratio="10"/>
-<attribute name="VALUE" x="172.7059" y="80.5986" size="2.543509375" layer="96" ratio="10"/>
+<instance part="GND5" gate="1" x="187.96" y="2.54" smashed="yes" rot="R270">
+<attribute name="VALUE" x="185.42" y="5.08" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="P+2" gate="VCC" x="33.02" y="-99.06" smashed="yes">
 <attribute name="VALUE" x="30.48" y="-101.6" size="1.778" layer="96" rot="R90"/>
@@ -17849,16 +17841,16 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <instance part="GND12" gate="1" x="218.44" y="142.24" smashed="yes">
 <attribute name="VALUE" x="215.9" y="139.7" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="226.06" y="132.08" smashed="yes">
-<attribute name="NAME" x="227.584" y="132.461" size="1.778" layer="95"/>
-<attribute name="VALUE" x="227.584" y="127.381" size="1.778" layer="96"/>
+<instance part="C8" gate="G$1" x="203.2" y="88.9" smashed="yes">
+<attribute name="NAME" x="204.724" y="89.281" size="1.778" layer="95"/>
+<attribute name="VALUE" x="204.724" y="84.201" size="1.778" layer="96"/>
 </instance>
-<instance part="C9" gate="G$1" x="233.68" y="132.08" smashed="yes">
-<attribute name="NAME" x="235.204" y="132.461" size="1.778" layer="95"/>
-<attribute name="VALUE" x="235.204" y="127.381" size="1.778" layer="96"/>
+<instance part="C9" gate="G$1" x="210.82" y="88.9" smashed="yes">
+<attribute name="NAME" x="212.344" y="89.281" size="1.778" layer="95"/>
+<attribute name="VALUE" x="212.344" y="84.201" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="233.68" y="121.92" smashed="yes">
-<attribute name="VALUE" x="231.14" y="119.38" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="210.82" y="78.74" smashed="yes">
+<attribute name="VALUE" x="208.28" y="76.2" size="1.778" layer="96"/>
 </instance>
 <instance part="BATTERY" gate="G$1" x="-261.62" y="27.94" smashed="yes">
 <attribute name="NAME" x="-270.51" y="33.655" size="1.778" layer="95"/>
@@ -17951,9 +17943,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <attribute name="NAME" x="179.07" y="38.1" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="179.07" y="22.86" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="GND25" gate="1" x="210.82" y="81.28" smashed="yes">
-<attribute name="VALUE" x="208.28" y="78.74" size="1.778" layer="96"/>
-</instance>
 <instance part="GND26" gate="1" x="119.38" y="101.6" smashed="yes">
 <attribute name="VALUE" x="116.84" y="99.06" size="1.778" layer="96"/>
 </instance>
@@ -18006,6 +17995,29 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <attribute name="NAME" x="-194.31" y="43.18" size="1.778" layer="95" rot="R180" align="center-left"/>
 <attribute name="VALUE" x="-199.39" y="27.94" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
+<instance part="HBRIDGE" gate="G$1" x="241.3" y="104.14" smashed="yes">
+<attribute name="NAME" x="250.19" y="109.22" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="247.65" y="71.12" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="GND16" gate="1" x="233.68" y="81.28" smashed="yes" rot="R270">
+<attribute name="VALUE" x="226.06" y="81.28" size="1.778" layer="96"/>
+</instance>
+<instance part="GND17" gate="1" x="233.68" y="96.52" smashed="yes" rot="R270">
+<attribute name="VALUE" x="226.06" y="96.52" size="1.778" layer="96"/>
+</instance>
+<instance part="GND18" gate="1" x="281.94" y="88.9" smashed="yes" rot="R90">
+<attribute name="VALUE" x="284.48" y="88.9" size="1.778" layer="96"/>
+</instance>
+<instance part="GND25" gate="1" x="172.72" y="30.48" smashed="yes" rot="R270">
+<attribute name="VALUE" x="165.1" y="30.48" size="1.778" layer="96"/>
+</instance>
+<instance part="GND28" gate="1" x="172.72" y="55.88" smashed="yes" rot="R270">
+<attribute name="VALUE" x="165.1" y="55.88" size="1.778" layer="96"/>
+</instance>
+<instance part="Y1" gate="G$1" x="190.5" y="2.54" smashed="yes">
+<attribute name="NAME" x="204.47" y="10.16" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="191.77" y="7.62" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18038,7 +18050,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <junction x="218.44" y="162.56"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="162.56" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="HBRIDGE" gate="G$1" pin="VCC"/>
 <wire x1="210.82" y1="162.56" x2="203.2" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="162.56" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
 <junction x="210.82" y="162.56"/>
@@ -18096,6 +18107,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <wire x1="134.62" y1="15.24" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-127" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="VCC"/>
+<wire x1="274.32" y1="93.98" x2="299.72" y2="93.98" width="0.1524" layer="91"/>
+<label x="299.72" y="93.98" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -18114,19 +18130,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <wire x1="-2.54" y1="-121.92" x2="-2.54" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="134.62" y1="7.62" x2="134.62" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="10.16" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="10.16" x2="154.94" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="10.16" x2="154.94" y2="7.62" width="0.1524" layer="91"/>
-<junction x="144.78" y="10.16"/>
-</segment>
-<segment>
-<pinref part="OSC" gate="G$1" pin="GND"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="154.94" y1="-5.08" x2="152.4" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="GND_2"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="-114.3" x2="33.02" y2="-114.3" width="0.1524" layer="91"/>
@@ -18170,11 +18175,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="127" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="124.46" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="83.82" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="127" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
-<junction x="233.68" y="124.46"/>
+<wire x1="210.82" y1="83.82" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<junction x="210.82" y="81.28"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -18252,19 +18257,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </segment>
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="3"/>
-<label x="165.1" y="55.88" size="1.778" layer="95"/>
-<wire x1="175.26" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="3"/>
-<label x="165.1" y="30.48" size="1.778" layer="95"/>
-<wire x1="175.26" y1="30.48" x2="165.1" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="HBRIDGE" gate="G$1" pin="GND"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="203.2" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="86.36" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
@@ -18296,6 +18293,33 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <wire x1="-91.44" y1="68.58" x2="-104.14" y2="68.58" width="0.1524" layer="91"/>
 <label x="-106.68" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="PGND1_1"/>
+<wire x1="241.3" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="99.06" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="HBRIDGE" gate="G$1" pin="PGND1_2"/>
+<wire x1="238.76" y1="96.52" x2="241.3" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="GND"/>
+<wire x1="274.32" y1="88.9" x2="279.4" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="PGND2_1"/>
+<wire x1="241.3" y1="83.82" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="83.82" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="81.28" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="HBRIDGE" gate="G$1" pin="PGND2_2"/>
+<wire x1="238.76" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="Y1" gate="G$1" pin="GND_1"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="AN0" class="0">
 <segment>
@@ -18314,7 +18338,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="AN0/VREF+/CN2/RA0"/>
 <wire x1="-63.5" y1="-20.32" x2="-68.58" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-68.58" y="-20.32" size="1.778" layer="95"/>
+<label x="-68.58" y="-20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="7"/>
@@ -18324,25 +18348,20 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="OSC" gate="G$1" pin="1"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="0" x2="134.62" y2="0" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="0" x2="134.62" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="134.62" y="0"/>
 <pinref part="MICROCHIP" gate="A" pin="OSC2/CLKO/CN29/RA3"/>
-<wire x1="134.62" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-7.62" x2="170.18" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="12.7" x2="220.98" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="12.7" x2="220.98" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="OSC" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="0" x2="152.4" y2="0" width="0.1524" layer="91"/>
 <pinref part="MICROCHIP" gate="A" pin="OSC1/CLKI/CN30/RA2"/>
-<wire x1="124.46" y1="-10.16" x2="160.02" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="-10.16" x2="160.02" y2="0" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="0" x2="154.94" y2="0" width="0.1524" layer="91"/>
-<junction x="154.94" y="0"/>
+<wire x1="124.46" y1="-10.16" x2="190.5" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="190.5" y1="-10.16" x2="190.5" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AN1" class="0">
@@ -18362,7 +18381,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="AN1/VREF-/CN3/RA1"/>
 <wire x1="-63.5" y1="-22.86" x2="-68.58" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-68.58" y="-22.86" size="1.778" layer="95"/>
+<label x="-68.58" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="9"/>
@@ -18387,7 +18406,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="AN4/C1IN-/RP2/CN6/RB2"/>
 <wire x1="124.46" y1="-27.94" x2="129.54" y2="-27.94" width="0.1524" layer="91"/>
-<label x="127" y="-27.94" size="1.778" layer="95"/>
+<label x="129.54" y="-27.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="11"/>
@@ -18395,54 +18414,28 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <label x="-76.2" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="137.16" x2="233.68" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="137.16" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="137.16" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
-<junction x="226.06" y="137.16"/>
-<pinref part="HBRIDGE" gate="G$1" pin="VM1"/>
-<pinref part="HBRIDGE" gate="G$1" pin="VM2"/>
-<wire x1="205.74" y1="137.16" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="134.62" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
-<junction x="205.74" y="137.16"/>
-<pinref part="HBRIDGE" gate="G$1" pin="VM3"/>
-<wire x1="203.2" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="132.08" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
-<junction x="205.74" y="134.62"/>
-</segment>
-</net>
 <net name="STBY" class="0">
-<segment>
-<pinref part="HBRIDGE" gate="G$1" pin="STBY"/>
-<wire x1="172.72" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
-<label x="162.56" y="129.54" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="SDA1/RP9/CN21/PMD3/RB9"/>
 <wire x1="-63.5" y1="25.4" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
-<label x="-68.58" y="25.4" size="1.778" layer="95"/>
+<label x="-68.58" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="5"/>
 <wire x1="-63.5" y1="66.04" x2="-76.2" y2="66.04" width="0.1524" layer="91"/>
 <label x="-76.2" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="STBY"/>
+<wire x1="274.32" y1="91.44" x2="289.56" y2="91.44" width="0.1524" layer="91"/>
+<label x="289.56" y="91.44" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWMA" class="0">
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="PWMA"/>
-<wire x1="172.72" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
-<label x="162.56" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="PWM2L1/RP23/CN17/PMA0/RC7"/>
 <wire x1="-63.5" y1="20.32" x2="-68.58" y2="20.32" width="0.1524" layer="91"/>
-<label x="-68.58" y="20.32" size="1.778" layer="95"/>
+<label x="-68.58" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -18454,17 +18447,17 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <wire x1="-63.5" y1="71.12" x2="-76.2" y2="71.12" width="0.1524" layer="91"/>
 <label x="-76.2" y="71.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="PWMA"/>
+<wire x1="274.32" y1="101.6" x2="276.86" y2="101.6" width="0.1524" layer="91"/>
+<label x="276.86" y="101.6" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWMB" class="0">
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="PWMB"/>
-<wire x1="172.72" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
-<label x="162.56" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="PWM1H1/DAC1LP/RTCC/RP14/CN12/PMWR/RB14"/>
 <wire x1="-63.5" y1="-7.62" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-68.58" y="-7.62" size="1.778" layer="95"/>
+<label x="-68.58" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -18476,17 +18469,17 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <wire x1="-63.5" y1="68.58" x2="-76.2" y2="68.58" width="0.1524" layer="91"/>
 <label x="-76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="PWMB"/>
+<wire x1="274.32" y1="81.28" x2="287.02" y2="78.74" width="0.1524" layer="91"/>
+<label x="287.02" y="78.74" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="MTRDRV_AIN1" class="0">
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="AIN1"/>
-<wire x1="172.72" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
-<label x="154.94" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="AN8/CVREF/RP18/PMA2/CN10/RC2"/>
 <wire x1="124.46" y1="-17.78" x2="129.54" y2="-17.78" width="0.1524" layer="91"/>
-<label x="127" y="-17.78" size="1.778" layer="95"/>
+<label x="129.54" y="-17.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="2"/>
@@ -18496,56 +18489,56 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </net>
 <net name="MTRDRV_BIN1" class="0">
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="BIN1"/>
-<wire x1="172.72" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
-<label x="154.94" y="106.68" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="AN6/DAC1RM/RP16/CN8/RC0"/>
 <wire x1="124.46" y1="-22.86" x2="129.54" y2="-22.86" width="0.1524" layer="91"/>
-<label x="127" y="-22.86" size="1.778" layer="95"/>
+<label x="129.54" y="-22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="6"/>
 <wire x1="-55.88" y1="66.04" x2="-45.72" y2="66.04" width="0.1524" layer="91"/>
 <label x="-50.8" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="BIN1"/>
+<wire x1="274.32" y1="86.36" x2="297.18" y2="86.36" width="0.1524" layer="91"/>
+<label x="297.18" y="86.36" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="MTRDRV_BIN2" class="0">
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="BIN2"/>
-<wire x1="172.72" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
-<label x="154.94" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="AN5/C1IN+/RP3/CN7/RB3"/>
 <wire x1="124.46" y1="-25.4" x2="129.54" y2="-25.4" width="0.1524" layer="91"/>
-<label x="127" y="-25.4" size="1.778" layer="95"/>
+<label x="129.54" y="-25.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="8"/>
 <wire x1="-55.88" y1="63.5" x2="-45.72" y2="63.5" width="0.1524" layer="91"/>
 <label x="-50.8" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="BIN2"/>
+<wire x1="274.32" y1="83.82" x2="276.86" y2="83.82" width="0.1524" layer="91"/>
+<label x="276.86" y="83.82" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="MTRDRV_AIN2" class="0">
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="AIN2"/>
-<wire x1="172.72" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
-<label x="154.94" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="AN7/DAC1LM/RP17/CN9/RC1"/>
 <wire x1="124.46" y1="-20.32" x2="129.54" y2="-20.32" width="0.1524" layer="91"/>
-<label x="127" y="-20.32" size="1.778" layer="95"/>
+<label x="129.54" y="-20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="4"/>
 <wire x1="-55.88" y1="68.58" x2="-45.72" y2="68.58" width="0.1524" layer="91"/>
 <label x="-50.8" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="AIN2"/>
+<wire x1="274.32" y1="99.06" x2="294.64" y2="99.06" width="0.1524" layer="91"/>
+<label x="294.64" y="99.06" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
-<net name="N$6" class="0">
+<net name="VM" class="0">
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
 <pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="INPUT"/>
@@ -18554,7 +18547,34 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <wire x1="-241.3" y1="30.48" x2="-241.3" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-241.3" y="30.48"/>
 <pinref part="BATTERY" gate="G$1" pin="1"/>
-<wire x1="-241.3" y1="30.48" x2="-264.16" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="30.48" x2="-251.46" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="30.48" x2="-264.16" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="30.48" x2="-251.46" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-251.46" y="30.48"/>
+<label x="-254" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="VM2"/>
+<pinref part="HBRIDGE" gate="G$1" pin="VM3"/>
+<label x="276.86" y="76.2" size="1.778" layer="95" xref="yes"/>
+<wire x1="274.32" y1="76.2" x2="274.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="76.2" x2="276.86" y2="76.2" width="0.1524" layer="91"/>
+<junction x="274.32" y="76.2"/>
+</segment>
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="VM1"/>
+<wire x1="274.32" y1="104.14" x2="287.02" y2="104.14" width="0.1524" layer="91"/>
+<label x="287.02" y="104.14" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="96.52" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="96.52" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
+<junction x="203.2" y="96.52"/>
+<label x="195.58" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -18637,29 +18657,24 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 </net>
 <net name="AO2" class="0">
 <segment>
-<pinref part="MOTOR_L" gate="G$1" pin="2"/>
-<label x="195.58" y="33.02" size="1.778" layer="95"/>
-<wire x1="195.58" y1="33.02" x2="205.74" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="HBRIDGE" gate="G$1" pin="AO2_1"/>
+<pinref part="HBRIDGE" gate="G$1" pin="AO2_2"/>
+<wire x1="241.3" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
+<label x="238.76" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="241.3" y1="93.98" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
+<junction x="241.3" y="91.44"/>
 </segment>
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="AO2@1"/>
-<label x="205.74" y="116.84" size="1.778" layer="95"/>
-<pinref part="HBRIDGE" gate="G$1" pin="AO2@2"/>
-<wire x1="203.2" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="114.3" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
-<junction x="203.2" y="116.84"/>
+<pinref part="MOTOR_L" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="33.02" x2="198.12" y2="35.56" width="0.1524" layer="91"/>
+<label x="198.12" y="35.56" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VDD33" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="4"/>
-<label x="195.58" y="55.88" size="1.778" layer="95"/>
-<wire x1="195.58" y1="55.88" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="MOTOR_L" gate="G$1" pin="4"/>
-<label x="195.58" y="30.48" size="1.778" layer="95"/>
-<wire x1="195.58" y1="30.48" x2="205.74" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="55.88" x2="198.12" y2="55.88" width="0.1524" layer="91"/>
+<label x="198.12" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="BLUETOOTH_UART" gate="A" pin="1"/>
@@ -18680,79 +18695,61 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <junction x="251.46" y="55.88"/>
 <label x="254" y="55.88" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="ENCA_B" class="0">
 <segment>
-<pinref part="MOTOR_L" gate="G$1" pin="6"/>
-<label x="195.58" y="27.94" size="1.778" layer="95"/>
-<wire x1="195.58" y1="27.94" x2="205.74" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ENCA_A" class="0">
-<segment>
-<pinref part="MOTOR_L" gate="G$1" pin="5"/>
-<label x="165.1" y="27.94" size="1.778" layer="95"/>
-<wire x1="175.26" y1="27.94" x2="165.1" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="MOTOR_L" gate="G$1" pin="4"/>
+<wire x1="195.58" y1="30.48" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
+<label x="198.12" y="30.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="AO1" class="0">
 <segment>
-<pinref part="MOTOR_L" gate="G$1" pin="1"/>
-<label x="165.1" y="33.02" size="1.778" layer="95"/>
-<wire x1="175.26" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="HBRIDGE" gate="G$1" pin="AO1_2"/>
+<wire x1="241.3" y1="101.6" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
+<label x="238.76" y="101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="HBRIDGE" gate="G$1" pin="AO1_1"/>
+<wire x1="241.3" y1="104.14" x2="241.3" y2="101.6" width="0.1524" layer="91"/>
+<junction x="241.3" y="101.6"/>
 </segment>
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="AO1@1"/>
-<label x="205.74" y="121.92" size="1.778" layer="95"/>
-<pinref part="HBRIDGE" gate="G$1" pin="AO1@2"/>
-<wire x1="203.2" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="119.38" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
-<junction x="203.2" y="121.92"/>
+<pinref part="MOTOR_L" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="33.02" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
+<label x="172.72" y="35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BO2" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="2"/>
-<label x="195.58" y="58.42" size="1.778" layer="95"/>
-<wire x1="195.58" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="58.42" x2="198.12" y2="60.96" width="0.1524" layer="91"/>
+<label x="198.12" y="60.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="HBRIDGE" gate="G$1" pin="BO2@1"/>
-<label x="205.74" y="104.14" size="1.778" layer="95"/>
-<pinref part="HBRIDGE" gate="G$1" pin="BO2@2"/>
-<wire x1="203.2" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="101.6" x2="203.2" y2="104.14" width="0.1524" layer="91"/>
-<junction x="203.2" y="104.14"/>
+<pinref part="HBRIDGE" gate="G$1" pin="BO2_2"/>
+<wire x1="241.3" y1="86.36" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
+<label x="238.76" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="HBRIDGE" gate="G$1" pin="BO2_1"/>
+<wire x1="241.3" y1="88.9" x2="241.3" y2="86.36" width="0.1524" layer="91"/>
+<junction x="241.3" y="86.36"/>
 </segment>
 </net>
 <net name="ENCB_B" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="6"/>
-<label x="195.58" y="53.34" size="1.778" layer="95"/>
-<wire x1="195.58" y1="53.34" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="53.34" x2="198.12" y2="50.8" width="0.1524" layer="91"/>
+<label x="198.12" y="50.8" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ENCB_A" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="5"/>
-<label x="165.1" y="53.34" size="1.778" layer="95"/>
-<wire x1="175.26" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="53.34" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
+<label x="172.72" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BO1" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="1"/>
-<label x="165.1" y="58.42" size="1.778" layer="95"/>
-<wire x1="175.26" y1="58.42" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="HBRIDGE" gate="G$1" pin="BO1@1"/>
-<label x="205.74" y="109.22" size="1.778" layer="95"/>
-<pinref part="HBRIDGE" gate="G$1" pin="BO1@2"/>
-<wire x1="203.2" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="106.68" x2="203.2" y2="109.22" width="0.1524" layer="91"/>
-<junction x="203.2" y="109.22"/>
+<wire x1="175.26" y1="58.42" x2="172.72" y2="60.96" width="0.1524" layer="91"/>
+<label x="172.72" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -18790,7 +18787,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PWM1L2/DAC1RN/RP13/CN13/PMRD/RB13"/>
 <wire x1="-63.5" y1="0" x2="-68.58" y2="0" width="0.1524" layer="91"/>
-<label x="-68.58" y="0" size="1.778" layer="95"/>
+<label x="-68.58" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -18802,7 +18799,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PGEC2/PWM1L3/RP11/CN15/PMD1/RB11"/>
 <wire x1="-63.5" y1="5.08" x2="-68.58" y2="5.08" width="0.1524" layer="91"/>
-<label x="-68.58" y="5.08" size="1.778" layer="95"/>
+<label x="-68.58" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -18814,7 +18811,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PGED2/EMCD2/PWM1H3/RP10/CN16/PMD2/RB10"/>
 <wire x1="-63.5" y1="7.62" x2="-68.58" y2="7.62" width="0.1524" layer="91"/>
-<label x="-68.58" y="7.62" size="1.778" layer="95"/>
+<label x="-68.58" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CTS" class="0">
@@ -18826,7 +18823,45 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/ua78m.pdf"&gt; Datasheet &l
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PWM1H2/DAC1RP/RP12/CN14/PMD0/RB12"/>
 <wire x1="-63.5" y1="2.54" x2="-68.58" y2="2.54" width="0.1524" layer="91"/>
-<label x="-68.58" y="2.54" size="1.778" layer="95"/>
+<label x="-68.58" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MTRDRV_AI1" class="0">
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="AIN1"/>
+<wire x1="274.32" y1="96.52" x2="276.86" y2="96.52" width="0.1524" layer="91"/>
+<label x="276.86" y="96.52" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="B01" class="0">
+<segment>
+<pinref part="HBRIDGE" gate="G$1" pin="BO1_2"/>
+<wire x1="241.3" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
+<label x="238.76" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ENCA_A" class="0">
+<segment>
+<pinref part="MOTOR_L" gate="G$1" pin="5"/>
+<wire x1="175.26" y1="27.94" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
+<label x="172.72" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MOTOR_L" gate="G$1" pin="6"/>
+<wire x1="195.58" y1="27.94" x2="198.12" y2="25.4" width="0.1524" layer="91"/>
+<label x="198.12" y="25.4" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="Y1" gate="G$1" pin="X1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="Y1" gate="G$1" pin="X2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

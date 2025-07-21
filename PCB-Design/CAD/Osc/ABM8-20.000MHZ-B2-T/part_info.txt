@@ -1,0 +1,9 @@
+Manufacturer=ABRACON
+PartNumber=ABM8-20.000MHZ-B2-T
+PartCategory=Crystal or Oscillator
+PackageCategory=Other
+PinCount=4
+Version=7.2
+Released=2022-03-29 12:42:47
+Downloaded=2025-07-21 07:51:27
+3D=Y
