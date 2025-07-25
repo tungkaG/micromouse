@@ -9053,7 +9053,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TLLG4400" device="" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
 <part name="DEBUGGING_PO" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X6" device="" package3d_urn="urn:adsk.eagle:package:22474/2"/>
-<part name="BLUETOOTH_UART" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
 <part name="C10" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
 <part name="C11" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9067,7 +9066,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Y1" library="ABM8-20.000MHZ-B2-T" deviceset="ABM8-20.000MHZ-B2-T" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
 <part name="LINEAR_REGULATOR_5V" library="ADP3338AKCZ-5-R7" deviceset="ADP3338AKCZ-5-R7" device=""/>
 <part name="C7" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="1uF"/>
@@ -9079,6 +9077,12 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TLLG4400" device="" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
+<part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="LED5" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TLLG4400" device="" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9180,34 +9184,34 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <instance part="GND13" gate="1" x="210.82" y="78.74" smashed="yes">
 <attribute name="VALUE" x="208.28" y="76.2" size="1.778" layer="96"/>
 </instance>
-<instance part="BATTERY" gate="G$1" x="-350.52" y="-48.26" smashed="yes">
-<attribute name="NAME" x="-359.41" y="-42.545" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-356.87" y="-53.34" size="1.778" layer="96"/>
+<instance part="BATTERY" gate="G$1" x="-327.66" y="-12.7" smashed="yes">
+<attribute name="NAME" x="-336.55" y="-6.985" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-334.01" y="-17.78" size="1.778" layer="96"/>
 </instance>
-<instance part="C14" gate="G$1" x="-269.24" y="-58.42" smashed="yes">
-<attribute name="NAME" x="-267.716" y="-58.039" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-267.716" y="-63.119" size="1.778" layer="96"/>
+<instance part="C14" gate="G$1" x="-317.5" y="-58.42" smashed="yes">
+<attribute name="NAME" x="-315.976" y="-58.039" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-315.976" y="-63.119" size="1.778" layer="96"/>
 </instance>
-<instance part="C15" gate="G$1" x="-205.74" y="-58.42" smashed="yes">
-<attribute name="NAME" x="-201.676" y="-58.039" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-204.216" y="-63.119" size="1.778" layer="96"/>
+<instance part="C15" gate="G$1" x="-248.92" y="-58.42" smashed="yes">
+<attribute name="NAME" x="-244.856" y="-58.039" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-247.396" y="-63.119" size="1.778" layer="96"/>
 </instance>
-<instance part="C16" gate="G$1" x="-195.58" y="-58.42" smashed="yes">
-<attribute name="NAME" x="-194.056" y="-58.039" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-194.056" y="-63.119" size="1.778" layer="96"/>
+<instance part="C16" gate="G$1" x="-238.76" y="-58.42" smashed="yes">
+<attribute name="NAME" x="-237.236" y="-58.039" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-237.236" y="-63.119" size="1.778" layer="96"/>
 </instance>
-<instance part="C17" gate="G$1" x="-182.88" y="-58.42" smashed="yes">
-<attribute name="NAME" x="-181.356" y="-58.039" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-181.356" y="-63.119" size="1.778" layer="96"/>
+<instance part="C17" gate="G$1" x="-226.06" y="-58.42" smashed="yes">
+<attribute name="NAME" x="-224.536" y="-58.039" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-224.536" y="-63.119" size="1.778" layer="96"/>
 </instance>
-<instance part="P+5" gate="VCC" x="-200.66" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="-195.58" y="-48.26" size="1.778" layer="96" rot="R90"/>
+<instance part="P+5" gate="VCC" x="-243.84" y="-48.26" smashed="yes">
+<attribute name="VALUE" x="-238.76" y="-48.26" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND19" gate="1" x="-215.9" y="-66.04" smashed="yes">
-<attribute name="VALUE" x="-208.28" y="-68.58" size="1.778" layer="96"/>
+<instance part="GND19" gate="1" x="-259.08" y="-66.04" smashed="yes">
+<attribute name="VALUE" x="-251.46" y="-68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="GND20" gate="1" x="-345.44" y="-55.88" smashed="yes">
-<attribute name="VALUE" x="-347.98" y="-58.42" size="1.778" layer="96"/>
+<instance part="GND20" gate="1" x="-322.58" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="-325.12" y="-22.86" size="1.778" layer="96"/>
 </instance>
 <instance part="PROGRAMMER_PO" gate="A" x="-198.12" y="-10.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="-184.15" y="1.905" size="1.778" layer="95" rot="R180"/>
@@ -9297,10 +9301,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <attribute name="NAME" x="-49.53" y="74.295" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-46.99" y="50.8" size="1.778" layer="96"/>
 </instance>
-<instance part="BLUETOOTH_UART" gate="A" x="-88.9" y="63.5" smashed="yes">
-<attribute name="NAME" x="-105.41" y="76.835" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-95.25" y="53.34" size="1.778" layer="96"/>
-</instance>
 <instance part="C10" gate="G$1" x="226.06" y="48.26" smashed="yes">
 <attribute name="NAME" x="227.584" y="48.641" size="1.778" layer="95"/>
 <attribute name="VALUE" x="227.584" y="43.561" size="1.778" layer="96"/>
@@ -9315,9 +9315,9 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <instance part="GND15" gate="1" x="251.46" y="33.02" smashed="yes">
 <attribute name="VALUE" x="248.92" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="LINEAR_REGULATOR_3.3V" gate="G$1" x="-256.54" y="-45.72" smashed="yes">
-<attribute name="NAME" x="-222.25" y="-40.64" size="1.778" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="-227.33" y="-55.88" size="1.778" layer="96" rot="R180" align="center-left"/>
+<instance part="LINEAR_REGULATOR_3.3V" gate="G$1" x="-304.8" y="-45.72" smashed="yes">
+<attribute name="NAME" x="-270.51" y="-40.64" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="-275.59" y="-55.88" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
 <instance part="HBRIDGE" gate="G$1" x="241.3" y="104.14" smashed="yes">
 <attribute name="NAME" x="250.19" y="109.22" size="1.778" layer="95" align="center-left"/>
@@ -9345,27 +9345,24 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <instance part="P+9" gate="VCC" x="-170.18" y="-43.18" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-172.72" y="-40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="GND29" gate="1" x="-114.3" y="68.58" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-116.84" y="68.58" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="C6" gate="G$1" x="251.46" y="48.26" smashed="yes">
 <attribute name="NAME" x="252.984" y="48.641" size="1.778" layer="95"/>
 <attribute name="VALUE" x="252.984" y="43.561" size="1.778" layer="96"/>
 </instance>
-<instance part="LINEAR_REGULATOR_5V" gate="A" x="-309.88" y="-48.26" smashed="yes">
-<attribute name="NAME" x="-322.58" y="-42.18" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="-322.58" y="-57.34" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+<instance part="LINEAR_REGULATOR_5V" gate="A" x="-287.02" y="-12.7" smashed="yes">
+<attribute name="NAME" x="-299.72" y="-6.62" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="-299.72" y="-21.78" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="C7" gate="G$1" x="-281.94" y="-50.8" smashed="yes">
-<attribute name="NAME" x="-280.416" y="-50.419" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-280.416" y="-55.499" size="1.778" layer="96"/>
+<instance part="C7" gate="G$1" x="-259.08" y="-15.24" smashed="yes">
+<attribute name="NAME" x="-257.556" y="-14.859" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-257.556" y="-19.939" size="1.778" layer="96"/>
 </instance>
-<instance part="C12" gate="G$1" x="-332.74" y="-50.8" smashed="yes">
-<attribute name="NAME" x="-331.216" y="-50.419" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-331.216" y="-55.499" size="1.778" layer="96"/>
+<instance part="C12" gate="G$1" x="-309.88" y="-15.24" smashed="yes">
+<attribute name="NAME" x="-308.356" y="-14.859" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-308.356" y="-19.939" size="1.778" layer="96"/>
 </instance>
-<instance part="GND12" gate="1" x="-292.1" y="-63.5" smashed="yes">
-<attribute name="VALUE" x="-294.64" y="-66.04" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="-269.24" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="-271.78" y="-30.48" size="1.778" layer="96"/>
 </instance>
 <instance part="C13" gate="G$1" x="-10.16" y="-104.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="-10.541" y="-102.616" size="1.778" layer="95" rot="R90"/>
@@ -9388,6 +9385,28 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <instance part="GND32" gate="1" x="104.14" y="-104.14" smashed="yes" rot="R90">
 <attribute name="VALUE" x="106.68" y="-106.68" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GND29" gate="1" x="83.82" y="101.6" smashed="yes">
+<attribute name="VALUE" x="81.28" y="99.06" size="1.778" layer="96"/>
+</instance>
+<instance part="LED4" gate="G$1" x="83.82" y="111.76" smashed="yes">
+<attribute name="NAME" x="87.376" y="107.188" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="89.535" y="107.188" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R9" gate="G$1" x="83.82" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="82.3214" y="118.11" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="87.122" y="118.11" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND33" gate="1" x="63.5" y="101.6" smashed="yes">
+<attribute name="VALUE" x="60.96" y="99.06" size="1.778" layer="96"/>
+</instance>
+<instance part="LED5" gate="G$1" x="63.5" y="111.76" smashed="yes">
+<attribute name="NAME" x="67.056" y="107.188" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="69.215" y="107.188" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R10" gate="G$1" x="63.5" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="62.0014" y="118.11" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="66.802" y="118.11" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9395,27 +9414,27 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <net name="VCC" class="0">
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="-205.74" y1="-53.34" x2="-200.66" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-200.66" y1="-53.34" x2="-195.58" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-195.58" y1="-53.34" x2="-182.88" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-182.88" y1="-53.34" x2="-198.12" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-205.74" y1="-53.34" x2="-205.74" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-248.92" y1="-53.34" x2="-243.84" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-243.84" y1="-53.34" x2="-238.76" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-238.76" y1="-53.34" x2="-226.06" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="-53.34" x2="-241.3" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-248.92" y1="-53.34" x2="-248.92" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="-195.58" y1="-53.34" x2="-195.58" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="-195.58" y="-53.34"/>
+<wire x1="-238.76" y1="-53.34" x2="-238.76" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-238.76" y="-53.34"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="-182.88" y1="-53.34" x2="-182.88" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="-182.88" y="-53.34"/>
+<wire x1="-226.06" y1="-53.34" x2="-226.06" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-226.06" y="-53.34"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="-200.66" y1="-50.8" x2="-200.66" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="-200.66" y="-53.34"/>
-<wire x1="-182.88" y1="-53.34" x2="-175.26" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-208.28" y1="-53.34" x2="-205.74" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="-205.74" y="-53.34"/>
+<wire x1="-243.84" y1="-50.8" x2="-243.84" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-243.84" y="-53.34"/>
+<wire x1="-226.06" y1="-53.34" x2="-175.26" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="-53.34" x2="-248.92" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-248.92" y="-53.34"/>
 <pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="OUTPUT"/>
-<wire x1="-256.54" y1="-50.8" x2="-256.54" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-256.54" y1="-58.42" x2="-208.28" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-208.28" y1="-58.42" x2="-208.28" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-304.8" y1="-50.8" x2="-304.8" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-304.8" y1="-58.42" x2="-251.46" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="-58.42" x2="-251.46" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="PROGRAMMER_PO" gate="A" pin="2"/>
 <wire x1="-175.26" y1="-53.34" x2="-175.26" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-175.26" y1="-43.18" x2="-175.26" y2="-15.24" width="0.1524" layer="91"/>
@@ -9499,30 +9518,30 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <segment>
 <pinref part="BATTERY" gate="G$1" pin="2"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="-353.06" y1="-48.26" x2="-345.44" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-345.44" y1="-48.26" x2="-345.44" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-330.2" y1="-12.7" x2="-322.58" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-322.58" y1="-12.7" x2="-322.58" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
-<junction x="-215.9" y="-63.5"/>
+<junction x="-259.08" y="-63.5"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="-205.74" y1="-63.5" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-248.92" y1="-63.5" x2="-259.08" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="-195.58" y1="-63.5" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-238.76" y1="-63.5" x2="-259.08" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="-182.88" y1="-63.5" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="-63.5" x2="-259.08" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="-218.44" y1="-63.5" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="-269.24" y1="-63.5" x2="-218.44" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-266.7" y1="-63.5" x2="-259.08" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-317.5" y1="-63.5" x2="-266.7" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="COMMON_1"/>
-<wire x1="-256.54" y1="-48.26" x2="-259.08" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-259.08" y1="-48.26" x2="-259.08" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-259.08" y1="-60.96" x2="-218.44" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-218.44" y1="-60.96" x2="-218.44" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="-218.44" y="-63.5"/>
+<wire x1="-304.8" y1="-48.26" x2="-307.34" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-307.34" y1="-48.26" x2="-307.34" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-307.34" y1="-60.96" x2="-266.7" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-266.7" y1="-60.96" x2="-266.7" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="-266.7" y="-63.5"/>
 <pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="COMMON_2"/>
-<wire x1="-218.44" y1="-45.72" x2="-218.44" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="-218.44" y="-60.96"/>
+<wire x1="-266.7" y1="-45.72" x2="-266.7" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="-266.7" y="-60.96"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
@@ -9598,11 +9617,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="BLUETOOTH_UART" gate="A" pin="2"/>
-<wire x1="-91.44" y1="68.58" x2="-111.76" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="GND29" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="HBRIDGE" gate="G$1" pin="PGND1_1"/>
 <wire x1="241.3" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="99.06" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
@@ -9642,15 +9656,15 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <segment>
 <pinref part="LINEAR_REGULATOR_5V" gate="A" pin="GND"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="-292.1" y1="-50.8" x2="-292.1" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-269.24" y1="-15.24" x2="-269.24" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="-292.1" y1="-58.42" x2="-292.1" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-281.94" y1="-55.88" x2="-281.94" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-281.94" y1="-58.42" x2="-292.1" y2="-58.42" width="0.1524" layer="91"/>
-<junction x="-292.1" y="-58.42"/>
+<wire x1="-269.24" y1="-22.86" x2="-269.24" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-259.08" y1="-20.32" x2="-259.08" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-259.08" y1="-22.86" x2="-269.24" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="-269.24" y="-22.86"/>
 <pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="-332.74" y1="-55.88" x2="-332.74" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-332.74" y1="-58.42" x2="-292.1" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="-20.32" x2="-309.88" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="-22.86" x2="-269.24" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
@@ -9666,6 +9680,16 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="96.52" y1="-104.14" x2="101.6" y2="-104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+<wire x1="83.82" y1="106.68" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="GND33" gate="1" pin="GND"/>
+<wire x1="63.5" y1="106.68" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AN0" class="0">
@@ -9780,11 +9804,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 </net>
 <net name="PWMA" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="127" x2="99.06" y2="127" width="0.1524" layer="91"/>
-<label x="99.06" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="1"/>
 <wire x1="-43.18" y1="68.58" x2="-53.34" y2="76.2" width="0.1524" layer="91"/>
 <label x="-53.34" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -9805,11 +9824,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <pinref part="MICROCHIP" gate="A" pin="PWM1H1/DAC1LP/RTCC/RP14/CN12/PMWR/RB14"/>
 <wire x1="-63.5" y1="-7.62" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-68.58" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<label x="121.92" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="127" y1="127" x2="121.92" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="3"/>
@@ -9892,19 +9906,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 </net>
 <net name="VM" class="0">
 <segment>
-<pinref part="BATTERY" gate="G$1" pin="1"/>
-<wire x1="-327.66" y1="-45.72" x2="-332.74" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-332.74" y1="-45.72" x2="-340.36" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-340.36" y1="-45.72" x2="-353.06" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-340.36" y1="-45.72" x2="-340.36" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="-340.36" y="-45.72"/>
-<label x="-340.36" y="-40.64" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="LINEAR_REGULATOR_5V" gate="A" pin="IN"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="-332.74" y1="-45.72" x2="-332.74" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-332.74" y="-45.72"/>
-</segment>
-<segment>
 <pinref part="HBRIDGE" gate="G$1" pin="VM2"/>
 <pinref part="HBRIDGE" gate="G$1" pin="VM3"/>
 <label x="276.86" y="76.2" size="1.778" layer="95" xref="yes"/>
@@ -9926,6 +9927,25 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <wire x1="203.2" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <junction x="203.2" y="96.52"/>
 <label x="195.58" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="-317.5" y1="-45.72" x2="-317.5" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="INPUT"/>
+<wire x1="-304.8" y1="-45.72" x2="-317.5" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="BATTERY" gate="G$1" pin="1"/>
+<wire x1="-304.8" y1="-10.16" x2="-309.88" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="-10.16" x2="-317.5" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-317.5" y1="-10.16" x2="-330.2" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-317.5" y1="-10.16" x2="-317.5" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="-317.5" y="-10.16"/>
+<label x="-317.5" y="-5.08" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="LINEAR_REGULATOR_5V" gate="A" pin="IN"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="-309.88" y1="-10.16" x2="-309.88" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="-309.88" y="-10.16"/>
+<wire x1="-317.5" y1="-45.72" x2="-317.5" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-317.5" y="-45.72"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -10002,11 +10022,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <pinref part="MOTOR_R" gate="G$1" pin="4"/>
 <wire x1="195.58" y1="55.88" x2="198.12" y2="55.88" width="0.1524" layer="91"/>
 <label x="198.12" y="55.88" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="BLUETOOTH_UART" gate="A" pin="1"/>
-<wire x1="-91.44" y1="71.12" x2="-96.52" y2="71.12" width="0.1524" layer="91"/>
-<label x="-96.52" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="1"/>
@@ -10149,11 +10164,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 </net>
 <net name="RTS" class="0">
 <segment>
-<pinref part="BLUETOOTH_UART" gate="A" pin="3"/>
-<wire x1="-91.44" y1="66.04" x2="-104.14" y2="66.04" width="0.1524" layer="91"/>
-<label x="-104.14" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="PWM1L1/DAC1LN/RP15/CN11/PMCS1/RB15"/>
 <wire x1="-63.5" y1="-10.16" x2="-68.58" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-68.58" y="-10.16" size="1.778" layer="95"/>
@@ -10162,11 +10172,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="BLUETOOTH_UART" gate="A" pin="4"/>
-<wire x1="-91.44" y1="63.5" x2="-96.52" y2="63.5" width="0.1524" layer="91"/>
-<label x="-96.52" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="PGEC2/PWM1L3/RP11/CN15/PMD1/RB11"/>
 <wire x1="-63.5" y1="5.08" x2="-68.58" y2="5.08" width="0.1524" layer="91"/>
 <label x="-68.58" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -10174,22 +10179,12 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="BLUETOOTH_UART" gate="A" pin="5"/>
-<wire x1="-91.44" y1="60.96" x2="-104.14" y2="60.96" width="0.1524" layer="91"/>
-<label x="-104.14" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="PGED2/EMCD2/PWM1H3/RP10/CN16/PMD2/RB10"/>
 <wire x1="-63.5" y1="7.62" x2="-68.58" y2="7.62" width="0.1524" layer="91"/>
 <label x="-68.58" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CTS" class="0">
-<segment>
-<pinref part="BLUETOOTH_UART" gate="A" pin="6"/>
-<wire x1="-91.44" y1="58.42" x2="-96.52" y2="58.42" width="0.1524" layer="91"/>
-<label x="-96.52" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="PWM1H2/DAC1RP/RP12/CN14/PMD0/RB12"/>
 <wire x1="-63.5" y1="2.54" x2="-68.58" y2="2.54" width="0.1524" layer="91"/>
@@ -10248,22 +10243,6 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="-269.24" y1="-45.72" x2="-269.24" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="INPUT"/>
-<wire x1="-256.54" y1="-45.72" x2="-269.24" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="LINEAR_REGULATOR_5V" gate="A" pin="OUT"/>
-<wire x1="-292.1" y1="-45.72" x2="-281.94" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="-281.94" y1="-45.72" x2="-274.32" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-274.32" y1="-45.72" x2="-269.24" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-281.94" y1="-45.72" x2="-281.94" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-281.94" y="-45.72"/>
-<wire x1="-274.32" y1="-45.72" x2="-274.32" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-274.32" y="-45.72"/>
-<label x="-274.32" y="-33.02" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP1(GP2Y0A51SK0F)" gate="A" pin="1"/>
 <wire x1="-33.02" y1="-109.22" x2="-17.78" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-109.22" x2="-17.78" y2="-104.14" width="0.1524" layer="91"/>
@@ -10292,6 +10271,57 @@ Source: &lt;a href="https://abracon.com/Resonators/abm8.pdf"&gt; Datasheet &lt;/
 <wire x1="83.82" y1="-104.14" x2="83.82" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-104.14" x2="88.9" y2="-104.14" width="0.1524" layer="91"/>
 <junction x="83.82" y="-104.14"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="LINEAR_REGULATOR_5V" gate="A" pin="OUT"/>
+<wire x1="-269.24" y1="-10.16" x2="-259.08" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-259.08" y1="-10.16" x2="-259.08" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-259.08" y1="-10.16" x2="-246.38" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-259.08" y="-10.16"/>
+<label x="-246.38" y="-10.16" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="83.82" y1="116.84" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<wire x1="63.5" y1="116.84" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED5" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
+<label x="55.88" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED4" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<label x="78.74" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="83.82" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED3" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="127" x2="99.06" y2="127" width="0.1524" layer="91"/>
+<label x="99.06" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED2" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<label x="121.92" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="127" y1="127" x2="121.92" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
