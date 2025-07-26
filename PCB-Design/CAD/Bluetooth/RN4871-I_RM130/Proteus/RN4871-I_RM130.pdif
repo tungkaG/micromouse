@@ -1,0 +1,238 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "RN4871-I_RM130"
+   (description "Bluetooth BLE Module, Shielded, Antenna,")
+   (family "ANA")
+   (package "RN4871")
+   (attribute "Datasheet Link" "http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pdf")
+   (attribute "Mouser Part Number" "579-RN4871IRM130")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM130?qs=MLItCLRbWswoZsrzvVbGYw%3D%3D")
+   (attribute "Manufacturer_Name" "Microchip")
+   (attribute "Manufacturer_Part_Number" "RN4871-I/RM130")
+   (gate
+    (symbol "RN4871-I_RM130")
+    (pin "NC" 1 NC)
+    (pin "GND_1" 2 PS)
+    (pin "P1_2" 3 PS)
+    (pin "P1_3" 4 PS)
+    (pin "P1_7" 5 PS)
+    (pin "P1_6" 6 PS)
+    (pin "UART_RX" 7 PS)
+    (pin "UART_TX" 8 PS)
+    (pin "P3_6" 9 PS)
+    (pin "RST_N" 10 PS)
+    (pin "P0_0" 11 PS)
+    (pin "P0_2" 12 PS)
+    (pin "GND_2" 13 PS)
+    (pin "VBAT" 14 PS)
+    (pin "P2_7" 15 PS)
+    (pin "P2_0" 16 PS)
+   )
+  )
+  (symbol "RN4871-I_RM130"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1100 100) (pt 1100 -800) (pt 200 -800) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -700) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -600) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -700) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "RN4871"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -4.5 11.5)
+      (pt 4.5 11.5)
+      (pt 4.5 0)
+      (pt -4.5 0)
+      (pt -4.5 11.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -4.5 11.5)
+      (pt 4.5 11.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -4.5 11.5)
+      (pt -4.5 7.475))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 4.5 11.5)
+      (pt 4.5 7.475))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -4.5 0)
+      (pt -4.5 1.139))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 4.5 0)
+      (pt 4.5 1.139))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -4.5 0)
+      (pt -3.715 0))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 4.5 0)
+      (pt 3.715 0))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (circle
+      (pt -5.672 6.741) (pt -5.582 6.741)
+     )
+    )
+   )
+   (leg 1 (pt -4.25 6.7) (padstack 0))
+   (leg 2 (pt -4.25 5.5) (padstack 0))
+   (leg 3 (pt -4.25 4.3) (padstack 0))
+   (leg 4 (pt -4.25 3.1) (padstack 0))
+   (leg 5 (pt -4.25 1.9) (padstack 0))
+   (leg 6 (pt -3 0.25) (padstack 6))
+   (leg 7 (pt -1.8 0.25) (padstack 7))
+   (leg 8 (pt -0.6 0.25) (padstack 8))
+   (leg 9 (pt 0.6 0.25) (padstack 9))
+   (leg 10 (pt 1.8 0.25) (padstack 10))
+   (leg 11 (pt 3 0.25) (padstack 11))
+   (leg 12 (pt 4.25 1.9) (padstack 0))
+   (leg 13 (pt 4.25 3.1) (padstack 0))
+   (leg 14 (pt 4.25 4.3) (padstack 0))
+   (leg 15 (pt 4.25 5.5) (padstack 0))
+   (leg 16 (pt 4.25 6.7) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.5 0 0 0))
+   )
+   (padstack 6
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.5 0 0 90))
+   )
+   (padstack 7
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.5 0 0 90))
+   )
+   (padstack 8
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.5 0 0 90))
+   )
+   (padstack 9
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.5 0 0 90))
+   )
+   (padstack 10
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.5 0 0 90))
+   )
+   (padstack 11
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.5 0 0 90))
+   )
+   (model "RN4871-I_RM130.stp"
+    (euler 90 0 0)
+    (offset 0 5.75 0)
+   )
+  )
+ )
+)

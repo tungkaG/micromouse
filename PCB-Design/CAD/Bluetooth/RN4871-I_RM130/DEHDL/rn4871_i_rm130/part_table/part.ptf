@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RN4871_I_RM130'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Microchip", "RN4871-I/RM130" (!) = "", "RN4871", "Other", "579-RN4871IRM130", "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM130?qs=MLItCLRbWswoZsrzvVbGYw%3D%3D", "Bluetooth BLE Module, Shielded, Antenna,", "http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pdf"
+END_PART
+
+END.

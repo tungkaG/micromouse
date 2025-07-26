@@ -1,0 +1,16 @@
+.RN4871-I_RM130 :1 ;Bluetooth BLE Module, Shielded, Antenna,
+RN4871
+*STM IC
+*NGS
+*PLB 1="NC" 2="GND_1" 3="P1_2" 4="P1_3" 5="P1_7" 6="P1_6" 7="UART_RX" 8="UART_TX" 9="P3_6" 10="RST_N" 11="P0_0" 12="P0_2" 13="GND_2" 14="VBAT" 15="P2_7" 16="P2_0"
+*MXP 16
+*DFN RN4871-I_RM130
+~!Mouser Part Number (579-RN4871IRM130)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM130?qs=MLItCLRbWswoZsrzvVbGYw%3D%3D)
+~!Manufacturer_Name (Microchip)
+~!Manufacturer_Part_Number (RN4871-I/RM130)
+~!Link Datasheet (http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pdf)
+~!Height (-)
+~!3D_Model (RN4871-I_RM130)
+RN4871-I_RM130
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 

@@ -1,0 +1,9 @@
+Manufacturer=Microchip
+PartNumber=RN4871-I/RM130
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=16
+Version=1.1
+Released=2018-10-30 12:55:07
+Downloaded=2025-07-26 18:21:03
+3D=Y

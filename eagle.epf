@@ -269,6 +269,7 @@ UsedLibrary="/home/olivia/TUM/Mouse/micromouse/custom parts/DSPIC33FJ64MC804-H_P
 UsedLibrary="/home/olivia/TUM/Mouse/micromouse/custom parts/GP2Y0A51SK0F.lbr"
 UsedLibrary="/home/olivia/TUM/Mouse/micromouse/PCB-Design/CAD/H-Bridge/TB6612FNG,C,8,EL/EAGLE/TB6612FNG_C_8_EL.lbr"
 UsedLibrary="/home/olivia/TUM/Mouse/micromouse/PCB-Design/CAD/Osc/ABM8-20.000MHZ-B2-T/EAGLE/ABM8-20.000MHZ-B2-T.lbr"
+UsedLibrary="/home/olivia/TUM/Mouse/micromouse/PCB-Design/CAD/Bluetooth/RN4871-I_RM130/EAGLE/RN4871-I_RM130.lbr"
 
 [Win_1]
 Type="Control Panel"
