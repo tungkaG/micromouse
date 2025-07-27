@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,12 +53,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -9125,7 +9125,7 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <part name="C5" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C8" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
+<part name="C8" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="10uF"/>
 <part name="C9" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="10uF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="BATTERY" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
@@ -9193,6 +9193,17 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <part name="BLUETOOTH" library="RN4871-I_RM130" deviceset="RN4871-I_RM130" device=""/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C24" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
+<part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C25" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
+<part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C26" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
+<part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C27" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
+<part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9490,17 +9501,17 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <instance part="GND37" gate="1" x="129.54" y="-12.7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="132.08" y="-15.24" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C6" gate="G$1" x="-73.66" y="-15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="-13.716" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-68.961" y="-13.716" size="1.778" layer="96"/>
+<instance part="C6" gate="G$1" x="-86.36" y="-17.78" smashed="yes">
+<attribute name="NAME" x="-84.836" y="-14.859" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-84.836" y="-22.479" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C10" gate="G$1" x="134.62" y="15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="134.239" y="16.764" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="139.319" y="16.764" size="1.778" layer="96" rot="R90"/>
+<instance part="C10" gate="G$1" x="157.48" y="10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="155.956" y="9.779" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="155.956" y="14.859" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C11" gate="G$1" x="139.7" y="-15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="134.239" y="-13.716" size="1.778" layer="95"/>
-<attribute name="VALUE" x="144.399" y="-13.716" size="1.778" layer="96"/>
+<instance part="C11" gate="G$1" x="157.48" y="-20.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="155.956" y="-25.781" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="155.956" y="-15.621" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C21" gate="G$1" x="-109.22" y="-17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="-109.601" y="-16.256" size="1.778" layer="95" rot="R90"/>
@@ -9526,6 +9537,43 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 </instance>
 <instance part="GND39" gate="1" x="-119.38" y="53.34" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-116.84" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C24" gate="G$1" x="213.36" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="212.979" y="75.184" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="218.059" y="75.184" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND40" gate="1" x="223.52" y="73.66" smashed="yes" rot="R90">
+<attribute name="VALUE" x="226.06" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="C25" gate="G$1" x="294.64" y="81.28" smashed="yes">
+<attribute name="NAME" x="296.164" y="81.661" size="1.778" layer="95"/>
+<attribute name="VALUE" x="296.164" y="76.581" size="1.778" layer="96"/>
+</instance>
+<instance part="GND41" gate="1" x="294.64" y="71.12" smashed="yes">
+<attribute name="VALUE" x="294.64" y="68.58" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C26" gate="G$1" x="294.64" y="55.88" smashed="yes">
+<attribute name="NAME" x="296.164" y="56.261" size="1.778" layer="95"/>
+<attribute name="VALUE" x="296.164" y="51.181" size="1.778" layer="96"/>
+</instance>
+<instance part="GND42" gate="1" x="294.64" y="45.72" smashed="yes">
+<attribute name="VALUE" x="294.64" y="43.18" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C27" gate="G$1" x="-114.3" y="45.72" smashed="yes">
+<attribute name="NAME" x="-112.776" y="46.101" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-112.776" y="41.021" size="1.778" layer="96"/>
+</instance>
+<instance part="GND43" gate="1" x="-114.3" y="35.56" smashed="yes">
+<attribute name="VALUE" x="-114.3" y="33.02" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND44" gate="1" x="157.48" y="-25.4" smashed="yes">
+<attribute name="VALUE" x="154.94" y="-27.94" size="1.778" layer="96"/>
+</instance>
+<instance part="GND45" gate="1" x="157.48" y="5.08" smashed="yes">
+<attribute name="VALUE" x="154.94" y="2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="GND46" gate="1" x="-86.36" y="-25.4" smashed="yes">
+<attribute name="VALUE" x="-88.9" y="-27.94" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9762,6 +9810,38 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <wire x1="-124.46" y1="53.34" x2="-121.92" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND39" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="2"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+<wire x1="218.44" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+<wire x1="294.64" y1="76.2" x2="294.64" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="294.64" y1="50.8" x2="294.64" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C27" gate="G$1" pin="2"/>
+<pinref part="GND43" gate="1" pin="GND"/>
+<wire x1="-114.3" y1="40.64" x2="-114.3" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="GND45" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="GND46" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="AN0" class="0">
 <segment>
@@ -9847,18 +9927,16 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <label x="-53.34" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="STBY" class="0">
-<segment>
-<pinref part="DEBUGGING_PO" gate="A" pin="5"/>
-<wire x1="-43.18" y1="63.5" x2="-53.34" y2="66.04" width="0.1524" layer="91"/>
-<label x="-53.34" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="PWM_L" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="PWMA"/>
 <wire x1="185.42" y1="83.82" x2="187.96" y2="83.82" width="0.1524" layer="91"/>
 <label x="187.96" y="83.82" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<label x="50.8" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MTRDRV_AIN1" class="0">
@@ -9891,8 +9969,8 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="BIN1"/>
-<wire x1="185.42" y1="68.58" x2="208.28" y2="68.58" width="0.1524" layer="91"/>
-<label x="208.28" y="68.58" size="1.778" layer="95" xref="yes"/>
+<wire x1="185.42" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
+<label x="215.9" y="68.58" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MTRDRV_BIN2" class="0">
@@ -9908,8 +9986,8 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="BIN2"/>
-<wire x1="185.42" y1="66.04" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
-<label x="187.96" y="66.04" size="1.778" layer="95" xref="yes"/>
+<wire x1="185.42" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
+<label x="195.58" y="66.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MTRDRV_AIN2" class="0">
@@ -10194,30 +10272,6 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <wire x1="35.56" y1="68.58" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED4" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<label x="30.48" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="35.56" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="MICROCHIP" gate="A" pin="PWM1H2/DAC1RP/RP12/CN14/PMD0/RB12"/>
-<wire x1="-63.5" y1="2.54" x2="-66.04" y2="2.54" width="0.1524" layer="91"/>
-<label x="-66.04" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LED3" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<label x="50.8" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="MICROCHIP" gate="A" pin="PGEC2/PWM1L3/RP11/CN15/PMD1/RB11"/>
-<wire x1="-63.5" y1="5.08" x2="-66.04" y2="5.08" width="0.1524" layer="91"/>
-<label x="-66.04" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="LED2" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -10233,18 +10287,30 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <net name="3.3V" class="0">
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="4"/>
-<wire x1="274.32" y1="86.36" x2="276.86" y2="86.36" width="0.1524" layer="91"/>
-<label x="276.86" y="86.36" size="1.778" layer="95" xref="yes"/>
+<wire x1="274.32" y1="86.36" x2="294.64" y2="86.36" width="0.1524" layer="91"/>
+<label x="299.72" y="86.36" size="1.778" layer="95" xref="yes"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="86.36" x2="299.72" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="86.36" x2="294.64" y2="83.82" width="0.1524" layer="91"/>
+<junction x="294.64" y="86.36"/>
 </segment>
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="4"/>
-<wire x1="274.32" y1="60.96" x2="276.86" y2="60.96" width="0.1524" layer="91"/>
-<label x="276.86" y="60.96" size="1.778" layer="95" xref="yes"/>
+<label x="299.72" y="60.96" size="1.778" layer="95" xref="yes"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="274.32" y1="60.96" x2="294.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="60.96" x2="294.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="60.96" x2="299.72" y2="60.96" width="0.1524" layer="91"/>
+<junction x="294.64" y="60.96"/>
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="VCC"/>
-<wire x1="185.42" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
-<label x="210.82" y="76.2" size="1.778" layer="95" xref="yes"/>
+<wire x1="185.42" y1="76.2" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
+<label x="226.06" y="76.2" size="1.778" layer="95" xref="yes"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="76.2" x2="226.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="76.2" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PROGRAMMER_PO" gate="A" pin="2"/>
@@ -10278,13 +10344,19 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-76.2" y1="-15.24" x2="-83.82" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-83.82" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-86.36" y1="-15.24" x2="-88.9" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-88.9" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="AVDD"/>
+<wire x1="-86.36" y1="-15.24" x2="-63.5" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="-86.36" y="-15.24"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="15.24" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
-<label x="142.24" y="15.24" size="1.778" layer="95" xref="yes"/>
+<wire x1="157.48" y1="15.24" x2="162.56" y2="15.24" width="0.1524" layer="91"/>
+<label x="162.56" y="15.24" size="1.778" layer="95" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="VDD"/>
+<wire x1="124.46" y1="15.24" x2="157.48" y2="15.24" width="0.1524" layer="91"/>
+<junction x="157.48" y="15.24"/>
 </segment>
 <segment>
 <pinref part="S2" gate="BEF1" pin="S"/>
@@ -10293,13 +10365,20 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="-15.24" x2="147.32" y2="-15.24" width="0.1524" layer="91"/>
-<label x="147.32" y="-15.24" size="1.778" layer="95" xref="yes"/>
+<wire x1="157.48" y1="-15.24" x2="162.56" y2="-15.24" width="0.1524" layer="91"/>
+<label x="162.56" y="-15.24" size="1.778" layer="95" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="VDD_2"/>
+<wire x1="124.46" y1="-15.24" x2="157.48" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="157.48" y="-15.24"/>
 </segment>
 <segment>
 <pinref part="BLUETOOTH" gate="G$1" pin="VBAT"/>
-<wire x1="-124.46" y1="50.8" x2="-121.92" y2="50.8" width="0.1524" layer="91"/>
-<label x="-121.92" y="50.8" size="1.778" layer="95" xref="yes"/>
+<wire x1="-124.46" y1="50.8" x2="-114.3" y2="50.8" width="0.1524" layer="91"/>
+<label x="-111.76" y="50.8" size="1.778" layer="95" xref="yes"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="50.8" x2="-111.76" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="50.8" x2="-114.3" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-114.3" y="50.8"/>
 </segment>
 </net>
 <net name="PMW_L" class="0">
@@ -10375,15 +10454,13 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="PWMB"/>
-<wire x1="185.42" y1="63.5" x2="198.12" y2="60.96" width="0.1524" layer="91"/>
-<label x="198.12" y="60.96" size="1.778" layer="95" xref="yes"/>
+<wire x1="185.42" y1="63.5" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
+<label x="215.9" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="N$8" class="0">
 <segment>
-<pinref part="MICROCHIP" gate="A" pin="AVDD"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="-63.5" y1="-15.24" x2="-68.58" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<label x="30.48" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="35.56" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -10391,13 +10468,6 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <pinref part="MICROCHIP" gate="A" pin="!MCLR"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="-63.5" y1="-17.78" x2="-104.14" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="MICROCHIP" gate="A" pin="VDD"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="15.24" x2="132.08" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -10419,18 +10489,16 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <wire x1="187.96" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="MICROCHIP" gate="A" pin="VDD_2"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="-15.24" x2="137.16" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RX" class="0">
 <segment>
 <pinref part="BLUETOOTH" gate="G$1" pin="UART_RX"/>
 <wire x1="-157.48" y1="48.26" x2="-160.02" y2="48.26" width="0.1524" layer="91"/>
 <label x="-160.02" y="48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MICROCHIP" gate="A" pin="RP21/CN26/PMA3/RC5"/>
+<wire x1="124.46" y1="10.16" x2="137.16" y2="10.16" width="0.1524" layer="91"/>
+<label x="137.16" y="10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -10438,6 +10506,11 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002489C.pd
 <pinref part="BLUETOOTH" gate="G$1" pin="UART_TX"/>
 <wire x1="-157.48" y1="45.72" x2="-160.02" y2="45.72" width="0.1524" layer="91"/>
 <label x="-160.02" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MICROCHIP" gate="A" pin="RP20/CN25/PMA4/RC4"/>
+<wire x1="124.46" y1="7.62" x2="144.78" y2="7.62" width="0.1524" layer="91"/>
+<label x="144.78" y="7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$20" class="0">
