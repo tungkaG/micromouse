@@ -22,27 +22,15 @@
 #include "switches.h"
 #include "timers.h"
 
+#include "highLevelPlanning.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <xc.h>
-#include <stdbool.h>
-#include <limits.h>
 
-typedef enum { STOP, FORWARD, TURN_LEFT_90, TURN_RIGHT_90, TURN_180 } command_t;
-
-typedef enum { FREE, WALL, UNKNOWN } wall_t;
-
-typedef enum { UP, LEFT, DOWN, RIGHT } heading_t;
-
-typedef enum { IDLE, EXPLORING_PATH_TO_GOAL, EXPLORING_TEMP_BEST_PATH, RETURN_TO_START, DRIVE_TO_GOAL } state_t;
-
-#define FORWARD_SPEED 10.0
 #define TURNING_SPEED 10.0
-#define GRID_SIZE 6
-#define START_X 0
-#define START_Y 0
-#define START_HEADING DOWN
+// #define FORWARD_SPEED 10.0
+volatile int FORWARD_SPEED = 10.0;  // to make it editable via the UART Receive
 
 typedef struct {
     float Kp;
@@ -52,61 +40,11 @@ typedef struct {
     float output_max;
 } PIController;
 
-typedef struct {
-    uint8_t x, y;
-} Cell;
-
-
-// offsets for surrounding cells (UP, LEFT, DOWN, RIGHT)
-static const int dx[4] = { 0, -1, 0, 1 };
-static const int dy[4] = { -1, 0, 1, 0 };
-static int opposite[4] = { 2,  3, 0, 1 }; 
-
 volatile float setpoint = 0.0f;  // target speed (rad/s)
-
 PIController motorPI_left;
 PIController motorPI_right;
 volatile long startAngleLeft = 0;
 volatile long startAngleRight = 0;
-
-
-volatile int action_enabled = 0;
-command_t curr_cmd = STOP;
-state_t state = IDLE;
-
-wall_t grid[GRID_SIZE][GRID_SIZE][4];
-int dist[GRID_SIZE][GRID_SIZE];
-
-Cell curr_cell = {START_X, START_Y}; // current grid positions (0 to GRID_SIZE-1)
-Cell next_cell = {START_X, START_Y}; // Next cell to move to (0 to GRID_SIZE-1)
-volatile heading_t curr_heading=START_HEADING;   // current heading (UP, LEFT, DOWN, RIGHT)
-
-
-void resetGrid() {
-    curr_cell = (Cell){START_X, START_Y};
-    next_cell = (Cell){START_X, START_Y};
-    curr_heading = START_HEADING;
-    
-    // init grid by setting all walls to unknown
-    for (int i = 0; i < GRID_SIZE; i++) {
-        for (int j = 0; j < GRID_SIZE; j++) {
-            for (int k = 0; k < 4; k++) {
-                grid[i][j][k] = UNKNOWN;
-            }
-        }
-    }
-    
-    // set borders of maze to WALL
-    for(int i=0;i<GRID_SIZE;i++){
-        grid[0][i][UP] = WALL;
-        grid[GRID_SIZE-1][i][DOWN] = WALL;
-        grid[i][0][LEFT] = WALL;
-        grid[i][GRID_SIZE-1][RIGHT] = WALL;
-    }
-    
-    // set back of start cell (opposite of heading) to WALL
-    grid[curr_cell.y][curr_cell.x][opposite[curr_heading]] = WALL;
-}
 
 void PI_Init(PIController *pi, float Kp, float Ki, float output_min, float output_max) {
     pi->Kp = Kp;
@@ -193,13 +131,12 @@ void toggle_led4(unsigned int registerContent)
     LED4 = !LED4;
 }
 
-// TODO: not working (?)
 void uartReceiver(unsigned int rxData) {
-    
+        
     static char input[10];
     static int readInput = -1;
     static int decimalOccured = 0;
-    // read data from UART like "<70.352>"
+    // read data from UART like "<15.352>"
     if (rxData == '<' && readInput == -1) {	
         // clear current input and start reading;
         input[0] = '\0';
@@ -210,12 +147,15 @@ void uartReceiver(unsigned int rxData) {
         input[readInput] = '\0'; // null-terminate the string
 
         float value = atof(input); // convert string to float
+        
+        // to set setpoint in % between -1.0 and 1.0
+        /*
         value = value / 100; // convert to percentage
 
         if (value < -1.0f || value > 1.0f) {
             // printf("Error: Value out of range (0.0 to 1.0)\n");
             char *errorMsg = "Error: PWM out of range.\n";
-            UART_TXString(errorMsg); // send error message to UART
+            // UART_TXString(errorMsg); // send error message to UART
         } else {
             // P1DC1 = (int) (value*0.81*MYPWM_MAX);
             
@@ -230,16 +170,21 @@ void uartReceiver(unsigned int rxData) {
             
             // putsUART1(msg); // send the message to UART
             // putsUART1(valueStr); // send the message to UART
-            UART_TXFloat(value);
+            // UART_TXFloat(value);
 
+        }
+         * */
+        
+        if (value >= 0.1f && value <= 18.0f) {
+            // update FORWARD_SPEED (in rad/s)
+            FORWARD_SPEED = value;
         }
 
         readInput = -1; // reset readInput for the next input
 
     } else if (readInput >= 0 && readInput < 9) {
         if ((rxData < '0' || rxData > '9') && (rxData != '.' || decimalOccured)) {
-            char *errorMsg = "E: PWM input invalid.\n";
-            UART_TXString(errorMsg); // send error message to UART
+            // invalid input (no digit or decimal point)
             readInput = -1;
             
             // Flush remaining characters until '>' or buffer empty
@@ -257,323 +202,36 @@ void uartReceiver(unsigned int rxData) {
     }
 }
 
-// checks if cell (x,y) has at least one UNKNOWN
-bool has_unknown(uint8_t x, uint8_t y) {
-    for (int d = 0; d < 4; d++) {
-        if (grid[y][x][d] == UNKNOWN) {
-            return true;
-        }
-    }
-    return false;
-}
-
-// Precondition: next_cell is a direct neighbour of curr_cell
-// Determines if mouse should turn or go forward to get (in the direction of) next cell
-command_t translate_next_cell_to_cmd()
-{
-    heading_t want_h;
-    int dx = next_cell.x - curr_cell.x;
-    int dy = next_cell.y - curr_cell.y;
-    if      (dx ==  0 && dy == -1) want_h = UP;
-    else if (dx == -1 && dy ==  0) want_h = LEFT;
-    else if (dx ==  1 && dy ==  0) want_h = RIGHT;
-    else if (dx ==  0 && dy ==  1) want_h = DOWN;
-    else {
-        // invalid step
-        return STOP;
-    }
-
-    if (want_h == curr_heading) {
-        return FORWARD;
-    }
+// send curr_cell and grid (down and right walls of each cell) over UART
+void uart_print_grid(void) {
+    char line[32];
     
-    if ((curr_heading+1)%4 == want_h) {
-        return TURN_LEFT_90;
-    }
-    
-    // workaround for (curr_heading-1)%4
-    if ((curr_heading+3)%4 == want_h) {
-        return TURN_RIGHT_90;
-    }
-    
-    return TURN_180;
-}
+    // send curr_cell
+    int n = snprintf(line, sizeof(line), "POS %u %u %u\nNEXT %u %u\n", curr_cell.x, curr_cell.y, curr_heading, next_cell.x, next_cell.y);
+    if (n > 0) UART_TXString(line);
 
-// update grid at curr_cell with new sensor information
-void update_cell(int d, wall_t w) {
-    // mark this cell
-    grid[curr_cell.y][curr_cell.x][d] = w;
-    // mark neighbour too, if in bounds
-    int nx = curr_cell.x + dx[d], ny = curr_cell.y + dy[d];
-    if (nx >= 0 && nx < GRID_SIZE && ny >= 0 && ny < GRID_SIZE) {
-        grid[ny][nx][opposite[d]] = w;
-    }
-}
-
-// build a distance field around goals
-void build_distance_field(Cell goals[4], int num_goals) {
-    // initialize all distances to infinite
-    for (int y=0; y<GRID_SIZE; y++)
-        for (int x=0; x<GRID_SIZE; x++)
-            dist[y][x] = INT_MAX;
-
-    // BFS queue
-    Cell queue[GRID_SIZE*GRID_SIZE];
-    // queue_pointer keeps track of current queue element, queue_counter keeps track of total number of added cells
-    int queue_pointer = 0, queue_counter = 0;
-    
-    // set goals to distance 0
-    for (int i=0; i<num_goals; i++) {
-        Cell g = goals[i];
-        dist[g.y][g.x] = 0;
-        queue[queue_counter] = g;
-        queue_counter++;
-    }
-
-    // BFS
-    while (queue_pointer < queue_counter) {
-        Cell c = queue[queue_pointer];
-        queue_pointer++;
-        int cd = dist[c.y][c.x];
-        for (int d=0; d<4; d++) {
-            int nx = c.x + dx[d], ny = c.y + dy[d];
-            // check if new cell is in bounds and not a wall
-            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[c.y][c.x][d] == WALL) continue;
-            if (dist[ny][nx] > cd + 1) {
-                dist[ny][nx] = cd + 1;
-                queue[queue_counter] = (Cell){nx,ny};
-                queue_counter++;
+    // for each row:
+    for (int y = 0; y < GRID_SIZE; y++) {
+        // first send all DOWNS of row y, then all RIGHTS of row y
+        for (int d = DOWN; d <= RIGHT; d++) {
+            int idx = 0;
+            for (int x = 0; x < GRID_SIZE; x++) {
+                wall_t w = grid[y][x][d];
+                line[idx++] = (w == WALL   ? '#'
+                              : w == FREE   ? '.'
+                                            : '?');
             }
-        }
-    }
-}
-
-// test if curr_cell is one of the goal cells
-bool goal_reached(Cell *goals, int num_goals) {
-    for (int i=0; i<num_goals; i++) {
-        if (curr_cell.x == goals[i].x && curr_cell.y == goals[i].y) {
-            return true;
-        }
-    }
-    return false;
-}
-
-// in provisional_path[] we store the current best path from middle (goals) to start (provisional_path[0] is goal cell)
-int calculate_path_to_goal(Cell *provisional_path) {
-    int provisional_path_len = 0;
-
-    // go from START_X, START_Y the fastest way to the first goal cell
-    Cell curr_provisional = {START_X, START_Y};
-    // inital heading when starting to goal will be facing a wall -> choose opposite of start heading
-    heading_t provisional_heading = opposite[START_HEADING];
-    
-    while (dist[curr_provisional.y][curr_provisional.x] != 0) {
-        // find next cell with distance one less
-        int best_d = INT_MAX;
-        heading_t best_dir = -1;
-        Cell next_provisional = {0xFF, 0xFF}; // invalid cell
-        for (int d=0; d<4; d++) {
-            // start with current (provisional) heading + 1, such that current (provisional) heading is chosen as next cell (if multiple options have the same distance)
-            int n_heading = (provisional_heading + 1 + d) % 4;
-            int nx = curr_provisional.x + dx[n_heading], ny = curr_provisional.y + dy[n_heading];
-
-            // check if new cell is in bounds and not a wall
-            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr_provisional.y][curr_provisional.x][n_heading] == WALL) continue;
-
-            int cd = dist[ny][nx];
-            // if current distance is better or equal than best_d (=giving priority to the last tested heading, which is our current (most desired) heading),
-            // then we have a new best direction
-            if (cd <= best_d) {
-                best_d = cd;
-                next_provisional = (Cell){nx, ny};
-                best_dir = n_heading;
-            }
-        }
-        if (next_provisional.x == 0xFF) {
-            // no next cell found -> no path to goals found
-            return 0;
-        }
-        
-        provisional_path[provisional_path_len] = next_provisional;
-        provisional_path_len++;
-        curr_provisional = next_provisional;
-        provisional_heading = best_dir; // update provisional heading to next cell's heading
-    }
-
-    // reverse provisional path to have path from goal to start
-    for (int i=0; i<provisional_path_len/2; i++) {
-        Cell tmp = provisional_path[i];
-        provisional_path[i] = provisional_path[provisional_path_len-1-i];
-        provisional_path[provisional_path_len-1-i] = tmp;
-    }
-    return provisional_path_len;
-}
-
-Cell find_unknown_in_provisional_path() {
-    // new target is end of path that is temporarily planned from start to goal
-    Cell *goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
-    int num_goals = 4;
-    build_distance_field(goals, num_goals);
-
-    Cell provisional_path[GRID_SIZE * GRID_SIZE];
-    int provisional_path_len = calculate_path_to_goal(provisional_path);
-    int provisional_path_counter = 0;
-
-    // now in path[] we have the path from middle (goals) to start (provisional_path[0] is goal cell) -> find the last cell that has UNKNOWN walls
-    for (; provisional_path_counter < provisional_path_len; provisional_path_counter++) {
-        if (has_unknown(provisional_path[provisional_path_counter].x, provisional_path[provisional_path_counter].y)) {
-            // provisional_path[provisional_path_counter] has UNKNOWN walls -> go to this cell next
-            return provisional_path[provisional_path_counter];
-        }
-    }
-
-    // no cell found with UNKNOWN walls -> next goal cell is start cell
-    return (Cell){START_X, START_Y};
-}
-
-void get_new_best_direction(int *best_dir) {
-    int best_d = INT_MAX;
-    
-    for (int d = 0; d < 4; d++) {
-        // start with current heading + 1, such that current heading is chosen as next cell (if multiple options have the same distance)
-        int n_heading = (curr_heading + 1 + d) % 4;
-        int nx = curr_cell.x + dx[n_heading], ny = curr_cell.y + dy[n_heading];
-        // check if new cell is in bounds and not a wall
-        if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr_cell.y][curr_cell.x][n_heading] == WALL) continue;
-
-        int cd = dist[ny][nx];
-        // if current distance is better than best_d, or if it is equal and 
-        // the cell has at least one UNKNOWN (in Explore or Return state)
-        // or has no unknown walls (in Drive_to_Goal) to take paths that are already explored if possible
-        // then we have a new best direction
-        if (cd < best_d || (cd == best_d && (state == DRIVE_TO_GOAL ? !has_unknown(nx, ny) : has_unknown(nx, ny)))) {
-            best_d = cd;
-            *best_dir = n_heading;
-        }
-    }
-    
-    // no neighbor is reachable -> error
-    if (best_d == INT_MAX) {
-        *best_dir = -1;
-    }
-}
-
-command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
-    if (curr_cell.x == next_cell.x && curr_cell.y == next_cell.y) {
-        // reached next cell
-        
-        int best_dir = -1;
-        Cell *goals;
-        int num_goals = 0;
-        switch (state) {
-            case IDLE:
-                toggle_led2();
-                action_enabled = 0;
-                return STOP;
-                
-                break;
-            case EXPLORING_PATH_TO_GOAL:
-                update_cell(curr_heading, front_wall);
-                update_cell((curr_heading+1)%4, left_wall);
-                update_cell((curr_heading+3)%4, right_wall);
-
-                goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
-                num_goals = 4;
-
-                if (goal_reached(goals, num_goals)) {
-                    // new state is EXPLORING_TEMP_BEST_PATH
-                    state = EXPLORING_TEMP_BEST_PATH;
-
-                    goals = (Cell[]){find_unknown_in_provisional_path()};
-                    // goals is either START_X/Y cell or the last cell in provisional_path with UNKNOWN walls
-                    num_goals = 1;
-
-                    if (goals[0].x == START_X && goals[0].y == START_Y) {
-                        // no cell with UNKNOWN walls found -> new state is RETURN_TO_START
-                        state = RETURN_TO_START;
-                        // build distance field to START_X/Y
-                    }
-                    // else: build distance field to last cell in provisional_path with UNKNOWN walls
-                }             
-                break;
-            case EXPLORING_TEMP_BEST_PATH:
-                update_cell(curr_heading, front_wall);
-                update_cell((curr_heading+1)%4, left_wall);
-                update_cell((curr_heading+3)%4, right_wall);
-
-                goals = (Cell[]){find_unknown_in_provisional_path()};
-                // goals is either START_X/Y cell or the last cell in provisional_path with UNKNOWN walls
-                num_goals = 1;
-
-                if (goals[0].x == START_X && goals[0].y == START_Y) {
-                    // no cell with UNKNOWN walls found -> new state is RETURN_TO_START
-                    state = RETURN_TO_START;
-                    toggle_led2();
-                    // build distance field to START_X/Y
-                }
-                // else: build distance field to last cell in provisional_path with UNKNOWN walls
-                break;
-            case RETURN_TO_START:
-                update_cell(curr_heading, front_wall);
-                update_cell((curr_heading+1)%4, left_wall);
-                update_cell((curr_heading+3)%4, right_wall);
-                
-
-                goals = (Cell[]){{START_X,START_Y}};
-                num_goals = 1;
-
-                if (goal_reached(goals, num_goals)) {
-                    // returned to start, new state is DRIVE_TO_GOAL
-                    toggle_led2();
-                    state = DRIVE_TO_GOAL;
-                    // build distance field to goals 
-                    goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
-                    num_goals = 4;
-                }                
-                break;
-            case DRIVE_TO_GOAL:
-                // do this just in case we get stuck, but actually we should be able to not update path
-                update_cell(curr_heading, front_wall);
-                update_cell((curr_heading+1)%4, left_wall);
-                update_cell((curr_heading+3)%4, right_wall);
-                
-                goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
-                num_goals = 4;
-
-                if (goal_reached(goals, num_goals)) {
-                    // driven to goal -> go back to IDLE state
-                    state = IDLE;
-                    toggle_led2();
-                    action_enabled = 0;
-                    // reset grid
-                    resetGrid();
-                    return STOP;
-                }                
-                break;
-            default:
-                toggle_led2();
-                action_enabled = 0;                
-        }
-        // create distance fields with distances to specified goals
-        build_distance_field(goals, num_goals);
-        
-        // stores the new best_dir (UP, LEFT, DOWN, RIGHT) in best_dir
-        get_new_best_direction(&best_dir);
-
-        // no neighbor is reachable -> error
-        if (best_dir < 0) {
-            toggle_led2();
-            state = IDLE;
-            action_enabled = 0;
-            return STOP;
+            // append new line + null
+            line[idx++] = '\n';
+            line[idx]   = '\0';
+            UART_TXString(line);
         }
 
-        // update next_cell
-        next_cell = (Cell){curr_cell.x + dx[best_dir], curr_cell.y + dy[best_dir]};
+        // blank separator
+        UART_TXString("\n");
     }
-
-    // translate_next_cell_to_cmd generates next command to get from curr_cell to next_cell    
-    return translate_next_cell_to_cmd();
+    // final extra blank line
+    UART_TXString("\n");
 }
 
 int stream_sensor_data(void)
@@ -586,7 +244,7 @@ int stream_sensor_data(void)
     
     static long initial_counter = 0;
     static int last_forward = -1;
-    
+        
 
     // calculate current velocity of left wheel in rad/s
     long t_left = encoders_getTicksLeft();
@@ -631,6 +289,9 @@ int stream_sensor_data(void)
                     initial_counter++;
                     current_setpoint_left = 0.0;
                     current_setpoint_right = 0.0;
+                    
+                    // print grid while we are waiting (but make sure that setpoint is already 0 -> initial_counter == 0 and not 1)
+                    if (initial_counter == 1) uart_print_grid();
                 } else {
                     // next action possible:
                     curr_cmd = nextCmd(left_wall, right_wall, front_wall);
@@ -747,7 +408,7 @@ int stream_sensor_data(void)
             curr_cmd = STOP;
     }
     
-
+    
     float new_percentage_left = PI_Update(&motorPI_left, current_setpoint_left, curr_rad_left);
     motors_setMotorLeft(new_percentage_left);
     // apply_motor_output(new_percentage_left / 100.0);   // TODO: Drive H-bridge with signed % output
@@ -756,28 +417,7 @@ int stream_sensor_data(void)
     motors_setMotorRight(new_percentage_right);
     // apply_motor_output(new_percentage_right / 100.0);   // TODO: Drive H-bridge with signed % output
     
-    unsigned int a = 10;
-    int8_t b = 5;
-    long c = 20;
     
-    UART_TXint8(FRAME_MARKER); // start of visualizer frame
-    UART_TXint8(b);
-    UART_TXint8(b);
-    UART_TXint8(curr_cmd);
-    UART_TXUInt(a);
-    UART_TXUInt(a);
-    UART_TXUInt(a);
-    UART_TXLong(c);
-    UART_TXLong(c);
-    UART_TXFloat(left_dist);
-    UART_TXFloat(right_dist);
-    UART_TXFloat(new_percentage_left*100);
-    UART_TXFloat(new_percentage_right*100);
-    UART_TXFloat(curr_rad_left);
-    UART_TXFloat(curr_rad_right);
-    UART_TXLong(t_left);
-    UART_TXLong(t_right);
-    UART_TXint8(~FRAME_MARKER); // end of visualizer frame (one's complement of start marker)
 /*
     UART_TXint8(FRAME_MARKER); // start of visualizer frame
     UART_TXint8(sensors_readFront());
@@ -850,9 +490,7 @@ int main()
     switches_registerSW1Callback(&toggle_motors);
 
     // test UART callbacks
-    UART_registerRX1Callback(&toggle_led3);
-    UART_registerTX1Callback(&uartReceiver);
-
+    UART_registerRX1Callback(&uartReceiver);
 
     // infinite loop
     while (1) {}
