@@ -22,6 +22,7 @@
 #include "switches.h"
 #include "timers.h"
 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <xc.h>
@@ -62,30 +63,28 @@ static const int dy[4] = { -1, 0, 1, 0 };
 static int opposite[4] = { 2,  3, 0, 1 }; 
 
 volatile float setpoint = 0.0f;  // target speed (rad/s)
+
 PIController motorPI_left;
 PIController motorPI_right;
-command_t curr_cmd = STOP;
 volatile long startAngleLeft = 0;
 volatile long startAngleRight = 0;
+
+
 volatile int action_enabled = 0;
-
-wall_t grid[GRID_SIZE][GRID_SIZE][4];
-
-volatile uint8_t curr_x=START_X, curr_y=START_Y; // current grid positions (0 to GRID_SIZE-1)
-volatile heading_t curr_heading=START_HEADING;   // current heading (UP, LEFT, DOWN, RIGHT)
+command_t curr_cmd = STOP;
 state_t state = IDLE;
 
-volatile int path_len = 0;
-volatile int path_counter = 0;
-Cell path[GRID_SIZE * GRID_SIZE];
+wall_t grid[GRID_SIZE][GRID_SIZE][4];
 int dist[GRID_SIZE][GRID_SIZE];
+
+Cell curr_cell = {START_X, START_Y}; // current grid positions (0 to GRID_SIZE-1)
+Cell next_cell = {START_X, START_Y}; // Next cell to move to (0 to GRID_SIZE-1)
+volatile heading_t curr_heading=START_HEADING;   // current heading (UP, LEFT, DOWN, RIGHT)
 
 
 void resetGrid() {
-    path_len = 0;
-    path_counter = 0;
-    curr_x = START_X;
-    curr_y = START_Y;
+    curr_cell = (Cell){START_X, START_Y};
+    next_cell = (Cell){START_X, START_Y};
     curr_heading = START_HEADING;
     
     // init grid by setting all walls to unknown
@@ -106,7 +105,7 @@ void resetGrid() {
     }
     
     // set back of start cell (opposite of heading) to WALL
-    grid[curr_y][curr_x][opposite[curr_heading]] = WALL;
+    grid[curr_cell.y][curr_cell.x][opposite[curr_heading]] = WALL;
 }
 
 void PI_Init(PIController *pi, float Kp, float Ki, float output_min, float output_max) {
@@ -268,13 +267,13 @@ bool has_unknown(uint8_t x, uint8_t y) {
     return false;
 }
 
-// x_next and y_next should be direct neighbours of curr_x and curr_y
-// next_move determines if mouse should turn or go forward to get (in the direction of) next cell
-command_t next_move(int x_next, int y_next)
+// Precondition: next_cell is a direct neighbour of curr_cell
+// Determines if mouse should turn or go forward to get (in the direction of) next cell
+command_t translate_next_cell_to_cmd()
 {
     heading_t want_h;
-    int dx = x_next - curr_x;
-    int dy = y_next - curr_y;
+    int dx = next_cell.x - curr_cell.x;
+    int dy = next_cell.y - curr_cell.y;
     if      (dx ==  0 && dy == -1) want_h = UP;
     else if (dx == -1 && dy ==  0) want_h = LEFT;
     else if (dx ==  1 && dy ==  0) want_h = RIGHT;
@@ -300,12 +299,12 @@ command_t next_move(int x_next, int y_next)
     return TURN_180;
 }
 
-// update grid at curr_x, curr_y with new sensor information
-void updateCell(int d, wall_t w) {
+// update grid at curr_cell with new sensor information
+void update_cell(int d, wall_t w) {
     // mark this cell
-    grid[curr_y][curr_x][d] = w;
+    grid[curr_cell.y][curr_cell.x][d] = w;
     // mark neighbour too, if in bounds
-    int nx = curr_x + dx[d], ny = curr_y + dy[d];
+    int nx = curr_cell.x + dx[d], ny = curr_cell.y + dy[d];
     if (nx >= 0 && nx < GRID_SIZE && ny >= 0 && ny < GRID_SIZE) {
         grid[ny][nx][opposite[d]] = w;
     }
@@ -349,10 +348,10 @@ void build_distance_field(Cell goals[4], int num_goals) {
     }
 }
 
-// test if curr_x, curr_y is one of the goal cells
+// test if curr_cell is one of the goal cells
 bool goal_reached(Cell *goals, int num_goals) {
     for (int i=0; i<num_goals; i++) {
-        if (curr_x == goals[i].x && curr_y == goals[i].y) {
+        if (curr_cell.x == goals[i].x && curr_cell.y == goals[i].y) {
             return true;
         }
     }
@@ -364,40 +363,40 @@ int calculate_path_to_goal(Cell *provisional_path) {
     int provisional_path_len = 0;
 
     // go from START_X, START_Y the fastest way to the first goal cell
-    Cell curr = {START_X, START_Y};
+    Cell curr_provisional = {START_X, START_Y};
     // inital heading when starting to goal will be facing a wall -> choose opposite of start heading
     heading_t provisional_heading = opposite[START_HEADING];
     
-    while (dist[curr.y][curr.x] != 0) {
+    while (dist[curr_provisional.y][curr_provisional.x] != 0) {
         // find next cell with distance one less
         int best_d = INT_MAX;
         heading_t best_dir = -1;
-        Cell next = {0xFF, 0xFF}; // invalid cell
+        Cell next_provisional = {0xFF, 0xFF}; // invalid cell
         for (int d=0; d<4; d++) {
             // start with current (provisional) heading + 1, such that current (provisional) heading is chosen as next cell (if multiple options have the same distance)
             int n_heading = (provisional_heading + 1 + d) % 4;
-            int nx = curr.x + dx[n_heading], ny = curr.y + dy[n_heading];
+            int nx = curr_provisional.x + dx[n_heading], ny = curr_provisional.y + dy[n_heading];
 
             // check if new cell is in bounds and not a wall
-            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr.y][curr.x][n_heading] == WALL) continue;
+            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr_provisional.y][curr_provisional.x][n_heading] == WALL) continue;
 
             int cd = dist[ny][nx];
             // if current distance is better or equal than best_d (=giving priority to the last tested heading, which is our current (most desired) heading),
             // then we have a new best direction
             if (cd <= best_d) {
                 best_d = cd;
-                next = (Cell){nx, ny};
+                next_provisional = (Cell){nx, ny};
                 best_dir = n_heading;
             }
         }
-        if (next.x == 0xFF) {
-            // no next cell found, this should not happen
+        if (next_provisional.x == 0xFF) {
+            // no next cell found -> no path to goals found
             return 0;
         }
         
-        provisional_path[provisional_path_len] = next;
+        provisional_path[provisional_path_len] = next_provisional;
         provisional_path_len++;
-        curr = next;
+        curr_provisional = next_provisional;
         provisional_heading = best_dir; // update provisional heading to next cell's heading
     }
 
@@ -425,30 +424,58 @@ Cell find_unknown_in_provisional_path() {
         if (has_unknown(provisional_path[provisional_path_counter].x, provisional_path[provisional_path_counter].y)) {
             // provisional_path[provisional_path_counter] has UNKNOWN walls -> go to this cell next
             return provisional_path[provisional_path_counter];
-            break;
         }
     }
 
-    // no cell found with UNKNOWN walls
+    // no cell found with UNKNOWN walls -> next goal cell is start cell
     return (Cell){START_X, START_Y};
 }
 
+void get_new_best_direction(int *best_dir) {
+    int best_d = INT_MAX;
+    
+    for (int d = 0; d < 4; d++) {
+        // start with current heading + 1, such that current heading is chosen as next cell (if multiple options have the same distance)
+        int n_heading = (curr_heading + 1 + d) % 4;
+        int nx = curr_cell.x + dx[n_heading], ny = curr_cell.y + dy[n_heading];
+        // check if new cell is in bounds and not a wall
+        if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr_cell.y][curr_cell.x][n_heading] == WALL) continue;
+
+        int cd = dist[ny][nx];
+        // if current distance is better than best_d, or if it is equal and 
+        // the cell has at least one UNKNOWN (in Explore or Return state)
+        // or has no unknown walls (in Drive_to_Goal) to take paths that are already explored if possible
+        // then we have a new best direction
+        if (cd < best_d || (cd == best_d && (state == DRIVE_TO_GOAL ? !has_unknown(nx, ny) : has_unknown(nx, ny)))) {
+            best_d = cd;
+            *best_dir = n_heading;
+        }
+    }
+    
+    // no neighbor is reachable -> error
+    if (best_d == INT_MAX) {
+        *best_dir = -1;
+    }
+}
+
 command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
-    if (path_counter == path_len) {
-        // reached target cell
+    if (curr_cell.x == next_cell.x && curr_cell.y == next_cell.y) {
+        // reached next cell
         
-        int best_d = INT_MAX, best_dir = -1;
+        int best_dir = -1;
         Cell *goals;
         int num_goals = 0;
         switch (state) {
             case IDLE:
                 toggle_led2();
                 action_enabled = 0;
+                return STOP;
+                
                 break;
             case EXPLORING_PATH_TO_GOAL:
-                updateCell(curr_heading, front_wall);
-                updateCell((curr_heading+1)%4, left_wall);
-                updateCell((curr_heading+3)%4, right_wall);
+                update_cell(curr_heading, front_wall);
+                update_cell((curr_heading+1)%4, left_wall);
+                update_cell((curr_heading+3)%4, right_wall);
 
                 goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
                 num_goals = 4;
@@ -470,9 +497,9 @@ command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
                 }             
                 break;
             case EXPLORING_TEMP_BEST_PATH:
-                updateCell(curr_heading, front_wall);
-                updateCell((curr_heading+1)%4, left_wall);
-                updateCell((curr_heading+3)%4, right_wall);
+                update_cell(curr_heading, front_wall);
+                update_cell((curr_heading+1)%4, left_wall);
+                update_cell((curr_heading+3)%4, right_wall);
 
                 goals = (Cell[]){find_unknown_in_provisional_path()};
                 // goals is either START_X/Y cell or the last cell in provisional_path with UNKNOWN walls
@@ -487,9 +514,9 @@ command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
                 // else: build distance field to last cell in provisional_path with UNKNOWN walls
                 break;
             case RETURN_TO_START:
-                updateCell(curr_heading, front_wall);
-                updateCell((curr_heading+1)%4, left_wall);
-                updateCell((curr_heading+3)%4, right_wall);
+                update_cell(curr_heading, front_wall);
+                update_cell((curr_heading+1)%4, left_wall);
+                update_cell((curr_heading+3)%4, right_wall);
                 
 
                 goals = (Cell[]){{START_X,START_Y}};
@@ -506,9 +533,9 @@ command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
                 break;
             case DRIVE_TO_GOAL:
                 // do this just in case we get stuck, but actually we should be able to not update path
-                updateCell(curr_heading, front_wall);
-                updateCell((curr_heading+1)%4, left_wall);
-                updateCell((curr_heading+3)%4, right_wall);
+                update_cell(curr_heading, front_wall);
+                update_cell((curr_heading+1)%4, left_wall);
+                update_cell((curr_heading+3)%4, right_wall);
                 
                 goals = (Cell[]){{2,2},{2,3},{3,2},{3,3}};
                 num_goals = 4;
@@ -529,43 +556,24 @@ command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
         }
         // create distance fields with distances to specified goals
         build_distance_field(goals, num_goals);
+        
+        // stores the new best_dir (UP, LEFT, DOWN, RIGHT) in best_dir
+        get_new_best_direction(&best_dir);
 
-        for (int d = 0; d < 4; d++) {
-            // start with current heading + 1, such that current heading is chosen as next cell (if multiple options have the same distance)
-            int n_heading = (curr_heading + 1 + d) % 4;
-            int nx = curr_x + dx[n_heading], ny = curr_y + dy[n_heading];
-            // check if new cell is in bounds and not a wall
-            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr_y][curr_x][n_heading] == WALL) continue;
-
-            int cd = dist[ny][nx];
-            // if current distance is better than best_d, or if it is equal and 
-            // the cell has at least one UNKNOWN (in Explore or Return state)
-            // or has no unknown walls (in Drive_to_Goal) to take paths that are already explored if possible
-            // then we have a new best direction
-            if (cd < best_d || (cd == best_d && (state == DRIVE_TO_GOAL ? !has_unknown(nx, ny) : has_unknown(nx, ny)))) {
-                best_d = cd;
-                best_dir = n_heading;
-            }
-        }
-
-        // no neighbor is reachable
-        if (best_dir < 0 || best_d == INT_MAX) {
+        // no neighbor is reachable -> error
+        if (best_dir < 0) {
             toggle_led2();
             state = IDLE;
             action_enabled = 0;
             return STOP;
         }
 
-        // TODO: remove ugly path[]
-        path_counter = 0;
-        path[path_counter] = (Cell){ curr_x + dx[best_dir], curr_y + dy[best_dir] };
-        path_len = 1;
+        // update next_cell
+        next_cell = (Cell){curr_cell.x + dx[best_dir], curr_cell.y + dy[best_dir]};
     }
 
-    // next_move generates next command to get from curr_x/y to next path cell
-    command_t cmd = next_move(path[path_counter].x, path[path_counter].y);
-    
-    return cmd;
+    // translate_next_cell_to_cmd generates next command to get from curr_cell to next_cell    
+    return translate_next_cell_to_cmd();
 }
 
 int stream_sensor_data(void)
@@ -661,9 +669,8 @@ int stream_sensor_data(void)
                     // not yet checked if current forward movement is the last forward before a direction change
                     
                     // update curr position
-                    curr_x = path[path_counter].x;
-                    curr_y = path[path_counter].y;
-                    path_counter++;
+                    curr_cell = next_cell;
+                    
                     if (nextCmd(left_wall, right_wall, front_wall) == FORWARD) {
                         // continue driving forward (skip this if branch in next timer interrupt)
                         toggle_led4(1);
@@ -755,7 +762,7 @@ int stream_sensor_data(void)
     
     UART_TXint8(FRAME_MARKER); // start of visualizer frame
     UART_TXint8(b);
-    UART_TXint8(path_len);
+    UART_TXint8(b);
     UART_TXint8(curr_cmd);
     UART_TXUInt(a);
     UART_TXUInt(a);
