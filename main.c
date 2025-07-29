@@ -88,7 +88,7 @@ void resetGrid() {
     curr_y = START_Y;
     curr_heading = START_HEADING;
     
-    // init grid
+    // init grid by setting all walls to unknown
     for (int i = 0; i < GRID_SIZE; i++) {
         for (int j = 0; j < GRID_SIZE; j++) {
             for (int k = 0; k < 4; k++) {
@@ -300,16 +300,18 @@ command_t next_move(int x_next, int y_next)
     return TURN_180;
 }
 
+// update grid at curr_x, curr_y with new sensor information
 void updateCell(int d, wall_t w) {
     // mark this cell
     grid[curr_y][curr_x][d] = w;
-    // mark neighbour, if in bounds
+    // mark neighbour too, if in bounds
     int nx = curr_x + dx[d], ny = curr_y + dy[d];
     if (nx >= 0 && nx < GRID_SIZE && ny >= 0 && ny < GRID_SIZE) {
         grid[ny][nx][opposite[d]] = w;
     }
 }
 
+// build a distance field around goals
 void build_distance_field(Cell goals[4], int num_goals) {
     // initialize all distances to infinite
     for (int y=0; y<GRID_SIZE; y++)
@@ -347,6 +349,7 @@ void build_distance_field(Cell goals[4], int num_goals) {
     }
 }
 
+// test if curr_x, curr_y is one of the goal cells
 bool goal_reached(Cell *goals, int num_goals) {
     for (int i=0; i<num_goals; i++) {
         if (curr_x == goals[i].x && curr_y == goals[i].y) {
@@ -371,7 +374,6 @@ int calculate_path_to_goal(Cell *provisional_path) {
         heading_t best_dir = -1;
         Cell next = {0xFF, 0xFF}; // invalid cell
         for (int d=0; d<4; d++) {
-            // TODO: test and remove the outcommented code below if it works
             // start with current (provisional) heading + 1, such that current (provisional) heading is chosen as next cell (if multiple options have the same distance)
             int n_heading = (provisional_heading + 1 + d) % 4;
             int nx = curr.x + dx[n_heading], ny = curr.y + dy[n_heading];
@@ -387,17 +389,6 @@ int calculate_path_to_goal(Cell *provisional_path) {
                 next = (Cell){nx, ny};
                 best_dir = n_heading;
             }
-            /*
-            int nx = curr.x + dx[d], ny = curr.y + dy[d];
-            // check if new cell is in bounds and not a wall
-            if (nx<0 || nx>=GRID_SIZE || ny<0 || ny>=GRID_SIZE || grid[curr.y][curr.x][d] == WALL) continue;
-            // check if distance is one less than current cell
-
-            if (dist[ny][nx] < best_d && dist[ny][nx] == dist[curr.y][curr.x] - 1) {
-                best_d = dist[ny][nx];
-                next = (Cell){nx, ny};
-            }
-             * */
         }
         if (next.x == 0xFF) {
             // no next cell found, this should not happen
@@ -483,7 +474,6 @@ command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
                 updateCell((curr_heading+1)%4, left_wall);
                 updateCell((curr_heading+3)%4, right_wall);
 
-                // TODO: test
                 goals = (Cell[]){find_unknown_in_provisional_path()};
                 // goals is either START_X/Y cell or the last cell in provisional_path with UNKNOWN walls
                 num_goals = 1;
@@ -530,6 +520,7 @@ command_t nextCmd(wall_t left_wall, wall_t right_wall, wall_t front_wall) {
                     action_enabled = 0;
                     // reset grid
                     resetGrid();
+                    return STOP;
                 }                
                 break;
             default:
