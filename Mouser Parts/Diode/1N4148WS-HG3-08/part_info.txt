@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=1N4148WS-HG3-08
+PartCategory=Diode
+PackageCategory=Small Outline Diode
+PinCount=2
+Version=1.1
+Released=2019-11-12 03:13:05
+Downloaded=2025-08-03 14:31:49
+3D=Y

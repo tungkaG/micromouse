@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "1N4148WS-HG3-08"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-08-10-13:10:25)
+    (mountForm default
+        (footprintRef "SOD2713X115N")
+        (spec "System")
+    )
+)

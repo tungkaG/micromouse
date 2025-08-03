@@ -1,0 +1,16 @@
+.ERA-6ARW472V :1 ;Thin Film Resistors - SMD 0805 4.7Kohm 0.05% 10ppm AEC-Q200
+ERA6AEB101V
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN ERA-6ARW472V
+~!Mouser Part Number (667-ERA-6ARW472V)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6ARW472V?qs=ob%252BdNz2%252BYEgbYp9qzrbNPA%3D%3D)
+~!Manufacturer_Name (Panasonic)
+~!Manufacturer_Part_Number (ERA-6ARW472V)
+~!Link Datasheet (https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf)
+~!Height (0.6mm)
+~!3D_Model (ERA-6ARW472V)
+ERA-6ARW472V
+1.1!U 2.1!U 
