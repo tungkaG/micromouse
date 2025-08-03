@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/526479/1717166/2.50/4/0/Integrated Circuit/-->
+<quadcept_library>
+  <setting unit="mil" />
+  <textstyle name="Default" height="47.244094488189" strokewidth="7.8740157480315" charwidth="47.244094488189" />
+  <textstyle name="Dimension" height="19.6850393700787" strokewidth="0" charwidth="19.6850393700787" />
+  <textstyle name="H127W0635TH00762" height="50" strokewidth="3" charwidth="25" />
+  <textstyle name="H15W15TH02" height="59.0551181102362" strokewidth="7.8740157480315" charwidth="59.0551181102362" />
+  <padstyle name="r162.56_88.9" surface="True" plated="False" isvia="False" nopaste="False" nomask="True" complex="False" holesize="0">
+    <padshape layer="TOP" shape="rectangle" width="35" height="63.999999999999" />
+    <padshape layer="TOP_SOLDER_MASK" shape="rectangle" width="42.874015748031" height="71.874015748031" />
+    <padshape layer="TOP_SOLDER_PASTE" shape="rectangle" width="35" height="63.999999999999" />
+  </padstyle>
+  <padstyle name="r317.5_162.56" surface="True" plated="False" isvia="False" nopaste="False" nomask="True" complex="False" holesize="0">
+    <padshape layer="TOP" shape="rectangle" width="63.999999999999" height="125" />
+    <padshape layer="TOP_SOLDER_MASK" shape="rectangle" width="71.874015748031" height="132.87401574803" />
+    <padshape layer="TOP_SOLDER_PASTE" shape="rectangle" width="63.999999999999" height="125" />
+  </padstyle>
+  <footprint name="SOT230P700X180-4N" originx="0" originy="0" pickpointx="0" pickpointy="0">
+    <pcbpin number="1" name="1" style="r162.56_88.9" originx="-126" originy="90.999999999999" rotation="90" />
+    <pcbpin number="2" name="2" style="r162.56_88.9" originx="-126" originy="0" rotation="90" />
+    <pcbpin number="3" name="3" style="r162.56_88.9" originx="-126" originy="-90.999999999999" rotation="90" />
+    <pcbpin number="4" name="4" style="r317.5_162.56" originx="126" originy="0" rotation="0" />
+    <line layer="TOP_ASSEMBLY" originx="-72.999999999999" originy="73.999999999999" endx="-72.999999999999" endy="108" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-72.999999999999" originy="108" endx="-144" endy="108" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-144" originy="108" endx="-144" endy="73.999999999999" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-144" originy="73.999999999999" endx="-72.999999999999" endy="73.999999999999" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-72.999999999999" originy="-17" endx="-72.999999999999" endy="17" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-72.999999999999" originy="17" endx="-144" endy="17" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-144" originy="17" endx="-144" endy="-17" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-144" originy="-17" endx="-72.999999999999" endy="-17" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-72.999999999999" originy="-108" endx="-72.999999999999" endy="-73.999999999999" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-72.999999999999" originy="-73.999999999999" endx="-144" endy="-73.999999999999" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-144" originy="-73.999999999999" endx="-144" endy="-108" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-144" originy="-108" endx="-72.999999999999" endy="-108" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="72.999999999999" originy="61.999999999999" endx="72.999999999999" endy="-61.999999999999" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="72.999999999999" originy="-61.999999999999" endx="144" endy="-61.999999999999" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="144" originy="-61.999999999999" endx="144" endy="62.999999999999" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="144" originy="62.999999999999" endx="72.999999999999" endy="61.999999999999" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-72.999999999999" originy="-132" endx="72.999999999999" endy="-132" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="72.999999999999" originy="-132" endx="72.999999999999" endy="132" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="72.999999999999" originy="132" endx="-72.999999999999" endy="132" width="5.9999999999999" />
+    <line layer="TOP_ASSEMBLY" originx="-72.999999999999" originy="132" endx="-72.999999999999" endy="-132" width="5.9999999999999" />
+    <line layer="TOP_SILKSCREEN" originx="-72.999999999999" originy="-132" endx="72.999999999999" endy="-132" width="5.9999999999999" />
+    <line layer="TOP_SILKSCREEN" originx="72.999999999999" originy="-132" endx="72.999999999999" endy="132" width="5.9999999999999" />
+    <line layer="TOP_SILKSCREEN" originx="72.999999999999" originy="132" endx="-72.999999999999" endy="132" width="5.9999999999999" />
+    <line layer="TOP_SILKSCREEN" originx="-72.999999999999" originy="132" endx="-72.999999999999" endy="-132" width="5.9999999999999" />
+  </footprint>
+  <symbol name="ADP3338AKCZ-5-R7" originx="0" originy="0">
+    <line originx="200" originy="100" endx="900" endy="100" width="0" />
+    <line originx="900" originy="-300" endx="900" endy="100" width="0" />
+    <line originx="900" originy="-300" endx="200" endy="-300" width="0" />
+    <line originx="200" originy="100" endx="200" endy="-300" width="0" />
+    <sympin number="1" originx="200" originy="0" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="0" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="GND" />
+      <text name="pindes" originx="140" originy="20" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="1" />
+    </sympin>
+    <sympin number="2" originx="200" originy="-100" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="-100" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="OUT_2" />
+      <text name="pindes" originx="140" originy="-80" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="2" />
+    </sympin>
+    <sympin number="3" originx="200" originy="-200" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="-200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="IN" />
+      <text name="pindes" originx="140" originy="-180" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="3" />
+    </sympin>
+    <sympin number="4" originx="900" originy="0" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="870" originy="0" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="OUT" />
+      <text name="pindes" originx="960" originy="20" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="4" />
+    </sympin>
+  </symbol>
+  <component name="ADP3338AKCZ-5-R7" designatorprefix="IC" height="0" footprint="SOT230P700X180-4N">
+    <comppin designator="1" sympin="1" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="GND" />
+    <comppin designator="2" sympin="2" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="OUT_2" />
+    <comppin designator="3" sympin="3" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="IN" />
+    <comppin designator="4" sympin="4" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="OUT" />
+    <attached_symbol gate="1" name="ADP3338AKCZ-5-R7" />
+    <pinmap designator="1" footprintpin="1" />
+    <pinmap designator="2" footprintpin="2" />
+    <pinmap designator="3" footprintpin="3" />
+    <pinmap designator="4" footprintpin="4" />
+    <text name="Datasheet" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="" />
+    <text name="Description" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Analog Devices ADP3338AKCZ-5-R7, LDO Voltage Regulator, 1A, 5 V +/-1.6%, 2.7  8 Vin, 3-Pin SOT-223" />
+    <text name="Mouser Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="584-ADP3338AKCZ-5-R7" />
+    <text name="Mouser Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADP3338AKCZ-5-R7?qs=WIvQP4zGangs6Tv%252BSE3hsA%3D%3D" />
+    <text name="Manufacturer_Name" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Analog Devices" />
+    <text name="Manufacturer_Part_Number" originx="950" originy="200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="ADP3338AKCZ-5-R7" />
+  </component>
+</quadcept_library>

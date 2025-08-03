@@ -1,0 +1,16 @@
+.C0805J104K1RACAUTO :1 ;SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm
+CAPC2012X140N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN C0805J104K1RACAUTO
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (KEMET)
+~!Manufacturer_Part_Number (C0805J104K1RACAUTO)
+~!Link Datasheet (https://search.kemet.com/component-documentation/download/specsheet/C0805J104K1RACAUTO)
+~!Height (1.4mm)
+~!3D_Model (C0805J104K1RACAUTO)
+C0805J104K1RACAUTO
+1.1!U 2.1!U 

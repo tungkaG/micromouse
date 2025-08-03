@@ -1,0 +1,9 @@
+Manufacturer=Omron Electronics
+PartNumber=B3F-1020
+PartCategory=Switch
+PackageCategory=Other
+PinCount=4
+Version=1.1
+Released=2017-03-19 11:51:47
+Downloaded=2025-08-02 17:41:23
+3D=Y

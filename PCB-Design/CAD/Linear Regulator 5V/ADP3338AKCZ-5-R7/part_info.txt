@@ -1,0 +1,9 @@
+Manufacturer=Analog Devices
+PartNumber=ADP3338AKCZ-5-R7
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=4
+Version=3.1
+Released=2017-01-10 13:33:33
+Downloaded=2025-08-02 19:17:36
+3D=N

@@ -1,0 +1,15 @@
+.ADP3338AKCZ-5-R7 :1 ;Analog Devices ADP3338AKCZ-5-R7, LDO Voltage Regulator, 1A, 5 V +/-1.6%, 2.7  8 Vin, 3-Pin SOT-223
+SOT230P700X180-4N
+*STM IC
+*NGS
+*PLB 1="GND" 2="OUT_2" 3="IN" 4="OUT"
+*MXP 4
+*DFN ADP3338AKCZ-5-R7
+~!Mouser Part Number (584-ADP3338AKCZ-5-R7)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADP3338AKCZ-5-R7?qs=WIvQP4zGangs6Tv%252BSE3hsA%3D%3D)
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (ADP3338AKCZ-5-R7)
+~!Link Datasheet (-)
+~!Height (-)
+ADP3338AKCZ-5-R7
+1.1!U 2.1!U 3.1!U 4.1!U 
