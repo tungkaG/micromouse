@@ -9095,6 +9095,128 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 </deviceset>
 </devicesets>
 </library>
+<library name="0805YC106KAT2A">
+<description>&lt;Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="CAPC2012X94N">
+<description>&lt;b&gt;0805-ren13&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.81" y="0" dx="1.47" dy="1.02" layer="1" rot="R90"/>
+<smd name="2" x="0.81" y="0" dx="1.47" dy="1.02" layer="1" rot="R90"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.47" y1="0.89" x2="1.47" y2="0.89" width="0.05" layer="51"/>
+<wire x1="1.47" y1="0.89" x2="1.47" y2="-0.89" width="0.05" layer="51"/>
+<wire x1="1.47" y1="-0.89" x2="-1.47" y2="-0.89" width="0.05" layer="51"/>
+<wire x1="-1.47" y1="-0.89" x2="-1.47" y2="0.89" width="0.05" layer="51"/>
+<wire x1="-1.005" y1="0.625" x2="1.005" y2="0.625" width="0.1" layer="51"/>
+<wire x1="1.005" y1="0.625" x2="1.005" y2="-0.625" width="0.1" layer="51"/>
+<wire x1="1.005" y1="-0.625" x2="-1.005" y2="-0.625" width="0.1" layer="51"/>
+<wire x1="-1.005" y1="-0.625" x2="-1.005" y2="0.625" width="0.1" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="0805YC106KAT2A">
+<wire x1="5.588" y1="2.54" x2="5.588" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.112" y1="2.54" x2="7.112" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.588" y2="0" width="0.254" layer="94"/>
+<wire x1="7.112" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<text x="8.89" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="8.89" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="12.7" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0805YC106KAT2A" prefix="C">
+<description>&lt;b&gt;Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.mouser.fr/datasheet/2/40/AVX_X7RDielectric_777024-1853642.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="0805YC106KAT2A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPC2012X94N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%" constant="no"/>
+<attribute name="HEIGHT" value="0.94mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Kyocera AVX" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="0805YC106KAT2A" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="581-0805YC106KAT2A" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/0805YC106KAT2A?qs=3HJ2avRr9PKwMzeRMZhF2g%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="08053C334KAZ2A">
+<description>&lt;AVX 330nF Multilayer Ceramic Capacitor (MLCC) 25 V 0805 SMT Max. Op. Temp. +125C&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="CAPC2012X152N">
+<description>&lt;b&gt;0805_H=1.52&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.81" y="0" dx="1.47" dy="1.02" layer="1" rot="R90"/>
+<smd name="2" x="0.81" y="0" dx="1.47" dy="1.02" layer="1" rot="R90"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.47" y1="0.89" x2="1.47" y2="0.89" width="0.05" layer="51"/>
+<wire x1="1.47" y1="0.89" x2="1.47" y2="-0.89" width="0.05" layer="51"/>
+<wire x1="1.47" y1="-0.89" x2="-1.47" y2="-0.89" width="0.05" layer="51"/>
+<wire x1="-1.47" y1="-0.89" x2="-1.47" y2="0.89" width="0.05" layer="51"/>
+<wire x1="-1.005" y1="0.625" x2="1.005" y2="0.625" width="0.1" layer="51"/>
+<wire x1="1.005" y1="0.625" x2="1.005" y2="-0.625" width="0.1" layer="51"/>
+<wire x1="1.005" y1="-0.625" x2="-1.005" y2="-0.625" width="0.1" layer="51"/>
+<wire x1="-1.005" y1="-0.625" x2="-1.005" y2="0.625" width="0.1" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="08053C334KAZ2A">
+<wire x1="5.588" y1="2.54" x2="5.588" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.112" y1="2.54" x2="7.112" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.588" y2="0" width="0.254" layer="94"/>
+<wire x1="7.112" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<text x="8.89" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="8.89" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="12.7" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="08053C334KAZ2A" prefix="C">
+<description>&lt;b&gt;AVX 330nF Multilayer Ceramic Capacitor (MLCC) 25 V 0805 SMT Max. Op. Temp. +125C&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="08053C334KAZ2A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPC2012X152N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="AVX 330nF Multilayer Ceramic Capacitor (MLCC) 25 V 0805 SMT Max. Op. Temp. +125C" constant="no"/>
+<attribute name="HEIGHT" value="1.52mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Kyocera AVX" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="08053C334KAZ2A" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9112,7 +9234,6 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="4.7k"/>
-<part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9121,21 +9242,13 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
-<part name="C4" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
-<part name="C5" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C8" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="10uF"/>
-<part name="C9" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="10uF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C14" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.33µF"/>
-<part name="C15" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1µF"/>
-<part name="C16" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
-<part name="C17" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PROGRAMMER_PO" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
@@ -9162,9 +9275,6 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Y1" library="ABM8-20.000MHZ-B2-T" deviceset="ABM8-20.000MHZ-B2-T" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C13" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
-<part name="C19" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
-<part name="C20" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9177,23 +9287,13 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C6" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
-<part name="C10" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
-<part name="C11" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
-<part name="C21" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
-<part name="C22" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
-<part name="C23" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="10uF"/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="BLUETOOTH" library="RN4871-I_RM130" deviceset="RN4871-I_RM130" device=""/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C24" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C25" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C26" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C27" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9210,10 +9310,32 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <part name="J1" library="22-23-2021" deviceset="22-23-2021" device=""/>
 <part name="IC1" library="ADP3338AKCZ-5-R7" deviceset="ADP3338AKCZ-5-R7" device=""/>
 <part name="C29" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
-<part name="C30" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C30" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device="" value="1µF"/>
 <part name="C31" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C7" library="0805YC106KAT2A" deviceset="0805YC106KAT2A" device=""/>
+<part name="C12" library="0805YC106KAT2A" deviceset="0805YC106KAT2A" device=""/>
+<part name="C8" library="0805YC106KAT2A" deviceset="0805YC106KAT2A" device=""/>
+<part name="C9" library="08053C334KAZ2A" deviceset="08053C334KAZ2A" device=""/>
+<part name="C14" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C23" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C28" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C32" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C33" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C34" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C35" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C36" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C37" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C38" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C39" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C40" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C41" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C42" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C43" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C44" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C46" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
+<part name="C1" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9246,15 +9368,11 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <attribute name="NAME" x="-21.8186" y="-74.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-17.018" y="-74.93" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C1" gate="G$1" x="-12.7" y="-68.58" smashed="yes">
-<attribute name="NAME" x="-11.176" y="-68.199" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-11.176" y="-73.279" size="1.778" layer="96"/>
-</instance>
 <instance part="GND2" gate="1" x="-20.32" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="-22.86" y="-81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="-12.7" y="-78.74" smashed="yes">
-<attribute name="VALUE" x="-15.24" y="-81.28" size="1.778" layer="96"/>
+<instance part="GND3" gate="1" x="-12.7" y="-83.82" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="-86.36" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="226.06" y="0" smashed="yes" rot="R90">
 <attribute name="VALUE" x="228.6" y="-2.54" size="1.778" layer="96" rot="R180"/>
@@ -9277,15 +9395,11 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <attribute name="NAME" x="28.9814" y="-74.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="33.782" y="-74.93" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C4" gate="G$1" x="38.1" y="-68.58" smashed="yes">
-<attribute name="NAME" x="39.624" y="-68.199" size="1.778" layer="95"/>
-<attribute name="VALUE" x="39.624" y="-73.279" size="1.778" layer="96"/>
-</instance>
 <instance part="GND7" gate="1" x="30.48" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="27.94" y="-81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="GND8" gate="1" x="38.1" y="-78.74" smashed="yes">
-<attribute name="VALUE" x="35.56" y="-81.28" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="38.1" y="-83.82" smashed="yes">
+<attribute name="VALUE" x="35.56" y="-86.36" size="1.778" layer="96"/>
 </instance>
 <instance part="GND9" gate="1" x="73.66" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="71.12" y="-81.28" size="1.778" layer="96"/>
@@ -9294,45 +9408,17 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <attribute name="NAME" x="79.7814" y="-74.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="84.582" y="-74.93" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C5" gate="G$1" x="88.9" y="-68.58" smashed="yes">
-<attribute name="NAME" x="90.424" y="-68.199" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.424" y="-73.279" size="1.778" layer="96"/>
-</instance>
 <instance part="GND10" gate="1" x="81.28" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="78.74" y="-81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="GND11" gate="1" x="88.9" y="-78.74" smashed="yes">
-<attribute name="VALUE" x="86.36" y="-81.28" size="1.778" layer="96"/>
+<instance part="GND11" gate="1" x="88.9" y="-83.82" smashed="yes">
+<attribute name="VALUE" x="86.36" y="-86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="114.3" y="71.12" smashed="yes">
-<attribute name="NAME" x="115.824" y="71.501" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.824" y="66.421" size="1.778" layer="96"/>
-</instance>
-<instance part="C9" gate="G$1" x="121.92" y="71.12" smashed="yes">
-<attribute name="NAME" x="123.444" y="71.501" size="1.778" layer="95"/>
-<attribute name="VALUE" x="123.444" y="66.421" size="1.778" layer="96"/>
-</instance>
-<instance part="GND13" gate="1" x="121.92" y="60.96" smashed="yes">
-<attribute name="VALUE" x="119.38" y="58.42" size="1.778" layer="96"/>
-</instance>
-<instance part="C14" gate="G$1" x="-271.78" y="-58.42" smashed="yes">
-<attribute name="NAME" x="-270.256" y="-58.039" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-270.256" y="-63.119" size="1.778" layer="96"/>
-</instance>
-<instance part="C15" gate="G$1" x="-203.2" y="-58.42" smashed="yes">
-<attribute name="NAME" x="-199.136" y="-58.039" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-201.676" y="-63.119" size="1.778" layer="96"/>
-</instance>
-<instance part="C16" gate="G$1" x="-193.04" y="-58.42" smashed="yes">
-<attribute name="NAME" x="-191.516" y="-58.039" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-191.516" y="-63.119" size="1.778" layer="96"/>
-</instance>
-<instance part="C17" gate="G$1" x="-180.34" y="-58.42" smashed="yes">
-<attribute name="NAME" x="-178.816" y="-58.039" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-178.816" y="-63.119" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="121.92" y="55.88" smashed="yes">
+<attribute name="VALUE" x="119.38" y="53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="GND19" gate="1" x="-215.9" y="-66.04" smashed="yes">
-<attribute name="VALUE" x="-208.28" y="-68.58" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-218.44" y="-71.12" size="1.778" layer="96"/>
 </instance>
 <instance part="GND20" gate="1" x="-279.4" y="0" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-276.86" y="2.54" size="1.778" layer="96" rot="R180"/>
@@ -9422,26 +9508,14 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <instance part="GND12" gate="1" x="-254" y="-5.08" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-251.46" y="-2.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C13" gate="G$1" x="-20.32" y="-55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="-20.701" y="-54.356" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-15.621" y="-54.356" size="1.778" layer="96" rot="R90"/>
+<instance part="GND30" gate="1" x="-5.08" y="-55.88" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-2.54" y="-58.42" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C19" gate="G$1" x="30.48" y="-55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.099" y="-54.356" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="35.179" y="-54.356" size="1.778" layer="96" rot="R90"/>
+<instance part="GND31" gate="1" x="45.72" y="-55.88" smashed="yes" rot="R90">
+<attribute name="VALUE" x="48.26" y="-58.42" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C20" gate="G$1" x="81.28" y="-55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="80.899" y="-54.356" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="85.979" y="-54.356" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND30" gate="1" x="-7.62" y="-55.88" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-5.08" y="-58.42" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND31" gate="1" x="43.18" y="-55.88" smashed="yes" rot="R90">
-<attribute name="VALUE" x="45.72" y="-58.42" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND32" gate="1" x="93.98" y="-55.88" smashed="yes" rot="R90">
-<attribute name="VALUE" x="96.52" y="-58.42" size="1.778" layer="96" rot="R90"/>
+<instance part="GND32" gate="1" x="96.52" y="-55.88" smashed="yes" rot="R90">
+<attribute name="VALUE" x="99.06" y="-58.42" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND29" gate="1" x="17.78" y="48.26" smashed="yes">
 <attribute name="VALUE" x="15.24" y="45.72" size="1.778" layer="96"/>
@@ -9454,7 +9528,7 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <attribute name="VALUE" x="-213.36" y="-45.72" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND35" gate="1" x="-264.16" y="-48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-266.7" y="-53.34" size="1.778" layer="96" rot="R270"/>
+<attribute name="VALUE" x="-266.7" y="-45.72" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND14" gate="1" x="-152.4" y="-12.7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-149.86" y="-15.24" size="1.778" layer="96" rot="R90"/>
@@ -9471,30 +9545,6 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <instance part="GND37" gate="1" x="129.54" y="-12.7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="132.08" y="-15.24" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C6" gate="G$1" x="-86.36" y="-17.78" smashed="yes">
-<attribute name="NAME" x="-84.836" y="-14.859" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-84.836" y="-22.479" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="C10" gate="G$1" x="157.48" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="155.956" y="9.779" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="155.956" y="14.859" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="C11" gate="G$1" x="157.48" y="-20.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="155.956" y="-25.781" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="155.956" y="-15.621" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C21" gate="G$1" x="-109.22" y="-17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="-109.601" y="-16.256" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-104.521" y="-16.256" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C22" gate="G$1" x="114.3" y="99.06" smashed="yes">
-<attribute name="NAME" x="115.824" y="99.441" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.824" y="94.361" size="1.778" layer="96"/>
-</instance>
-<instance part="C23" gate="G$1" x="121.92" y="99.06" smashed="yes">
-<attribute name="NAME" x="123.444" y="99.441" size="1.778" layer="95"/>
-<attribute name="VALUE" x="123.444" y="94.361" size="1.778" layer="96"/>
-</instance>
 <instance part="GND33" gate="1" x="121.92" y="88.9" smashed="yes">
 <attribute name="VALUE" x="119.38" y="86.36" size="1.778" layer="96"/>
 </instance>
@@ -9508,42 +9558,26 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <instance part="GND39" gate="1" x="-190.5" y="60.96" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-187.96" y="58.42" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C24" gate="G$1" x="213.36" y="73.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="212.979" y="75.184" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="218.059" y="75.184" size="1.778" layer="96" rot="R90"/>
+<instance part="GND40" gate="1" x="236.22" y="73.66" smashed="yes" rot="R90">
+<attribute name="VALUE" x="238.76" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="GND40" gate="1" x="223.52" y="73.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="226.06" y="73.66" size="1.778" layer="96"/>
+<instance part="GND41" gate="1" x="312.42" y="81.28" smashed="yes">
+<attribute name="VALUE" x="312.42" y="78.74" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C25" gate="G$1" x="294.64" y="81.28" smashed="yes">
-<attribute name="NAME" x="296.164" y="81.661" size="1.778" layer="95"/>
-<attribute name="VALUE" x="296.164" y="76.581" size="1.778" layer="96"/>
+<instance part="GND42" gate="1" x="312.42" y="53.34" smashed="yes">
+<attribute name="VALUE" x="312.42" y="50.8" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND41" gate="1" x="294.64" y="71.12" smashed="yes">
-<attribute name="VALUE" x="294.64" y="68.58" size="1.778" layer="96" rot="R270"/>
+<instance part="GND43" gate="1" x="-185.42" y="38.1" smashed="yes">
+<attribute name="VALUE" x="-185.42" y="35.56" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C26" gate="G$1" x="294.64" y="55.88" smashed="yes">
-<attribute name="NAME" x="296.164" y="56.261" size="1.778" layer="95"/>
-<attribute name="VALUE" x="296.164" y="51.181" size="1.778" layer="96"/>
+<instance part="GND44" gate="1" x="160.02" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="157.48" y="-38.1" size="1.778" layer="96"/>
 </instance>
-<instance part="GND42" gate="1" x="294.64" y="45.72" smashed="yes">
-<attribute name="VALUE" x="294.64" y="43.18" size="1.778" layer="96" rot="R270"/>
+<instance part="GND45" gate="1" x="154.94" y="33.02" smashed="yes" rot="R180">
+<attribute name="VALUE" x="157.48" y="35.56" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C27" gate="G$1" x="-185.42" y="53.34" smashed="yes">
-<attribute name="NAME" x="-183.896" y="53.721" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-183.896" y="48.641" size="1.778" layer="96"/>
-</instance>
-<instance part="GND43" gate="1" x="-185.42" y="43.18" smashed="yes">
-<attribute name="VALUE" x="-185.42" y="40.64" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND44" gate="1" x="157.48" y="-25.4" smashed="yes">
-<attribute name="VALUE" x="154.94" y="-27.94" size="1.778" layer="96"/>
-</instance>
-<instance part="GND45" gate="1" x="157.48" y="5.08" smashed="yes">
-<attribute name="VALUE" x="154.94" y="2.54" size="1.778" layer="96"/>
-</instance>
-<instance part="GND46" gate="1" x="-86.36" y="-25.4" smashed="yes">
-<attribute name="VALUE" x="-88.9" y="-27.94" size="1.778" layer="96"/>
+<instance part="GND46" gate="1" x="-83.82" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="-86.36" y="-35.56" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="G$1" x="-121.92" y="-27.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="-113.03" y="-40.64" size="1.778" layer="95" rot="R270"/>
@@ -9603,6 +9637,94 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <instance part="GND49" gate="1" x="-213.36" y="-30.48" smashed="yes">
 <attribute name="VALUE" x="-215.9" y="-33.02" size="1.778" layer="96"/>
 </instance>
+<instance part="C7" gate="G$1" x="121.92" y="73.66" smashed="yes" rot="R270">
+<attribute name="NAME" x="128.27" y="69.85" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="125.73" y="77.47" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C12" gate="G$1" x="114.3" y="73.66" smashed="yes" rot="R270">
+<attribute name="NAME" x="107.95" y="67.31" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="110.49" y="74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C8" gate="G$1" x="121.92" y="109.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="125.73" y="102.87" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="125.73" y="100.33" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C9" gate="G$1" x="-271.78" y="-48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="-278.13" y="-52.07" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-275.59" y="-44.45" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C14" gate="G$1" x="-180.34" y="-55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="-173.99" y="-64.77" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-176.53" y="-64.77" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C23" gate="G$1" x="-203.2" y="-55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="-196.85" y="-64.77" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-199.39" y="-64.77" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C28" gate="G$1" x="-193.04" y="-55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="-186.69" y="-64.77" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-189.23" y="-64.77" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C32" gate="G$1" x="-12.7" y="-66.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="-6.35" y="-74.93" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-8.89" y="-74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C33" gate="G$1" x="38.1" y="-66.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="44.45" y="-74.93" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="41.91" y="-74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C34" gate="G$1" x="88.9" y="-66.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="95.25" y="-74.93" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="92.71" y="-74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C35" gate="G$1" x="-22.86" y="-55.88" smashed="yes">
+<attribute name="NAME" x="-13.97" y="-49.53" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-13.97" y="-52.07" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C36" gate="G$1" x="27.94" y="-55.88" smashed="yes">
+<attribute name="NAME" x="36.83" y="-49.53" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="36.83" y="-52.07" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C37" gate="G$1" x="78.74" y="-55.88" smashed="yes">
+<attribute name="NAME" x="87.63" y="-49.53" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="87.63" y="-52.07" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C38" gate="G$1" x="-83.82" y="-15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="-77.47" y="-24.13" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-80.01" y="-24.13" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C39" gate="G$1" x="154.94" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="148.59" y="24.13" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="151.13" y="24.13" size="1.778" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="C40" gate="G$1" x="160.02" y="-17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="166.37" y="-26.67" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="163.83" y="-26.67" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C41" gate="G$1" x="-106.68" y="-17.78" smashed="yes">
+<attribute name="NAME" x="-102.87" y="-13.97" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-115.57" y="-21.59" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C42" gate="G$1" x="210.82" y="73.66" smashed="yes">
+<attribute name="NAME" x="219.71" y="80.01" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="219.71" y="77.47" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C43" gate="G$1" x="294.64" y="83.82" smashed="yes">
+<attribute name="NAME" x="303.53" y="90.17" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="303.53" y="87.63" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C44" gate="G$1" x="294.64" y="55.88" smashed="yes">
+<attribute name="NAME" x="303.53" y="62.23" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="303.53" y="59.69" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C46" gate="G$1" x="114.3" y="109.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="120.65" y="100.33" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="118.11" y="100.33" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="C1" gate="G$1" x="-185.42" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="-179.07" y="46.99" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-181.61" y="46.99" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9619,9 +9741,9 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="-12.7" y1="-73.66" x2="-12.7" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-78.74" x2="-12.7" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -9639,9 +9761,9 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="38.1" y1="-73.66" x2="38.1" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-78.74" x2="38.1" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="C33" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="-66.04" x2="73.66" y2="-66.04" width="0.1524" layer="91"/>
@@ -9654,30 +9776,33 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="88.9" y1="-73.66" x2="88.9" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-78.74" x2="88.9" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="C34" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="66.04" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="63.5" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="66.04" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
-<junction x="121.92" y="63.5"/>
+<wire x1="114.3" y1="60.96" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="60.96" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
+<junction x="121.92" y="58.42"/>
 <pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
 <junction x="-215.9" y="-63.5"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="-203.2" y1="-63.5" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="-193.04" y1="-63.5" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="-180.34" y1="-63.5" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="-203.2" y1="-68.58" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="-63.5" x2="-215.9" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="-271.78" y1="-63.5" x2="-271.78" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="2"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<wire x1="-203.2" y1="-68.58" x2="-193.04" y2="-68.58" width="0.1524" layer="91"/>
+<junction x="-203.2" y="-68.58"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="-180.34" y1="-68.58" x2="-193.04" y2="-68.58" width="0.1524" layer="91"/>
+<junction x="-193.04" y="-68.58"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
@@ -9741,19 +9866,19 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <label x="-25.4" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C13" gate="G$1" pin="2"/>
 <pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="-15.24" y1="-55.88" x2="-10.16" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-55.88" x2="-7.62" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="C35" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C19" gate="G$1" pin="2"/>
 <pinref part="GND31" gate="1" pin="GND"/>
-<wire x1="35.56" y1="-55.88" x2="40.64" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-55.88" x2="43.18" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="C36" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="86.36" y1="-55.88" x2="91.44" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-55.88" x2="93.98" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="C37" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
@@ -9796,13 +9921,13 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <wire x1="-76.2" y1="-12.7" x2="-63.5" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C22" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="93.98" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="93.98" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 <junction x="121.92" y="91.44"/>
 <pinref part="GND33" gate="1" pin="GND"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="91.44" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C46" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="91.44" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BLUETOOTH" gate="G$1" pin="GND_1"/>
@@ -9815,36 +9940,24 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <pinref part="GND39" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C24" gate="G$1" pin="2"/>
 <pinref part="GND40" gate="1" pin="GND"/>
-<wire x1="218.44" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="73.66" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="C42" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C25" gate="G$1" pin="2"/>
 <pinref part="GND41" gate="1" pin="GND"/>
-<wire x1="294.64" y1="76.2" x2="294.64" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="83.82" x2="312.42" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C43" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C26" gate="G$1" pin="2"/>
 <pinref part="GND42" gate="1" pin="GND"/>
-<wire x1="294.64" y1="50.8" x2="294.64" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="55.88" x2="312.42" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C44" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C27" gate="G$1" pin="2"/>
 <pinref part="GND43" gate="1" pin="GND"/>
-<wire x1="-185.42" y1="48.26" x2="-185.42" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C11" gate="G$1" pin="1"/>
-<pinref part="GND44" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="GND45" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C6" gate="G$1" pin="2"/>
-<pinref part="GND46" gate="1" pin="GND"/>
+<wire x1="-185.42" y1="43.18" x2="-185.42" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-160.02" y1="53.34" x2="-160.02" y2="50.8" width="0.1524" layer="91"/>
@@ -9877,6 +9990,21 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <pinref part="GND49" gate="1" pin="GND"/>
 <wire x1="-213.36" y1="-27.94" x2="-213.36" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND46" gate="1" pin="GND"/>
+<pinref part="C38" gate="G$1" pin="2"/>
+<wire x1="-83.82" y1="-30.48" x2="-83.82" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C40" gate="G$1" pin="2"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+<wire x1="160.02" y1="-30.48" x2="160.02" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C39" gate="G$1" pin="2"/>
+<pinref part="GND45" gate="1" pin="GND"/>
+<wire x1="154.94" y1="27.94" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="AN0" class="0">
 <segment>
@@ -9886,11 +10014,11 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <wire x1="-20.32" y1="-63.5" x2="-20.32" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-63.5" x2="-12.7" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-63.5"/>
-<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="-63.5" x2="-12.7" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-63.5" x2="-7.62" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="-12.7" y="-63.5"/>
 <label x="-7.62" y="-63.5" size="1.778" layer="95" xref="yes"/>
+<pinref part="C32" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="7"/>
@@ -9919,12 +10047,12 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <wire x1="30.48" y1="-63.5" x2="30.48" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-63.5" x2="38.1" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="30.48" y="-63.5"/>
-<pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="-63.5" x2="38.1" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="-63.5" x2="43.18" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="38.1" y="-63.5"/>
 <pinref part="JP2(GP2Y0A51SK0F)" gate="A" pin="2"/>
 <label x="43.18" y="-63.5" size="1.778" layer="95" xref="yes"/>
+<pinref part="C33" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="DEBUGGING_PO" gate="A" pin="9"/>
@@ -9944,12 +10072,12 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <wire x1="81.28" y1="-63.5" x2="81.28" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-63.5" x2="88.9" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="81.28" y="-63.5"/>
-<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="-63.5" x2="88.9" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="88.9" y="-63.5"/>
 <pinref part="JP3(GP2Y0A51SK0F)" gate="A" pin="2"/>
 <label x="93.98" y="-63.5" size="1.778" layer="95" xref="yes"/>
+<pinref part="C34" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="AN4/C1IN-/RP2/CN6/RB2"/>
@@ -10062,18 +10190,16 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <label x="198.12" y="86.36" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="78.74" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="78.74" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 <junction x="114.3" y="78.74"/>
 <label x="106.68" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="-271.78" y1="-45.72" x2="-271.78" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="INPUT"/>
 <wire x1="-259.08" y1="-45.72" x2="-271.78" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-256.54" y1="-10.16" x2="-264.16" y2="-10.16" width="0.1524" layer="91"/>
@@ -10085,12 +10211,14 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <wire x1="-264.16" y1="-10.16" x2="-264.16" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-264.16" y="-10.16"/>
 <wire x1="-271.78" y1="-45.72" x2="-271.78" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="-271.78" y="-45.72"/>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="-256.54" y1="-10.16" x2="-256.54" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="IN"/>
 <wire x1="-256.54" y1="-15.24" x2="-254" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="C30" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="-271.78" y1="-48.26" x2="-271.78" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="-271.78" y="-45.72"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -10258,30 +10386,30 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <wire x1="-43.18" y1="-60.96" x2="-27.94" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-60.96" x2="-27.94" y2="-55.88" width="0.1524" layer="91"/>
 <label x="-27.94" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="-27.94" y1="-55.88" x2="-27.94" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-55.88" x2="-22.86" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-55.88"/>
+<pinref part="C35" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="-60.96" x2="22.86" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-60.96" x2="22.86" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="JP2(GP2Y0A51SK0F)" gate="A" pin="1"/>
 <label x="22.86" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="-55.88" x2="22.86" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-55.88" x2="27.94" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="22.86" y="-55.88"/>
+<pinref part="C36" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="-60.96" x2="73.66" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-60.96" x2="73.66" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="JP3(GP2Y0A51SK0F)" gate="A" pin="1"/>
 <label x="73.66" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="C20" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="-55.88" x2="73.66" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-55.88" x2="78.74" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="73.66" y="-55.88"/>
+<pinref part="C37" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-226.06" y1="-10.16" x2="-213.36" y2="-10.16" width="0.1524" layer="91"/>
@@ -10298,14 +10426,14 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <label x="200.66" y="73.66" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="106.68" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="106.68" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="106.68" x2="106.68" y2="106.68" width="0.1524" layer="91"/>
-<junction x="114.3" y="106.68"/>
-<label x="106.68" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="121.92" y1="114.3" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="114.3" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
+<junction x="114.3" y="114.3"/>
+<label x="106.68" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C46" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -10331,44 +10459,40 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <segment>
 <pinref part="MOTOR_R" gate="G$1" pin="4"/>
 <wire x1="274.32" y1="86.36" x2="294.64" y2="86.36" width="0.1524" layer="91"/>
-<label x="299.72" y="86.36" size="1.778" layer="95" xref="yes"/>
-<pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="294.64" y1="86.36" x2="299.72" y2="86.36" width="0.1524" layer="91"/>
+<label x="294.64" y="91.44" size="1.778" layer="95" xref="yes"/>
+<wire x1="294.64" y1="86.36" x2="294.64" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="86.36" x2="294.64" y2="83.82" width="0.1524" layer="91"/>
 <junction x="294.64" y="86.36"/>
+<pinref part="C43" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="4"/>
 <label x="299.72" y="60.96" size="1.778" layer="95" xref="yes"/>
-<pinref part="C26" gate="G$1" pin="1"/>
 <wire x1="274.32" y1="60.96" x2="294.64" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="60.96" x2="294.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="60.96" x2="294.64" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="60.96" x2="299.72" y2="60.96" width="0.1524" layer="91"/>
 <junction x="294.64" y="60.96"/>
+<pinref part="C44" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="VCC"/>
-<wire x1="185.42" y1="76.2" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
 <label x="226.06" y="76.2" size="1.778" layer="95" xref="yes"/>
-<pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="76.2" x2="226.06" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="76.2" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="C42" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="PROGRAMMER_PO" gate="A" pin="2"/>
 <wire x1="-170.18" y1="-15.24" x2="-162.56" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="-15.24" x2="-162.56" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="-203.2" y1="-53.34" x2="-198.12" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-198.12" y1="-53.34" x2="-193.04" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-193.04" y1="-53.34" x2="-180.34" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-53.34" x2="-195.58" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-203.2" y1="-53.34" x2="-203.2" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="-193.04" y1="-53.34" x2="-193.04" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-193.04" y="-53.34"/>
-<pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="-180.34" y1="-53.34" x2="-180.34" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-180.34" y="-53.34"/>
 <wire x1="-198.12" y1="-50.8" x2="-198.12" y2="-53.34" width="0.1524" layer="91"/>
@@ -10384,42 +10508,46 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <pinref part="D1" gate="1" pin="A"/>
 <label x="-198.12" y="-50.8" size="1.778" layer="95" rot="R90" xref="yes"/>
 <junction x="-162.56" y="-53.34"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="C23" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-86.36" y1="-15.24" x2="-88.9" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-88.9" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="MICROCHIP" gate="A" pin="AVDD"/>
-<wire x1="-86.36" y1="-15.24" x2="-63.5" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="-86.36" y="-15.24"/>
+<wire x1="-88.9" y1="-15.24" x2="-83.82" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="C38" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="-15.24" x2="-63.5" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="-83.82" y="-15.24"/>
 </segment>
 <segment>
-<pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="15.24" x2="162.56" y2="15.24" width="0.1524" layer="91"/>
 <label x="162.56" y="15.24" size="1.778" layer="95" xref="yes"/>
 <pinref part="MICROCHIP" gate="A" pin="VDD"/>
-<wire x1="124.46" y1="15.24" x2="157.48" y2="15.24" width="0.1524" layer="91"/>
-<junction x="157.48" y="15.24"/>
+<wire x1="124.46" y1="15.24" x2="154.94" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="C39" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="15.24" x2="162.56" y2="15.24" width="0.1524" layer="91"/>
+<junction x="154.94" y="15.24"/>
 </segment>
 <segment>
 <wire x1="-132.08" y1="27.94" x2="-132.08" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="-15.24" x2="162.56" y2="-15.24" width="0.1524" layer="91"/>
 <label x="162.56" y="-15.24" size="1.778" layer="95" xref="yes"/>
 <pinref part="MICROCHIP" gate="A" pin="VDD_2"/>
-<wire x1="124.46" y1="-15.24" x2="157.48" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="157.48" y="-15.24"/>
+<wire x1="124.46" y1="-15.24" x2="160.02" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="C40" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="-15.24" x2="162.56" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-17.78" x2="160.02" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="160.02" y="-15.24"/>
 </segment>
 <segment>
 <pinref part="BLUETOOTH" gate="G$1" pin="VBAT"/>
 <wire x1="-195.58" y1="58.42" x2="-185.42" y2="58.42" width="0.1524" layer="91"/>
 <label x="-182.88" y="58.42" size="1.778" layer="95" xref="yes"/>
-<pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="-185.42" y1="58.42" x2="-182.88" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-185.42" y1="58.42" x2="-185.42" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-185.42" y="58.42"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -10475,12 +10603,12 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <net name="N$9" class="0">
 <segment>
 <pinref part="PROGRAMMER_PO" gate="A" pin="1"/>
-<wire x1="-111.76" y1="-17.78" x2="-121.92" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="-106.68" y1="-17.78" x2="-121.92" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="K"/>
 <wire x1="-121.92" y1="-17.78" x2="-170.18" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="-27.94" x2="-121.92" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="-121.92" y="-17.78"/>
+<pinref part="C41" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -10514,8 +10642,8 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <net name="N$13" class="0">
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="!MCLR"/>
-<pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="-63.5" y1="-17.78" x2="-104.14" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="-17.78" x2="-93.98" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="C41" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$16" class="0">

@@ -1,0 +1,9 @@
+Manufacturer=Kyocera AVX
+PartNumber=0805YC106KAT2A
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=2.1
+Released=2022-04-20 09:46:13
+Downloaded=2025-08-03 10:07:24
+3D=Y

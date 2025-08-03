@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_20702193"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-08-02-03:13:15)
+    (utime 2025-08-02-03:13:15)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "C0805J104K1RACAUTO")
+)
+
+
+(pinAssign "ECS_20702193"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-08-02-03:13:15)
+    (utime 2025-08-02-03:13:15)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_20702193")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "C0805J104K1RACAUTO")
+)
+
+
+(part "C0805J104K1RACAUTO"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-08-02-03:13:15)
+    (utime 2025-08-02-03:13:15)
+    (packageRef "C0805J104K1RACAUTO")
+    (pinAssignRef "ECS_20702193")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "Manufacturer_Name" "KEMET")
+    (property "Manufacturer_Part_Number" "C0805J104K1RACAUTO")
+    (property "Datasheet_Link" "https://search.kemet.com/component-documentation/download/specsheet/C0805J104K1RACAUTO")
+    (property "compAreaTopHeight" 1.4)
+)
+
+

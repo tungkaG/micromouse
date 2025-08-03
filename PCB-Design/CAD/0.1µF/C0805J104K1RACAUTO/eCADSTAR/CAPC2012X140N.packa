@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "C0805J104K1RACAUTO"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-02-11-05:41:18)
+    (mountForm default
+        (footprintRef "CAPC2012X140N")
+        (spec "System")
+    )
+)

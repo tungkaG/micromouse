@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0805YC106KAT2A
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%
+K
+F https://www.mouser.fr/datasheet/2/40/AVX_X7RDielectric_777024-1853642.pdf
+$ENDCMP
+#
+#End Doc Library

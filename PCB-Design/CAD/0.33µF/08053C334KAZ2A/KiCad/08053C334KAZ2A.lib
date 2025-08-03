@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 08053C334KAZ2A
+#/932531/1717166/2.50/2/3/Capacitor
+DEF 08053C334KAZ2A C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "08053C334KAZ2A" 350 150 50 H V L CNN
+F2 "CAPC2012X152N" 350 50 50 H I L CNN
+F3 "" 350 -50 50 H I L CNN
+F4 "AVX 330nF Multilayer Ceramic Capacitor (MLCC) 25 V 0805 SMT Max. Op. Temp. +125C" 350 -150 50 H I L CNN "Description"
+F5 "1.52" 350 -250 50 H I L CNN "Height"
+F6 "" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Kyocera AVX" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "08053C334KAZ2A" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library
