@@ -2334,14 +2334,14 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="8" x="58.42" y="39.37" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="29.21" y="83.185" size="1.27" layer="27"/>
 </element>
-<element name="HBRIDGE" library="TB6612FNG_C_8_EL" package="SOP65P760X160-24N" value="TB6612FNG,C,8,EL" x="55.88" y="58.42" smashed="yes">
-<attribute name="DESCRIPTION" value="otor / Motion / Ignition Controllers &amp; Drivers Brush Motor Driver IC" x="133.35" y="20.32" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="1.6mm" x="133.35" y="20.32" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Toshiba" x="133.35" y="20.32" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="TB6612FNG,C,8,EL" x="133.35" y="20.32" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="757-TB6612FNGC8EL" x="133.35" y="20.32" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Toshiba/TB6612FNGC8EL?qs=rsevcuukUAy2UalRuv4E%2FQ%3D%3D" x="133.35" y="20.32" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="55.88" y="60.96" size="1.27" layer="25" align="center"/>
+<element name="HBRIDGE" library="TB6612FNG_C_8_EL" package="SOP65P760X160-24N" value="TB6612FNG,C,8,EL" x="57.15" y="58.42" smashed="yes">
+<attribute name="DESCRIPTION" value="otor / Motion / Ignition Controllers &amp; Drivers Brush Motor Driver IC" x="134.62" y="20.32" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.6mm" x="134.62" y="20.32" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Toshiba" x="134.62" y="20.32" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TB6612FNG,C,8,EL" x="134.62" y="20.32" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="757-TB6612FNGC8EL" x="134.62" y="20.32" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Toshiba/TB6612FNGC8EL?qs=rsevcuukUAy2UalRuv4E%2FQ%3D%3D" x="134.62" y="20.32" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="57.15" y="60.96" size="1.27" layer="25" align="center"/>
 </element>
 <element name="JP1(GP2Y0A51SK0F)" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="95.25" y="64.77" smashed="yes">
 <attribute name="NAME" x="91.3638" y="66.5988" size="1.27" layer="25" ratio="10"/>
@@ -2358,14 +2358,14 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="92" x="142.24" y="-30.48" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="91.44" y="51.435" size="1.27" layer="27"/>
 </element>
-<element name="LED1" library="APT3216LSECK_J3-PRV" package="LEDC3216X95N" value="APT3216LSECK_J3-PRV" x="113.03" y="35.56" smashed="yes">
-<attribute name="DESCRIPTION" value="3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle" x="137.16" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="0.95mm" x="137.16" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Kingbright" x="137.16" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="APT3216LSECK/J3-PRV" x="137.16" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="604-APT3216LSECKJ3RV" x="137.16" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D" x="137.16" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="113.03" y="38.1" size="1.27" layer="25" align="center"/>
+<element name="LED1" library="APT3216LSECK_J3-PRV" package="LEDC3216X95N" value="APT3216LSECK_J3-PRV" x="82.55" y="44.45" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle" x="172.72" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="0.95mm" x="172.72" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Kingbright" x="172.72" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APT3216LSECK/J3-PRV" x="172.72" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="604-APT3216LSECKJ3RV" x="172.72" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D" x="172.72" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="80.01" y="44.45" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element name="LED2" library="APT3216LSECK_J3-PRV" package="LEDC3216X95N" value="APT3216LSECK_J3-PRV" x="27.94" y="15.24" smashed="yes">
 <attribute name="DESCRIPTION" value="3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle" x="74.93" y="-74.93" size="1.778" layer="27" display="off"/>
@@ -2458,11 +2458,11 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="100.33" y="-54.61" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="18.1864" y="15.4686" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204V" package3d_urn="urn:adsk.eagle:package:23495/1" value="47k" x="114.3" y="30.48" smashed="yes">
-<attribute name="NAME" x="112.1664" y="31.6484" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="11" x="199.39" y="-41.91" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="199.39" y="-41.91" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="112.1664" y="28.1686" size="1.27" layer="27" ratio="10"/>
+<element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204V" package3d_urn="urn:adsk.eagle:package:23495/1" value="47k" x="80.01" y="46.99" smashed="yes" rot="R270">
+<attribute name="NAME" x="81.1784" y="49.1236" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="11" x="7.62" y="-38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="7.62" y="-38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="77.6986" y="49.1236" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204V" package3d_urn="urn:adsk.eagle:package:23495/1" value="4.7k" x="55.88" y="17.78" smashed="yes">
 <attribute name="NAME" x="53.7464" y="18.9484" size="1.27" layer="25" ratio="10"/>
@@ -2494,14 +2494,14 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="93.98" y="-67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="56.2864" y="10.3886" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="S1" library="B3F-1020" package="B3F1000" value="B3F-1020" x="106.68" y="26.67" smashed="yes">
-<attribute name="DESCRIPTION" value="Switch Tact SPST,flat 5mm act,PC Pins Black Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 0.9mm" x="158.75" y="-45.72" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="mm" x="158.75" y="-45.72" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Omron Electronics" x="158.75" y="-45.72" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="B3F-1020" x="158.75" y="-45.72" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="653-B3F-1020" x="158.75" y="-45.72" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1020?qs=lK7M36XCk6J1%2FfWxwEHrqA%3D%3D" x="158.75" y="-45.72" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="106.35" y="25.455" size="1.27" layer="25" align="center"/>
+<element name="S1" library="B3F-1020" package="B3F1000" value="B3F-1020" x="88.9" y="45.72" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="Switch Tact SPST,flat 5mm act,PC Pins Black Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 0.9mm" x="36.83" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="36.83" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Omron Electronics" x="36.83" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="B3F-1020" x="36.83" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="653-B3F-1020" x="36.83" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1020?qs=lK7M36XCk6J1%2FfWxwEHrqA%3D%3D" x="36.83" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.23" y="46.935" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
 <element name="S2" library="B3F-1020" package="B3F1000" value="B3F-1020" x="97.79" y="26.67" smashed="yes">
 <attribute name="DESCRIPTION" value="Switch Tact SPST,flat 5mm act,PC Pins Black Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 0.9mm" x="160.02" y="-45.72" size="1.778" layer="27" display="off"/>
@@ -2766,14 +2766,14 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="-119.38" y="-57.15" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-119.38" y="-57.15" size="1.27" layer="25" align="center"/>
 </element>
-<element name="D1" library="1N4148WS-HG3-08" package="SOD2713X115N" value="1N4148WS-HG3-08" x="80.01" y="45.72" smashed="yes">
-<attribute name="DESCRIPTION" value="Diodes - General Purpose, Power, Switching 1V Vf, 4pF; 25nA Ir SOD-323" x="80.01" y="45.72" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="1.15mm" x="80.01" y="45.72" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Vishay" x="80.01" y="45.72" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1N4148WS-HG3-08" x="80.01" y="45.72" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="78-1N4148WS-HG3-08" x="80.01" y="45.72" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/1N4148WS-HG3-08?qs=MLItCLRbWsz%2FnO5zs5RZvA%3D%3D" x="80.01" y="45.72" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="80.01" y="43.18" size="1.27" layer="25" align="center"/>
+<element name="D1" library="1N4148WS-HG3-08" package="SOD2713X115N" value="1N4148WS-HG3-08" x="77.47" y="46.99" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="Diodes - General Purpose, Power, Switching 1V Vf, 4pF; 25nA Ir SOD-323" x="77.47" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="1.15mm" x="77.47" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Vishay" x="77.47" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1N4148WS-HG3-08" x="77.47" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="78-1N4148WS-HG3-08" x="77.47" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/1N4148WS-HG3-08?qs=MLItCLRbWsz%2FnO5zs5RZvA%3D%3D" x="77.47" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="80.01" y="46.99" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 </elements>
 <signals>
@@ -2851,23 +2851,23 @@ design rules under a new name.</description>
 <wire x1="79.3496" y1="64.5414" x2="76.2" y2="61.77" width="0" layer="19" extent="1-1"/>
 <wire x1="71.12" y1="59.69" x2="76.2" y2="61.77" width="0" layer="19" extent="1-1"/>
 <wire x1="66.04" y1="59.23" x2="71.12" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="59.442" y1="58.095" x2="66.04" y2="59.23" width="0" layer="19" extent="1-1"/>
+<wire x1="60.712" y1="58.095" x2="66.04" y2="59.23" width="0" layer="19" extent="1-1"/>
 <wire x1="97.79" y1="54.61" x2="91.44" y2="51.61" width="0" layer="19" extent="1-1"/>
 <wire x1="97.79" y1="59.69" x2="97.79" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="97.79" y1="64.77" x2="97.79" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="52.318" y1="56.795" x2="59.442" y2="58.095" width="0" layer="19" extent="1-1"/>
-<wire x1="52.318" y1="56.145" x2="52.318" y2="56.795" width="0" layer="19" extent="1-1"/>
-<wire x1="52.318" y1="60.045" x2="52.318" y2="56.795" width="0" layer="19" extent="1-1"/>
-<wire x1="52.318" y1="60.695" x2="52.318" y2="60.045" width="0" layer="19" extent="1-1"/>
+<wire x1="53.588" y1="56.795" x2="60.712" y2="58.095" width="0" layer="19" extent="1-1"/>
+<wire x1="53.588" y1="56.145" x2="53.588" y2="56.795" width="0" layer="19" extent="1-1"/>
+<wire x1="53.588" y1="60.045" x2="53.588" y2="56.795" width="0" layer="19" extent="1-1"/>
+<wire x1="53.588" y1="60.695" x2="53.588" y2="60.045" width="0" layer="19" extent="1-1"/>
 <wire x1="109.34" y1="51.725" x2="97.79" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="111.64" y1="49.875" x2="109.34" y2="51.725" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="64.77" x2="52.318" y2="60.695" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="52.07" x2="34.29" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="80.01" y1="31.0134" x2="76.2" y2="52.88" width="0" layer="19" extent="1-1"/>
+<wire x1="92.15" y1="43.47" x2="91.44" y2="51.61" width="0" layer="19" extent="1-1"/>
+<wire x1="80.01" y1="31.0134" x2="92.15" y2="43.47" width="0" layer="19" extent="1-1"/>
 <wire x1="85.6234" y1="26.2" x2="80.01" y2="31.0134" width="0" layer="19" extent="1-1"/>
 <wire x1="74.3966" y1="25.4" x2="80.01" y2="31.0134" width="0" layer="19" extent="1-1"/>
 <wire x1="79.21" y1="19.7866" x2="74.3966" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="103.43" y1="28.92" x2="85.6234" y2="26.2" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="64.77" x2="53.588" y2="60.695" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="52.07" x2="34.29" y2="64.77" width="0" layer="19" extent="1-1"/>
 <wire x1="54.61" y1="17.78" x2="74.3966" y2="25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="49.3" y1="12.7" x2="54.61" y2="17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="41.68" y1="22.86" x2="49.3" y2="12.7" width="0" layer="19" extent="1-1"/>
@@ -2934,36 +2934,36 @@ design rules under a new name.</description>
 <contactref element="HBRIDGE" pad="23"/>
 <contactref element="R8" pad="2"/>
 <contactref element="MICROCHIP" pad="15"/>
-<wire x1="63.5" y1="41.91" x2="59.442" y2="61.345" width="0" layer="19" extent="1-1"/>
+<wire x1="63.5" y1="41.91" x2="60.712" y2="61.345" width="0" layer="19" extent="1-1"/>
 <wire x1="78.41" y1="19.7866" x2="63.5" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MTRDRV_AIN1">
 <contactref element="MICROCHIP" pad="27"/>
 <contactref element="HBRIDGE" pad="21"/>
 <contactref element="DEBUGGING_PO" pad="2"/>
-<wire x1="85.6234" y1="24.6" x2="59.442" y2="60.045" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="88.9" x2="59.442" y2="60.045" width="0" layer="19" extent="1-1"/>
+<wire x1="85.6234" y1="24.6" x2="60.712" y2="60.045" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="88.9" x2="60.712" y2="60.045" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MTRDRV_BIN1">
 <contactref element="MICROCHIP" pad="25"/>
 <contactref element="HBRIDGE" pad="17"/>
 <contactref element="DEBUGGING_PO" pad="6"/>
-<wire x1="59.442" y1="57.445" x2="35.56" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="85.6234" y1="23" x2="59.442" y2="57.445" width="0" layer="19" extent="1-1"/>
+<wire x1="60.712" y1="57.445" x2="35.56" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="85.6234" y1="23" x2="60.712" y2="57.445" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MTRDRV_BIN2">
 <contactref element="MICROCHIP" pad="24"/>
 <contactref element="HBRIDGE" pad="16"/>
 <contactref element="DEBUGGING_PO" pad="8"/>
-<wire x1="59.442" y1="56.795" x2="38.1" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="85.6234" y1="22.2" x2="59.442" y2="56.795" width="0" layer="19" extent="1-1"/>
+<wire x1="60.712" y1="56.795" x2="38.1" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="85.6234" y1="22.2" x2="60.712" y2="56.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MTRDRV_AIN2">
 <contactref element="MICROCHIP" pad="26"/>
 <contactref element="HBRIDGE" pad="22"/>
 <contactref element="DEBUGGING_PO" pad="4"/>
-<wire x1="59.442" y1="60.695" x2="33.02" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="59.442" y1="60.695" x2="85.6234" y2="23.8" width="0" layer="19" extent="1-1"/>
+<wire x1="60.712" y1="60.695" x2="33.02" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="60.712" y1="60.695" x2="85.6234" y2="23.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VM">
 <contactref element="HBRIDGE" pad="13"/>
@@ -2973,9 +2973,9 @@ design rules under a new name.</description>
 <contactref element="J1" pad="1"/>
 <wire x1="71.12" y1="57.15" x2="71.36" y2="57.39" width="1.016" layer="1"/>
 <wire x1="71.12" y1="57.15" x2="66.0396" y2="62.2304" width="1.016" layer="1"/>
-<wire x1="59.442" y1="62.2304" x2="66.0396" y2="62.2304" width="1.016" layer="1"/>
+<wire x1="60.712" y1="62.2304" x2="66.0396" y2="62.2304" width="1.016" layer="1"/>
 <contactref element="IC1" pad="3"/>
-<wire x1="59.442" y1="61.995" x2="59.442" y2="62.2304" width="0.508" layer="1"/>
+<wire x1="60.712" y1="61.995" x2="60.712" y2="62.2304" width="0.508" layer="1"/>
 <contactref element="C30" pad="1"/>
 <contactref element="C7" pad="1"/>
 <contactref element="C12" pad="1"/>
@@ -2992,11 +2992,11 @@ design rules under a new name.</description>
 <wire x1="76.4314" y1="59.9186" x2="76.2" y2="60.15" width="1.016" layer="1"/>
 <wire x1="71.12" y1="57.15" x2="69.32395" y2="55.35395" width="1.016" layer="16"/>
 <wire x1="69.32395" y1="55.35395" x2="67.527896875" y2="54.61" width="1.016" layer="16" curve="-45"/>
-<wire x1="67.527896875" y1="54.61" x2="60.96" y2="54.61" width="1.016" layer="16"/>
-<wire x1="59.442" y1="54.845" x2="60.392709375" y2="54.845" width="1.016" layer="1"/>
-<wire x1="60.96" y1="54.61" x2="60.392709375" y2="54.845" width="1.016" layer="1" curve="-45"/>
-<wire x1="59.442" y1="54.845" x2="59.442" y2="55.495" width="0.508" layer="1"/>
-<via x="60.96" y="54.61" extent="1-16" drill="0.35" diameter="1.05"/>
+<wire x1="67.527896875" y1="54.61" x2="62.23" y2="54.61" width="1.016" layer="16"/>
+<wire x1="60.712" y1="54.845" x2="62.23" y2="54.845" width="1.016" layer="1"/>
+<wire x1="62.23" y1="54.61" x2="62.23" y2="54.845" width="1.016" layer="1"/>
+<wire x1="60.712" y1="54.845" x2="60.712" y2="55.495" width="0.508" layer="1"/>
+<via x="62.23" y="54.61" extent="1-16" drill="0.35" diameter="1.05"/>
 </signal>
 <signal name="N$7">
 <contactref element="MICROCHIP" pad="7"/>
@@ -3007,22 +3007,22 @@ design rules under a new name.</description>
 <contactref element="HBRIDGE" pad="5"/>
 <contactref element="HBRIDGE" pad="6"/>
 <contactref element="MOTOR_L" pad="2"/>
-<wire x1="52.318" y1="59.395" x2="52.318" y2="58.745" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="67.31" x2="52.318" y2="59.395" width="0" layer="19" extent="1-1"/>
+<wire x1="53.588" y1="59.395" x2="53.588" y2="58.745" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="67.31" x2="53.588" y2="59.395" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AO1">
 <contactref element="HBRIDGE" pad="2"/>
 <contactref element="HBRIDGE" pad="1"/>
 <contactref element="MOTOR_L" pad="1"/>
-<wire x1="52.318" y1="61.995" x2="52.318" y2="61.345" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="64.77" x2="52.318" y2="61.995" width="0" layer="19" extent="1-1"/>
+<wire x1="53.588" y1="61.995" x2="53.588" y2="61.345" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="64.77" x2="53.588" y2="61.995" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BO2">
 <contactref element="MOTOR_R" pad="2"/>
 <contactref element="HBRIDGE" pad="8"/>
 <contactref element="HBRIDGE" pad="7"/>
-<wire x1="52.318" y1="57.445" x2="52.318" y2="58.095" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="54.61" x2="52.318" y2="57.445" width="0" layer="19" extent="1-1"/>
+<wire x1="53.588" y1="57.445" x2="53.588" y2="58.095" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="54.61" x2="53.588" y2="57.445" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENCR_B">
 <contactref element="MOTOR_R" pad="6"/>
@@ -3038,8 +3038,8 @@ design rules under a new name.</description>
 <contactref element="MOTOR_R" pad="1"/>
 <contactref element="HBRIDGE" pad="12"/>
 <contactref element="HBRIDGE" pad="11"/>
-<wire x1="52.318" y1="55.495" x2="52.318" y2="54.845" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="52.07" x2="52.318" y2="54.845" width="0" layer="19" extent="1-1"/>
+<wire x1="53.588" y1="55.495" x2="53.588" y2="54.845" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="52.07" x2="53.588" y2="54.845" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R7" pad="1"/>
@@ -3072,7 +3072,8 @@ design rules under a new name.</description>
 <signal name="N$5">
 <contactref element="R4" pad="2"/>
 <contactref element="D1" pad="1"/>
-<wire x1="115.57" y1="30.48" x2="78.848" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="45.828" x2="77.730734375" y2="45.72" width="0.6096" layer="1" curve="45"/>
+<wire x1="77.730734375" y1="45.72" x2="80.01" y2="45.72" width="0.6096" layer="1"/>
 </signal>
 <signal name="ENCL_A">
 <contactref element="MOTOR_L" pad="5"/>
@@ -3144,7 +3145,8 @@ design rules under a new name.</description>
 <wire x1="78.35" y1="51.26" x2="76.2" y2="51.26" width="0.6096" layer="1"/>
 <contactref element="D1" pad="2"/>
 <wire x1="76.2" y1="51.26" x2="76.2" y2="49.53" width="0.6096" layer="1"/>
-<wire x1="87.7894625" y1="49.53" x2="76.2" y2="49.53" width="0.6096" layer="1"/>
+<wire x1="87.7894625" y1="49.53" x2="77.47" y2="49.53" width="0.6096" layer="1"/>
+<wire x1="77.47" y1="49.53" x2="76.2" y2="49.53" width="0.6096" layer="1"/>
 <wire x1="87.7894625" y1="49.53" x2="88.9" y2="49.99" width="0.6096" layer="1" curve="45"/>
 <wire x1="91.44" y1="49.99" x2="88.9" y2="49.99" width="0.6096" layer="1"/>
 <wire x1="76.2" y1="49.53" x2="74.93" y2="50.8" width="0.6096" layer="1"/>
@@ -3156,15 +3158,15 @@ design rules under a new name.</description>
 <wire x1="74.93" y1="50.8" x2="70.902103125" y2="50.8" width="0.6096" layer="1"/>
 <wire x1="66.04" y1="57.61" x2="65.25473125" y2="57.93526875" width="0.508" layer="1" curve="-45"/>
 <wire x1="64.53895" y1="58.65105" x2="62.742896875" y2="59.395" width="0.508" layer="1" curve="45"/>
-<wire x1="62.742896875" y1="59.395" x2="59.442" y2="59.395" width="0.508" layer="1"/>
+<wire x1="62.742896875" y1="59.395" x2="60.712" y2="59.395" width="0.508" layer="1"/>
 <wire x1="65.25473125" y1="57.93526875" x2="64.53895" y2="58.65105" width="0.508" layer="1"/>
+<wire x1="77.47" y1="48.152" x2="77.47" y2="49.53" width="0.508" layer="1"/>
 <wire x1="79.4" y1="52.31" x2="88.9" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="81.172" y1="45.72" x2="79.4" y2="52.31" width="0" layer="19" extent="1-1"/>
-<wire x1="79.21" y1="31.0134" x2="81.172" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="79.21" y1="31.0134" x2="77.47" y2="48.152" width="0" layer="19" extent="1-1"/>
 <wire x1="85.6234" y1="25.4" x2="79.21" y2="31.0134" width="0" layer="19" extent="1-1"/>
 <wire x1="80.01" y1="19.7866" x2="85.6234" y2="25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="101.04" y1="28.92" x2="85.6234" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="67.31" x2="59.442" y2="59.395" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="67.31" x2="60.712" y2="59.395" width="0" layer="19" extent="1-1"/>
 <wire x1="30.48" y1="78.74" x2="34.29" y2="67.31" width="0" layer="19" extent="1-1"/>
 <wire x1="33.02" y1="54.61" x2="34.29" y2="67.31" width="0" layer="19" extent="1-1"/>
 <wire x1="9.67" y1="76.64" x2="30.48" y2="78.74" width="0" layer="19" extent="1-1"/>
@@ -3194,21 +3196,23 @@ design rules under a new name.</description>
 <contactref element="PROGRAMMER_PO" pad="1"/>
 <contactref element="LED1" pad="1"/>
 <contactref element="C41" pad="1"/>
-<wire x1="111.53" y1="35.56" x2="86.36" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-82.09" y1="-41.91" x2="111.53" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="82.55" y1="42.95" x2="86.36" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-82.09" y1="-41.91" x2="82.55" y2="42.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="LED1" pad="2"/>
 <contactref element="R4" pad="1"/>
 <contactref element="S1" pad="1"/>
-<wire x1="113.03" y1="30.48" x2="114.53" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="109.93" y1="24.42" x2="113.03" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="80.01" y1="48.26" x2="82.55" y2="48.26" width="0.6096" layer="1"/>
+<wire x1="82.55" y1="48.26" x2="84.949878125" y2="48.26" width="0.6096" layer="1"/>
+<wire x1="84.949878125" y1="48.26" x2="85.65" y2="47.97" width="0.6096" layer="1" curve="-45"/>
+<wire x1="82.55" y1="48.26" x2="82.55" y2="45.95" width="0.6096" layer="1"/>
 </signal>
 <signal name="PWM_R">
 <contactref element="HBRIDGE" pad="15"/>
 <contactref element="R9" pad="2"/>
 <contactref element="MICROCHIP" pad="11"/>
-<wire x1="74.3966" y1="21.4" x2="59.442" y2="56.145" width="0" layer="19" extent="1-1"/>
+<wire x1="74.3966" y1="21.4" x2="60.712" y2="56.145" width="0" layer="19" extent="1-1"/>
 <wire x1="59.69" y1="12.7" x2="74.3966" y2="21.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
