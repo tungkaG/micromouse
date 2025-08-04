@@ -3636,7 +3636,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <attribute name="VALUE" x="-143.51" y="-57.15" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="C4" gate="G$1" x="-86.36" y="10.16" smashed="yes">
-<attribute name="NAME" x="-77.47" y="16.51" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-77.47" y="13.97" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="R4" gate="G$1" x="30.48" y="-66.04" smashed="yes" rot="R270">
@@ -3952,19 +3951,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </net>
 <net name="AN0" class="0">
 <segment>
-<pinref part="JP1(GP2Y0A51SK0F)" gate="A" pin="2"/>
-<wire x1="-43.18" y1="-63.5" x2="-20.32" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-63.5" x2="-20.32" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-63.5" x2="-12.7" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="-20.32" y="-63.5"/>
-<wire x1="-12.7" y1="-63.5" x2="-12.7" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-63.5" x2="-7.62" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="-12.7" y="-63.5"/>
-<label x="-7.62" y="-63.5" size="1.778" layer="95" xref="yes"/>
-<pinref part="C32" gate="G$1" pin="1"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <wire x1="-43.18" y1="60.96" x2="-53.34" y2="60.96" width="0.1524" layer="91"/>
 <label x="-53.34" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -3973,17 +3959,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="-63.5" y1="-22.86" x2="-68.58" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-68.58" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="MICROCHIP" gate="A" pin="OSC2/CLKO/CN29/RA3"/>
-<wire x1="177.8" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="-7.62" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="20.32" x2="223.52" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="AN1" class="0">
 <segment>
 <wire x1="10.16" y1="-63.5" x2="30.48" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-63.5" x2="30.48" y2="-66.04" width="0.1524" layer="91"/>
@@ -3997,6 +3972,17 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="C33" gate="G$1" pin="1"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="MICROCHIP" gate="A" pin="OSC2/CLKO/CN29/RA3"/>
+<wire x1="177.8" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-7.62" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="20.32" x2="223.52" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="AN1" class="0">
 <segment>
 <wire x1="-43.18" y1="58.42" x2="-53.34" y2="55.88" width="0.1524" layer="91"/>
 <label x="-53.34" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -4006,8 +3992,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="-63.5" y1="-20.32" x2="-68.58" y2="-20.32" width="0.1524" layer="91"/>
 <label x="-68.58" y="-20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="AN4" class="0">
 <segment>
 <wire x1="58.42" y1="-63.5" x2="81.28" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-63.5" x2="81.28" y2="-66.04" width="0.1524" layer="91"/>
@@ -4021,6 +4005,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="C34" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
+</net>
+<net name="AN4" class="0">
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="AN4/C1IN-/RP2/CN6/RB2"/>
 <wire x1="124.46" y1="-27.94" x2="124.46" y2="-30.48" width="0.1524" layer="91"/>
@@ -4029,6 +4015,19 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <segment>
 <wire x1="-43.18" y1="55.88" x2="-53.34" y2="50.8" width="0.1524" layer="91"/>
 <label x="-53.34" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP1(GP2Y0A51SK0F)" gate="A" pin="2"/>
+<wire x1="-43.18" y1="-63.5" x2="-20.32" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-63.5" x2="-20.32" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-63.5" x2="-12.7" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="-20.32" y="-63.5"/>
+<wire x1="-12.7" y1="-63.5" x2="-12.7" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-63.5" x2="-7.62" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-63.5"/>
+<label x="-7.62" y="-63.5" size="1.778" layer="95" xref="yes"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM_L" class="0">
@@ -4212,9 +4211,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="276.86" y="81.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MICROCHIP" gate="A" pin="RP24/CN20/PMA5/RC8"/>
-<wire x1="-63.5" y1="17.78" x2="-73.66" y2="17.78" width="0.1524" layer="91"/>
-<label x="-73.66" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="RP21/CN26/PMA3/RC5"/>
+<wire x1="124.46" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
+<label x="132.08" y="10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ENCR_A" class="0">
@@ -4224,11 +4223,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="251.46" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MICROCHIP" gate="A" pin="PWM2L1/RP23/CN17/PMA0/RC7"/>
-<wire x1="-63.5" y1="20.32" x2="-71.12" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="20.32" x2="-71.12" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="22.86" x2="-73.66" y2="22.86" width="0.1524" layer="91"/>
-<label x="-73.66" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="RP20/CN25/PMA4/RC4"/>
+<wire x1="124.46" y1="7.62" x2="132.08" y2="7.62" width="0.1524" layer="91"/>
+<label x="132.08" y="7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BO1" class="0">
@@ -4272,10 +4269,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="276.86" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MICROCHIP" gate="A" pin="PWM2H1/RP22/CN18/PMA1/RC6"/>
-<wire x1="-63.5" y1="22.86" x2="-68.58" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="22.86" x2="-68.58" y2="27.94" width="0.1524" layer="91"/>
-<label x="-68.58" y="27.94" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="TDI/PMA9/RA9"/>
+<wire x1="124.46" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
+<label x="132.08" y="2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4306,9 +4302,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="251.46" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MICROCHIP" gate="A" pin="SDA1/RP9/CN21/PMD3/RB9"/>
-<wire x1="-63.5" y1="25.4" x2="-63.5" y2="27.94" width="0.1524" layer="91"/>
-<label x="-63.5" y="27.94" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="RP19/CN28/PMBE/RC3"/>
+<wire x1="124.46" y1="5.08" x2="132.08" y2="5.08" width="0.1524" layer="91"/>
+<label x="132.08" y="5.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -4673,6 +4669,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="HBRIDGE" gate="G$1" pin="STBY"/>
 <wire x1="185.42" y1="73.66" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
 <label x="200.66" y="73.66" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MICROCHIP" gate="A" pin="TCK/PMA7/RA7"/>
+<wire x1="-63.5" y1="-5.08" x2="-71.12" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-71.12" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED4" class="0">
