@@ -3180,16 +3180,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <part name="JP3(GP2Y0A51SK0F)" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -3221,7 +3215,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="BLUETOOTH" library="RN4871-I_RM130" deviceset="RN4871-I_RM130" device=""/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -3248,14 +3241,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C7" library="0805YC106KAT2A" deviceset="0805YC106KAT2A" device=""/>
 <part name="C12" library="0805YC106KAT2A" deviceset="0805YC106KAT2A" device=""/>
-<part name="C8" library="0805YC106KAT2A" deviceset="0805YC106KAT2A" device=""/>
 <part name="C9" library="08053C334KAZ2A" deviceset="08053C334KAZ2A" device=""/>
 <part name="C14" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C23" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C28" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
-<part name="C32" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
-<part name="C33" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
-<part name="C34" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C35" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C36" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C37" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
@@ -3266,22 +3255,20 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <part name="C42" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C43" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C44" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
-<part name="C46" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C1" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="D1" library="1N4148WS-HG3-08" deviceset="1N4148WS-HG3-08" device=""/>
-<part name="R11" library="ERA-6ARW472V" deviceset="ERA-6ARW472V" device=""/>
 <part name="R12" library="ERA-6ARW472V" deviceset="ERA-6ARW472V" device=""/>
 <part name="R13" library="ERA-6ARW472V" deviceset="ERA-6ARW472V" device=""/>
 <part name="R14" library="ERA-6ARW472V" deviceset="ERA-6ARW472V" device=""/>
 <part name="R1" library="ERA-6ARW473V" deviceset="ERA-6ARW473V" device=""/>
 <part name="C4" library="MBAST21GBC7475KTCA01" deviceset="MBAST21GBC7475KTCA01" device=""/>
-<part name="R4" library="RNCE0805BTE10K0" deviceset="RNCE0805BTE10K0" device=""/>
-<part name="R5" library="RNCE0805BTE10K0" deviceset="RNCE0805BTE10K0" device=""/>
 <part name="R6" library="RNCE0805BTE10K0" deviceset="RNCE0805BTE10K0" device=""/>
 <part name="R10" library="RNCE0805BTE10K0" deviceset="RNCE0805BTE10K0" device=""/>
 <part name="R15" library="RNCE0805BTE10K0" deviceset="RNCE0805BTE10K0" device=""/>
 <part name="C2" library="08055A300JAT2A" deviceset="08055A300JAT2A" device=""/>
 <part name="C3" library="08055A300JAT2A" deviceset="08055A300JAT2A" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3310,12 +3297,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="GND1" gate="1" x="-27.94" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="-30.48" y="-81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="-20.32" y="-91.44" smashed="yes">
-<attribute name="VALUE" x="-22.86" y="-93.98" size="1.778" layer="96"/>
-</instance>
-<instance part="GND3" gate="1" x="-12.7" y="-83.82" smashed="yes">
-<attribute name="VALUE" x="-15.24" y="-86.36" size="1.778" layer="96"/>
-</instance>
 <instance part="GND4" gate="1" x="228.6" y="2.54" smashed="yes" rot="R90">
 <attribute name="VALUE" x="231.14" y="0" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3325,20 +3306,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="GND6" gate="1" x="22.86" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="20.32" y="-81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="GND7" gate="1" x="30.48" y="-88.9" smashed="yes">
-<attribute name="VALUE" x="27.94" y="-91.44" size="1.778" layer="96"/>
-</instance>
-<instance part="GND8" gate="1" x="38.1" y="-83.82" smashed="yes">
-<attribute name="VALUE" x="35.56" y="-86.36" size="1.778" layer="96"/>
-</instance>
 <instance part="GND9" gate="1" x="73.66" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="71.12" y="-81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="GND10" gate="1" x="81.28" y="-88.9" smashed="yes">
-<attribute name="VALUE" x="78.74" y="-91.44" size="1.778" layer="96"/>
-</instance>
-<instance part="GND11" gate="1" x="88.9" y="-83.82" smashed="yes">
-<attribute name="VALUE" x="86.36" y="-86.36" size="1.778" layer="96"/>
 </instance>
 <instance part="GND13" gate="1" x="121.92" y="55.88" smashed="yes">
 <attribute name="VALUE" x="119.38" y="53.34" size="1.778" layer="96"/>
@@ -3439,9 +3408,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="GND37" gate="1" x="129.54" y="-12.7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="132.08" y="-15.24" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND33" gate="1" x="121.92" y="88.9" smashed="yes">
-<attribute name="VALUE" x="119.38" y="86.36" size="1.778" layer="96"/>
-</instance>
 <instance part="BLUETOOTH" gate="G$1" x="-228.6" y="71.12" smashed="yes">
 <attribute name="NAME" x="-219.71" y="78.74" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-222.25" y="76.2" size="1.778" layer="96" align="center-left"/>
@@ -3531,10 +3497,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <attribute name="NAME" x="107.95" y="67.31" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="110.49" y="74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
-<instance part="C8" gate="G$1" x="121.92" y="109.22" smashed="yes" rot="R270">
-<attribute name="NAME" x="125.73" y="102.87" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="125.73" y="100.33" size="1.778" layer="96" align="center-left"/>
-</instance>
 <instance part="C9" gate="G$1" x="-271.78" y="-48.26" smashed="yes" rot="R270">
 <attribute name="NAME" x="-278.13" y="-52.07" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="-275.59" y="-44.45" size="1.778" layer="96" rot="R270" align="center-left"/>
@@ -3550,18 +3512,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="C28" gate="G$1" x="-193.04" y="-55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="-186.69" y="-64.77" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="-189.23" y="-64.77" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
-<instance part="C32" gate="G$1" x="-12.7" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="-6.35" y="-74.93" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="-8.89" y="-74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
-<instance part="C33" gate="G$1" x="38.1" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="44.45" y="-74.93" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="41.91" y="-74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
-<instance part="C34" gate="G$1" x="88.9" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="95.25" y="-74.93" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="92.71" y="-74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
 <instance part="C35" gate="G$1" x="-22.86" y="-55.88" smashed="yes">
 <attribute name="NAME" x="-13.97" y="-49.53" size="1.778" layer="95" align="center-left"/>
@@ -3603,10 +3553,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <attribute name="NAME" x="303.53" y="62.23" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="303.53" y="59.69" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="C46" gate="G$1" x="114.3" y="109.22" smashed="yes" rot="R270">
-<attribute name="NAME" x="120.65" y="100.33" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="118.11" y="100.33" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
 <instance part="C1" gate="G$1" x="-185.42" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="-179.07" y="46.99" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="-181.61" y="46.99" size="1.778" layer="96" rot="R270" align="center-left"/>
@@ -3614,10 +3560,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="D1" gate="G$1" x="-144.78" y="-53.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="-151.13" y="-58.42" size="1.778" layer="95" rot="R180" align="center-left"/>
 <attribute name="VALUE" x="-140.97" y="-48.26" size="1.778" layer="96" rot="R180" align="center-left"/>
-</instance>
-<instance part="R11" gate="G$1" x="-20.32" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="-13.97" y="-80.01" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="-16.51" y="-80.01" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
 <instance part="R12" gate="G$1" x="-134.62" y="7.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="-128.27" y="-6.35" size="1.778" layer="95" rot="R270" align="center-left"/>
@@ -3638,14 +3580,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="C4" gate="G$1" x="-86.36" y="10.16" smashed="yes">
 <attribute name="VALUE" x="-77.47" y="13.97" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="R4" gate="G$1" x="30.48" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.83" y="-80.01" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="34.29" y="-80.01" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
-<instance part="R5" gate="G$1" x="81.28" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="87.63" y="-80.01" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="85.09" y="-80.01" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
 <instance part="R6" gate="G$1" x="60.96" y="88.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="67.31" y="74.93" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="64.77" y="74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
@@ -3658,13 +3592,19 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <attribute name="NAME" x="24.13" y="74.93" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="21.59" y="74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
-<instance part="C2" gate="G$1" x="223.52" y="20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="229.87" y="11.43" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="227.33" y="11.43" size="1.778" layer="96" rot="R270" align="center-left"/>
+<instance part="C2" gate="G$1" x="228.6" y="15.24" smashed="yes">
+<attribute name="NAME" x="237.49" y="21.59" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="237.49" y="19.05" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="C3" gate="G$1" x="190.5" y="2.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="196.85" y="-6.35" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="194.31" y="-6.35" size="1.778" layer="96" rot="R270" align="center-left"/>
+<instance part="C3" gate="G$1" x="190.5" y="-2.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="196.85" y="-11.43" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="194.31" y="-11.43" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="GND2" gate="1" x="190.5" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="187.96" y="-20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="243.84" y="15.24" smashed="yes" rot="R90">
+<attribute name="VALUE" x="246.38" y="12.7" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -3678,11 +3618,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="-27.94" y1="-66.04" x2="-27.94" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="-12.7" y1="-78.74" x2="-12.7" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="Y1" gate="G$1" pin="GND_2"/>
 <wire x1="190.5" y1="5.08" x2="193.04" y2="5.08" width="0.1524" layer="91"/>
@@ -3694,25 +3629,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="JP2(GP2Y0A51SK0F)" gate="A" pin="3"/>
 </segment>
 <segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="30.48" y1="-86.36" x2="30.48" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="38.1" y1="-78.74" x2="38.1" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="C33" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <wire x1="58.42" y1="-66.04" x2="73.66" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="73.66" y1="-66.04" x2="73.66" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="JP3(GP2Y0A51SK0F)" gate="A" pin="3"/>
-</segment>
-<segment>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="88.9" y1="-78.74" x2="88.9" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="C34" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="60.96" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
@@ -3854,15 +3774,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="-76.2" y1="-12.7" x2="-63.5" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
-<junction x="121.92" y="91.44"/>
-<pinref part="GND33" gate="1" pin="GND"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="91.44" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C46" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="91.44" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="BLUETOOTH" gate="G$1" pin="GND_1"/>
 <wire x1="-228.6" y1="68.58" x2="-231.14" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND38" gate="1" pin="GND"/>
@@ -3940,13 +3851,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-20.32" y1="-83.82" x2="-20.32" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="81.28" y1="-86.36" x2="81.28" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="AN0" class="0">
@@ -3960,26 +3869,22 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="-68.58" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="10.16" y1="-63.5" x2="30.48" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-63.5" x2="30.48" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-63.5" x2="38.1" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="30.48" y="-63.5"/>
-<wire x1="38.1" y1="-63.5" x2="38.1" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-63.5" x2="43.18" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="38.1" y="-63.5"/>
+<wire x1="10.16" y1="-63.5" x2="43.18" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="JP2(GP2Y0A51SK0F)" gate="A" pin="2"/>
 <label x="43.18" y="-63.5" size="1.778" layer="95" xref="yes"/>
-<pinref part="C33" gate="G$1" pin="1"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="OSC2/CLKO/CN29/RA3"/>
 <wire x1="177.8" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="-7.62" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="20.32" x2="223.52" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-7.62" x2="177.8" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="15.24" x2="223.52" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="X2"/>
+<wire x1="223.52" y1="15.24" x2="223.52" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="15.24" x2="228.6" y2="15.24" width="0.1524" layer="91"/>
+<junction x="223.52" y="15.24"/>
 </segment>
 </net>
 <net name="AN1" class="0">
@@ -3993,17 +3898,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="-68.58" y="-20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="-63.5" x2="81.28" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-63.5" x2="81.28" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-63.5" x2="88.9" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="81.28" y="-63.5"/>
-<wire x1="88.9" y1="-63.5" x2="88.9" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="88.9" y="-63.5"/>
+<wire x1="58.42" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="JP3(GP2Y0A51SK0F)" gate="A" pin="2"/>
 <label x="93.98" y="-63.5" size="1.778" layer="95" xref="yes"/>
-<pinref part="C34" gate="G$1" pin="1"/>
-<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AN4" class="0">
@@ -4018,16 +3915,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </segment>
 <segment>
 <pinref part="JP1(GP2Y0A51SK0F)" gate="A" pin="2"/>
-<wire x1="-43.18" y1="-63.5" x2="-20.32" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-63.5" x2="-20.32" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-63.5" x2="-12.7" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="-20.32" y="-63.5"/>
-<wire x1="-12.7" y1="-63.5" x2="-12.7" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-63.5" x2="-7.62" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="-12.7" y="-63.5"/>
+<wire x1="-43.18" y1="-63.5" x2="-7.62" y2="-63.5" width="0.1524" layer="91"/>
 <label x="-7.62" y="-63.5" size="1.778" layer="95" xref="yes"/>
-<pinref part="C32" gate="G$1" pin="1"/>
-<pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM_L" class="0">
@@ -4191,17 +4080,17 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </net>
 <net name="BO2" class="0">
 <segment>
-<pinref part="MOTOR_R" gate="G$1" pin="2"/>
-<wire x1="274.32" y1="88.9" x2="276.86" y2="91.44" width="0.1524" layer="91"/>
-<label x="276.86" y="91.44" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="HBRIDGE" gate="G$1" pin="BO2_2"/>
 <wire x1="152.4" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
 <label x="149.86" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="HBRIDGE" gate="G$1" pin="BO2_1"/>
 <wire x1="152.4" y1="71.12" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
 <junction x="152.4" y="68.58"/>
+</segment>
+<segment>
+<pinref part="MOTOR_R" gate="G$1" pin="1"/>
+<wire x1="254" y1="88.9" x2="251.46" y2="91.44" width="0.1524" layer="91"/>
+<label x="251.46" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ENCR_B" class="0">
@@ -4211,9 +4100,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="276.86" y="81.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MICROCHIP" gate="A" pin="RP21/CN26/PMA3/RC5"/>
-<wire x1="124.46" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
-<label x="132.08" y="10.16" size="1.778" layer="95" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="RP20/CN25/PMA4/RC4"/>
+<wire x1="124.46" y1="7.62" x2="132.08" y2="7.62" width="0.1524" layer="91"/>
+<label x="132.08" y="7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ENCR_A" class="0">
@@ -4223,17 +4112,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="251.46" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MICROCHIP" gate="A" pin="RP20/CN25/PMA4/RC4"/>
-<wire x1="124.46" y1="7.62" x2="132.08" y2="7.62" width="0.1524" layer="91"/>
-<label x="132.08" y="7.62" size="1.778" layer="95" xref="yes"/>
+<pinref part="MICROCHIP" gate="A" pin="RP21/CN26/PMA3/RC5"/>
+<wire x1="124.46" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
+<label x="132.08" y="10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BO1" class="0">
-<segment>
-<pinref part="MOTOR_R" gate="G$1" pin="1"/>
-<wire x1="254" y1="88.9" x2="251.46" y2="91.44" width="0.1524" layer="91"/>
-<label x="251.46" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="BO1_2"/>
 <wire x1="152.4" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
@@ -4241,6 +4125,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="HBRIDGE" gate="G$1" pin="BO1_1"/>
 <wire x1="152.4" y1="60.96" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
 <junction x="152.4" y="58.42"/>
+</segment>
+<segment>
+<pinref part="MOTOR_R" gate="G$1" pin="2"/>
+<wire x1="274.32" y1="88.9" x2="276.86" y2="91.44" width="0.1524" layer="91"/>
+<label x="276.86" y="91.44" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -4272,20 +4161,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="MICROCHIP" gate="A" pin="TDI/PMA9/RA9"/>
 <wire x1="124.46" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
 <label x="132.08" y="2.54" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="Y1" gate="G$1" pin="X1"/>
-<wire x1="190.5" y1="2.54" x2="193.04" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="Y1" gate="G$1" pin="X2"/>
-<wire x1="223.52" y1="7.62" x2="223.52" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4346,16 +4221,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="-200.66" y="-10.16" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
 <pinref part="C29" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="114.3" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="114.3" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
-<junction x="114.3" y="114.3"/>
-<label x="106.68" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="C46" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -4566,13 +4431,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="MICROCHIP" gate="A" pin="OSC1/CLKI/CN30/RA2"/>
-<wire x1="190.5" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="RX" class="0">
 <segment>
 <pinref part="BLUETOOTH" gate="G$1" pin="UART_RX"/>
@@ -4698,6 +4556,19 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="MICROCHIP" gate="A" pin="PGEC2/PWM1L3/RP11/CN15/PMD1/RB11"/>
 <wire x1="-63.5" y1="5.08" x2="-66.04" y2="5.08" width="0.1524" layer="91"/>
 <label x="-66.04" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="MICROCHIP" gate="A" pin="OSC1/CLKI/CN30/RA2"/>
+<wire x1="124.46" y1="-10.16" x2="185.42" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-10.16" x2="185.42" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="X1"/>
+<wire x1="185.42" y1="2.54" x2="190.5" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="2.54" x2="193.04" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="2.54" x2="190.5" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="190.5" y="2.54"/>
 </segment>
 </net>
 </nets>
