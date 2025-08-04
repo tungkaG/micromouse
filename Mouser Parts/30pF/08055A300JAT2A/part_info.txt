@@ -1,0 +1,9 @@
+Manufacturer=Kyocera AVX
+PartNumber=08055A300JAT2A
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=1.1
+Released=2022-02-06 11:32:26
+Downloaded=2025-08-04 09:47:08
+3D=Y

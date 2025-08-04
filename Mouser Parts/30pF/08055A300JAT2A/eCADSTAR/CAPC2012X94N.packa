@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "08055A300JAT2A"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-01-18-07:37:36)
+    (mountForm default
+        (footprintRef "CAPC2012X94N")
+        (spec "System")
+    )
+)
