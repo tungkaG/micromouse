@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "RNCE0805BTE10K0"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-06-18-03:54:56)
+    (mountForm default
+        (footprintRef "RESC2012X65N")
+        (spec "System")
+    )
+)

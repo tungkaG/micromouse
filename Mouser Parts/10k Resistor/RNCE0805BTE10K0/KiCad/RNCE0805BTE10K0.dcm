@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RNCE0805BTE10K0
+D Thin Film Resistors - SMD 10KOhms 0805 25ppm 1/8W 150V 0.1% Hi Temp/Stability
+K
+F https://www.mouser.sg/datasheet/2/418/9/ENG_DS_9_1773463_9_B-3355380.pdf
+$ENDCMP
+#
+#End Doc Library

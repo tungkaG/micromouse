@@ -1,0 +1,9 @@
+Manufacturer=Stackpole Electronics, Inc.
+PartNumber=RNCE0805BTE10K0
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=1.1
+Released=2025-07-31 08:53:42
+Downloaded=2025-08-03 22:32:40
+3D=Y

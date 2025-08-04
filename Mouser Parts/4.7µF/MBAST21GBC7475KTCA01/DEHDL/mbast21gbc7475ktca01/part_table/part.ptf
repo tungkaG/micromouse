@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MBAST21GBC7475KTCA01'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TAIYO YUDEN", "MBAST21GBC7475KTCA01" (!) = "", "CAPC2114X145N", "Capacitor Chip Non-polarised", "", "", "4.7 F +/-10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)", "https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=MBAST21GBC7475KTCA01&u=I", "1.45 mm"
+END_PART
+
+END.

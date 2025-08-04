@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RNCE0805BTE10K0'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Stackpole Electronics, Inc.", "RNCE0805BTE10K0" (!) = "", "RESC2012X65N", "Resistor Chip", "", "", "Thin Film Resistors - SMD 10KOhms 0805 25ppm 1/8W 150V 0.1% Hi Temp/Stability", "https://www.mouser.sg/datasheet/2/418/9/ENG_DS_9_1773463_9_B-3355380.pdf", "0.65 mm"
+END_PART
+
+END.

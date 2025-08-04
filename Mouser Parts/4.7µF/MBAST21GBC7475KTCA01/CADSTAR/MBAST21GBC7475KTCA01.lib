@@ -1,0 +1,16 @@
+.MBAST21GBC7475KTCA01 :1 ;4.7 F +/-10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)
+CAPC2114X145N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN MBAST21GBC7475KTCA01
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (TAIYO YUDEN)
+~!Manufacturer_Part_Number (MBAST21GBC7475KTCA01)
+~!Link Datasheet (https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=MBAST21GBC7475KTCA01&u=I)
+~!Height (1.45mm)
+~!3D_Model (MBAST21GBC7475KTCA01)
+MBAST21GBC7475KTCA01
+1.1!U 2.1!U 

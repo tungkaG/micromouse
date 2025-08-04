@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_20532634"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-07-01-14:41:03)
+    (utime 2025-07-01-14:41:03)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "MBAST21GBC7475KTCA01")
+)
+
+
+(pinAssign "ECS_20532634"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-07-01-14:41:03)
+    (utime 2025-07-01-14:41:03)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_20532634")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "MBAST21GBC7475KTCA01")
+)
+
+
+(part "MBAST21GBC7475KTCA01"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-07-01-14:41:03)
+    (utime 2025-07-01-14:41:03)
+    (packageRef "MBAST21GBC7475KTCA01")
+    (pinAssignRef "ECS_20532634")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "4.7 F +/-10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "Manufacturer_Name" "TAIYO YUDEN")
+    (property "Manufacturer_Part_Number" "MBAST21GBC7475KTCA01")
+    (property "Datasheet_Link" "https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=MBAST21GBC7475KTCA01&u=I")
+    (property "compAreaTopHeight" 1.45)
+)
+
+

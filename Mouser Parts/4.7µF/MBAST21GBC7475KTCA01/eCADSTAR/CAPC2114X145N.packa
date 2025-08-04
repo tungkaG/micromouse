@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MBAST21GBC7475KTCA01"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-01-31-03:42:50)
+    (mountForm default
+        (footprintRef "CAPC2114X145N")
+        (spec "System")
+    )
+)

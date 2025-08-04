@@ -1,0 +1,16 @@
+.RNCE0805BTE10K0 :1 ;Thin Film Resistors - SMD 10KOhms 0805 25ppm 1/8W 150V 0.1% Hi Temp/Stability
+RESC2012X65N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN RNCE0805BTE10K0
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (Stackpole Electronics, Inc.)
+~!Manufacturer_Part_Number (RNCE0805BTE10K0)
+~!Link Datasheet (https://www.mouser.sg/datasheet/2/418/9/ENG_DS_9_1773463_9_B-3355380.pdf)
+~!Height (0.65mm)
+~!3D_Model (RNCE0805BTE10K0)
+RNCE0805BTE10K0
+1.1!U 2.1!U 
