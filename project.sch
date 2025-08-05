@@ -2446,71 +2446,6 @@ Source: &lt;a href="http://www.omron.com/ecb/products/pdf/en-b3f.pdf"&gt; Datash
 </deviceset>
 </devicesets>
 </library>
-<library name="22-23-2021">
-<description>&lt;Headers &amp; Wire Housings VERT PCB HDR 2P TIN FRICTION LOCK&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="SHDR2W87P0X254_1X2_493X635X110">
-<description>&lt;b&gt;22-23-2021&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="0" y="0" drill="1.45" diameter="2.175" shape="square"/>
-<pad name="2" x="2.54" y="0" drill="1.45" diameter="2.175"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.44" y1="-3.5" x2="-1.44" y2="3.6" width="0.05" layer="51"/>
-<wire x1="-1.44" y1="3.6" x2="4.475" y2="3.6" width="0.05" layer="51"/>
-<wire x1="4.475" y1="3.6" x2="4.475" y2="-3.5" width="0.05" layer="51"/>
-<wire x1="4.475" y1="-3.5" x2="-1.44" y2="-3.5" width="0.05" layer="51"/>
-<wire x1="-1.19" y1="-3.25" x2="-1.19" y2="3.35" width="0.1" layer="51"/>
-<wire x1="-1.19" y1="3.35" x2="3.99" y2="3.35" width="0.1" layer="51"/>
-<wire x1="3.99" y1="3.35" x2="3.99" y2="-3.25" width="0.1" layer="51"/>
-<wire x1="3.99" y1="-3.25" x2="-1.19" y2="-3.25" width="0.1" layer="51"/>
-<wire x1="0" y1="-3.25" x2="3.978" y2="-3.25" width="0.2" layer="21"/>
-<wire x1="3.978" y1="-3.25" x2="3.978" y2="3.35" width="0.2" layer="21"/>
-<wire x1="3.978" y1="3.35" x2="-1.4375" y2="3.35" width="0.2" layer="21"/>
-<wire x1="-1.4375" y1="3.35" x2="-1.4375" y2="0" width="0.2" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="22-23-2021">
-<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" length="middle"/>
-<pin name="2" x="0" y="-2.54" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="22-23-2021" prefix="J">
-<description>&lt;b&gt;Headers &amp; Wire Housings VERT PCB HDR 2P TIN FRICTION LOCK&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="22-23-2021" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SHDR2W87P0X254_1X2_493X635X110">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="Headers &amp; Wire Housings VERT PCB HDR 2P TIN FRICTION LOCK" constant="no"/>
-<attribute name="HEIGHT" value="11.05mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Molex" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="22-23-2021" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-22-23-2021" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/22-23-2021?qs=ILqg114nvd4YKlRlbo3yMg%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="ADP3338AKCZ-5-R7">
 <description>&lt;Analog Devices ADP3338AKCZ-5-R7, LDO Voltage Regulator, 1A, 5 V +/-1.6%, 2.7  8 Vin, 3-Pin SOT-223&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -2648,67 +2583,6 @@ Source: &lt;a href="https://search.kemet.com/component-documentation/download/sp
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="0805YC106KAT2A">
-<description>&lt;Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="CAPC2012X94N">
-<description>&lt;b&gt;0805-ren13&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-0.81" y="0" dx="1.47" dy="1.02" layer="1" rot="R90"/>
-<smd name="2" x="0.81" y="0" dx="1.47" dy="1.02" layer="1" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.47" y1="0.89" x2="1.47" y2="0.89" width="0.05" layer="51"/>
-<wire x1="1.47" y1="0.89" x2="1.47" y2="-0.89" width="0.05" layer="51"/>
-<wire x1="1.47" y1="-0.89" x2="-1.47" y2="-0.89" width="0.05" layer="51"/>
-<wire x1="-1.47" y1="-0.89" x2="-1.47" y2="0.89" width="0.05" layer="51"/>
-<wire x1="-1.005" y1="0.625" x2="1.005" y2="0.625" width="0.1" layer="51"/>
-<wire x1="1.005" y1="0.625" x2="1.005" y2="-0.625" width="0.1" layer="51"/>
-<wire x1="1.005" y1="-0.625" x2="-1.005" y2="-0.625" width="0.1" layer="51"/>
-<wire x1="-1.005" y1="-0.625" x2="-1.005" y2="0.625" width="0.1" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="0805YC106KAT2A">
-<wire x1="5.588" y1="2.54" x2="5.588" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.112" y1="2.54" x2="7.112" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.588" y2="0" width="0.254" layer="94"/>
-<wire x1="7.112" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="8.89" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="8.89" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" visible="pad" length="middle"/>
-<pin name="2" x="12.7" y="0" visible="pad" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0805YC106KAT2A" prefix="C">
-<description>&lt;b&gt;Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.mouser.fr/datasheet/2/40/AVX_X7RDielectric_777024-1853642.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="0805YC106KAT2A" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CAPC2012X94N">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%" constant="no"/>
-<attribute name="HEIGHT" value="0.94mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Kyocera AVX" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="0805YC106KAT2A" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="581-0805YC106KAT2A" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/0805YC106KAT2A?qs=3HJ2avRr9PKwMzeRMZhF2g%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3164,6 +3038,71 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </deviceset>
 </devicesets>
 </library>
+<library name="691137710002">
+<description>&lt;Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SHDR2W70P0X500_1X2_1000X750X11">
+<description>&lt;b&gt;64900221122&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.2" diameter="1.8" shape="square"/>
+<pad name="2" x="5" y="0" drill="1.2" diameter="1.8"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.75" y1="-3.75" x2="-2.75" y2="4.35" width="0.05" layer="51"/>
+<wire x1="-2.75" y1="4.35" x2="7.85" y2="4.35" width="0.05" layer="51"/>
+<wire x1="7.85" y1="4.35" x2="7.85" y2="-3.75" width="0.05" layer="51"/>
+<wire x1="7.85" y1="-3.75" x2="-2.75" y2="-3.75" width="0.05" layer="51"/>
+<wire x1="-2.5" y1="-3.5" x2="-2.5" y2="4.1" width="0.1" layer="51"/>
+<wire x1="-2.5" y1="4.1" x2="7.6" y2="4.1" width="0.1" layer="51"/>
+<wire x1="7.6" y1="4.1" x2="7.6" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="7.6" y1="-3.5" x2="-2.5" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="0" y1="-3.5" x2="7.6" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="7.6" y1="-3.5" x2="7.6" y2="4.1" width="0.2" layer="21"/>
+<wire x1="7.6" y1="4.1" x2="-2.5" y2="4.1" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="4.1" x2="-2.5" y2="0" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="691137710002">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="691137710002" prefix="J">
+<description>&lt;b&gt;Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://katalog.we-online.com/em/datasheet/691137710002.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="691137710002" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SHDR2W70P0X500_1X2_1000X750X11">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole" constant="no"/>
+<attribute name="HEIGHT" value="11.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="691137710002" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="710-691137710002" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3175,19 +3114,18 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </classes>
 <parts>
 <part name="MICROCHIP" library="DSPIC33FJ64MC804-H_PT" deviceset="DSPIC33FJ64MC804-H/PT" device=""/>
-<part name="JP1(GP2Y0A51SK0F)" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="JP2(GP2Y0A51SK0F)" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="JP3(GP2Y0A51SK0F)" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="PROGRAMMER_PO" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
+<part name="1-&gt;PROG-&gt;6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -3195,7 +3133,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <part name="MOTOR_L" library="1761681-1" deviceset="1761681-1" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LINEAR_REGULATOR_3.3V" library="UA78M33CDCYG3" deviceset="UA78M33CDCYG3" device=""/>
+<part name="3.3V" library="UA78M33CDCYG3" deviceset="UA78M33CDCYG3" device=""/>
 <part name="HBRIDGE" library="TB6612FNG_C_8_EL" deviceset="TB6612FNG,C,8,EL" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -3204,7 +3142,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Y1" library="ABM8-20.000MHZ-B2-T" deviceset="ABM8-20.000MHZ-B2-T" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -3232,20 +3169,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S1" library="B3F-1020" deviceset="B3F-1020" device=""/>
 <part name="S2" library="B3F-1020" deviceset="B3F-1020" device=""/>
-<part name="J1" library="22-23-2021" deviceset="22-23-2021" device=""/>
-<part name="IC1" library="ADP3338AKCZ-5-R7" deviceset="ADP3338AKCZ-5-R7" device=""/>
+<part name="5V" library="ADP3338AKCZ-5-R7" deviceset="ADP3338AKCZ-5-R7" device=""/>
 <part name="C29" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C30" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device="" value="1µF"/>
 <part name="C31" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C7" library="0805YC106KAT2A" deviceset="0805YC106KAT2A" device=""/>
-<part name="C12" library="0805YC106KAT2A" deviceset="0805YC106KAT2A" device=""/>
 <part name="C9" library="08053C334KAZ2A" deviceset="08053C334KAZ2A" device=""/>
-<part name="C14" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C23" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
-<part name="C28" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
-<part name="C35" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C36" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C37" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
 <part name="C38" library="C0805J104K1RACAUTO" deviceset="C0805J104K1RACAUTO" device=""/>
@@ -3269,6 +3200,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <part name="C3" library="08055A300JAT2A" deviceset="08055A300JAT2A" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="BATTERY" library="691137710002" deviceset="691137710002" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3279,15 +3211,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <attribute name="NAME" x="25.7556" y="16.7386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="17.5006" y="11.6586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="JP1(GP2Y0A51SK0F)" gate="A" x="-40.64" y="-63.5" smashed="yes">
+<instance part="JP1" gate="A" x="-40.64" y="-63.5" smashed="yes">
 <attribute name="NAME" x="-46.99" y="-57.785" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-46.99" y="-71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="JP2(GP2Y0A51SK0F)" gate="A" x="12.7" y="-63.5" smashed="yes">
+<instance part="JP2" gate="A" x="12.7" y="-63.5" smashed="yes">
 <attribute name="NAME" x="6.35" y="-57.785" size="1.778" layer="95"/>
 <attribute name="VALUE" x="6.35" y="-71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="JP3(GP2Y0A51SK0F)" gate="A" x="60.96" y="-63.5" smashed="yes">
+<instance part="JP3" gate="A" x="60.96" y="-63.5" smashed="yes">
 <attribute name="NAME" x="54.61" y="-57.785" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="-71.12" size="1.778" layer="96"/>
 </instance>
@@ -3309,16 +3241,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="GND9" gate="1" x="73.66" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="71.12" y="-81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="121.92" y="55.88" smashed="yes">
-<attribute name="VALUE" x="119.38" y="53.34" size="1.778" layer="96"/>
-</instance>
 <instance part="GND19" gate="1" x="-215.9" y="-66.04" smashed="yes">
 <attribute name="VALUE" x="-218.44" y="-71.12" size="1.778" layer="96"/>
 </instance>
 <instance part="GND20" gate="1" x="-279.4" y="0" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-276.86" y="2.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="PROGRAMMER_PO" gate="A" x="-172.72" y="-10.16" smashed="yes" rot="R180">
+<instance part="1-&gt;PROG-&gt;6" gate="A" x="-172.72" y="-10.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="-158.75" y="1.905" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-166.37" y="0" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3345,7 +3274,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="GND27" gate="1" x="40.64" y="48.26" smashed="yes">
 <attribute name="VALUE" x="38.1" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="LINEAR_REGULATOR_3.3V" gate="G$1" x="-259.08" y="-45.72" smashed="yes">
+<instance part="3.3V" gate="G$1" x="-259.08" y="-45.72" smashed="yes">
 <attribute name="NAME" x="-224.79" y="-40.64" size="1.778" layer="95" rot="R180" align="center-left"/>
 <attribute name="VALUE" x="-229.87" y="-55.88" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
@@ -3372,11 +3301,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <attribute name="NAME" x="207.01" y="12.7" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="194.31" y="10.16" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="GND12" gate="1" x="-254" y="-5.08" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-251.46" y="-2.54" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND30" gate="1" x="-5.08" y="-55.88" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-2.54" y="-58.42" size="1.778" layer="96" rot="R90"/>
+<instance part="GND12" gate="1" x="-254" y="-2.54" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-251.46" y="0" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND31" gate="1" x="45.72" y="-55.88" smashed="yes" rot="R90">
 <attribute name="VALUE" x="48.26" y="-58.42" size="1.778" layer="96" rot="R90"/>
@@ -3466,13 +3392,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <attribute name="NAME" x="-142.24" y="21.59" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="-129.54" y="16.51" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="J1" gate="G$1" x="-284.48" y="-10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="-300.99" y="-17.78" size="1.778" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="-300.99" y="-15.24" size="1.778" layer="96" rot="R180" align="center-left"/>
-</instance>
-<instance part="IC1" gate="G$1" x="-254" y="-10.16" smashed="yes">
-<attribute name="NAME" x="-229.87" y="-2.54" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="-229.87" y="-5.08" size="1.778" layer="96" align="center-left"/>
+<instance part="5V" gate="G$1" x="-251.46" y="-5.08" smashed="yes">
+<attribute name="NAME" x="-227.33" y="2.54" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-227.33" y="0" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="C29" gate="G$1" x="-213.36" y="-12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="-207.01" y="-21.59" size="1.778" layer="95" rot="R270" align="center-left"/>
@@ -3489,33 +3411,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="GND49" gate="1" x="-213.36" y="-30.48" smashed="yes">
 <attribute name="VALUE" x="-215.9" y="-33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="C7" gate="G$1" x="121.92" y="73.66" smashed="yes" rot="R270">
-<attribute name="NAME" x="128.27" y="69.85" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="125.73" y="77.47" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
-<instance part="C12" gate="G$1" x="114.3" y="73.66" smashed="yes" rot="R270">
-<attribute name="NAME" x="107.95" y="67.31" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="110.49" y="74.93" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
 <instance part="C9" gate="G$1" x="-271.78" y="-48.26" smashed="yes" rot="R270">
 <attribute name="NAME" x="-278.13" y="-52.07" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="-275.59" y="-44.45" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
-<instance part="C14" gate="G$1" x="-180.34" y="-55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="-173.99" y="-64.77" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="-176.53" y="-64.77" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
 <instance part="C23" gate="G$1" x="-203.2" y="-55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="-196.85" y="-64.77" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="-199.39" y="-64.77" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
-<instance part="C28" gate="G$1" x="-193.04" y="-55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="-186.69" y="-64.77" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="-189.23" y="-64.77" size="1.778" layer="96" rot="R270" align="center-left"/>
-</instance>
-<instance part="C35" gate="G$1" x="-22.86" y="-55.88" smashed="yes">
-<attribute name="NAME" x="-13.97" y="-49.53" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="-13.97" y="-52.07" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="C36" gate="G$1" x="27.94" y="-55.88" smashed="yes">
 <attribute name="NAME" x="36.83" y="-49.53" size="1.778" layer="95" align="center-left"/>
@@ -3606,13 +3508,17 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <instance part="GND3" gate="1" x="243.84" y="15.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="246.38" y="12.7" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="BATTERY" gate="G$1" x="-284.48" y="-10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="-300.99" y="-17.78" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="-300.99" y="-15.24" size="1.778" layer="96" rot="R180" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="JP1(GP2Y0A51SK0F)" gate="A" pin="3"/>
+<pinref part="JP1" gate="A" pin="3"/>
 <wire x1="-43.18" y1="-66.04" x2="-27.94" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-27.94" y1="-66.04" x2="-27.94" y2="-76.2" width="0.1524" layer="91"/>
@@ -3626,22 +3532,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="10.16" y1="-66.04" x2="22.86" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="22.86" y1="-66.04" x2="22.86" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="JP2(GP2Y0A51SK0F)" gate="A" pin="3"/>
+<pinref part="JP2" gate="A" pin="3"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="-66.04" x2="73.66" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="73.66" y1="-66.04" x2="73.66" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="JP3(GP2Y0A51SK0F)" gate="A" pin="3"/>
-</segment>
-<segment>
-<wire x1="114.3" y1="60.96" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="60.96" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
-<junction x="121.92" y="58.42"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="JP3" gate="A" pin="3"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -3651,12 +3548,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="-271.78" y1="-63.5" x2="-271.78" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="C23" gate="G$1" pin="2"/>
-<pinref part="C28" gate="G$1" pin="2"/>
-<wire x1="-203.2" y1="-68.58" x2="-193.04" y2="-68.58" width="0.1524" layer="91"/>
-<junction x="-203.2" y="-68.58"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="-180.34" y1="-68.58" x2="-193.04" y2="-68.58" width="0.1524" layer="91"/>
-<junction x="-193.04" y="-68.58"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -3715,15 +3606,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="226.06" y1="2.54" x2="223.52" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-35.56" y1="58.42" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
-<label x="-25.4" y="55.88" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="-10.16" y1="-55.88" x2="-7.62" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="40.64" y1="-55.88" x2="43.18" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="C36" gate="G$1" pin="2"/>
@@ -3739,12 +3621,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="17.78" y1="50.8" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="COMMON_2"/>
+<pinref part="3.3V" gate="G$1" pin="COMMON_2"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 <wire x1="-218.44" y1="-45.72" x2="-220.98" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="COMMON_1"/>
+<pinref part="3.3V" gate="G$1" pin="COMMON_1"/>
 <wire x1="-259.08" y1="-48.26" x2="-261.62" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="GND35" gate="1" pin="GND"/>
 </segment>
@@ -3764,7 +3646,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="127" y1="-12.7" x2="124.46" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PROGRAMMER_PO" gate="A" pin="3"/>
+<pinref part="1-&gt;PROG-&gt;6" gate="A" pin="3"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="-170.18" y1="-12.7" x2="-154.94" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
@@ -3814,15 +3696,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="-124.46" y1="-86.36" x2="-124.46" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="-284.48" y1="-7.62" x2="-279.4" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-279.4" y1="-7.62" x2="-279.4" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="BATTERY" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="-254" y1="-7.62" x2="-254" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="5V" gate="G$1" pin="GND"/>
+<wire x1="-251.46" y1="-5.08" x2="-254" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C30" gate="G$1" pin="2"/>
@@ -3860,17 +3742,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </net>
 <net name="AN0" class="0">
 <segment>
-<wire x1="-43.18" y1="60.96" x2="-53.34" y2="60.96" width="0.1524" layer="91"/>
-<label x="-53.34" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="AN1/VREF-/CN3/RA1"/>
 <wire x1="-63.5" y1="-22.86" x2="-68.58" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-68.58" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="-63.5" x2="43.18" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="JP2(GP2Y0A51SK0F)" gate="A" pin="2"/>
+<pinref part="JP2" gate="A" pin="2"/>
 <label x="43.18" y="-63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
@@ -3889,17 +3767,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </net>
 <net name="AN1" class="0">
 <segment>
-<wire x1="-43.18" y1="58.42" x2="-53.34" y2="55.88" width="0.1524" layer="91"/>
-<label x="-53.34" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="AN0/VREF+/CN2/RA0"/>
 <wire x1="-63.5" y1="-20.32" x2="-68.58" y2="-20.32" width="0.1524" layer="91"/>
 <label x="-68.58" y="-20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="JP3(GP2Y0A51SK0F)" gate="A" pin="2"/>
+<pinref part="JP3" gate="A" pin="2"/>
 <label x="93.98" y="-63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
@@ -3910,11 +3784,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="124.46" y="-30.48" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-43.18" y1="55.88" x2="-53.34" y2="50.8" width="0.1524" layer="91"/>
-<label x="-53.34" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP1(GP2Y0A51SK0F)" gate="A" pin="2"/>
+<pinref part="JP1" gate="A" pin="2"/>
 <wire x1="-43.18" y1="-63.5" x2="-7.62" y2="-63.5" width="0.1524" layer="91"/>
 <label x="-7.62" y="-63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -3938,10 +3808,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="187.96" y="78.74" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-35.56" y1="68.58" x2="-25.4" y2="76.2" width="0.1524" layer="91"/>
-<label x="-25.4" y="76.2" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="MICROCHIP" gate="A" pin="AN7/DAC1LM/RP17/CN9/RC1"/>
 <wire x1="124.46" y1="-20.32" x2="129.54" y2="-25.4" width="0.1524" layer="91"/>
 <label x="129.54" y="-25.4" size="1.778" layer="95" xref="yes"/>
@@ -3958,10 +3824,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="185.42" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
 <label x="215.9" y="68.58" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="-35.56" y1="63.5" x2="-25.4" y2="66.04" width="0.1524" layer="91"/>
-<label x="-25.4" y="66.04" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="MTRDRV_BIN2" class="0">
 <segment>
@@ -3974,20 +3836,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="185.42" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
 <label x="195.58" y="66.04" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="-35.56" y1="60.96" x2="-25.4" y2="60.96" width="0.1524" layer="91"/>
-<label x="-25.4" y="60.96" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="MTRDRV_AIN2" class="0">
 <segment>
 <pinref part="HBRIDGE" gate="G$1" pin="AIN2"/>
 <wire x1="185.42" y1="81.28" x2="205.74" y2="81.28" width="0.1524" layer="91"/>
 <label x="205.74" y="81.28" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="-35.56" y1="66.04" x2="-25.4" y2="71.12" width="0.1524" layer="91"/>
-<label x="-25.4" y="71.12" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="MICROCHIP" gate="A" pin="AN8/CVREF/RP18/PMA2/CN10/RC2"/>
@@ -4010,19 +3864,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <label x="198.12" y="86.36" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="78.74" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="78.74" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
-<junction x="114.3" y="78.74"/>
-<label x="106.68" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="INPUT"/>
+<pinref part="3.3V" gate="G$1" pin="INPUT"/>
 <wire x1="-259.08" y1="-45.72" x2="-271.78" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-256.54" y1="-10.16" x2="-264.16" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="-10.16" x2="-264.16" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-264.16" y1="-10.16" x2="-271.78" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="-10.16" x2="-284.48" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="-10.16" x2="-271.78" y2="-5.08" width="0.1524" layer="91"/>
@@ -4031,14 +3875,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="-264.16" y1="-10.16" x2="-264.16" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-264.16" y="-10.16"/>
 <wire x1="-271.78" y1="-45.72" x2="-271.78" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="-256.54" y1="-10.16" x2="-256.54" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="-256.54" y1="-15.24" x2="-254" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="5V" gate="G$1" pin="IN"/>
 <pinref part="C30" gate="G$1" pin="1"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="-271.78" y1="-48.26" x2="-271.78" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="-271.78" y="-45.72"/>
+<pinref part="BATTERY" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -4146,11 +3988,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$28" class="0">
-<segment>
-<wire x1="-35.56" y1="55.88" x2="-25.4" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ENCL_B" class="0">
 <segment>
 <pinref part="MOTOR_L" gate="G$1" pin="6"/>
@@ -4184,19 +4021,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="JP1(GP2Y0A51SK0F)" gate="A" pin="1"/>
+<pinref part="JP1" gate="A" pin="1"/>
 <wire x1="-43.18" y1="-60.96" x2="-27.94" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="-60.96" x2="-27.94" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-60.96" x2="-27.94" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-27.94" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
-<wire x1="-27.94" y1="-55.88" x2="-27.94" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="-55.88" x2="-22.86" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="-27.94" y="-55.88"/>
-<pinref part="C35" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="-60.96" x2="22.86" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-60.96" x2="22.86" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="JP2(GP2Y0A51SK0F)" gate="A" pin="1"/>
+<pinref part="JP2" gate="A" pin="1"/>
 <label x="22.86" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
 <wire x1="22.86" y1="-55.88" x2="22.86" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-55.88" x2="27.94" y2="-55.88" width="0.1524" layer="91"/>
@@ -4206,7 +4039,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <segment>
 <wire x1="58.42" y1="-60.96" x2="73.66" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-60.96" x2="73.66" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="JP3(GP2Y0A51SK0F)" gate="A" pin="1"/>
+<pinref part="JP3" gate="A" pin="1"/>
 <label x="73.66" y="-53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
 <wire x1="73.66" y1="-55.88" x2="73.66" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-55.88" x2="78.74" y2="-55.88" width="0.1524" layer="91"/>
@@ -4214,13 +4047,20 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="C37" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-226.06" y1="-10.16" x2="-213.36" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-223.52" y1="-5.08" x2="-213.36" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-213.36" y1="-10.16" x2="-213.36" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-213.36" y1="-10.16" x2="-200.66" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-213.36" y="-10.16"/>
 <label x="-200.66" y="-10.16" size="1.778" layer="95" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="OUT"/>
+<pinref part="5V" gate="G$1" pin="OUT"/>
 <pinref part="C29" gate="G$1" pin="1"/>
+<pinref part="5V" gate="G$1" pin="OUT_2"/>
+<wire x1="-251.46" y1="-7.62" x2="-259.08" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-259.08" y1="-7.62" x2="-259.08" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-259.08" y1="5.08" x2="-220.98" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-220.98" y1="5.08" x2="-220.98" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-220.98" y1="-5.08" x2="-223.52" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="-223.52" y="-5.08"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -4270,17 +4110,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="C42" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="PROGRAMMER_PO" gate="A" pin="2"/>
+<pinref part="1-&gt;PROG-&gt;6" gate="A" pin="2"/>
 <wire x1="-170.18" y1="-15.24" x2="-162.56" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="-15.24" x2="-162.56" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-203.2" y1="-53.34" x2="-198.12" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="-53.34" x2="-193.04" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-193.04" y1="-53.34" x2="-180.34" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-198.12" y1="-53.34" x2="-180.34" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-53.34" x2="-195.58" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-203.2" y1="-53.34" x2="-203.2" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-193.04" y1="-53.34" x2="-193.04" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="-193.04" y="-53.34"/>
-<wire x1="-180.34" y1="-53.34" x2="-180.34" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-180.34" y="-53.34"/>
 <wire x1="-198.12" y1="-50.8" x2="-198.12" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="-198.12" y="-53.34"/>
@@ -4288,14 +4124,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="-162.56" y1="-53.34" x2="-160.02" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-205.74" y1="-53.34" x2="-203.2" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="-203.2" y="-53.34"/>
-<pinref part="LINEAR_REGULATOR_3.3V" gate="G$1" pin="OUTPUT"/>
+<pinref part="3.3V" gate="G$1" pin="OUTPUT"/>
 <wire x1="-259.08" y1="-50.8" x2="-259.08" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-259.08" y1="-58.42" x2="-205.74" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-205.74" y1="-58.42" x2="-205.74" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-198.12" y="-50.8" size="1.778" layer="95" rot="R90" xref="yes"/>
 <junction x="-162.56" y="-53.34"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<pinref part="C28" gate="G$1" pin="1"/>
 <pinref part="C23" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 </segment>
@@ -4354,7 +4188,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </net>
 <net name="PGED1" class="0">
 <segment>
-<pinref part="PROGRAMMER_PO" gate="A" pin="4"/>
+<pinref part="1-&gt;PROG-&gt;6" gate="A" pin="4"/>
 <wire x1="-170.18" y1="-10.16" x2="-165.1" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-165.1" y="-10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -4367,7 +4201,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </net>
 <net name="PGEC1" class="0">
 <segment>
-<pinref part="PROGRAMMER_PO" gate="A" pin="5"/>
+<pinref part="1-&gt;PROG-&gt;6" gate="A" pin="5"/>
 <wire x1="-170.18" y1="-7.62" x2="-165.1" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-165.1" y="-5.08" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -4379,7 +4213,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="PROGRAMMER_PO" gate="A" pin="1"/>
+<pinref part="1-&gt;PROG-&gt;6" gate="A" pin="1"/>
 <wire x1="-106.68" y1="-17.78" x2="-121.92" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="K"/>
 <wire x1="-121.92" y1="-17.78" x2="-170.18" y2="-17.78" width="0.1524" layer="91"/>
@@ -4485,6 +4319,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <wire x1="-195.58" y1="71.12" x2="-193.04" y2="71.12" width="0.1524" layer="91"/>
 <label x="-193.04" y="71.12" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="MICROCHIP" gate="A" pin="PGEC3/ASCL1/RP6/CN24/PMD6/RB6"/>
+<wire x1="124.46" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<label x="127" y="20.32" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="N$25" class="0">
 <segment>
@@ -4501,6 +4340,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/08055A300JAT2
 <pinref part="BLUETOOTH" gate="G$1" pin="P0_0"/>
 <wire x1="-195.58" y1="66.04" x2="-193.04" y2="66.04" width="0.1524" layer="91"/>
 <label x="-193.04" y="66.04" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MICROCHIP" gate="A" pin="PGED3/ASDA1/RP5/CN27/PMD7/RB5"/>
+<wire x1="124.46" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
+<label x="127" y="17.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$27" class="0">

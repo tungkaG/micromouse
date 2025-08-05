@@ -269,11 +269,12 @@ UsedLibrary="/home/olivia/TUM/Mouse/micromouse/custom parts/DSPIC33FJ64MC804-H_P
 UsedLibrary="/home/olivia/TUM/Mouse/micromouse/custom parts/GP2Y0A51SK0F.lbr"
 UsedLibrary="/home/olivia/TUM/Mouse/micromouse/Mouser Parts/4.7k Resistor/ERA-6ARW472V/EAGLE/ERA-6ARW472V.lbr"
 UsedLibrary="/home/olivia/TUM/Mouse/micromouse/Mouser Parts/47k Resistor/ERA-6ARW473V/EAGLE/ERA-6ARW473V.lbr"
+UsedLibrary="/home/olivia/TUM/Mouse/micromouse/Mouser Parts/Terminal Block/691137710002/EAGLE/691137710002.lbr"
 
 [Win_1]
 Type="Control Panel"
 Number=0
 
 [Desktop]
-Screen="3840 1253"
+Screen="3840 1386"
 Window="Win_1"

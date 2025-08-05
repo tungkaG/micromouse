@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_702134"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-09-12-16:05:15)
+    (utime 2024-08-28-09:24:05)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "691137710002")
+)
+
+
+(pinAssign "ECS_702134"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-09-12-16:05:15)
+    (utime 2024-08-28-09:24:05)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_702134")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "691137710002")
+)
+
+
+(part "691137710002"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-09-12-16:05:15)
+    (utime 2024-08-28-09:24:05)
+    (packageRef "691137710002")
+    (pinAssignRef "ECS_702134")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "J")
+    (property "description" "Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole")
+    (property "Mouser_Part_Number" "710-691137710002")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D")
+    (property "Manufacturer_Name" "Wurth Elektronik")
+    (property "Manufacturer_Part_Number" "691137710002")
+    (property "Datasheet_Link" "https://katalog.we-online.com/em/datasheet/691137710002.pdf")
+    (property "compAreaTopHeight" 11.6)
+)
+
+

@@ -55,10 +55,10 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
@@ -74,30 +74,69 @@
 </layers>
 <board>
 <plain>
-<wire x1="96.4692" y1="85.0138" x2="27.432" y2="85.0138" width="0.2" layer="20"/>
-<wire x1="27.432" y1="85.0138" x2="27.432" y2="9.271" width="0.2" layer="20"/>
-<wire x1="27.432" y1="9.271" x2="96.6216" y2="9.271" width="0.2" layer="20"/>
-<wire x1="96.6216" y1="9.271" x2="113.5888" y2="26.5684" width="0.2" layer="20"/>
-<wire x1="113.5888" y1="26.5684" x2="113.8174" y2="68.9356" width="0.2" layer="20"/>
-<wire x1="96.4692" y1="85.0138" x2="113.8174" y2="68.9356" width="0.2" layer="20"/>
-<hole x="31.75" y="81.28" drill="1"/>
-<hole x="64.77" y="81.28" drill="1"/>
-<hole x="31.75" y="12.7" drill="0.35"/>
-<hole x="64.77" y="12.7" drill="0.35"/>
-<hole x="74.93" y="81.28" drill="1"/>
-<hole x="90.17" y="81.28" drill="1"/>
-<hole x="109.22" y="55.88" drill="0.35"/>
-<hole x="109.22" y="40.64" drill="0.35"/>
-<hole x="90.17" y="12.7" drill="0.35"/>
-<hole x="74.93" y="12.7" drill="0.35"/>
-<dimension x1="74.93" y1="81.28" x2="90.17" y2="81.28" x3="82.55" y3="86.36" textsize="1.778" layer="1"/>
-<dimension x1="31.75" y1="81.28" x2="64.77" y2="81.28" x3="48.26" y3="86.36" textsize="1.778" layer="1"/>
-<dimension x1="64.77" y1="81.28" x2="74.93" y2="81.28" x3="69.85" y3="88.9" textsize="1.778" layer="1"/>
-<dimension x1="31.75" y1="12.7" x2="64.77" y2="12.7" x3="48.26" y3="5.08" textsize="1.778" layer="1"/>
-<dimension x1="64.77" y1="12.7" x2="74.93" y2="12.7" x3="69.85" y3="1.27" textsize="1.778" layer="1"/>
-<dimension x1="74.93" y1="12.7" x2="90.17" y2="12.7" x3="82.55" y3="6.35" textsize="1.778" layer="1"/>
-<dimension x1="109.22" y1="40.64" x2="109.22" y2="55.88" x3="116.84" y3="48.26" textsize="1.778" layer="1"/>
-<dimension x1="32.25" y1="81.28" x2="31.25" y2="81.28" x3="31.25" y3="81.28" textsize="1.778" layer="1" dtype="diameter"/>
+<dimension x1="27.94" y1="69.85" x2="27.94" y2="80.01" x3="27.94" y3="74.93" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="27.94" y1="25.4" x2="27.94" y2="15.24" x3="27.94" y3="20.32" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="101.6" y1="34.29" x2="111.76" y2="34.29" x3="106.68" y3="34.29" textsize="1.778" layer="47" precision="0"/>
+<wire x1="27.94" y1="15.24" x2="92.71" y2="15.24" width="0.508" layer="20"/>
+<wire x1="92.71" y1="15.24" x2="111.76" y2="34.29" width="0.508" layer="20"/>
+<wire x1="27.94" y1="80.01" x2="27.94" y2="15.24" width="0.508" layer="20"/>
+<wire x1="27.94" y1="80.01" x2="92.71" y2="80.01" width="0.508" layer="20"/>
+<wire x1="92.71" y1="80.01" x2="111.76" y2="60.96" width="0.508" layer="20"/>
+<wire x1="111.76" y1="60.96" x2="111.76" y2="34.29" width="0.508" layer="20"/>
+<dimension x1="86.36" y1="69.85" x2="27.94" y2="69.85" x3="57.15" y3="69.85" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="27.94" y1="25.4" x2="92.71" y2="25.4" x3="60.325" y3="25.4" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="27.94" y1="15.24" x2="92.71" y2="15.24" x3="60.325" y3="15.24" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="27.94" y1="80.01" x2="92.71" y2="80.01" x3="60.325" y3="80.01" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="92.71" y1="80.01" x2="111.76" y2="60.96" x3="102.235" y3="70.485" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="92.71" y1="15.24" x2="111.76" y2="34.29" x3="102.235" y3="24.765" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="111.76" y1="60.96" x2="111.76" y2="34.29" x3="111.76" y3="47.625" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="40.64" y1="74.93" x2="40.64" y2="80.01" x3="40.64" y3="77.47" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="40.64" y1="74.93" x2="27.94" y2="74.93" x3="34.29" y3="74.93" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="27.94" y1="15.24" x2="40.64" y2="15.24" x3="34.29" y3="20.32" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="27.94" y1="15.24" x2="92.71" y2="15.24" x3="60.325" y3="15.24" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="40.64" y1="20.32" x2="40.64" y2="15.24" x3="40.64" y3="17.78" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="40.64" y1="20.32" x2="76.2" y2="20.32" x3="58.42" y3="20.32" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="40.64" y1="74.93" x2="76.2" y2="74.93" x3="58.42" y3="74.93" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="106.68" y1="34.29" x2="106.68" y2="39.37" x3="106.68" y3="36.83" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="106.68" y1="39.37" x2="106.68" y2="55.88" x3="106.68" y3="47.625" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="76.2" y1="74.93" x2="81.28" y2="74.93" x3="78.74" y3="74.93" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="81.28" y1="74.93" x2="91.44" y2="74.93" x3="86.36" y3="74.93" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="76.2" y1="20.32" x2="81.28" y2="20.32" x3="78.74" y3="20.32" textsize="1.778" layer="47" precision="0"/>
+<dimension x1="81.28" y1="20.32" x2="91.44" y2="20.32" x3="86.36" y3="20.32" textsize="1.778" layer="47" precision="0"/>
+<hole x="81.28" y="74.93" drill="1"/>
+<hole x="90.17" y="74.93" drill="1"/>
+<hole x="107.95" y="55.88" drill="1"/>
+<hole x="107.95" y="39.37" drill="1"/>
+<hole x="90.17" y="20.32" drill="1"/>
+<hole x="81.28" y="20.32" drill="1"/>
+<hole x="40.64" y="17.78" drill="1"/>
+<hole x="40.64" y="22.86" drill="1"/>
+<hole x="76.2" y="22.86" drill="1"/>
+<hole x="76.2" y="17.78" drill="1"/>
+<hole x="40.64" y="77.47" drill="1"/>
+<hole x="40.64" y="72.39" drill="1"/>
+<hole x="76.2" y="77.47" drill="1"/>
+<hole x="76.2" y="72.39" drill="1"/>
+<hole x="104.14" y="46.99" drill="1"/>
+<wire x1="111.76" y1="34.29" x2="101.6" y2="34.29" width="0.2" layer="21"/>
+<wire x1="101.6" y1="34.29" x2="101.6" y2="60.96" width="0.2" layer="21"/>
+<wire x1="111.76" y1="60.96" x2="101.6" y2="60.96" width="0.2" layer="21"/>
+<wire x1="38.1" y1="15.24" x2="38.1" y2="25.4" width="0.2" layer="21"/>
+<wire x1="38.1" y1="25.4" x2="78.74" y2="25.4" width="0.2" layer="21"/>
+<wire x1="78.74" y1="25.4" x2="78.74" y2="15.24" width="0.2" layer="21"/>
+<wire x1="78.74" y1="25.4" x2="92.71" y2="25.4" width="0.2" layer="21"/>
+<wire x1="92.71" y1="25.4" x2="92.71" y2="15.24" width="0.2" layer="21"/>
+<wire x1="38.1" y1="80.01" x2="38.1" y2="69.85" width="0.2" layer="21"/>
+<wire x1="38.1" y1="69.85" x2="78.74" y2="69.85" width="0.2" layer="21"/>
+<wire x1="78.74" y1="69.85" x2="78.74" y2="80.01" width="0.2" layer="21"/>
+<wire x1="78.74" y1="69.85" x2="92.71" y2="69.85" width="0.2" layer="21"/>
+<wire x1="92.71" y1="69.85" x2="92.71" y2="80.01" width="0.2" layer="21"/>
+<wire x1="92.71" y1="80.01" x2="78.74" y2="80.01" width="0.2" layer="21"/>
+<text x="97.917" y="66.294" size="1.016" layer="21" rot="SR135.1" align="center">Die Makromäuse:
+Daniel, Glenn,
+Olivia &amp; Tristan</text>
+<text x="99.568" y="27.051" size="1.778" layer="21" rot="R45" align="center">SOSE 25</text>
+<text x="33.401" y="20.32" size="2.1844" layer="21" rot="SR0" align="center">TUM</text>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -788,32 +827,6 @@
 </package>
 </packages>
 </library>
-<library name="22-23-2021">
-<description>&lt;Headers &amp; Wire Housings VERT PCB HDR 2P TIN FRICTION LOCK&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="SHDR2W87P0X254_1X2_493X635X110">
-<description>&lt;b&gt;22-23-2021&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="0" y="0" drill="1.45" diameter="2.175" shape="square"/>
-<pad name="2" x="2.54" y="0" drill="1.45" diameter="2.175"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.44" y1="-3.5" x2="-1.44" y2="3.6" width="0.05" layer="51"/>
-<wire x1="-1.44" y1="3.6" x2="4.475" y2="3.6" width="0.05" layer="51"/>
-<wire x1="4.475" y1="3.6" x2="4.475" y2="-3.5" width="0.05" layer="51"/>
-<wire x1="4.475" y1="-3.5" x2="-1.44" y2="-3.5" width="0.05" layer="51"/>
-<wire x1="-1.19" y1="-3.25" x2="-1.19" y2="3.35" width="0.1" layer="51"/>
-<wire x1="-1.19" y1="3.35" x2="3.99" y2="3.35" width="0.1" layer="51"/>
-<wire x1="3.99" y1="3.35" x2="3.99" y2="-3.25" width="0.1" layer="51"/>
-<wire x1="3.99" y1="-3.25" x2="-1.19" y2="-3.25" width="0.1" layer="51"/>
-<wire x1="0" y1="-3.25" x2="3.978" y2="-3.25" width="0.2" layer="21"/>
-<wire x1="3.978" y1="-3.25" x2="3.978" y2="3.35" width="0.2" layer="21"/>
-<wire x1="3.978" y1="3.35" x2="-1.4375" y2="3.35" width="0.2" layer="21"/>
-<wire x1="-1.4375" y1="3.35" x2="-1.4375" y2="0" width="0.2" layer="21"/>
-</package>
-</packages>
-</library>
 <library name="ADP3338AKCZ-5-R7">
 <description>&lt;Analog Devices ADP3338AKCZ-5-R7, LDO Voltage Regulator, 1A, 5 V +/-1.6%, 2.7  8 Vin, 3-Pin SOT-223&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -873,28 +886,6 @@
 <wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1" layer="51"/>
 <wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1" layer="51"/>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1" layer="51"/>
-</package>
-</packages>
-</library>
-<library name="0805YC106KAT2A">
-<description>&lt;Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="CAPC2012X94N">
-<description>&lt;b&gt;0805-ren13&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-0.81" y="0" dx="1.47" dy="1.02" layer="1" rot="R90"/>
-<smd name="2" x="0.81" y="0" dx="1.47" dy="1.02" layer="1" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.47" y1="0.89" x2="1.47" y2="0.89" width="0.05" layer="51"/>
-<wire x1="1.47" y1="0.89" x2="1.47" y2="-0.89" width="0.05" layer="51"/>
-<wire x1="1.47" y1="-0.89" x2="-1.47" y2="-0.89" width="0.05" layer="51"/>
-<wire x1="-1.47" y1="-0.89" x2="-1.47" y2="0.89" width="0.05" layer="51"/>
-<wire x1="-1.005" y1="0.625" x2="1.005" y2="0.625" width="0.1" layer="51"/>
-<wire x1="1.005" y1="0.625" x2="1.005" y2="-0.625" width="0.1" layer="51"/>
-<wire x1="1.005" y1="-0.625" x2="-1.005" y2="-0.625" width="0.1" layer="51"/>
-<wire x1="-1.005" y1="-0.625" x2="-1.005" y2="0.625" width="0.1" layer="51"/>
 </package>
 </packages>
 </library>
@@ -1066,6 +1057,32 @@
 <wire x1="1.005" y1="0.625" x2="1.005" y2="-0.625" width="0.1" layer="51"/>
 <wire x1="1.005" y1="-0.625" x2="-1.005" y2="-0.625" width="0.1" layer="51"/>
 <wire x1="-1.005" y1="-0.625" x2="-1.005" y2="0.625" width="0.1" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="691137710002">
+<description>&lt;Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SHDR2W70P0X500_1X2_1000X750X11">
+<description>&lt;b&gt;64900221122&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.2" diameter="1.8" shape="square"/>
+<pad name="2" x="5" y="0" drill="1.2" diameter="1.8"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.75" y1="-3.75" x2="-2.75" y2="4.35" width="0.05" layer="51"/>
+<wire x1="-2.75" y1="4.35" x2="7.85" y2="4.35" width="0.05" layer="51"/>
+<wire x1="7.85" y1="4.35" x2="7.85" y2="-3.75" width="0.05" layer="51"/>
+<wire x1="7.85" y1="-3.75" x2="-2.75" y2="-3.75" width="0.05" layer="51"/>
+<wire x1="-2.5" y1="-3.5" x2="-2.5" y2="4.1" width="0.1" layer="51"/>
+<wire x1="-2.5" y1="4.1" x2="7.6" y2="4.1" width="0.1" layer="51"/>
+<wire x1="7.6" y1="4.1" x2="7.6" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="7.6" y1="-3.5" x2="-2.5" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="0" y1="-3.5" x2="7.6" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="7.6" y1="-3.5" x2="7.6" y2="4.1" width="0.2" layer="21"/>
+<wire x1="7.6" y1="4.1" x2="-2.5" y2="4.1" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="4.1" x2="-2.5" y2="0" width="0.2" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1266,14 +1283,14 @@ Covered vias can be set in Masks (Limit).
 </pass>
 </autorouter>
 <elements>
-<element name="BLUETOOTH" library="RN4871-I_RM130" package="RN4871" value="RN4871-I_RM130" x="36.83" y="31.75" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="Bluetooth BLE Module, Shielded, Antenna," x="38.1" y="92.71" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="mm" x="38.1" y="92.71" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Microchip" x="38.1" y="92.71" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="RN4871-I/RM130" x="38.1" y="92.71" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="579-RN4871IRM130" x="38.1" y="92.71" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM130?qs=MLItCLRbWswoZsrzvVbGYw%3D%3D" x="38.1" y="92.71" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="32.42326875" y="31.325040625" size="1.27" layer="25" rot="R90" align="center"/>
+<element name="BLUETOOTH" library="RN4871-I_RM130" package="RN4871" value="RN4871-I_RM130" x="35.56" y="31.496" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="Bluetooth BLE Module, Shielded, Antenna," x="36.83" y="92.456" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="mm" x="36.83" y="92.456" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Microchip" x="36.83" y="92.456" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="RN4871-I/RM130" x="36.83" y="92.456" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="579-RN4871IRM130" x="36.83" y="92.456" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM130?qs=MLItCLRbWswoZsrzvVbGYw%3D%3D" x="36.83" y="92.456" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="29.88326875" y="31.071040625" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element name="HBRIDGE" library="TB6612FNG_C_8_EL" package="SOP65P760X160-24N" value="TB6612FNG,C,8,EL" x="57.15" y="62.23" smashed="yes">
 <attribute name="DESCRIPTION" value="otor / Motion / Ignition Controllers &amp; Drivers Brush Motor Driver IC" x="134.62" y="24.13" size="1.778" layer="27" display="off"/>
@@ -1282,20 +1299,20 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="TB6612FNG,C,8,EL" x="134.62" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="757-TB6612FNGC8EL" x="134.62" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Toshiba/TB6612FNGC8EL?qs=rsevcuukUAy2UalRuv4E%2FQ%3D%3D" x="134.62" y="24.13" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="57.15" y="64.77" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="57.15" y="62.23" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="JP1(GP2Y0A51SK0F)" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="83.4898" y="67.437" smashed="yes" rot="R180">
-<attribute name="NAME" x="87.376" y="65.6082" size="1.27" layer="25" ratio="10" rot="R180"/>
+<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="83.4898" y="67.437" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="70.6882" size="1.27" layer="25" ratio="10" rot="SR179.8"/>
 <attribute name="POPULARITY" value="92" x="3.4798" y="146.177" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="87.2998" y="70.612" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP2(GP2Y0A51SK0F)" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="101.8286" y="47.1932" smashed="yes" rot="R90">
-<attribute name="NAME" x="99.9998" y="43.307" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="92" x="186.9186" y="75.1332" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="105.0036" y="43.3832" size="1.27" layer="27" rot="R90"/>
+<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="99.2886" y="47.1932" smashed="yes" rot="R270">
+<attribute name="NAME" x="101.1174" y="48.5394" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="92" x="14.1986" y="19.2532" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="96.1136" y="51.0032" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP3(GP2Y0A51SK0F)" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="87.1982" y="30.0736" smashed="yes" rot="R180">
-<attribute name="NAME" x="91.0844" y="28.2448" size="1.27" layer="25" ratio="10" rot="R180"/>
+<element name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="87.1982" y="30.0736" smashed="yes" rot="R180">
+<attribute name="NAME" x="88.5444" y="28.2448" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="POPULARITY" value="92" x="40.2082" y="115.1636" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="91.0082" y="33.2486" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -1306,16 +1323,16 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="APT3216LSECK/J3-PRV" x="175.26" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="604-APT3216LSECKJ3RV" x="175.26" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D" x="175.26" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="86.36" y="44.45" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="82.931" y="44.323" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="LED2" library="APT3216LSECK_J3-PRV" package="LEDC3216X95N" value="APT3216LSECK_J3-PRV" x="53.34" y="29.21" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle" x="143.51" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="0.95mm" x="143.51" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Kingbright" x="143.51" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="APT3216LSECK/J3-PRV" x="143.51" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="604-APT3216LSECKJ3RV" x="143.51" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D" x="143.51" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="54.61" y="29.21" size="1.27" layer="25" rot="R270" align="center"/>
+<element name="LED2" library="APT3216LSECK_J3-PRV" package="LEDC3216X95N" value="APT3216LSECK_J3-PRV" x="52.07" y="29.21" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle" x="142.24" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="0.95mm" x="142.24" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Kingbright" x="142.24" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APT3216LSECK/J3-PRV" x="142.24" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="604-APT3216LSECKJ3RV" x="142.24" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D" x="142.24" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="49.53" y="29.21" size="1.27" layer="25" rot="R270" align="center"/>
 </element>
 <element name="LED3" library="APT3216LSECK_J3-PRV" package="LEDC3216X95N" value="APT3216LSECK_J3-PRV" x="57.15" y="29.21" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle" x="147.32" y="99.06" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1324,25 +1341,25 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="APT3216LSECK/J3-PRV" x="147.32" y="99.06" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="604-APT3216LSECKJ3RV" x="147.32" y="99.06" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D" x="147.32" y="99.06" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="58.42" y="29.21" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="54.61" y="29.21" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="LED4" library="APT3216LSECK_J3-PRV" package="LEDC3216X95N" value="APT3216LSECK_J3-PRV" x="60.96" y="29.21" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle" x="154.94" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="0.95mm" x="154.94" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Kingbright" x="154.94" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="APT3216LSECK/J3-PRV" x="154.94" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="604-APT3216LSECKJ3RV" x="154.94" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D" x="154.94" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="62.23" y="29.21" size="1.27" layer="25" rot="R90" align="center"/>
+<element name="LED4" library="APT3216LSECK_J3-PRV" package="LEDC3216X95N" value="APT3216LSECK_J3-PRV" x="62.23" y="29.21" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="3.2X1.6mm Low Current Red SMD LED; Water Clear; 625nm; 120 Viewing Angle" x="156.21" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="0.95mm" x="156.21" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Kingbright" x="156.21" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APT3216LSECK/J3-PRV" x="156.21" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="604-APT3216LSECKJ3RV" x="156.21" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Kingbright/APT3216LSECK-J3-PRV?qs=6oMev5NRZMH6FCB40E9NQw%3D%3D" x="156.21" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="59.69" y="29.21" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="LINEAR_REGULATOR_3.3V" library="UA78M33CDCYG3" package="SOT230P700X180-4N" value="UA78M33CDCYG3" x="82.55" y="54.61" smashed="yes">
+<element name="3.3V" library="UA78M33CDCYG3" package="SOT230P700X180-4N" value="UA78M33CDCYG3" x="82.55" y="54.61" smashed="yes">
 <attribute name="DESCRIPTION" value="Linear Voltage Regulators 3.3 V 500mA Fix Pos Voltage Regulator" x="124.46" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="1.8mm" x="124.46" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="124.46" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="UA78M33CDCYG3" x="124.46" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="595-UA78M33CDCYG3" x="124.46" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/UA78M33CDCYG3?qs=0O%2FZFlpUpJU0kFSZAC76Kw%3D%3D" x="124.46" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="83.82" y="57.15" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="82.804" y="54.61" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element name="MICROCHIP" library="DSPIC33FJ64MC804-H_PT" package="TQFP44_10X10MC_MCH" value="DSPIC33FJ64MC804-H/PT" x="54.61" y="43.18" smashed="yes" rot="R90">
 <attribute name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved." x="76.2" y="77.47" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1358,17 +1375,17 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1761681-1?qs=BqFpTYCQ3dLAeZ2wzdz7aw%3D%3D" x="-8.89" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="35.56" y="57.15" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
-<element name="MOTOR_R" library="1761681-1" package="SHDR6W67P254_2X3_1524X916X922P" value="1761681-1" x="37.7698" y="52.1462" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="Body Features: Primary Product Color Black | Connector Profile Low | Daisy Chain With | Configuration Features: PCB Mount Orientation Vertical | Number of Positions 6 | Number of Rows 2 | Contact Features: Contact Mating Area Plating Material Thickness 15 MICIN | Contact Type Pin | PCB Contact Termination Area Plating Material Tin | Contact Base Material Phosphor Bronze | PCB Contact Termination Area Plating Material Thickness 100 MICIN | Contact Current Rating (Max) 1 AMP | Contact Underplating Material Ni" x="-25.7302" y="90.2462" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="9.22mm" x="-25.7302" y="90.2462" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="TE Connectivity" x="-25.7302" y="90.2462" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1761681-1" x="-25.7302" y="90.2462" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="571-1761681-1" x="-25.7302" y="90.2462" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1761681-1?qs=BqFpTYCQ3dLAeZ2wzdz7aw%3D%3D" x="-25.7302" y="90.2462" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="35.2298" y="47.0662" size="1.27" layer="25" rot="R180" align="center"/>
+<element name="MOTOR_R" library="1761681-1" package="SHDR6W67P254_2X3_1524X916X922P" value="1761681-1" x="38.1508" y="52.0192" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="Body Features: Primary Product Color Black | Connector Profile Low | Daisy Chain With | Configuration Features: PCB Mount Orientation Vertical | Number of Positions 6 | Number of Rows 2 | Contact Features: Contact Mating Area Plating Material Thickness 15 MICIN | Contact Type Pin | PCB Contact Termination Area Plating Material Tin | Contact Base Material Phosphor Bronze | PCB Contact Termination Area Plating Material Thickness 100 MICIN | Contact Current Rating (Max) 1 AMP | Contact Underplating Material Ni" x="-25.3492" y="90.1192" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="9.22mm" x="-25.3492" y="90.1192" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="TE Connectivity" x="-25.3492" y="90.1192" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1761681-1" x="-25.3492" y="90.1192" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="571-1761681-1" x="-25.3492" y="90.1192" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1761681-1?qs=BqFpTYCQ3dLAeZ2wzdz7aw%3D%3D" x="-25.3492" y="90.1192" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="35.6108" y="46.9392" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
-<element name="PROGRAMMER_PO" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" package3d_urn="urn:adsk.eagle:package:22472/2" value="" x="77.47" y="35.56" smashed="yes" rot="R180">
-<attribute name="NAME" x="85.1662" y="33.7312" size="1.27" layer="25" ratio="10" rot="R180"/>
+<element name="1-&gt;PROG-&gt;6" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" package3d_urn="urn:adsk.eagle:package:22472/2" value="" x="77.47" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="82.6262" y="38.8112" size="1.27" layer="25" ratio="10" rot="SR180"/>
 <attribute name="POPULARITY" value="79" x="15.24" y="120.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="85.09" y="38.735" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -1379,7 +1396,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="B3F-1020" x="39.37" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="653-B3F-1020" x="39.37" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1020?qs=lK7M36XCk6J1%2FfWxwEHrqA%3D%3D" x="39.37" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="91.77" y="45.665" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="91.389" y="45.792" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
 <element name="S2" library="B3F-1020" package="B3F1000" value="B3F-1020" x="91.44" y="39.37" smashed="yes">
 <attribute name="DESCRIPTION" value="Switch Tact SPST,flat 5mm act,PC Pins Black Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 0.9mm" x="153.67" y="-33.02" size="1.778" layer="27" display="off"/>
@@ -1388,7 +1405,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="B3F-1020" x="153.67" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="653-B3F-1020" x="153.67" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1020?qs=lK7M36XCk6J1%2FfWxwEHrqA%3D%3D" x="153.67" y="-33.02" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="91.11" y="38.155" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="91.364" y="39.298" size="1.27" layer="25" align="center"/>
 </element>
 <element name="Y1" library="ABM8-20.000MHZ-B2-T" package="ABM810000MHZ12D2W" value="ABM8-20.000MHZ-B2-T" x="50.8" y="53.34" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="20 MHz +/-20ppm Crystal 18pF 50 Ohms 4-SMD, No Lead" x="-3.81" y="133.35" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1399,33 +1416,24 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/ABRACON/ABM8-20000MHZ-B2-T?qs=zLkLEWnxMJwLicGB81opDg%3D%3D" x="-3.81" y="133.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="50.8" y="51.018" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
-<element name="J1" library="22-23-2021" package="SHDR2W87P0X254_1X2_493X635X110" value="22-23-2021" x="71.12" y="57.15" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="Headers &amp; Wire Housings VERT PCB HDR 2P TIN FRICTION LOCK" x="71.12" y="57.15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="11.05mm" x="71.12" y="57.15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Molex" x="71.12" y="57.15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="22-23-2021" x="71.12" y="57.15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-22-23-2021" x="71.12" y="57.15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/22-23-2021?qs=ILqg114nvd4YKlRlbo3yMg%3D%3D" x="71.12" y="57.15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="72.39" y="55.88" size="1.27" layer="25" rot="R90" align="center"/>
-</element>
-<element name="IC1" library="ADP3338AKCZ-5-R7" package="SOT230P700X180-4N" value="ADP3338AKCZ-5-R7" x="82.55" y="62.23" smashed="yes">
+<element name="5V" library="ADP3338AKCZ-5-R7" package="SOT230P700X180-4N" value="ADP3338AKCZ-5-R7" x="82.55" y="62.23" smashed="yes">
 <attribute name="DESCRIPTION" value="Analog Devices ADP3338AKCZ-5-R7, LDO Voltage Regulator, 1A, 5 V +/-1.6%, 2.7  8 Vin, 3-Pin SOT-223" x="82.55" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="mm" x="82.55" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Analog Devices" x="82.55" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ADP3338AKCZ-5-R7" x="82.55" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="584-ADP3338AKCZ-5-R7" x="82.55" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADP3338AKCZ-5-R7?qs=WIvQP4zGangs6Tv%252BSE3hsA%3D%3D" x="82.55" y="62.23" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="77.7494" y="65.786" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="82.7024" y="62.23" size="1.27" layer="25" rot="R90" align="center"/>
 <attribute name="VALUE" x="76.835" y="56.3626" size="1.27" layer="27" align="center"/>
 </element>
-<element name="C29" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="88.9" y="62.23" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="88.9" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="88.9" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="88.9" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="88.9" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="88.9" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="88.9" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="93.98" y="62.23" size="1.27" layer="25" rot="R90" align="center"/>
+<element name="C29" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="88.9" y="62.23" smashed="yes">
+<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="88.9" y="62.23" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.4mm" x="88.9" y="62.23" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="KEMET" x="88.9" y="62.23" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="88.9" y="62.23" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="" x="88.9" y="62.23" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" x="88.9" y="62.23" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="88.773" y="64.008" size="1.27" layer="25" align="center"/>
 </element>
 <element name="C30" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="1µF" x="76.2" y="60.96" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="76.2" y="60.96" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1434,34 +1442,16 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="76.2" y="60.96" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="76.2" y="60.96" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="76.2" y="60.96" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="78.74" y="60.96" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="76.2" y="64.77" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="C31" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="39.37" y="36.83" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="39.37" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="39.37" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="39.37" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="39.37" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="39.37" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="39.37" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="38.1" y="39.37" size="1.27" layer="25" rot="R90" align="center"/>
-</element>
-<element name="C7" library="0805YC106KAT2A" package="CAPC2012X94N" value="0805YC106KAT2A" x="71.12" y="53.34" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%" x="71.12" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="HEIGHT" value="0.94mm" x="71.12" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Kyocera AVX" x="71.12" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="0805YC106KAT2A" x="71.12" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="581-0805YC106KAT2A" x="71.12" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/0805YC106KAT2A?qs=3HJ2avRr9PKwMzeRMZhF2g%3D%3D" x="71.12" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="71.12" y="53.34" size="1.27" layer="25" rot="R270" align="center"/>
-</element>
-<element name="C12" library="0805YC106KAT2A" package="CAPC2012X94N" value="0805YC106KAT2A" x="73.66" y="53.34" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X7R 0805 10%" x="73.66" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="HEIGHT" value="0.94mm" x="73.66" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Kyocera AVX" x="73.66" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="0805YC106KAT2A" x="73.66" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="581-0805YC106KAT2A" x="73.66" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/0805YC106KAT2A?qs=3HJ2avRr9PKwMzeRMZhF2g%3D%3D" x="73.66" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="73.66" y="53.34" size="1.27" layer="25" rot="R270" align="center"/>
+<element name="C31" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="38.1" y="38.1" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="38.1" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="1.4mm" x="38.1" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="KEMET" x="38.1" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="38.1" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="" x="38.1" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" x="38.1" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="36.576" y="38.1" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element name="C9" library="08053C334KAZ2A" package="CAPC2012X152N" value="08053C334KAZ2A" x="76.2" y="55.88" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value="AVX 330nF Multilayer Ceramic Capacitor (MLCC) 25 V 0805 SMT Max. Op. Temp. +125C" x="76.2" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1470,16 +1460,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="08053C334KAZ2A" x="76.2" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="76.2" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="76.2" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="76.2" y="55.88" size="1.27" layer="25" rot="R270" align="center"/>
-</element>
-<element name="C14" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="92.71" y="50.8" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="92.71" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="92.71" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="92.71" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="92.71" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="92.71" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="92.71" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="93.98" y="50.8" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="74.549" y="55.626" size="1.27" layer="25" rot="R270" align="center"/>
 </element>
 <element name="C23" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="76.2" y="52.07" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="76.2" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1488,34 +1469,16 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="76.2" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="76.2" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="76.2" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="76.2" y="52.07" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="74.549" y="52.07" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="C28" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="90.17" y="50.8" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="90.17" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="90.17" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="90.17" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="90.17" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="90.17" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="90.17" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="88.9" y="50.8" size="1.27" layer="25" rot="R90" align="center"/>
-</element>
-<element name="C35" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="88.9" y="66.04" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="88.9" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="88.9" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="88.9" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="88.9" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="88.9" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="88.9" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="88.9" y="68.58" size="1.27" layer="25" rot="R90" align="center"/>
-</element>
-<element name="C36" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="98.552" y="45.7962" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="98.552" y="45.7962" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="98.552" y="45.7962" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="98.552" y="45.7962" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="98.552" y="45.7962" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="98.552" y="45.7962" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="98.552" y="45.7962" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="98.552" y="43.2562" size="1.27" layer="25" rot="R270" align="center"/>
+<element name="C36" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="98.552" y="53.4162" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="98.552" y="53.4162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="1.4mm" x="98.552" y="53.4162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="KEMET" x="98.552" y="53.4162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="98.552" y="53.4162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="" x="98.552" y="53.4162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" x="98.552" y="53.4162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="96.393" y="53.1622" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element name="C37" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="93.98" y="30.48" smashed="yes">
 <attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="93.98" y="30.48" size="1.778" layer="27" display="off"/>
@@ -1524,25 +1487,25 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="93.98" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="93.98" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="93.98" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="90.17" y="33.02" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="93.98" y="32.131" size="1.27" layer="25" align="center"/>
 </element>
-<element name="C38" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="69.9262" y="41.7576" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="69.9262" y="41.7576" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="69.9262" y="41.7576" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="69.9262" y="41.7576" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="69.9262" y="41.7576" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="69.9262" y="41.7576" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="69.9262" y="41.7576" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="68.6562" y="41.7576" size="1.27" layer="25" rot="R270" align="center"/>
+<element name="C38" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="58.4962" y="45.5676" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="58.4962" y="45.5676" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="HEIGHT" value="1.4mm" x="58.4962" y="45.5676" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="KEMET" x="58.4962" y="45.5676" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="58.4962" y="45.5676" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="" x="58.4962" y="45.5676" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" x="58.4962" y="45.5676" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="60.1472" y="45.4406" size="1.27" layer="26" rot="MR90" align="center"/>
 </element>
-<element name="C39" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="45.593" y="42.1132" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="45.593" y="42.1132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="45.593" y="42.1132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="45.593" y="42.1132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="45.593" y="42.1132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="45.593" y="42.1132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="45.593" y="42.1132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="46.863" y="39.5732" size="1.27" layer="25" rot="R180" align="center"/>
+<element name="C39" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="51.943" y="44.6532" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="51.943" y="44.6532" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="HEIGHT" value="1.4mm" x="51.943" y="44.6532" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="KEMET" x="51.943" y="44.6532" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="51.943" y="44.6532" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="" x="51.943" y="44.6532" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" x="51.943" y="44.6532" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="53.594" y="44.6532" size="1.27" layer="26" rot="MR90" align="center"/>
 </element>
 <element name="C40" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="46.99" y="55.88" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="46.99" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1551,7 +1514,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="46.99" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="46.99" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="46.99" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="46.99" y="58.42" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="NAME" x="45.466" y="56.007" size="1.27" layer="25" rot="R270" align="center"/>
 </element>
 <element name="C41" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="80.8736" y="41.3258" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="80.8736" y="41.3258" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1560,7 +1523,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="80.8736" y="41.3258" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="80.8736" y="41.3258" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="80.8736" y="41.3258" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="80.8736" y="42.5958" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="81.0006" y="42.7228" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
 <element name="C42" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="64.4679875" y="62.755028125" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="64.4679875" y="62.755028125" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1569,7 +1532,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="64.4679875" y="62.755028125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="64.4679875" y="62.755028125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="64.4679875" y="62.755028125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="65.7379875" y="62.755028125" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="62.5629875" y="62.755028125" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element name="C43" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="44.45" y="52.07" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="44.45" y="52.07" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1578,7 +1541,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="44.45" y="52.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="44.45" y="52.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="44.45" y="52.07" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="44.45" y="50.8" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="NAME" x="42.672" y="52.07" size="1.27" layer="25" rot="R270" align="center"/>
 </element>
 <element name="C44" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="45.205084375" y="60.392765625" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="45.205084375" y="60.392765625" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1587,16 +1550,16 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="45.205084375" y="60.392765625" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="45.205084375" y="60.392765625" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="45.205084375" y="60.392765625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="45.205084375" y="62.932765625" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="45.205084375" y="60.392765625" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="C1" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="31.75" y="43.18" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="31.75" y="43.18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="31.75" y="43.18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="KEMET" x="31.75" y="43.18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="31.75" y="43.18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="31.75" y="43.18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="31.75" y="43.18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="30.48" y="43.18" size="1.27" layer="25" rot="R180" align="center"/>
+<element name="C1" library="C0805J104K1RACAUTO" package="CAPC2012X140N" value="C0805J104K1RACAUTO" x="30.48" y="40.64" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="SMD Auto X7R FO, Ceramic, 0.1 uF, 10%, 100 VDC, X7R, SMD, MLCC, Open Mode, Automotive Grade, 0805, 0.6 mm" x="30.48" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="1.4mm" x="30.48" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="KEMET" x="30.48" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="C0805J104K1RACAUTO" x="30.48" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="" x="30.48" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" x="30.48" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="30.607" y="42.291" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
 <element name="D1" library="1N4148WS-HG3-08" package="SOD2713X115N" value="1N4148WS-HG3-08" x="78.1558" y="46.6852" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="Diodes - General Purpose, Power, Switching 1V Vf, 4pF; 25nA Ir SOD-323" x="78.1558" y="46.6852" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1605,37 +1568,34 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="1N4148WS-HG3-08" x="78.1558" y="46.6852" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="78-1N4148WS-HG3-08" x="78.1558" y="46.6852" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/1N4148WS-HG3-08?qs=MLItCLRbWsz%2FnO5zs5RZvA%3D%3D" x="78.1558" y="46.6852" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="79.4258" y="46.6852" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="76.3778" y="46.5582" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="R12" library="ERA-6ARW472V" package="ERA6AEB101V" value="ERA-6ARW472V" x="91.44" y="34.29" smashed="yes">
-<attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 4.7Kohm 0.05% 10ppm AEC-Q200" x="91.44" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="0.6mm" x="91.44" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Panasonic" x="91.44" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6ARW472V" x="91.44" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="667-ERA-6ARW472V" x="91.44" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6ARW472V?qs=ob%252BdNz2%252BYEgbYp9qzrbNPA%3D%3D" x="91.44" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="91.265" y="34.29" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="91.265" y="34.29" size="1.27" layer="27" align="center"/>
+<element name="R12" library="ERA-6ARW472V" package="ERA6AEB101V" value="ERA-6ARW472V" x="88.011" y="33.655" smashed="yes">
+<attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 4.7Kohm 0.05% 10ppm AEC-Q200" x="88.011" y="33.655" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="0.6mm" x="88.011" y="33.655" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Panasonic" x="88.011" y="33.655" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6ARW472V" x="88.011" y="33.655" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="667-ERA-6ARW472V" x="88.011" y="33.655" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6ARW472V?qs=ob%252BdNz2%252BYEgbYp9qzrbNPA%3D%3D" x="88.011" y="33.655" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="87.963" y="35.306" size="1.27" layer="25" align="center"/>
 </element>
-<element name="R13" library="ERA-6ARW472V" package="ERA6AEB101V" value="ERA-6ARW472V" x="35.56" y="41.91" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 4.7Kohm 0.05% 10ppm AEC-Q200" x="35.56" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="0.6mm" x="35.56" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Panasonic" x="35.56" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6ARW472V" x="35.56" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="667-ERA-6ARW472V" x="35.56" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6ARW472V?qs=ob%252BdNz2%252BYEgbYp9qzrbNPA%3D%3D" x="35.56" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="38.1" y="41.735" size="1.27" layer="25" rot="R90" align="center"/>
-<attribute name="VALUE" x="38.1" y="41.735" size="1.27" layer="27" rot="R90" align="center"/>
+<element name="R13" library="ERA-6ARW472V" package="ERA6AEB101V" value="ERA-6ARW472V" x="34.29" y="39.37" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 4.7Kohm 0.05% 10ppm AEC-Q200" x="34.29" y="39.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="0.6mm" x="34.29" y="39.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Panasonic" x="34.29" y="39.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6ARW472V" x="34.29" y="39.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="667-ERA-6ARW472V" x="34.29" y="39.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6ARW472V?qs=ob%252BdNz2%252BYEgbYp9qzrbNPA%3D%3D" x="34.29" y="39.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="32.766" y="39.195" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="R14" library="ERA-6ARW472V" package="ERA6AEB101V" value="ERA-6ARW472V" x="40.64" y="43.18" smashed="yes">
-<attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 4.7Kohm 0.05% 10ppm AEC-Q200" x="40.64" y="43.18" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="0.6mm" x="40.64" y="43.18" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Panasonic" x="40.64" y="43.18" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6ARW472V" x="40.64" y="43.18" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="667-ERA-6ARW472V" x="40.64" y="43.18" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6ARW472V?qs=ob%252BdNz2%252BYEgbYp9qzrbNPA%3D%3D" x="40.64" y="43.18" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="40.465" y="43.18" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="40.465" y="39.37" size="1.27" layer="27" align="center"/>
+<element name="R14" library="ERA-6ARW472V" package="ERA6AEB101V" value="ERA-6ARW472V" x="39.37" y="40.767" smashed="yes">
+<attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 4.7Kohm 0.05% 10ppm AEC-Q200" x="39.37" y="40.767" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="0.6mm" x="39.37" y="40.767" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Panasonic" x="39.37" y="40.767" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6ARW472V" x="39.37" y="40.767" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="667-ERA-6ARW472V" x="39.37" y="40.767" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6ARW472V?qs=ob%252BdNz2%252BYEgbYp9qzrbNPA%3D%3D" x="39.37" y="40.767" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="39.322" y="42.164" size="1.27" layer="25" align="center"/>
 </element>
 <element name="R1" library="ERA-6ARW473V" package="ERA6AEB101V" value="ERA-6ARW473V" x="81.28" y="45.72" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 47Kohm 0.05% 10ppm AEC-Q200" x="81.28" y="45.72" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1644,16 +1604,16 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6ARW473V" x="81.28" y="45.72" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="667-ERA-6ARW473V" x="81.28" y="45.72" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6ARW473V?qs=ob%252BdNz2%252BYEhPt1EjoyLPGQ%3D%3D" x="81.28" y="45.72" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="82.55" y="45.545" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="79.883" y="45.799" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
-<element name="C4" library="MBAST21GBC7475KTCA01" package="CAPC2114X145N" value="MBAST21GBC7475KTCA01" x="50.8" y="29.21" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="4.7 F +/-10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)" x="50.8" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.45mm" x="50.8" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="TAIYO YUDEN" x="50.8" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="MBAST21GBC7475KTCA01" x="50.8" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="" x="50.8" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" x="50.8" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="50.8" y="26.67" size="1.27" layer="25" rot="R90" align="center"/>
+<element name="C4" library="MBAST21GBC7475KTCA01" package="CAPC2114X145N" value="MBAST21GBC7475KTCA01" x="53.34" y="35.56" smashed="yes">
+<attribute name="DESCRIPTION" value="4.7 F +/-10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)" x="53.34" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.45mm" x="53.34" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="TAIYO YUDEN" x="53.34" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MBAST21GBC7475KTCA01" x="53.34" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="" x="53.34" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" x="53.34" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="50.673" y="35.56" size="1.27" layer="25" align="center"/>
 </element>
 <element name="R6" library="RNCE0805BTE10K0" package="RESC2012X65N" value="RNCE0805BTE10K0" x="53.34" y="33.02" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 10KOhms 0805 25ppm 1/8W 150V 0.1% Hi Temp/Stability" x="53.34" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1662,7 +1622,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="RNCE0805BTE10K0" x="53.34" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="53.34" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="53.34" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="52.07" y="33.02" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="53.467" y="34.417" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
 <element name="R10" library="RNCE0805BTE10K0" package="RESC2012X65N" value="RNCE0805BTE10K0" x="57.15" y="33.02" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 10KOhms 0805 25ppm 1/8W 150V 0.1% Hi Temp/Stability" x="57.15" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1671,7 +1631,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="RNCE0805BTE10K0" x="57.15" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="57.15" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="57.15" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="54.61" y="33.02" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="57.023" y="34.544" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
 <element name="R15" library="RNCE0805BTE10K0" package="RESC2012X65N" value="RNCE0805BTE10K0" x="60.96" y="33.02" smashed="yes">
 <attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 10KOhms 0805 25ppm 1/8W 150V 0.1% Hi Temp/Stability" x="60.96" y="33.02" size="1.778" layer="27" display="off"/>
@@ -1680,7 +1640,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="RNCE0805BTE10K0" x="60.96" y="33.02" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="60.96" y="33.02" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="60.96" y="33.02" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="63.5" y="33.02" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="60.833" y="34.417" size="1.27" layer="25" align="center"/>
 </element>
 <element name="C2" library="08055A300JAT2A" package="CAPC2012X94N" value="08055A300JAT2A" x="46.99" y="52.07" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 30pF C0G 0805 5%" x="46.99" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1689,7 +1649,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="08055A300JAT2A" x="46.99" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="581-08055A300J" x="46.99" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=581-08055A300J" x="46.99" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="46.99" y="53.34" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="45.72" y="52.07" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element name="C3" library="08055A300JAT2A" package="CAPC2012X94N" value="08055A300JAT2A" x="49.53" y="55.88" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 30pF C0G 0805 5%" x="49.53" y="55.88" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1698,15 +1658,24 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MANUFACTURER_PART_NUMBER" value="08055A300JAT2A" x="49.53" y="55.88" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="581-08055A300J" x="49.53" y="55.88" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=581-08055A300J" x="49.53" y="55.88" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="48.26" y="55.88" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="49.53" y="57.277" size="1.27" layer="25" rot="R180" align="center"/>
+</element>
+<element name="BATTERY" library="691137710002" package="SHDR2W70P0X500_1X2_1000X750X11" value="691137710002" x="71.12" y="59.69" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole" x="71.12" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="11.6mm" x="71.12" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" x="71.12" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="691137710002" x="71.12" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="710-691137710002" x="71.12" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D" x="71.12" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="68.834" y="62.103" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="JP1(GP2Y0A51SK0F)" pad="3"/>
+<contactref element="JP1" pad="3"/>
 <contactref element="Y1" pad="4"/>
-<contactref element="JP2(GP2Y0A51SK0F)" pad="3"/>
-<contactref element="JP3(GP2Y0A51SK0F)" pad="3"/>
+<contactref element="JP2" pad="3"/>
+<contactref element="JP3" pad="3"/>
 <contactref element="MOTOR_R" pad="3"/>
 <contactref element="MOTOR_L" pad="3"/>
 <contactref element="LED2" pad="1"/>
@@ -1718,34 +1687,28 @@ Covered vias can be set in Masks (Limit).
 <contactref element="HBRIDGE" pad="10"/>
 <contactref element="Y1" pad="2"/>
 <contactref element="LED4" pad="1"/>
-<contactref element="LINEAR_REGULATOR_3.3V" pad="4"/>
-<contactref element="LINEAR_REGULATOR_3.3V" pad="2"/>
+<contactref element="3.3V" pad="4"/>
+<contactref element="3.3V" pad="2"/>
 <contactref element="MICROCHIP" pad="6"/>
 <contactref element="MICROCHIP" pad="39"/>
 <contactref element="MICROCHIP" pad="29"/>
-<contactref element="PROGRAMMER_PO" pad="3"/>
+<contactref element="1-&gt;PROG-&gt;6" pad="3"/>
 <contactref element="MICROCHIP" pad="16"/>
 <contactref element="BLUETOOTH" pad="2"/>
 <contactref element="BLUETOOTH" pad="13"/>
 <contactref element="S1" pad="4"/>
-<contactref element="J1" pad="2"/>
-<contactref element="IC1" pad="1"/>
+<contactref element="5V" pad="1"/>
 <contactref element="C30" pad="2"/>
 <contactref element="C29" pad="2"/>
 <contactref element="C31" pad="2"/>
-<contactref element="C7" pad="2"/>
-<contactref element="C12" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C43" pad="2"/>
 <contactref element="C44" pad="2"/>
 <contactref element="C42" pad="2"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C23" pad="2"/>
-<contactref element="C28" pad="2"/>
-<contactref element="C14" pad="2"/>
 <contactref element="C37" pad="2"/>
 <contactref element="C36" pad="2"/>
-<contactref element="C35" pad="2"/>
 <contactref element="C38" pad="2"/>
 <contactref element="C40" pad="2"/>
 <contactref element="C39" pad="2"/>
@@ -1764,15 +1727,6 @@ Covered vias can be set in Masks (Limit).
 <wire x1="57.63039375" y1="63.402875" x2="57.080325" y2="63.402875" width="0.2" layer="1"/>
 <wire x1="57.080325" y1="63.402875" x2="54.42605" y2="60.7486" width="0.2" layer="1"/>
 <wire x1="54.42605" y1="60.7486" x2="53.7316" y2="60.7486" width="0.2" layer="1"/>
-<wire x1="60.2234" y1="42.38" x2="64.531346875" y2="42.38" width="0.2" layer="1"/>
-<wire x1="64.531346875" y1="42.38" x2="64.813984375" y2="42.0973625" width="0.2" layer="1"/>
-<via x="64.813984375" y="42.0973625" extent="1-16" drill="0.35"/>
-<wire x1="64.813984375" y1="42.0973625" x2="64.813984375" y2="39.1103" width="0.2" layer="16"/>
-<wire x1="64.813984375" y1="39.1103" x2="65.232678125" y2="38.69160625" width="0.2" layer="16"/>
-<via x="65.232678125" y="38.69160625" extent="1-16" drill="0.35"/>
-<wire x1="65.232678125" y1="38.69160625" x2="68.721715625" y2="38.69160625" width="0.2" layer="1"/>
-<wire x1="69.9262" y1="39.896090625" x2="69.9262" y2="40.9476" width="0.2" layer="1"/>
-<wire x1="68.721715625" y1="38.69160625" x2="69.9262" y2="39.896090625" width="0.2" layer="1"/>
 <wire x1="57.513984375" y1="63.352753125" x2="61.5279625" y2="63.352753125" width="0.2" layer="16"/>
 <wire x1="61.5279625" y1="63.352753125" x2="62.616309375" y2="64.4411" width="0.2" layer="16"/>
 <via x="62.616309375" y="64.4411" extent="1-16" drill="0.35"/>
@@ -1784,16 +1738,13 @@ Covered vias can be set in Masks (Limit).
 <wire x1="49.53" y1="54.265" x2="48.375" y2="54.265" width="0.2" layer="1"/>
 <wire x1="48.375" y1="54.265" x2="46.99" y2="52.88" width="0.2" layer="1"/>
 <polygon width="0.2" layer="1">
-<vertex x="29.21" y="69.85"/>
-<vertex x="29.21" y="21.59"/>
-<vertex x="92.71" y="21.59"/>
-<vertex x="106.68" y="35.56"/>
-<vertex x="106.68" y="58.42"/>
-<vertex x="92.71" y="72.39"/>
-<vertex x="29.21" y="72.39"/>
+<vertex x="27.94" y="69.85"/>
+<vertex x="27.94" y="25.4"/>
+<vertex x="92.71" y="25.4"/>
+<vertex x="101.6" y="34.29"/>
+<vertex x="101.6" y="54.61"/>
+<vertex x="86.36" y="69.85"/>
 </polygon>
-<wire x1="49.9832" y1="43.6332" x2="49.9832" y2="43.62244375" width="0.2" layer="1"/>
-<wire x1="49.54075625" y1="43.18" x2="48.9966" y2="43.18" width="0.2" layer="1"/>
 <via x="50.8" y="57.15" extent="1-16" drill="0.35"/>
 <wire x1="54.61" y1="57.15" x2="50.8" y2="57.15" width="0.2" layer="16"/>
 <via x="54.61" y="57.15" extent="1-16" drill="0.35"/>
@@ -1814,21 +1765,26 @@ Covered vias can be set in Masks (Limit).
 <wire x1="53.514" y1="47.95324375" x2="53.514" y2="48.4974" width="0.2" layer="1"/>
 <wire x1="48.72" y1="55.88" x2="49.53" y2="55.07" width="0.2" layer="1"/>
 <wire x1="49.53" y1="55.07" x2="49.53" y2="54.265" width="0.2" layer="1"/>
+<wire x1="51.943" y1="45.4632" x2="51.943" y2="46.863" width="0.508" layer="16"/>
+<wire x1="51.943" y1="46.863" x2="52.07" y2="46.99" width="0.508" layer="16"/>
+<contactref element="BATTERY" pad="2"/>
+<wire x1="52.07" y1="46.99" x2="56.0682375" y2="46.99" width="0.508" layer="16"/>
+<wire x1="56.0682375" y1="46.99" x2="56.3146375" y2="46.7436" width="0.508" layer="16"/>
+<wire x1="58.1302" y1="46.7436" x2="58.4962" y2="46.3776" width="0.508" layer="16"/>
+<wire x1="56.3146375" y1="46.7436" x2="58.1302" y2="46.7436" width="0.508" layer="16"/>
+<wire x1="99.2886" y1="44.6532" x2="98.1054" y2="43.47" width="0.1524" layer="16"/>
+<wire x1="98.1054" y1="43.47" x2="94.69" y2="43.47" width="0.1524" layer="16"/>
 </signal>
 <signal name="AN0">
 <contactref element="MICROCHIP" pad="20"/>
-<contactref element="JP2(GP2Y0A51SK0F)" pad="2"/>
+<contactref element="JP2" pad="2"/>
 <via x="65.659" y="50.5206" extent="1-16" drill="0.35"/>
 <wire x1="60.2234" y1="45.58" x2="60.517" y2="45.8736" width="0.2" layer="1"/>
 <wire x1="60.517" y1="45.8736" x2="61.06455" y2="45.8736" width="0.2" layer="1"/>
 <wire x1="61.06455" y1="45.8736" x2="65.659" y2="50.46805" width="0.2" layer="1"/>
 <wire x1="65.659" y1="50.46805" x2="65.659" y2="50.5206" width="0.2" layer="1"/>
-<wire x1="65.659" y1="50.5206" x2="98.0694" y2="50.5206" width="0.2" layer="16"/>
-<wire x1="98.0694" y1="50.5206" x2="100.33" y2="48.26" width="0.2" layer="16"/>
-<via x="100.33" y="48.26" extent="1-16" drill="0.35"/>
-<wire x1="100.33" y1="48.26" x2="100.33" y2="47.4218" width="0.2" layer="1"/>
-<wire x1="100.5586" y1="47.1932" x2="100.33" y2="47.4218" width="0.2" layer="1"/>
-<wire x1="100.5586" y1="47.1932" x2="101.8286" y2="47.1932" width="0.2" layer="1"/>
+<wire x1="65.659" y1="50.5206" x2="95.9612" y2="50.5206" width="0.2" layer="16"/>
+<wire x1="95.9612" y1="50.5206" x2="99.2886" y2="47.1932" width="0.2" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="MICROCHIP" pad="31"/>
@@ -1846,12 +1802,13 @@ Covered vias can be set in Masks (Limit).
 </signal>
 <signal name="AN1">
 <contactref element="MICROCHIP" pad="19"/>
-<contactref element="JP3(GP2Y0A51SK0F)" pad="2"/>
-<wire x1="65.9892" y1="43.942" x2="65.1512" y2="44.78" width="0.2" layer="1"/>
-<wire x1="65.1512" y1="44.78" x2="60.2234" y2="44.78" width="0.2" layer="1"/>
-<via x="65.9892" y="43.942" extent="1-16" drill="0.35"/>
-<wire x1="65.9892" y1="43.942" x2="66.04" y2="43.8912" width="0.2" layer="16"/>
-<wire x1="66.04" y1="43.8912" x2="66.04" y2="33.02" width="0.2" layer="16"/>
+<contactref element="JP3" pad="2"/>
+<wire x1="61.5442" y1="44.704" x2="61.4682" y2="44.78" width="0.2" layer="1"/>
+<wire x1="61.4682" y1="44.78" x2="60.2234" y2="44.78" width="0.2" layer="1"/>
+<via x="61.5442" y="44.704" extent="1-16" drill="0.35"/>
+<wire x1="61.5442" y1="44.704" x2="61.5442" y2="43.434" width="0.2" layer="16"/>
+<wire x1="66.04" y1="38.9382" x2="61.5442" y2="43.434" width="0.2" layer="16"/>
+<wire x1="66.04" y1="38.9382" x2="66.04" y2="33.02" width="0.2" layer="16"/>
 <via x="66.04" y="33.02" extent="1-16" drill="0.35"/>
 <wire x1="86.72101875" y1="30.0736" x2="87.1982" y2="30.0736" width="0.2" layer="1"/>
 <wire x1="85.05501875" y1="31.7396" x2="86.72101875" y2="30.0736" width="0.2" layer="1"/>
@@ -1863,42 +1820,38 @@ Covered vias can be set in Masks (Limit).
 <wire x1="58.61" y1="48.7934" x2="61.6326" y2="51.816" width="0.2" layer="1"/>
 <wire x1="61.6326" y1="51.816" x2="62.7888" y2="51.816" width="0.2" layer="1"/>
 <via x="62.7888" y="51.816" extent="1-16" drill="0.35"/>
-<contactref element="JP1(GP2Y0A51SK0F)" pad="2"/>
-<via x="75.692" y="63.627" extent="1-16" drill="0.35"/>
+<contactref element="JP1" pad="2"/>
 <wire x1="62.7888" y1="51.816" x2="66.2222" y2="55.2494" width="0.2" layer="16"/>
 <wire x1="66.2222" y1="55.2494" x2="66.30120625" y2="55.2494" width="0.2" layer="16"/>
 <wire x1="66.30120625" y1="55.2494" x2="69.7801" y2="58.72829375" width="0.2" layer="16"/>
-<wire x1="69.7801" y1="58.72829375" x2="69.7801" y2="60.24500625" width="0.2" layer="16"/>
-<wire x1="69.7801" y1="60.24500625" x2="73.16209375" y2="63.627" width="0.2" layer="16"/>
-<wire x1="73.16209375" y1="63.627" x2="75.692" y2="63.627" width="0.2" layer="16"/>
-<wire x1="80.73185625" y1="64.77" x2="82.55" y2="64.77" width="0.2" layer="1"/>
-<wire x1="80.26595625" y1="65.2359" x2="80.73185625" y2="64.77" width="0.2" layer="1"/>
-<wire x1="75.692" y1="63.627" x2="77.3009" y2="65.2359" width="0.2" layer="1"/>
-<wire x1="77.3009" y1="65.2359" x2="80.26595625" y2="65.2359" width="0.2" layer="1"/>
-<wire x1="82.55" y1="64.77" x2="83.4898" y2="65.7098" width="0.2" layer="1"/>
-<wire x1="83.4898" y1="65.7098" x2="83.4898" y2="67.437" width="0.2" layer="1"/>
+<wire x1="69.7801" y1="58.72829375" x2="69.7801" y2="61.51500625" width="0.2" layer="16"/>
+<wire x1="82.281" y1="65.771" x2="83.4898" y2="66.9798" width="0.2" layer="16"/>
+<wire x1="74.03609375" y1="65.771" x2="82.281" y2="65.771" width="0.2" layer="16"/>
+<wire x1="83.4898" y1="66.9798" x2="83.4898" y2="67.437" width="0.2" layer="16"/>
+<wire x1="69.7801" y1="61.51500625" x2="74.03609375" y2="65.771" width="0.2" layer="16"/>
 </signal>
 <signal name="PWM_L">
 <contactref element="HBRIDGE" pad="23"/>
 <contactref element="MICROCHIP" pad="15"/>
-<via x="66.04" y="58.7082" extent="1-16" drill="0.35"/>
-<wire x1="66.04" y1="64.221071875" x2="66.04" y2="58.7082" width="0.2" layer="1"/>
 <wire x1="66.04" y1="64.221071875" x2="65.0673" y2="65.193771875" width="0.2" layer="1"/>
 <wire x1="61.254765625" y1="65.193771875" x2="61.21599375" y2="65.155" width="0.2" layer="1"/>
 <wire x1="60.712" y1="65.155" x2="61.21599375" y2="65.155" width="0.2" layer="1"/>
 <wire x1="65.0673" y1="65.193771875" x2="61.254765625" y2="65.193771875" width="0.2" layer="1"/>
-<wire x1="66.04" y1="58.7082" x2="66.04" y2="55.88" width="0.2" layer="16"/>
-<via x="66.04" y="55.88" extent="1-16" drill="0.35"/>
-<wire x1="69.9372" y1="52.821" x2="66.8782" y2="55.88" width="0.2" layer="1"/>
-<wire x1="66.04" y1="55.88" x2="66.8782" y2="55.88" width="0.2" layer="1"/>
-<wire x1="69.9372" y1="52.821" x2="69.9372" y2="44.2976" width="0.2" layer="1"/>
-<via x="69.9372" y="44.2976" extent="1-16" drill="0.35"/>
-<wire x1="69.9372" y1="44.2976" x2="68.65081875" y2="43.01121875" width="0.2" layer="16"/>
-<wire x1="68.65081875" y1="43.01121875" x2="68.65081875" y2="41.7576" width="0.2" layer="16"/>
-<via x="68.65081875" y="41.7576" extent="1-16" drill="0.35"/>
-<wire x1="68.65081875" y1="41.7576" x2="68.32081875" y2="41.4276" width="0.2" layer="1"/>
-<wire x1="68.32081875" y1="41.4276" x2="60.3758" y2="41.4276" width="0.2" layer="1"/>
-<wire x1="60.3758" y1="41.4276" x2="60.2234" y2="41.58" width="0.2" layer="1"/>
+<wire x1="60.2234" y1="41.58" x2="60.4924" y2="41.849" width="0.254" layer="1"/>
+<wire x1="63.5" y1="55.5241625" x2="63.5" y2="57.11865" width="0.254" layer="1"/>
+<wire x1="63.5" y1="57.11865" x2="63.484325" y2="57.134325" width="0.254" layer="1"/>
+<wire x1="68.1152" y1="45.6230375" x2="68.1152" y2="46.99" width="0.254" layer="1"/>
+<wire x1="68.1152" y1="46.99" x2="68.1152" y2="50.9089625" width="0.254" layer="1"/>
+<wire x1="68.1152" y1="50.9089625" x2="63.5" y2="55.5241625" width="0.254" layer="1"/>
+<wire x1="60.4924" y1="41.849" x2="64.3411625" y2="41.849" width="0.254" layer="1"/>
+<wire x1="64.3411625" y1="41.849" x2="68.1152" y2="45.6230375" width="0.254" layer="1"/>
+<wire x1="63.484325" y1="57.134325" x2="63.34431875" y2="56.99431875" width="0.254" layer="1"/>
+<via x="63.34431875" y="56.99431875" extent="1-16" drill="0.35"/>
+<via x="66.04" y="64.221071875" extent="1-16" drill="0.35"/>
+<wire x1="63.34431875" y1="56.99431875" x2="64.168" y2="57.818" width="0.254" layer="16"/>
+<wire x1="66.04" y1="60.8295625" x2="66.04" y2="64.221071875" width="0.254" layer="16"/>
+<wire x1="64.168" y1="57.818" x2="64.168" y2="58.9575625" width="0.254" layer="16"/>
+<wire x1="64.168" y1="58.9575625" x2="66.04" y2="60.8295625" width="0.254" layer="16"/>
 </signal>
 <signal name="MTRDRV_AIN1">
 <contactref element="HBRIDGE" pad="21"/>
@@ -1946,54 +1899,47 @@ Covered vias can be set in Masks (Limit).
 <contactref element="HBRIDGE" pad="13"/>
 <contactref element="HBRIDGE" pad="14"/>
 <contactref element="HBRIDGE" pad="24"/>
-<contactref element="LINEAR_REGULATOR_3.3V" pad="1"/>
-<contactref element="J1" pad="1"/>
-<contactref element="IC1" pad="3"/>
+<contactref element="3.3V" pad="1"/>
+<contactref element="5V" pad="3"/>
 <contactref element="C30" pad="1"/>
-<contactref element="C7" pad="1"/>
-<contactref element="C12" pad="1"/>
-<wire x1="73.66" y1="54.15" x2="71.12" y2="54.15" width="1.016" layer="1"/>
-<wire x1="71.12" y1="54.15" x2="71.12" y2="57.15" width="1.016" layer="1"/>
 <contactref element="C9" pad="1"/>
-<wire x1="71.12" y1="57.15" x2="75.74" y2="57.15" width="1.016" layer="1"/>
-<wire x1="75.74" y1="57.15" x2="76.2" y2="56.69" width="1.016" layer="1"/>
-<wire x1="79.4" y1="56.91" x2="76.42" y2="56.91" width="1.016" layer="1"/>
-<wire x1="76.42" y1="56.91" x2="76.2" y2="56.69" width="1.016" layer="1"/>
-<wire x1="74.12" y1="60.15" x2="76.2" y2="60.15" width="1.016" layer="1"/>
-<wire x1="79.3496" y1="59.9186" x2="76.4314" y2="59.9186" width="1.016" layer="1"/>
-<wire x1="76.4314" y1="59.9186" x2="76.2" y2="60.15" width="1.016" layer="1"/>
 <wire x1="60.712" y1="58.655" x2="60.712" y2="59.305" width="0.508" layer="1"/>
-<wire x1="70.6004" y1="57.6696" x2="71.12" y2="57.15" width="1.016" layer="1"/>
-<wire x1="62.6936875" y1="58.655" x2="63.6790875" y2="57.6696" width="1.016" layer="1"/>
-<wire x1="63.6790875" y1="57.6696" x2="70.6004" y2="57.6696" width="1.016" layer="1"/>
-<wire x1="60.712" y1="58.655" x2="62.6936875" y2="58.655" width="1.016" layer="1"/>
-<wire x1="71.12" y1="57.15" x2="68.1228" y2="60.1472" width="1.016" layer="1"/>
-<wire x1="68.1228" y1="60.1472" x2="68.1228" y2="64.6938" width="1.016" layer="1"/>
-<wire x1="68.1228" y1="64.6938" x2="67.056" y2="65.7606" width="1.016" layer="1"/>
-<wire x1="65.6844" y1="65.7606" x2="67.056" y2="65.7606" width="1.016" layer="1"/>
 <wire x1="60.712" y1="66.046" x2="60.712" y2="65.805" width="0.2" layer="1"/>
-<wire x1="60.712" y1="66.046" x2="61.0362" y2="66.3702" width="0.2" layer="1"/>
-<wire x1="61.0362" y1="66.3702" x2="65.0748" y2="66.3702" width="1.016" layer="1"/>
-<wire x1="65.0748" y1="66.3702" x2="65.6844" y2="65.7606" width="1.016" layer="1"/>
-<wire x1="71.12" y1="57.15" x2="74.12" y2="60.15" width="1.016" layer="1"/>
+<wire x1="60.712" y1="66.046" x2="60.833" y2="66.167" width="0.2" layer="1"/>
+<contactref element="BATTERY" pad="1"/>
+<wire x1="71.12" y1="59.69" x2="71.58" y2="60.15" width="1.27" layer="1"/>
+<wire x1="71.58" y1="60.15" x2="76.2" y2="60.15" width="1.27" layer="1"/>
+<wire x1="76.2" y1="60.15" x2="79.1182" y2="60.15" width="1.27" layer="1"/>
+<wire x1="79.1182" y1="60.15" x2="79.3496" y2="59.9186" width="1.27" layer="1"/>
+<wire x1="71.12" y1="59.69" x2="74.12" y2="56.69" width="1.27" layer="1"/>
+<wire x1="74.12" y1="56.69" x2="76.2" y2="56.69" width="1.27" layer="1"/>
+<wire x1="76.2" y1="56.69" x2="76.42" y2="56.91" width="1.27" layer="1"/>
+<wire x1="76.42" y1="56.91" x2="79.4" y2="56.91" width="1.27" layer="1"/>
+<wire x1="61.71941875" y1="58.6308" x2="61.69521875" y2="58.655" width="1.27" layer="1"/>
+<wire x1="61.69521875" y1="58.655" x2="60.712" y2="58.655" width="1.27" layer="1"/>
+<wire x1="64.31021875" y1="57.5982" x2="63.27761875" y2="58.6308" width="1.27" layer="1"/>
+<wire x1="63.27761875" y1="58.6308" x2="61.71941875" y2="58.6308" width="1.27" layer="1"/>
+<wire x1="71.12" y1="59.69" x2="69.0282" y2="57.5982" width="1.27" layer="1"/>
+<wire x1="69.0282" y1="57.5982" x2="64.31021875" y2="57.5982" width="1.27" layer="1"/>
+<wire x1="71.12" y1="59.69" x2="67.31" y2="63.5" width="1.27" layer="1"/>
+<wire x1="67.31" y1="63.5" x2="67.31" y2="64.77" width="1.27" layer="1"/>
+<wire x1="67.31" y1="64.77" x2="65.913" y2="66.167" width="1.27" layer="1"/>
+<wire x1="65.913" y1="66.167" x2="60.833" y2="66.167" width="1.27" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="MICROCHIP" pad="7"/>
 <contactref element="C4" pad="2"/>
-<wire x1="55.41" y1="37.5666" x2="55.41" y2="35.09" width="0.508" layer="1"/>
-<wire x1="55.41" y1="35.09" x2="54.61" y2="34.29" width="0.508" layer="1"/>
-<wire x1="51.8602625" y1="34.29" x2="50.8" y2="33.2297375" width="0.508" layer="1"/>
-<wire x1="50.8" y1="33.2297375" x2="50.8" y2="30.05" width="0.508" layer="1"/>
-<wire x1="54.61" y1="34.29" x2="51.8602625" y2="34.29" width="0.508" layer="1"/>
+<wire x1="55.41" y1="37.5666" x2="55.41" y2="35.56" width="0.508" layer="1"/>
+<wire x1="54.18" y1="35.56" x2="55.41" y2="35.56" width="0.508" layer="1"/>
 </signal>
 <signal name="AO2">
 <contactref element="HBRIDGE" pad="5"/>
 <contactref element="HBRIDGE" pad="6"/>
 <contactref element="MOTOR_L" pad="2"/>
 <wire x1="38.1" y1="59.69" x2="41.5852" y2="63.1752" width="0.6096" layer="1"/>
-<wire x1="41.5852" y1="63.1752" x2="41.615" y2="63.205" width="0.4064" layer="1"/>
-<wire x1="41.615" y1="63.205" x2="53.588" y2="63.205" width="0.4064" layer="1"/>
 <wire x1="53.588" y1="63.205" x2="53.588" y2="62.555" width="0.4064" layer="1"/>
+<wire x1="53.588" y1="63.205" x2="41.615" y2="63.205" width="0.508" layer="1"/>
+<wire x1="41.615" y1="63.205" x2="41.5852" y2="63.1752" width="0.6096" layer="1"/>
 </signal>
 <signal name="AO1">
 <contactref element="HBRIDGE" pad="2"/>
@@ -2009,23 +1955,22 @@ Covered vias can be set in Masks (Limit).
 <wire x1="53.588" y1="61.255" x2="53.588" y2="61.8752" width="0.508" layer="1"/>
 <contactref element="MOTOR_R" pad="1"/>
 <wire x1="53.588" y1="61.8752" x2="53.588" y2="61.905" width="0.508" layer="1"/>
-<wire x1="37.7698" y1="52.1462" x2="39.37" y2="53.7464" width="0.6096" layer="1"/>
-<wire x1="39.37" y1="53.7464" x2="39.37" y2="55.88" width="0.6096" layer="1"/>
+<wire x1="38.1508" y1="52.0192" x2="39.37" y2="53.2384" width="0.6096" layer="1"/>
+<wire x1="39.37" y1="53.2384" x2="39.37" y2="55.88" width="0.6096" layer="1"/>
 <wire x1="39.37" y1="55.88" x2="40.64" y2="57.15" width="0.6096" layer="1"/>
 <wire x1="40.64" y1="57.15" x2="43.18" y2="57.15" width="0.6096" layer="1"/>
 <via x="43.18" y="57.15" extent="1-16" drill="0.35"/>
 <wire x1="46.99" y1="60.96" x2="43.18" y2="57.15" width="0.6096" layer="16"/>
-<wire x1="46.99" y1="60.96" x2="48.26" y2="60.96" width="0.6096" layer="16"/>
-<via x="48.26" y="60.96" extent="1-16" drill="0.35"/>
-<wire x1="48.26" y1="60.96" x2="49.1752" y2="61.8752" width="0.6096" layer="1"/>
-<wire x1="49.1752" y1="61.8752" x2="53.588" y2="61.8752" width="0.6096" layer="1"/>
+<via x="46.99" y="60.96" extent="1-16" drill="0.35"/>
+<wire x1="46.99" y1="60.96" x2="47.9052" y2="61.8752" width="0.6096" layer="1"/>
+<wire x1="47.9052" y1="61.8752" x2="53.588" y2="61.8752" width="0.6096" layer="1"/>
 </signal>
 <signal name="ENCR_B">
 <contactref element="MOTOR_R" pad="6"/>
 <contactref element="MICROCHIP" pad="37"/>
 <wire x1="44.6026" y1="44.78" x2="48.9966" y2="44.78" width="0.2" layer="1"/>
-<wire x1="32.6898" y1="49.6062" x2="32.6898" y2="47.3202" width="0.2" layer="1"/>
-<wire x1="32.6898" y1="47.3202" x2="33.02" y2="46.99" width="0.2" layer="1"/>
+<wire x1="33.02" y1="46.99" x2="33.0708" y2="47.0408" width="0.2" layer="1"/>
+<wire x1="33.0708" y1="49.4792" x2="33.0708" y2="47.0408" width="0.2" layer="1"/>
 <via x="33.02" y="46.99" extent="1-16" drill="0.35"/>
 <wire x1="33.02" y1="46.99" x2="36.83" y2="46.99" width="0.2" layer="16"/>
 <via x="36.83" y="46.99" extent="1-16" drill="0.35"/>
@@ -2035,8 +1980,8 @@ Covered vias can be set in Masks (Limit).
 <signal name="ENCR_A">
 <contactref element="MOTOR_R" pad="5"/>
 <contactref element="MICROCHIP" pad="38"/>
-<wire x1="32.6898" y1="52.1462" x2="30.48" y2="49.9364" width="0.2" layer="1"/>
-<wire x1="30.48" y1="49.9364" x2="30.48" y2="48.26" width="0.2" layer="1"/>
+<wire x1="33.0708" y1="52.0192" x2="30.48" y2="49.4284" width="0.2" layer="1"/>
+<wire x1="30.48" y1="49.4284" x2="30.48" y2="48.26" width="0.2" layer="1"/>
 <wire x1="30.48" y1="48.26" x2="33.02" y2="45.72" width="0.2" layer="1"/>
 <via x="33.02" y="45.72" extent="1-16" drill="0.35"/>
 <wire x1="33.02" y1="45.72" x2="36.83" y2="45.72" width="0.2" layer="16"/>
@@ -2053,8 +1998,8 @@ Covered vias can be set in Masks (Limit).
 <wire x1="53.588" y1="58.655" x2="53.588" y2="59.2752" width="0.508" layer="1"/>
 <contactref element="MOTOR_R" pad="2"/>
 <wire x1="53.588" y1="59.2752" x2="53.588" y2="59.305" width="0.508" layer="1"/>
-<wire x1="37.7698" y1="49.6062" x2="40.64" y2="52.4764" width="0.6096" layer="1"/>
-<wire x1="40.64" y1="52.4764" x2="40.64" y2="54.61" width="0.6096" layer="1"/>
+<wire x1="38.1508" y1="49.4792" x2="40.64" y2="51.9684" width="0.6096" layer="1"/>
+<wire x1="40.64" y1="51.9684" x2="40.64" y2="54.61" width="0.6096" layer="1"/>
 <wire x1="40.64" y1="54.61" x2="41.91" y2="55.88" width="0.6096" layer="1"/>
 <wire x1="41.91" y1="55.88" x2="43.18" y2="55.88" width="0.6096" layer="1"/>
 <via x="43.18" y="55.88" extent="1-16" drill="0.35"/>
@@ -2069,8 +2014,9 @@ Covered vias can be set in Masks (Limit).
 <signal name="N$11">
 <contactref element="LED2" pad="2"/>
 <contactref element="R6" pad="2"/>
-<wire x1="53.34" y1="32.07" x2="52.39" y2="33.02" width="0.3048" layer="1"/>
-<wire x1="53.34" y1="30.71" x2="53.34" y2="32.07" width="0.3048" layer="1"/>
+<wire x1="52.39" y1="33.02" x2="52.39" y2="31.75" width="0.3048" layer="1"/>
+<wire x1="52.39" y1="31.75" x2="52.07" y2="31.43" width="0.3048" layer="1"/>
+<wire x1="52.07" y1="31.43" x2="52.07" y2="30.71" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="LED3" pad="2"/>
@@ -2083,16 +2029,14 @@ Covered vias can be set in Masks (Limit).
 <contactref element="MICROCHIP" pad="35"/>
 <wire x1="48.9966" y1="46.38" x2="48.9854" y2="46.3688" width="0.2" layer="1"/>
 <wire x1="48.9854" y1="46.3688" x2="48.46025" y2="46.3688" width="0.2" layer="1"/>
-<wire x1="46.482" y1="48.34705" x2="46.779525" y2="48.049525" width="0.2" layer="1"/>
-<wire x1="46.779525" y1="48.049525" x2="48.46025" y2="46.3688" width="0.2" layer="1"/>
 <wire x1="33.02" y1="59.69" x2="38.1" y2="54.61" width="0.2" layer="1"/>
 <via x="38.1" y="54.61" extent="1-16" drill="0.35"/>
-<wire x1="38.1" y1="54.61" x2="41.919675" y2="50.790325" width="0.2" layer="16"/>
-<via x="41.919675" y="50.790325" extent="1-16" drill="0.35"/>
-<wire x1="43.56144375" y1="50.46" x2="44.36905" y2="50.46" width="0.2" layer="1"/>
-<wire x1="44.36905" y1="50.46" x2="46.482" y2="48.34705" width="0.2" layer="1"/>
-<wire x1="41.919675" y1="50.790325" x2="43.23111875" y2="50.790325" width="0.2" layer="1"/>
-<wire x1="43.23111875" y1="50.790325" x2="43.56144375" y2="50.46" width="0.2" layer="1"/>
+<wire x1="42.554675" y1="50.409325" x2="38.354" y2="54.61" width="0.2" layer="16"/>
+<wire x1="38.1" y1="54.61" x2="38.354" y2="54.61" width="0.2" layer="16"/>
+<via x="42.554675" y="50.409325" extent="1-16" drill="0.35"/>
+<wire x1="44.36905" y1="50.46" x2="48.46025" y2="46.3688" width="0.2" layer="1"/>
+<wire x1="42.554675" y1="50.409325" x2="42.60535" y2="50.46" width="0.2" layer="1"/>
+<wire x1="44.36905" y1="50.46" x2="42.60535" y2="50.46" width="0.2" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="D1" pad="1"/>
@@ -2110,35 +2054,22 @@ Covered vias can be set in Masks (Limit).
 <wire x1="31.75" y1="54.61" x2="35.56" y2="54.61" width="0.2" layer="1"/>
 <via x="35.56" y="54.61" extent="1-16" drill="0.35"/>
 <via x="41.91" y="49.53" extent="1-16" drill="0.35"/>
-<wire x1="35.56" y1="54.61" x2="36.9113" y2="53.2587" width="0.2" layer="16"/>
-<wire x1="36.9113" y1="53.2587" x2="38.73585625" y2="53.2587" width="0.2" layer="16"/>
-<wire x1="38.73585625" y1="53.2587" x2="38.8823" y2="53.11225625" width="0.2" layer="16"/>
-<wire x1="38.8823" y1="53.11225625" x2="38.8823" y2="52.5577" width="0.2" layer="16"/>
-<wire x1="38.8823" y1="52.5577" x2="41.91" y2="49.53" width="0.2" layer="16"/>
+<wire x1="35.56" y1="54.61" x2="36.5303" y2="53.6397" width="0.2" layer="16"/>
+<wire x1="36.5303" y1="53.6397" x2="38.60885625" y2="53.6397" width="0.2" layer="16"/>
+<wire x1="41.91" y1="49.53" x2="41.91" y2="50.33855625" width="0.2" layer="16"/>
+<wire x1="41.91" y1="50.33855625" x2="38.60885625" y2="53.6397" width="0.2" layer="16"/>
 <wire x1="41.91" y1="49.53" x2="43.83405" y2="49.53" width="0.2" layer="1"/>
 <wire x1="43.83405" y1="49.53" x2="47.78405" y2="45.58" width="0.2" layer="1"/>
 </signal>
 <signal name="5V">
-<contactref element="JP1(GP2Y0A51SK0F)" pad="1"/>
-<contactref element="JP2(GP2Y0A51SK0F)" pad="1"/>
-<contactref element="JP3(GP2Y0A51SK0F)" pad="1"/>
-<contactref element="IC1" pad="4"/>
+<contactref element="JP1" pad="1"/>
+<contactref element="JP2" pad="1"/>
+<contactref element="JP3" pad="1"/>
+<contactref element="5V" pad="4"/>
 <contactref element="C29" pad="1"/>
 <contactref element="C37" pad="1"/>
 <contactref element="C36" pad="1"/>
-<contactref element="C35" pad="1"/>
-<wire x1="85.7504" y1="62.23" x2="85.7504" y2="61.42" width="1.016" layer="1"/>
-<wire x1="88.9" y1="61.42" x2="85.7504" y2="61.42" width="1.016" layer="1"/>
-<wire x1="88.9" y1="61.42" x2="90.63" y2="61.42" width="1.016" layer="1"/>
-<wire x1="90.63" y1="61.42" x2="91.44" y2="62.23" width="1.016" layer="1"/>
-<wire x1="91.44" y1="62.23" x2="91.44" y2="63.5" width="1.016" layer="1"/>
-<wire x1="91.44" y1="63.5" x2="89.71" y2="65.23" width="1.016" layer="1"/>
-<wire x1="89.71" y1="65.23" x2="88.9" y2="65.23" width="1.016" layer="1"/>
-<wire x1="88.9" y1="61.42" x2="98.552" y2="51.768" width="1.016" layer="1"/>
-<wire x1="98.552" y1="51.768" x2="98.552" y2="46.6062" width="1.016" layer="1"/>
-<wire x1="88.9" y1="61.42" x2="88.9" y2="58.42" width="1.016" layer="1"/>
-<wire x1="88.9" y1="58.42" x2="96.52" y2="50.8" width="1.016" layer="1"/>
-<wire x1="96.52" y1="50.8" x2="96.52" y2="34.29" width="1.016" layer="1"/>
+<wire x1="96.52" y1="34.29" x2="96.52" y2="50.8" width="1.016" layer="1"/>
 <wire x1="93.96745" y1="31.923" x2="93.582" y2="31.53755" width="1.016" layer="1"/>
 <wire x1="93.582" y1="31.53755" x2="93.582" y2="30.892" width="1.016" layer="1"/>
 <wire x1="93.582" y1="30.892" x2="93.17" y2="30.48" width="1.016" layer="1"/>
@@ -2146,18 +2077,28 @@ Covered vias can be set in Masks (Limit).
 <wire x1="94.153" y1="31.923" x2="93.96745" y2="31.923" width="1.016" layer="1"/>
 <wire x1="89.7382" y1="30.0736" x2="92.7636" y2="30.0736" width="1.016" layer="1"/>
 <wire x1="92.7636" y1="30.0736" x2="93.17" y2="30.48" width="1.016" layer="1"/>
-<wire x1="98.552" y1="46.6062" x2="98.964" y2="46.1942" width="1.016" layer="1"/>
-<wire x1="98.964" y1="46.1942" x2="99.60955" y2="46.1942" width="1.016" layer="1"/>
-<wire x1="101.15055" y1="44.6532" x2="101.8286" y2="44.6532" width="1.016" layer="1"/>
-<wire x1="99.60955" y1="46.1942" x2="101.15055" y2="44.6532" width="1.016" layer="1"/>
-<wire x1="86.0298" y1="67.437" x2="88.2368" y2="65.23" width="1.016" layer="1"/>
-<wire x1="88.2368" y1="65.23" x2="88.9" y2="65.23" width="1.016" layer="1"/>
+<contactref element="5V" pad="2"/>
+<wire x1="85.7504" y1="62.23" x2="79.3496" y2="62.23" width="1.016" layer="1"/>
+<wire x1="88.09" y1="59.23" x2="88.09" y2="62.23" width="1.016" layer="1"/>
+<wire x1="96.52" y1="50.8" x2="88.09" y2="59.23" width="1.016" layer="1"/>
+<wire x1="85.7504" y1="62.23" x2="88.09" y2="62.23" width="1.016" layer="1"/>
+<wire x1="88.09" y1="62.23" x2="88.09" y2="65.58" width="1.016" layer="1"/>
+<wire x1="86.233" y1="67.437" x2="86.0298" y2="67.437" width="1.016" layer="1"/>
+<wire x1="88.09" y1="65.58" x2="86.233" y2="67.437" width="1.016" layer="1"/>
+<wire x1="98.552" y1="51.768" x2="89.533" y2="60.787" width="1.016" layer="1"/>
+<wire x1="89.533" y1="60.787" x2="88.88745" y2="60.787" width="1.016" layer="1"/>
+<wire x1="88.88745" y1="60.787" x2="88.502" y2="61.17245" width="1.016" layer="1"/>
+<wire x1="88.502" y1="61.17245" x2="88.502" y2="61.818" width="1.016" layer="1"/>
+<wire x1="88.502" y1="61.818" x2="88.09" y2="62.23" width="1.016" layer="1"/>
+<wire x1="99.2886" y1="49.7332" x2="98.552" y2="50.4698" width="1.016" layer="1"/>
+<wire x1="98.552" y1="50.4698" x2="98.552" y2="51.768" width="1.016" layer="1"/>
+<wire x1="98.552" y1="52.6062" x2="98.552" y2="51.768" width="1.016" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="LED4" pad="2"/>
 <contactref element="R15" pad="2"/>
-<wire x1="60.96" y1="32.07" x2="61.91" y2="33.02" width="0.3048" layer="1"/>
-<wire x1="60.96" y1="30.71" x2="60.96" y2="32.07" width="0.3048" layer="1"/>
+<wire x1="61.91" y1="33.02" x2="62.23" y2="32.7" width="0.3048" layer="1"/>
+<wire x1="62.23" y1="32.7" x2="62.23" y2="30.71" width="0.3048" layer="1"/>
 </signal>
 <signal name="LED2">
 <contactref element="R6" pad="1"/>
@@ -2169,8 +2110,8 @@ Covered vias can be set in Masks (Limit).
 <contactref element="MOTOR_R" pad="4"/>
 <contactref element="MOTOR_L" pad="4"/>
 <contactref element="HBRIDGE" pad="20"/>
-<contactref element="PROGRAMMER_PO" pad="2"/>
-<contactref element="LINEAR_REGULATOR_3.3V" pad="3"/>
+<contactref element="1-&gt;PROG-&gt;6" pad="2"/>
+<contactref element="3.3V" pad="3"/>
 <contactref element="MICROCHIP" pad="17"/>
 <contactref element="MICROCHIP" pad="40"/>
 <contactref element="MICROCHIP" pad="28"/>
@@ -2180,8 +2121,6 @@ Covered vias can be set in Masks (Limit).
 <contactref element="C44" pad="1"/>
 <contactref element="C42" pad="1"/>
 <contactref element="C1" pad="1"/>
-<contactref element="C14" pad="1"/>
-<contactref element="C28" pad="1"/>
 <contactref element="C23" pad="1"/>
 <contactref element="C38" pad="1"/>
 <contactref element="C40" pad="1"/>
@@ -2189,59 +2128,31 @@ Covered vias can be set in Masks (Limit).
 <wire x1="79.4" y1="52.31" x2="78.35" y2="51.26" width="0.6096" layer="1"/>
 <wire x1="78.35" y1="51.26" x2="76.2" y2="51.26" width="0.6096" layer="1"/>
 <contactref element="D1" pad="2"/>
-<wire x1="92.71" y1="49.99" x2="90.17" y2="49.99" width="0.6096" layer="1"/>
 <contactref element="R13" pad="2"/>
 <contactref element="R14" pad="1"/>
-<wire x1="93.4078" y1="45.1816625" x2="90.3294625" y2="48.26" width="0.6096" layer="1"/>
 <wire x1="94.69" y1="41.65669375" x2="94.69" y2="41.62" width="0.6096" layer="1"/>
 <wire x1="93.4078" y1="45.1816625" x2="93.4078" y2="42.93889375" width="0.6096" layer="1"/>
 <wire x1="93.4078" y1="42.93889375" x2="94.69" y2="41.65669375" width="0.6096" layer="1"/>
-<wire x1="46.403" y1="42.1132" x2="46.6698" y2="42.38" width="0.508" layer="1"/>
-<wire x1="46.6698" y1="42.38" x2="48.9966" y2="42.38" width="0.508" layer="1"/>
-<wire x1="32.53" y1="36" x2="32.53" y2="43.15" width="0.508" layer="1"/>
-<wire x1="32.53" y1="43.15" x2="32.56" y2="43.18" width="0.508" layer="1"/>
-<wire x1="90.3294625" y1="48.26" x2="90.17" y2="48.4194625" width="0.254" layer="1"/>
-<wire x1="90.17" y1="48.4194625" x2="90.17" y2="49.99" width="0.6096" layer="1"/>
-<wire x1="35.56" y1="43.085" x2="39.465" y2="43.18" width="0.508" layer="1"/>
-<wire x1="76.6318" y1="46.3232" x2="76.6318" y2="43.2752" width="0.508" layer="1"/>
-<wire x1="76.6318" y1="46.3232" x2="78.1558" y2="47.8472" width="0.508" layer="1"/>
-<wire x1="76.6318" y1="43.2752" x2="76.3814" y2="43.0248" width="0.508" layer="1"/>
-<wire x1="69.9262" y1="42.5676" x2="70.3834" y2="43.0248" width="0.508" layer="1"/>
-<wire x1="76.3814" y1="43.0248" x2="70.3834" y2="43.0248" width="0.508" layer="1"/>
+<wire x1="31.26" y1="35.746" x2="31.26" y2="40.61" width="0.508" layer="1"/>
+<wire x1="31.26" y1="40.61" x2="31.29" y2="40.64" width="0.508" layer="1"/>
+<wire x1="38.06483125" y1="40.63683125" x2="34.29" y2="40.545" width="0.508" layer="1"/>
+<wire x1="38.06483125" y1="40.63683125" x2="38.195" y2="40.767" width="0.508" layer="1"/>
+<wire x1="78.1558" y1="47.8472" x2="76.6318" y2="46.3232" width="0.508" layer="1"/>
 <wire x1="76.2" y1="51.26" x2="78.1558" y2="49.3042" width="0.508" layer="1"/>
-<wire x1="78.1558" y1="49.3042" x2="78.1558" y2="47.8472" width="0.508" layer="1"/>
-<wire x1="69.9262" y1="42.5676" x2="70.4374" y2="42.0564" width="0.508" layer="1"/>
+<wire x1="78.1558" y1="47.8472" x2="78.1558" y2="49.3042" width="0.508" layer="1"/>
 <wire x1="81.15436875" y1="35.56" x2="81.28" y2="35.56" width="0.508" layer="1"/>
-<wire x1="70.4374" y1="42.0564" x2="74.65796875" y2="42.0564" width="0.508" layer="1"/>
-<wire x1="74.65796875" y1="42.0564" x2="81.15436875" y2="35.56" width="0.508" layer="1"/>
 <via x="64.77" y="58.7082" extent="1-16" drill="0.35"/>
-<wire x1="64.77" y1="58.7082" x2="64.77" y2="55.88" width="0.508" layer="16"/>
 <via x="64.77" y="55.88" extent="1-16" drill="0.35"/>
-<wire x1="64.77" y1="55.88" x2="68.6562" y2="51.9938" width="0.508" layer="1"/>
-<wire x1="68.6562" y1="43.8376" x2="69.9262" y2="42.5676" width="0.508" layer="1"/>
-<wire x1="68.6562" y1="51.9938" x2="68.6562" y2="43.8376" width="0.508" layer="1"/>
 <wire x1="64.4679875" y1="61.945028125" x2="64.486903125" y2="61.945028125" width="0.508" layer="1"/>
 <wire x1="64.77" y1="61.66193125" x2="64.486903125" y2="61.945028125" width="0.508" layer="1"/>
 <wire x1="64.77" y1="61.66193125" x2="64.77" y2="58.7082" width="0.508" layer="1"/>
-<wire x1="48.9966" y1="42.38" x2="50.2158" y2="42.38" width="0.508" layer="1"/>
 <via x="55.8546" y="44.8818" extent="1-16" drill="0.35"/>
-<wire x1="55.8546" y1="44.8818" x2="57.4548" y2="43.2816" width="0.508" layer="16"/>
+<wire x1="55.8546" y1="44.8818" x2="56.0832" y2="44.6532" width="0.508" layer="16"/>
+<wire x1="56.0832" y1="44.6532" x2="57.4548" y2="43.2816" width="0.508" layer="16"/>
 <wire x1="57.4548" y1="43.2816" x2="57.9882" y2="43.2816" width="0.508" layer="16"/>
 <via x="57.9882" y="43.2816" extent="1-16" drill="0.35"/>
 <wire x1="57.9882" y1="43.2816" x2="60.1218" y2="43.2816" width="0.508" layer="1"/>
 <wire x1="60.1218" y1="43.2816" x2="60.2234" y2="43.18" width="0.508" layer="1"/>
-<wire x1="89.2166625" y1="50.6536" x2="89.5064" y2="50.6536" width="0.508" layer="1"/>
-<wire x1="89.5064" y1="50.6536" x2="90.17" y2="49.99" width="0.508" layer="1"/>
-<wire x1="79.4" y1="52.31" x2="87.5602625" y2="52.31" width="0.508" layer="1"/>
-<wire x1="87.5602625" y1="52.31" x2="89.2166625" y2="50.6536" width="0.508" layer="1"/>
-<wire x1="60.2234" y1="43.18" x2="65.9384" y2="43.18" width="0.508" layer="1"/>
-<wire x1="66.5508" y1="42.5676" x2="69.9262" y2="42.5676" width="0.508" layer="1"/>
-<wire x1="65.9384" y1="43.18" x2="66.5508" y2="42.5676" width="0.508" layer="1"/>
-<wire x1="50.2158" y1="42.38" x2="51.7398" y2="43.904" width="0.508" layer="1"/>
-<wire x1="51.7398" y1="43.904" x2="51.7398" y2="45.1578625" width="0.508" layer="1"/>
-<wire x1="51.7398" y1="45.1578625" x2="54.4704" y2="47.8884625" width="0.508" layer="1"/>
-<wire x1="54.4704" y1="47.8884625" x2="54.4704" y2="48.6538" width="0.508" layer="1"/>
-<wire x1="54.4704" y1="48.6538" x2="54.61" y2="48.7934" width="0.508" layer="1"/>
 <wire x1="54.61" y1="48.7934" x2="54.61" y2="46.1264" width="0.508" layer="1"/>
 <wire x1="54.61" y1="46.1264" x2="55.8546" y2="44.8818" width="0.508" layer="1"/>
 <wire x1="62.1030875" y1="63.224434375" x2="60.731434375" y2="63.224434375" width="0.508" layer="1"/>
@@ -2250,74 +2161,78 @@ Covered vias can be set in Masks (Limit).
 <wire x1="63.38249375" y1="61.945028125" x2="62.1030875" y2="63.224434375" width="0.508" layer="1"/>
 <wire x1="54.61" y1="48.7934" x2="54.5188" y2="48.8846" width="0.6096" layer="1"/>
 <wire x1="54.5188" y1="48.8846" x2="54.5188" y2="54.5993875" width="0.6096" layer="1"/>
-<wire x1="54.5188" y1="54.5993875" x2="49.535415625" y2="59.582765625" width="0.6096" layer="1"/>
+<wire x1="49.535415625" y1="59.582765625" x2="54.5188" y2="54.5993875" width="0.6096" layer="1"/>
 <wire x1="45.205084375" y1="59.582765625" x2="49.535415625" y2="59.582765625" width="0.6096" layer="1"/>
 <wire x1="45.205084375" y1="59.582765625" x2="39.855709375" y2="59.582765625" width="0.6096" layer="1"/>
 <wire x1="39.855709375" y1="59.582765625" x2="38.64564375" y2="58.3727" width="0.6096" layer="1"/>
 <wire x1="38.64564375" y1="58.3727" x2="36.8773" y2="58.3727" width="0.6096" layer="1"/>
 <wire x1="36.8773" y1="58.3727" x2="35.56" y2="59.69" width="0.6096" layer="1"/>
 <wire x1="44.45" y1="52.88" x2="43.8348" y2="52.2648" width="0.6096" layer="1"/>
-<wire x1="38.31544375" y1="48.2889" x2="37.22415625" y2="48.2889" width="0.6096" layer="1"/>
-<wire x1="35.90685625" y1="49.6062" x2="35.2298" y2="49.6062" width="0.6096" layer="1"/>
-<wire x1="37.22415625" y1="48.2889" x2="35.90685625" y2="49.6062" width="0.6096" layer="1"/>
-<wire x1="43.8348" y1="52.2648" x2="42.29134375" y2="52.2648" width="0.6096" layer="1"/>
-<wire x1="42.29134375" y1="52.2648" x2="38.31544375" y2="48.2889" width="0.6096" layer="1"/>
+<wire x1="39.20444375" y1="48.1619" x2="37.35115625" y2="48.1619" width="0.6096" layer="1"/>
+<wire x1="36.03385625" y1="49.4792" x2="35.6108" y2="49.4792" width="0.6096" layer="1"/>
+<wire x1="37.35115625" y1="48.1619" x2="36.03385625" y2="49.4792" width="0.6096" layer="1"/>
+<wire x1="43.8348" y1="52.2648" x2="43.30734375" y2="52.2648" width="0.6096" layer="1"/>
+<wire x1="43.30734375" y1="52.2648" x2="39.20444375" y2="48.1619" width="0.6096" layer="1"/>
 <wire x1="44.45" y1="52.88" x2="44.45" y2="58.82768125" width="0.6096" layer="1"/>
 <wire x1="44.45" y1="58.82768125" x2="45.205084375" y2="59.582765625" width="0.6096" layer="1"/>
-<wire x1="32.56" y1="43.18" x2="35.465" y2="43.18" width="0.6096" layer="1"/>
-<wire x1="35.465" y1="43.18" x2="35.56" y2="43.085" width="0.6096" layer="1"/>
-<wire x1="32.56" y1="43.18" x2="35.2298" y2="45.8498" width="0.6096" layer="1"/>
-<wire x1="35.2298" y1="45.8498" x2="35.2298" y2="49.6062" width="0.6096" layer="1"/>
+<wire x1="34.29" y1="40.545" x2="34.195" y2="40.64" width="0.6096" layer="1"/>
+<wire x1="34.195" y1="40.64" x2="31.29" y2="40.64" width="0.6096" layer="1"/>
+<wire x1="31.29" y1="40.64" x2="35.6108" y2="44.9608" width="0.6096" layer="1"/>
+<wire x1="35.6108" y1="44.9608" x2="35.6108" y2="49.4792" width="0.6096" layer="1"/>
 <wire x1="45.205084375" y1="59.582765625" x2="46.99" y2="57.79785" width="0.6096" layer="1"/>
 <wire x1="46.99" y1="57.79785" x2="46.99" y2="56.69" width="0.6096" layer="1"/>
+<wire x1="78.1558" y1="49.3042" x2="91.6658" y2="49.3042" width="0.508" layer="1"/>
+<wire x1="91.6658" y1="49.3042" x2="93.4078" y2="47.5622" width="0.508" layer="1"/>
+<wire x1="93.4078" y1="47.5622" x2="93.4078" y2="45.1816625" width="0.508" layer="1"/>
+<wire x1="51.943" y1="43.8432" x2="55.2732" y2="43.8432" width="0.508" layer="16"/>
+<wire x1="55.2732" y1="43.8432" x2="56.0832" y2="44.6532" width="0.508" layer="16"/>
+<wire x1="51.943" y1="43.8432" x2="51.4068" y2="43.307" width="0.508" layer="16"/>
+<wire x1="51.4068" y1="43.307" x2="51.054" y2="43.307" width="0.508" layer="16"/>
+<wire x1="51.054" y1="43.307" x2="50.673" y2="42.926" width="0.508" layer="16"/>
+<via x="50.673" y="42.926" extent="1-16" drill="0.35"/>
+<wire x1="50.673" y1="42.926" x2="50.127" y2="42.38" width="0.508" layer="1"/>
+<wire x1="50.127" y1="42.38" x2="48.9966" y2="42.38" width="0.508" layer="1"/>
+<wire x1="58.4962" y1="44.7576" x2="57.9882" y2="44.2496" width="0.508" layer="16"/>
+<wire x1="57.9882" y1="44.2496" x2="57.9882" y2="43.2816" width="0.508" layer="16"/>
+<wire x1="76.6318" y1="40.08256875" x2="81.15436875" y2="35.56" width="0.508" layer="1"/>
+<wire x1="76.6318" y1="46.3232" x2="76.6318" y2="40.08256875" width="0.508" layer="1"/>
+<via x="54.5188" y="54.5993875" extent="1-16" drill="0.35"/>
+<wire x1="54.5188" y1="54.5993875" x2="55.7994125" y2="55.88" width="0.508" layer="16"/>
+<wire x1="55.7994125" y1="55.88" x2="64.77" y2="55.88" width="0.508" layer="16"/>
+<wire x1="75.24765625" y1="51.926" x2="75.534" y2="51.926" width="0.508" layer="1"/>
+<wire x1="75.534" y1="51.926" x2="76.2" y2="51.26" width="0.508" layer="1"/>
+<wire x1="64.77" y1="55.88" x2="71.29365625" y2="55.88" width="0.508" layer="1"/>
+<wire x1="71.29365625" y1="55.88" x2="75.24765625" y2="51.926" width="0.508" layer="1"/>
+<wire x1="64.77" y1="58.7082" x2="64.77" y2="55.88" width="0.508" layer="16"/>
 </signal>
 <signal name="PGED1">
-<contactref element="PROGRAMMER_PO" pad="4"/>
+<contactref element="1-&gt;PROG-&gt;6" pad="4"/>
 <contactref element="MICROCHIP" pad="21"/>
 <via x="62.6364" y="48.387" extent="1-16" drill="0.35"/>
 <wire x1="60.2234" y1="46.38" x2="60.517" y2="46.6736" width="0.2" layer="1"/>
 <wire x1="60.517" y1="46.6736" x2="61.06455" y2="46.6736" width="0.2" layer="1"/>
 <wire x1="61.06455" y1="46.6736" x2="61.2124" y2="46.82145" width="0.2" layer="1"/>
 <wire x1="61.2124" y1="46.82145" x2="61.2124" y2="46.963" width="0.2" layer="1"/>
+<wire x1="68.998" y1="42.762" x2="76.2" y2="35.56" width="0.2" layer="16"/>
+<wire x1="62.6364" y1="48.387" x2="62.6364" y2="45.618025" width="0.2" layer="16"/>
+<wire x1="62.6364" y1="45.618025" x2="65.492425" y2="42.762" width="0.2" layer="16"/>
+<wire x1="65.492425" y1="42.762" x2="68.998" y2="42.762" width="0.2" layer="16"/>
 <wire x1="61.2124" y1="46.963" x2="62.6364" y2="48.387" width="0.2" layer="1"/>
-<wire x1="71.247" y1="48.2346" x2="62.7888" y2="48.2346" width="0.2" layer="16"/>
-<wire x1="62.6364" y1="48.387" x2="62.7888" y2="48.2346" width="0.2" layer="16"/>
-<wire x1="71.247" y1="48.2346" x2="72.1614" y2="47.3202" width="0.2" layer="16"/>
-<via x="72.1614" y="47.3202" extent="1-16" drill="0.35"/>
-<wire x1="72.1614" y1="47.3202" x2="72.9996" y2="46.482" width="0.2" layer="1"/>
-<wire x1="72.9996" y1="46.482" x2="72.9996" y2="46.1772" width="0.2" layer="1"/>
-<via x="72.9996" y="46.1772" extent="1-16" drill="0.35"/>
-<via x="76.2762" y="38.5572" extent="1-16" drill="0.35"/>
-<wire x1="74.8494" y1="39.984" x2="76.2762" y2="38.5572" width="0.2" layer="16"/>
-<wire x1="74.18619375" y1="39.984" x2="74.8494" y2="39.984" width="0.2" layer="16"/>
-<wire x1="72.9996" y1="46.1772" x2="72.9996" y2="41.17059375" width="0.2" layer="16"/>
-<wire x1="72.9996" y1="41.17059375" x2="74.18619375" y2="39.984" width="0.2" layer="16"/>
-<wire x1="76.2762" y1="38.5572" x2="76.2762" y2="35.6362" width="0.2" layer="1"/>
-<wire x1="76.2762" y1="35.6362" x2="76.2" y2="35.56" width="0.2" layer="1"/>
 </signal>
 <signal name="PGEC1">
-<contactref element="PROGRAMMER_PO" pad="5"/>
+<contactref element="1-&gt;PROG-&gt;6" pad="5"/>
 <contactref element="MICROCHIP" pad="22"/>
-<wire x1="60.2234" y1="47.18" x2="62.5287" y2="49.4853" width="0.2" layer="1"/>
-<wire x1="62.5287" y1="49.4853" x2="62.5602" y2="49.4538" width="0.2" layer="1"/>
-<via x="62.5602" y="49.4538" extent="1-16" drill="0.35"/>
-<wire x1="71.3994" y1="49.3014" x2="62.7126" y2="49.3014" width="0.2" layer="16"/>
-<wire x1="62.5602" y1="49.4538" x2="62.7126" y2="49.3014" width="0.2" layer="16"/>
-<wire x1="71.3994" y1="49.3014" x2="71.5518" y2="49.149" width="0.2" layer="16"/>
-<via x="71.5518" y="49.149" extent="1-16" drill="0.35"/>
-<wire x1="71.5518" y1="49.149" x2="74.4474" y2="46.2534" width="0.2" layer="1"/>
-<via x="74.4474" y="45.1866" extent="1-16" drill="0.35"/>
-<wire x1="74.4474" y1="45.1866" x2="73.7616" y2="44.5008" width="0.2" layer="16"/>
-<wire x1="73.7616" y1="44.5008" x2="73.7616" y2="41.3004" width="0.2" layer="16"/>
-<wire x1="73.7616" y1="41.3004" x2="74.4474" y2="40.6146" width="0.2" layer="16"/>
-<via x="74.4474" y="40.6146" extent="1-16" drill="0.35"/>
-<wire x1="74.4474" y1="40.6146" x2="74.4474" y2="38.5064" width="0.2" layer="1"/>
-<wire x1="74.4474" y1="38.5064" x2="73.66" y2="37.719" width="0.2" layer="1"/>
-<wire x1="73.66" y1="37.719" x2="73.66" y2="35.56" width="0.2" layer="1"/>
-<wire x1="74.4474" y1="46.2534" x2="74.4474" y2="45.1866" width="0.2" layer="1"/>
+<wire x1="61.2272" y1="48.1838" x2="60.2234" y2="47.18" width="0.2" layer="1"/>
+<wire x1="61.2272" y1="48.1838" x2="61.2902" y2="48.1838" width="0.2" layer="1"/>
+<via x="61.2902" y="48.1838" extent="1-16" drill="0.35"/>
+<wire x1="68.998" y1="40.222" x2="73.66" y2="35.56" width="0.2" layer="16"/>
+<wire x1="62.2392" y1="43.475225" x2="65.492425" y2="40.222" width="0.2" layer="16"/>
+<wire x1="65.492425" y1="40.222" x2="68.998" y2="40.222" width="0.2" layer="16"/>
+<wire x1="62.2392" y1="47.2348" x2="62.2392" y2="43.475225" width="0.2" layer="16"/>
+<wire x1="61.2902" y1="48.1838" x2="62.2392" y2="47.2348" width="0.2" layer="16"/>
 </signal>
 <signal name="N$9">
-<contactref element="PROGRAMMER_PO" pad="1"/>
+<contactref element="1-&gt;PROG-&gt;6" pad="1"/>
 <contactref element="LED1" pad="1"/>
 <contactref element="C41" pad="1"/>
 <wire x1="83.82" y1="35.56" x2="83.82" y2="41.68" width="0.508" layer="1"/>
@@ -2361,36 +2276,34 @@ Covered vias can be set in Masks (Limit).
 <wire x1="79.450396875" y1="41.326603125" x2="79.450396875" y2="41.3258" width="0.2" layer="1"/>
 <via x="78.383596875" y="42.393403125" extent="1-16" drill="0.35"/>
 <wire x1="78.383596875" y1="42.393403125" x2="76.8096" y2="43.9674" width="0.2" layer="16"/>
-<wire x1="76.8096" y1="43.9674" x2="75.3618" y2="43.9674" width="0.2" layer="16"/>
-<via x="75.3618" y="43.9674" extent="1-16" drill="0.35"/>
-<wire x1="75.3618" y1="43.9674" x2="74.1426" y2="43.9674" width="0.2" layer="1"/>
-<wire x1="74.1426" y1="43.9674" x2="70.6374" y2="47.4726" width="0.2" layer="1"/>
-<via x="70.6374" y="47.4726" extent="1-16" drill="0.35"/>
-<wire x1="70.6374" y1="47.4726" x2="68.199" y2="47.4726" width="0.2" layer="16"/>
-<wire x1="68.199" y1="47.4726" x2="64.6938" y2="43.9674" width="0.2" layer="16"/>
-<wire x1="62.5602" y1="43.9674" x2="64.6938" y2="43.9674" width="0.2" layer="16"/>
-<via x="62.5602" y="43.9674" extent="1-16" drill="0.35"/>
-<wire x1="62.5602" y1="43.9674" x2="60.8838" y2="43.9674" width="0.2" layer="1"/>
+<wire x1="75.3618" y1="43.9674" x2="76.8096" y2="43.9674" width="0.2" layer="16"/>
+<wire x1="68.1482" y1="47.4218" x2="65.1002" y2="44.3738" width="0.2" layer="16"/>
+<wire x1="65.1002" y1="43.9674" x2="65.1002" y2="44.3738" width="0.2" layer="16"/>
+<via x="65.1002" y="43.9674" extent="1-16" drill="0.35"/>
+<wire x1="65.1002" y1="43.9674" x2="60.8838" y2="43.9674" width="0.2" layer="1"/>
 <wire x1="60.2234" y1="43.98" x2="60.8712" y2="43.98" width="0.2" layer="1"/>
 <wire x1="60.8712" y1="43.98" x2="60.8838" y2="43.9674" width="0.2" layer="1"/>
+<wire x1="68.1482" y1="47.4218" x2="71.9074" y2="47.4218" width="0.2" layer="16"/>
+<wire x1="71.9074" y1="47.4218" x2="75.3618" y2="43.9674" width="0.2" layer="16"/>
 </signal>
 <signal name="N$16">
 <contactref element="MICROCHIP" pad="12"/>
 <contactref element="S2" pad="2"/>
 <contactref element="R12" pad="1"/>
-<wire x1="84.24018125" y1="33.7836" x2="84.74658125" y2="34.29" width="0.2" layer="1"/>
-<wire x1="84.74658125" y1="34.29" x2="90.265" y2="34.29" width="0.2" layer="1"/>
-<wire x1="60.2234" y1="39.18" x2="65.6198" y2="33.7836" width="0.2" layer="1"/>
-<wire x1="65.6198" y1="33.7836" x2="84.24018125" y2="33.7836" width="0.2" layer="1"/>
-<wire x1="90.265" y1="34.29" x2="88.19" y2="36.365" width="0.2" layer="1"/>
-<wire x1="88.19" y1="36.365" x2="88.19" y2="37.12" width="0.2" layer="1"/>
+<wire x1="86.836" y1="33.655" x2="88.19" y2="35.009" width="0.508" layer="1"/>
+<wire x1="88.19" y1="35.009" x2="88.19" y2="37.12" width="0.508" layer="1"/>
+<wire x1="65.1134" y1="34.29" x2="60.2234" y2="39.18" width="0.508" layer="1"/>
+<wire x1="86.836" y1="33.655" x2="86.751" y2="33.74" width="0.508" layer="1"/>
+<wire x1="86.751" y1="33.74" x2="70.65939375" y2="33.74" width="0.508" layer="1"/>
+<wire x1="70.65939375" y1="33.74" x2="70.10939375" y2="34.29" width="0.508" layer="1"/>
+<wire x1="70.10939375" y1="34.29" x2="65.1134" y2="34.29" width="0.508" layer="1"/>
 </signal>
 <signal name="RX">
 <contactref element="BLUETOOTH" pad="7"/>
 <contactref element="MICROCHIP" pad="44"/>
 <wire x1="48.703" y1="39.4736" x2="47.3736" y2="39.4736" width="0.2" layer="1"/>
-<wire x1="47.3736" y1="39.4736" x2="37.85" y2="29.95" width="0.2" layer="1"/>
-<wire x1="36.58" y1="29.95" x2="37.85" y2="29.95" width="0.2" layer="1"/>
+<wire x1="47.3736" y1="39.4736" x2="37.596" y2="29.696" width="0.2" layer="1"/>
+<wire x1="35.31" y1="29.696" x2="37.596" y2="29.696" width="0.2" layer="1"/>
 <wire x1="48.703" y1="39.4736" x2="48.9966" y2="39.18" width="0.2" layer="1"/>
 </signal>
 <signal name="TX">
@@ -2398,8 +2311,8 @@ Covered vias can be set in Masks (Limit).
 <contactref element="MICROCHIP" pad="43"/>
 <wire x1="48.703" y1="40.2736" x2="48.9966" y2="39.98" width="0.2" layer="1"/>
 <wire x1="48.703" y1="40.2736" x2="46.9736" y2="40.2736" width="0.2" layer="1"/>
-<wire x1="36.58" y1="31.15" x2="37.85" y2="31.15" width="0.2" layer="1"/>
-<wire x1="46.9736" y1="40.2736" x2="37.85" y2="31.15" width="0.2" layer="1"/>
+<wire x1="35.31" y1="30.896" x2="37.596" y2="30.896" width="0.2" layer="1"/>
+<wire x1="46.9736" y1="40.2736" x2="37.596" y2="30.896" width="0.2" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="BLUETOOTH" pad="3"/>
@@ -2415,27 +2328,42 @@ Covered vias can be set in Masks (Limit).
 </signal>
 <signal name="RTS">
 <contactref element="BLUETOOTH" pad="9"/>
+<contactref element="MICROCHIP" pad="42"/>
+<wire x1="48.9966" y1="40.78" x2="48.8566" y2="40.64" width="0.2" layer="1"/>
+<wire x1="48.8566" y1="40.64" x2="45.72" y2="40.64" width="0.2" layer="1"/>
+<wire x1="37.176" y1="32.096" x2="35.31" y2="32.096" width="0.2" layer="1"/>
+<wire x1="45.72" y1="40.64" x2="37.176" y2="32.096" width="0.2" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="BLUETOOTH" pad="10"/>
 <contactref element="C31" pad="1"/>
 <contactref element="R14" pad="2"/>
-<wire x1="39.37" y1="36.02" x2="39.37" y2="35.07" width="0.2" layer="1"/>
-<wire x1="39.37" y1="35.07" x2="37.85" y2="33.55" width="0.2" layer="1"/>
-<wire x1="37.85" y1="33.55" x2="36.58" y2="33.55" width="0.2" layer="1"/>
-<wire x1="40.25921875" y1="36.8384" x2="40.1884" y2="36.8384" width="0.2032" layer="1"/>
-<wire x1="40.1884" y1="36.8384" x2="39.37" y2="36.02" width="0.2032" layer="1"/>
-<wire x1="41.815" y1="43.18" x2="41.815" y2="38.39418125" width="0.2032" layer="1"/>
-<wire x1="41.815" y1="38.39418125" x2="40.25921875" y2="36.8384" width="0.2032" layer="1"/>
+<wire x1="40.25921875" y1="36.8384" x2="38.5516" y2="36.8384" width="0.2032" layer="1"/>
+<wire x1="38.5516" y1="36.8384" x2="38.1" y2="37.29" width="0.2032" layer="1"/>
+<wire x1="40.545" y1="40.767" x2="40.545" y2="37.12418125" width="0.2032" layer="1"/>
+<wire x1="40.545" y1="37.12418125" x2="40.25921875" y2="36.8384" width="0.2032" layer="1"/>
+<wire x1="34.31" y1="33.896" x2="34.31" y2="35.096" width="0.2" layer="1"/>
+<wire x1="35.31" y1="33.296" x2="34.71" y2="33.896" width="0.2" layer="1"/>
+<wire x1="34.71" y1="33.896" x2="34.31" y2="33.896" width="0.2" layer="1"/>
+<wire x1="35.906" y1="35.096" x2="38.1" y2="37.29" width="0.2" layer="1"/>
+<wire x1="34.31" y1="35.096" x2="35.906" y2="35.096" width="0.2" layer="1"/>
 </signal>
 <signal name="CTS">
 <contactref element="BLUETOOTH" pad="11"/>
+<contactref element="MICROCHIP" pad="41"/>
+<wire x1="42.1666" y1="38.24854375" x2="42.1666" y2="38.3566" width="0.2" layer="1"/>
+<wire x1="35.31" y1="34.496" x2="38.41405625" y2="34.496" width="0.2" layer="1"/>
+<wire x1="38.41405625" y1="34.496" x2="42.1666" y2="38.24854375" width="0.2" layer="1"/>
+<wire x1="47.55835625" y1="41.58" x2="48.9966" y2="41.58" width="0.2" layer="1"/>
+<wire x1="47.05655625" y1="41.0782" x2="47.55835625" y2="41.58" width="0.2" layer="1"/>
+<wire x1="44.8882" y1="41.0782" x2="47.05655625" y2="41.0782" width="0.2" layer="1"/>
+<wire x1="42.1666" y1="38.3566" x2="44.8882" y2="41.0782" width="0.2" layer="1"/>
 </signal>
 <signal name="N$27">
 <contactref element="BLUETOOTH" pad="12"/>
 <contactref element="R13" pad="1"/>
-<wire x1="35.56" y1="40.735" x2="35.56" y2="36.63" width="0.2" layer="1"/>
-<wire x1="35.56" y1="36.63" x2="34.93" y2="36" width="0.2" layer="1"/>
+<wire x1="33.66" y1="35.746" x2="33.66" y2="37.565" width="0.508" layer="1"/>
+<wire x1="33.66" y1="37.565" x2="34.29" y2="38.195" width="0.508" layer="1"/>
 </signal>
 <signal name="N$31">
 <contactref element="BLUETOOTH" pad="15"/>
@@ -2459,11 +2387,11 @@ Covered vias can be set in Masks (Limit).
 <wire x1="67.5132" y1="45.8724" x2="66.9798" y2="46.4058" width="0.2" layer="1"/>
 <wire x1="66.9798" y1="51.5112" x2="66.9798" y2="46.4058" width="0.2" layer="1"/>
 <via x="67.5132" y="45.8724" extent="1-16" drill="0.35"/>
-<wire x1="67.5132" y1="45.8724" x2="67.5132" y2="41.3304" width="0.2" layer="16"/>
-<wire x1="67.5132" y1="41.3304" x2="66.9798" y2="40.797" width="0.2" layer="16"/>
-<via x="66.9798" y="40.797" extent="1-16" drill="0.35"/>
-<wire x1="66.9798" y1="40.797" x2="66.1628" y2="39.98" width="0.2" layer="1"/>
-<wire x1="66.1628" y1="39.98" x2="60.2234" y2="39.98" width="0.2" layer="1"/>
+<wire x1="67.5132" y1="45.8724" x2="67.5132" y2="43.8704" width="0.2" layer="16"/>
+<wire x1="67.5132" y1="43.8704" x2="66.9798" y2="43.337" width="0.2" layer="16"/>
+<via x="66.9798" y="43.337" extent="1-16" drill="0.35"/>
+<wire x1="66.9798" y1="43.337" x2="63.6228" y2="39.98" width="0.2" layer="1"/>
+<wire x1="63.6228" y1="39.98" x2="60.2234" y2="39.98" width="0.2" layer="1"/>
 </signal>
 <signal name="LED4">
 <contactref element="R15" pad="1"/>
@@ -2507,6 +2435,10 @@ Covered vias can be set in Masks (Limit).
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

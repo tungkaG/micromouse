@@ -1,0 +1,104 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "691137710002"
+   (description "Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole")
+   (family "CON")
+   (package "SHDR2W70P0X500_1X2_1000X750X1160P")
+   (attribute "Datasheet Link" "https://katalog.we-online.com/em/datasheet/691137710002.pdf")
+   (attribute "Geometry.Height" "11.6mm")
+   (attribute "Mouser Part Number" "710-691137710002")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D")
+   (attribute "Manufacturer_Name" "Wurth Elektronik")
+   (attribute "Manufacturer_Part_Number" "691137710002")
+   (gate
+    (symbol "691137710002")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "691137710002"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SHDR2W70P0X500_1X2_1000X750X1160P"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -2.75 -3.75)
+      (pt -2.75 4.35)
+      (pt 7.85 4.35)
+      (pt 7.85 -3.75)
+      (pt -2.75 -3.75))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.5 -3.5)
+      (pt -2.5 4.1)
+      (pt 7.6 4.1)
+      (pt 7.6 -3.5)
+      (pt -2.5 -3.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0 -3.5)
+      (pt 7.6 -3.5)
+      (pt 7.6 4.1)
+      (pt -2.5 4.1)
+      (pt -2.5 0))))
+   (leg 1 (pt 0 0) (padstack 1))
+   (leg 2 (pt 5 0) (padstack 0))
+   (padstack 0
+    (hole 1.2)
+    (plated true)
+    (pad (layer TCOP) (round 1.8))
+    (pad (layer INNER) (round 1.8))
+    (pad (layer BCOP) (round 1.8))
+   )
+   (padstack 1
+    (hole 1.2)
+    (plated true)
+    (pad (layer TCOP) (square 1.8))
+    (pad (layer INNER) (round 1.8))
+    (pad (layer BCOP) (square 1.8))
+   )
+   (model "691137710002.stp"
+    (euler 90 0 90)
+    (offset 7.550000190734863 4.050000190734863 0)
+   )
+  )
+ )
+)
