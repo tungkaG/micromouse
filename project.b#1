@@ -105,8 +105,8 @@
 <dimension x1="81.28" y1="20.32" x2="91.44" y2="20.32" x3="86.36" y3="20.32" textsize="1.778" layer="47" precision="0"/>
 <hole x="81.28" y="74.93" drill="1"/>
 <hole x="90.17" y="74.93" drill="1"/>
-<hole x="109.22" y="58.42" drill="1"/>
-<hole x="109.22" y="36.83" drill="1"/>
+<hole x="107.95" y="55.88" drill="1"/>
+<hole x="107.95" y="39.37" drill="1"/>
 <hole x="90.17" y="20.32" drill="1"/>
 <hole x="81.28" y="20.32" drill="1"/>
 <hole x="40.64" y="17.78" drill="1"/>
@@ -117,7 +117,7 @@
 <hole x="40.64" y="72.39" drill="1"/>
 <hole x="76.2" y="77.47" drill="1"/>
 <hole x="76.2" y="72.39" drill="1"/>
-<hole x="104.14" y="58.42" drill="1"/>
+<hole x="104.14" y="46.99" drill="1"/>
 <wire x1="111.76" y1="34.29" x2="101.6" y2="34.29" width="0.2" layer="21"/>
 <wire x1="101.6" y1="34.29" x2="101.6" y2="60.96" width="0.2" layer="21"/>
 <wire x1="111.76" y1="60.96" x2="101.6" y2="60.96" width="0.2" layer="21"/>
@@ -137,7 +137,6 @@ Daniel, Glenn,
 Olivia &amp; Tristan</text>
 <text x="99.568" y="27.051" size="1.778" layer="21" rot="R45" align="center">SOSE 25</text>
 <text x="33.401" y="20.32" size="2.1844" layer="21" rot="SR0" align="center">TUM</text>
-<hole x="104.14" y="36.83" drill="1"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
